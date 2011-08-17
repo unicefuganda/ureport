@@ -1,0 +1,39 @@
+[submodule "ureport_project/rapidsms_generic"]
+	path = ureport_project/rapidsms_generic
+	url = git://github.com/unicefuganda/rapidsms-generic.git
+[submodule "ureport_project/rapidsms_contact"]
+	path = ureport_project/rapidsms_contact
+	url = git@github.com:unicefuganda/rapidsms-contact.git
+[submodule "ureport_project/rapidsms_authsites"]
+	path = ureport_project/rapidsms_authsites
+	url = git@github.com:unicefuganda/rapidsms-authsites.git
+[submodule "ureport_project/rapidsms_ureport"]
+	path = ureport_project/rapidsms_ureport
+	url = git@github.com:unicefuganda/rapidsms-ureport.git
+[submodule "ureport_project/rapidsms"]
+	path = ureport_project/rapidsms
+	url = git@github.com:unicefuganda/rapidsms.git
+[submodule "ureport_project/django_eav"]
+	path = ureport_project/django_eav
+	url = git@github.com:unicefuganda/django-eav.git
+[submodule "ureport_project/rapidsms_auth"]
+	path = ureport_project/rapidsms_auth
+	url = git@github.com:unicefuganda/rapidsms-auth.git
+[submodule "ureport_project/rapidsms_httprouter"]
+	path = ureport_project/rapidsms_httprouter
+	url = git@github.com:unicefuganda/rapidsms-httprouter.git
+[submodule "ureport_project/rapidsms_polls"]
+	path = ureport_project/rapidsms_polls
+	url = git@github.com:unicefuganda/rapidsms-polls.git
+[submodule "ureport_project/rapidsms_script"]
+	path = ureport_project/rapidsms_script
+	url = git@github.com:unicefuganda/rapidsms-script.git
+[submodule "ureport_project/rapidsms_unregister"]
+	path = ureport_project/rapidsms_unregister
+	url = git@github.com:unicefuganda/rapidsms-unregister.git
+[submodule "ureport_project/rapidsms_uganda_common"]
+	path = ureport_project/rapidsms_uganda_common
+	url = git@github.com:unicefuganda/rapidsms-uganda-common.git
+[submodule "ureport_project/rapidsms_tracking"]
+	path = ureport_project/rapidsms_tracking
+	url = git://github.com/unicefuganda/rapidsms-tracking.git

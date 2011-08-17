@@ -1,0 +1,9 @@
+.project
+.pydevproject
+.settings
+*pyc
+localsettings.py
+*~
+build
+dist
+ureport.egg-info

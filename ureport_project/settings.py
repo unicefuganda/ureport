@@ -24,6 +24,7 @@ sys.path.append(os.path.join(filedir, 'rapidsms_uregister'))
 sys.path.append(os.path.join(filedir, 'rapidsms_ureport'))
 sys.path.append(os.path.join(filedir, 'rapidsms_uganda_common'))
 sys.path.append(os.path.join(filedir, 'rapidsms_unregister'))
+sys.path.append(os.path.join(filedir, 'rapidsms_xforms_src'))
 sys.path.append(os.path.join(filedir, 'rapidsms_tracking'))
 sys.path.append(os.path.join(filedir, 'django_eav'))
 
@@ -133,7 +134,8 @@ INSTALLED_APPS = [
     "unregister",
     "tracking",
     "uganda_common",
-      "rapidsms",
+    "rapidsms",
+    "rapidsms_xforms",
 ]
 
 SOUTH_MIGRATION_MODULES = {

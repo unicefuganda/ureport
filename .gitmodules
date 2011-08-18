@@ -37,3 +37,6 @@
 [submodule "ureport_project/rapidsms_tracking"]
 	path = ureport_project/rapidsms_tracking
 	url = git://github.com/unicefuganda/rapidsms-tracking.git
+[submodule "ureport_project/rapidsms_xforms_src"]
+	path = ureport_project/rapidsms_xforms_src
+	url = git://github.com/unicefuganda/rapidsms-xforms

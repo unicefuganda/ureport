@@ -58,7 +58,7 @@ ADMINS=(
 DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ureport',
+        'NAME': 'prod',
         'USER': 'postgres',
     }
 }
@@ -166,7 +166,7 @@ RAPIDSMS_TABS = [
 
 AUTHENTICATED_TABS = [
     ("ureport-polls", "Poll Admin"),
-    ("poll_dashboard", "Poll Dashboard"),
+    #("poll_dashboard", "Poll Dashboard"),
     ("contact-messagelog", "Message Log"),
     ("ureport-contact", "uReporters"),
 ]

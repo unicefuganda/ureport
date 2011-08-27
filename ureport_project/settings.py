@@ -74,21 +74,9 @@ DATABASES = {
 # to configure it. see the documentation in those modules for a list of
 # the valid options for each.
 INSTALLED_BACKENDS = {
-    #"att": {
-    #    "ENGINE": "rapidsms.backends.gsm",
-    #    "PORT": "/dev/ttyUSB0"
-    #},
-    #"verizon": {
-    #    "ENGINE": "rapidsms.backends.gsm,
-    #    "PORT": "/dev/ttyUSB1"
-    #},
     "message_tester": {
         "ENGINE": "rapidsms.backends.bucket",
     },
-#    "http" : {"ENGINE":  "rapidsms_backendmanager.backends.http",
-#                "gateway_url": "http://www.smsgateway.com",
-#                "params_outgoing": "user=my_username&password=my_password&id=%(phone_number)s&text=%(message)s",
-#    }
 }
 
 
@@ -100,12 +88,8 @@ INSTALLED_APPS = [
     "mptt",
     "uni_form",
     "django_extensions",
-    # common dependencies (which don't clutter up the ui).
     "rapidsms.contrib.handlers",
 
-    # enable the django admin using a little shim app (which includes
-    # the required urlpatterns), and a bunch of undocumented apps that
-    # the AdminSite seems to explode without.
     "django.contrib.sites",
     "django.contrib.auth",
     "django.contrib.admin",
@@ -114,15 +98,10 @@ INSTALLED_APPS = [
 
     # the rapidsms contrib apps.
     "rapidsms.contrib.default",
-#    "rapidsms.contrib.export",
-#    "rapidsms.contrib.httptester",  # REMOVE ME FOR HTTPROUTER
     "rapidsms.contrib.locations",
     "rapidsms.contrib.locations.nested",
-#    "rapidsms.contrib.messagelog",  # REMOVE ME FOR HTTPROUTER
     "rapidsms.contrib.messaging",
     "rapidsms.contrib.registration",
-#    "rapidsms.contrib.scheduler",
-#    "rapidsms.contrib.echo",
     "eav",
     "authsites",
     "auth",
@@ -148,7 +127,6 @@ SMS_APPS = [
     "unregister",
     "ureport",
     "script",
-#    "autoregistration",
     "poll",
     "rapidsms_xforms",
 ]
@@ -166,7 +144,6 @@ RAPIDSMS_TABS = [
 
 AUTHENTICATED_TABS = [
     ("ureport-polls", "Poll Admin"),
-    #("poll_dashboard", "Poll Dashboard"),
     ("contact-messagelog", "Message Log"),
     ("ureport-contact", "uReporters"),
 ]

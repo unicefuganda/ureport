@@ -58,7 +58,8 @@ ADMINS=(
 DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'prod',
+        'NAME': 'rapidsms-test',
+        'HOST': 'dbserver',
         'USER': 'postgres',
     }
 }

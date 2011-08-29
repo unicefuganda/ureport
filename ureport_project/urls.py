@@ -1,8 +1,6 @@
 from django.conf.urls.defaults import *
 from django.conf import settings
 from django.contrib import admin
-#from rapidsms_xforms.urls import urlpatterns as xforms_urls
-#from rapidsms_backendmanager.urls import urlpatterns as backendmgr_urls
 from rapidsms_httprouter.urls import urlpatterns as router_urls
 from ureport.urls import urlpatterns as ureport_urls
 from contact.urls import urlpatterns as contact_urls
@@ -13,9 +11,6 @@ from generic.urls import urlpatterns as generic_urls
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Example:
-    # (r'^my-project/', include('my_project.foo.urls')),
-
     # Uncomment the admin/doc line below to enable admin documentation:
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
@@ -23,7 +18,6 @@ urlpatterns = patterns('',
 
     # RapidSMS core URLs
     (r'^account/', include('rapidsms.urls.login_logout')),
-#    url(r'^$', 'ureport.views.index', name='rapidsms-dashboard'),
     url(r'^$', 'ureport.views.ureport_content', {'slug':'ureport_home','base_template':'ureport/three-square.html','num_columns':3}, name='rapidsms-dashboard'),
     url('^accounts/login', 'rapidsms.views.login'),
     url('^accounts/logout', 'rapidsms.views.logout'),

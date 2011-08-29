@@ -220,7 +220,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.core.context_processors.request",
     "generic.context_processors.map_params",
     "uganda_common.context_processors.authtabs",
-    #"uganda_common.context_processors.module",
+    "ureport.context_processors.voices",
 ]
 
 MIDDLEWARE_CLASSES = (

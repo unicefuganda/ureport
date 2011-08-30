@@ -58,7 +58,7 @@ ADMINS=(
 DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'rapidsms-test',
+        'NAME': 'ureport',
         'HOST': 'dbserver',
         'USER': 'postgres',
     }

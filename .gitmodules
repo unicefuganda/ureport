@@ -4,9 +4,6 @@
 [submodule "ureport_project/rapidsms_contact"]
 	path = ureport_project/rapidsms_contact
 	url = git://github.com/unicefuganda/rapidsms-contact.git
-[submodule "ureport_project/rapidsms_authsites"]
-	path = ureport_project/rapidsms_authsites
-	url = git://github.com/unicefuganda/rapidsms-authsites.git
 [submodule "ureport_project/rapidsms_ureport"]
 	path = ureport_project/rapidsms_ureport
 	url = git://github.com/unicefuganda/rapidsms-ureport.git

@@ -13,7 +13,6 @@ filedir = os.path.dirname(__file__)
 sys.path.append(os.path.join(filedir))
 sys.path.append(os.path.join(filedir, 'rapidsms', 'lib'))
 sys.path.append(os.path.join(filedir, 'rapidsms_auth'))
-sys.path.append(os.path.join(filedir, 'rapidsms_authsites'))
 sys.path.append(os.path.join(filedir, 'rapidsms_contact'))
 sys.path.append(os.path.join(filedir, 'rapidsms_cvs'))
 sys.path.append(os.path.join(filedir, 'rapidsms_generic'))
@@ -32,13 +31,13 @@ sys.path.append(os.path.join(filedir, 'django_eav'))
 # -------------------------------------------------------------------- #
 #                          MAIN CONFIGURATION                          #
 # -------------------------------------------------------------------- #
-BAD_WORDS=['poop',] #list of profanities
-TIME_ZONE="Africa/Kampala"
-EMAIL_HOST_USER=''
-EMAIL_HOST='127.0.0.1'
+BAD_WORDS = ['poop', ] #list of profanities
+TIME_ZONE = "Africa/Kampala"
+EMAIL_HOST_USER = ''
+EMAIL_HOST = '127.0.0.1'
 OPT_IN_WORDS = ['join']
 OPT_IN_CONFIRMATION = "Welcome to UReport! Ureport is a community of Ugandan youth that are dedicated to working for positive change in their communities. Stay tuned for more info."
-OPT_OUT_WORDS = ['stop','unjoin','quit']
+OPT_OUT_WORDS = ['stop', 'unjoin', 'quit']
 OPT_OUT_CONFIRMATION = "Your UReport opt out is confirmed.If you made a mistake,or you want your voice to be heard again,text in JOIN and send it to 8500!All SMS messages are free"
 
 # map bounding box
@@ -49,7 +48,7 @@ MAX_LAT = '4.280680030820496'
 # map categorized color pallete
 CATEGORY_COLORS = ['#AA4643', '#4572A7', '#89A54E', '#80699B', '#3D96AE', '#DB843D', '#92A8CD', '#A47D7C', '#B5CA92']
 
-ADMINS=(
+ADMINS = (
     (),
 )
 
@@ -104,7 +103,6 @@ INSTALLED_APPS = [
     "rapidsms.contrib.messaging",
     "rapidsms.contrib.registration",
     "eav",
-    "authsites",
     "auth",
     "rapidsms_httprouter",
     "poll",
@@ -173,7 +171,7 @@ TEST_RUNNER = "django_nose.NoseTestSuiteRunner"
 # for some reason this setting is blank in django's global_settings.py,
 # but it is needed for static assets to be linkable.
 MEDIA_URL = "/static/"
-ADMIN_MEDIA_PREFIX="/static/media/"
+ADMIN_MEDIA_PREFIX = "/static/media/"
 # this is required for the django.contrib.sites tests to run, but also
 # not included in global_settings.py, and is almost always ``1``.
 # see: http://docs.djangoproject.com/en/dev/ref/contrib/sites/
@@ -239,10 +237,10 @@ TEMPLATE_LOADERS = (
 # the project-level url patterns
 ROOT_URLCONF = "urls"
 
-MAP_KEY=[
+MAP_KEY = [
     ('ureport.rapidsms.org', "ABQIAAAAYimH_excdTjwGjM6LcP-DhRaLfBBEB0nsUEuMGz01RTfbwPCxRRUSCN6nz739wEN1rNcAJTRg8vTHg"),
-    ('www.ureport.ug',"ABQIAAAAmd7V71yw9ZddA0s8Z3wSKBTrSx965opJTPiXgouUw7qSi_I44xRzCENKBqv3-FQaLEhbpp2KvfIj-w"),
-    ('ureport.ug',"ABQIAAAAmd7V71yw9ZddA0s8Z3wSKBTrSx965opJTPiXgouUw7qSi_I44xRzCENKBqv3-FQaLEhbpp2KvfIj-w"),
+    ('www.ureport.ug', "ABQIAAAAmd7V71yw9ZddA0s8Z3wSKBTrSx965opJTPiXgouUw7qSi_I44xRzCENKBqv3-FQaLEhbpp2KvfIj-w"),
+    ('ureport.ug', "ABQIAAAAmd7V71yw9ZddA0s8Z3wSKBTrSx965opJTPiXgouUw7qSi_I44xRzCENKBqv3-FQaLEhbpp2KvfIj-w"),
 ]
 
 # since we might hit the database from any thread during testing, the

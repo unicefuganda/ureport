@@ -265,4 +265,4 @@ if 'test' in sys.argv:
     for db_name in DATABASES:
         DATABASES[db_name]['TEST_NAME'] = os.path.join(
             tempfile.gettempdir(),
-            "%s.rapidsms.test.sqlite3" % db_name)
+            "%s.ureport.test.sqlite3" % db_name)

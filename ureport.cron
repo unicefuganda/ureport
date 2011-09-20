@@ -1,0 +1,3 @@
+*/3 * * * * /var/www/env/prod/bin/python /var/www/prod/ureport/ureport_project/manage.py check_script_progress -e 7 -l 20
+0,15,30,45 * * * * /var/www/env/prod/bin/python /var/www/prod/ureport/ureport_project/manage.py monitor_kannel 
+01 03 * * * /var/www/env/prod/bin/python /var/www/prod/ureport/ureport_project/manage.py export_contacts

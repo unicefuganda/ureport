@@ -57,8 +57,8 @@ ADMINS = (
 DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'prod',
-        #'HOST': 'dbserver',
+        'NAME': 'ureport',
+        'HOST': 'dbserver',
         'USER': 'postgres',
     }
 }
@@ -114,7 +114,6 @@ INSTALLED_APPS = [
     "uganda_common",
     "rapidsms",
     "rapidsms_xforms",
-    "gunicorn",
 ]
 
 SOUTH_MIGRATION_MODULES = {
@@ -176,7 +175,7 @@ ADMIN_MEDIA_PREFIX = "/static/media/"
 # this is required for the django.contrib.sites tests to run, but also
 # not included in global_settings.py, and is almost always ``1``.
 # see: http://docs.djangoproject.com/en/dev/ref/contrib/sites/
-SITE_ID = 1 
+SITE_ID = 1
 
 
 # the default log settings are very noisy.
@@ -209,7 +208,6 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.transaction.TransactionMiddleware',
     'tracking.middleware.UserTrackingMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware'
 )
 
 # -------------------------------------------------------------------- #

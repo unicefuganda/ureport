@@ -57,8 +57,8 @@ ADMINS = (
 DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ureport',
-        'HOST': 'dbserver',
+        'NAME': 'prod',
+        #'HOST': 'dbserver',
         'USER': 'postgres',
     }
 }
@@ -114,6 +114,7 @@ INSTALLED_APPS = [
     "uganda_common",
     "rapidsms",
     "rapidsms_xforms",
+    "gunicorn",
 ]
 
 SOUTH_MIGRATION_MODULES = {
@@ -143,7 +144,7 @@ RAPIDSMS_TABS = [
 
 AUTHENTICATED_TABS = [
     ("ureport-polls", "Poll Admin"),
-    ("contact-messagelog", "Message Log"),
+    ("messagelog", "Message Log"),
     ("ureport-contact", "uReporters"),
 ]
 
@@ -208,6 +209,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.transaction.TransactionMiddleware',
     'tracking.middleware.UserTrackingMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware'
 )
 
 # -------------------------------------------------------------------- #

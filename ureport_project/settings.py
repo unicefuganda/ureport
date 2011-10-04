@@ -200,7 +200,9 @@ TEMPLATE_CONTEXT_PROCESSORS = [
 ]
 
 MIDDLEWARE_CLASSES = (
+     'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.cache.CacheMiddleware',
@@ -242,6 +244,18 @@ MAP_KEY = [
     ('www.ureport.ug', "ABQIAAAAmd7V71yw9ZddA0s8Z3wSKBTrSx965opJTPiXgouUw7qSi_I44xRzCENKBqv3-FQaLEhbpp2KvfIj-w"),
     ('ureport.ug', "ABQIAAAAmd7V71yw9ZddA0s8Z3wSKBTrSx965opJTPiXgouUw7qSi_I44xRzCENKBqv3-FQaLEhbpp2KvfIj-w"),
 ]
+
+#caching stuff
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+        'LOCATION': '127.0.0.1:11211',
+        'TIMEOUT': 6000,
+        'OPTIONS': {
+            'MAX_ENTRIES': 1000
+        }
+    }
+}
 
 # since we might hit the database from any thread during testing, the
 # in-memory sqlite database isn't sufficient. it spawns a separate

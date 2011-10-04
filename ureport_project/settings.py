@@ -171,7 +171,7 @@ TEST_RUNNER = "django_nose.NoseTestSuiteRunner"
 # for some reason this setting is blank in django's global_settings.py,
 # but it is needed for static assets to be linkable.
 MEDIA_URL = "/static/"
-ADMIN_MEDIA_PREFIX = "/static/media/"
+ADMIN_MEDIA_PREFIX = "/admin_media/"
 # this is required for the django.contrib.sites tests to run, but also
 # not included in global_settings.py, and is almost always ``1``.
 # see: http://docs.djangoproject.com/en/dev/ref/contrib/sites/

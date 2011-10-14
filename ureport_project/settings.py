@@ -145,6 +145,7 @@ AUTHENTICATED_TABS = [
     ("ureport-polls", "Poll Admin"),
     ("messagelog", "Message Log"),
     ("ureport-contact", "uReporters"),
+     ("flaggedmessages", "Flagged Messages"),
 ]
 
 # -------------------------------------------------------------------- #

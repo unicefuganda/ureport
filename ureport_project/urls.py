@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.views import password_change
 from tracking.urls import urlpatterns as tracking_urls
 from generic.urls import urlpatterns as generic_urls
+from django.views.generic.simple import direct_to_template
 admin.autodiscover()
 
 urlpatterns = patterns('',
@@ -18,7 +19,8 @@ urlpatterns = patterns('',
 
     # RapidSMS core URLs
     (r'^account/', include('rapidsms.urls.login_logout')),
-    url(r'^$','ureport.views.ureport_home',name="new_home"),
+    url(r'^$', direct_to_template, {'template':'ureport/home.html'}, name="new_home"),
+    url(r'^join/$', direct_to_template, {'template':'ureport/how_to_join.html'}),
     url(r'^ureport-admin$', 'ureport.views.ureport_content', {'slug':'ureport_home', 'base_template':'ureport/three-square.html', 'num_columns':3}, name='rapidsms-dashboard'),
     url('^accounts/login', 'rapidsms.views.login'),
     url('^accounts/logout', 'rapidsms.views.logout'),

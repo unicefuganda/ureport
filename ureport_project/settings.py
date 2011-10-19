@@ -181,6 +181,9 @@ ADMIN_MEDIA_PREFIX = "/static/media/"
 # see: http://docs.djangoproject.com/en/dev/ref/contrib/sites/
 SITE_ID = 1
 
+# this is used for geoserver to tell which website this viz should be for (and prevents clashing of
+# polls across different websites with the same id
+DEPLOYMENT_ID = 1
 
 # the default log settings are very noisy.
 LOG_LEVEL = "DEBUG"

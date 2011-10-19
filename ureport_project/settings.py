@@ -16,6 +16,7 @@ sys.path.append(os.path.join(filedir, 'rapidsms_auth'))
 sys.path.append(os.path.join(filedir, 'rapidsms_contact'))
 sys.path.append(os.path.join(filedir, 'rapidsms_cvs'))
 sys.path.append(os.path.join(filedir, 'rapidsms_generic'))
+sys.path.append(os.path.join(filedir, 'rapidsms_geoserver'))
 sys.path.append(os.path.join(filedir, 'rapidsms_httprouter_src'))
 sys.path.append(os.path.join(filedir, 'rapidsms_polls'))
 sys.path.append(os.path.join(filedir, 'rapidsms_script'))
@@ -101,6 +102,7 @@ INSTALLED_APPS = [
     "rapidsms.contrib.default",
     "rapidsms.contrib.locations",
     "rapidsms.contrib.locations.nested",
+    "geoserver",
     "rapidsms.contrib.messaging",
     "rapidsms.contrib.registration",
     "eav",

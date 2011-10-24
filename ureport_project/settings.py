@@ -117,6 +117,10 @@ INSTALLED_APPS = [
     "uganda_common",
     "rapidsms",
     "rapidsms_xforms",
+
+
+    # don't put any app below south
+    "south",
 ]
 
 SOUTH_MIGRATION_MODULES = {

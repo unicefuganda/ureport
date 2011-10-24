@@ -58,7 +58,7 @@ ADMINS = (
 DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ureport',
+        'NAME': 'foo',
         'HOST': 'dbserver',
         'USER': 'postgres',
     }
@@ -117,6 +117,7 @@ INSTALLED_APPS = [
     "uganda_common",
     "rapidsms",
     "rapidsms_xforms",
+    "south",
 ]
 
 SOUTH_MIGRATION_MODULES = {

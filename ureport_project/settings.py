@@ -58,7 +58,7 @@ ADMINS = (
 DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'foo',
+        'NAME': 'ureport',
         'HOST': 'dbserver',
         'USER': 'postgres',
     }

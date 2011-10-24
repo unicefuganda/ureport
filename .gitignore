@@ -7,3 +7,4 @@ localsettings.py
 build
 dist
 ureport.egg-info
+.idea

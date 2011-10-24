@@ -260,6 +260,9 @@ CACHES = {
     }
 }
 
+#south stuff
+SOUTH_TESTS_MIGRATE = False
+
 # since we might hit the database from any thread during testing, the
 # in-memory sqlite database isn't sufficient. it spawns a separate
 # virtual database for each thread, and syncdb is only called for the
@@ -283,3 +286,5 @@ if 'test' in sys.argv:
         DATABASES[db_name]['TEST_NAME'] = os.path.join(
             tempfile.gettempdir(),
             "%s.ureport.test.sqlite3" % db_name)
+
+

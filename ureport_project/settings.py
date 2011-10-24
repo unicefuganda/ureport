@@ -117,14 +117,9 @@ INSTALLED_APPS = [
     "uganda_common",
     "rapidsms",
     "rapidsms_xforms",
+   # nothing after south
     "south",
 ]
-
-SOUTH_MIGRATION_MODULES = {
-    "rapidsms": "migrations.rapidsms",
-    "rapidsms.contrib.handlers": "migrations.rapidsms.contrib.handlers",
-    "rapidsms_httprouter": "migrations.rapidsms_httprouter",
-}
 
 SMS_APPS = [
     "unregister",

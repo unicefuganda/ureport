@@ -1,4 +1,4 @@
 * * * * * root /var/www/env/prod/bin/python /var/www/prod/ureport/ureport_project/manage.py check_script_progress -e 7 -l 20
-01 03 * * * root /var/www/env/prod/bin/python /var/www/prod/ureport/ureport_project/manage.py export_contacts
-7 * * * * root /var/www/env/prod/bin/python /var/www/prod/ureport/ureport_project/manage.py export_poll_data
+01 03 * * * www /var/www/env/prod/bin/python /var/www/prod/ureport/ureport_project/manage.py export_contacts
+7 * * * * www /var/www/env/prod/bin/python /var/www/prod/ureport/ureport_project/manage.py export_poll_data
 

@@ -181,14 +181,6 @@ SITE_ID = 1
 # polls across different websites with the same id
 DEPLOYMENT_ID = 1
 
-# the default log settings are very noisy.
-LOG_LEVEL = "DEBUG"
-LOG_FILE = "rapidsms.log"
-LOG_FORMAT = "[%(name)s]: %(message)s"
-LOG_SIZE = 8192  # 8192 bits = 8 kb
-LOG_BACKUPS = 256  # number of logs to keep
-
-
 # these weird dependencies should be handled by their respective apps,
 # but they're not, so here they are. most of them are for django admin.
 TEMPLATE_CONTEXT_PROCESSORS = [
@@ -220,7 +212,6 @@ MIDDLEWARE_CLASSES = (
 #        these settings are pure hackery, and will go away soon        #
 # -------------------------------------------------------------------- #
 
-
 # these apps should not be started by rapidsms in your tests, however,
 # the models and bootstrap will still be available through django.
 TEST_EXCLUDED_APPS = [
@@ -234,19 +225,13 @@ TEST_EXCLUDED_APPS = [
 
 
 TEMPLATE_LOADERS = (
-                    'django.template.loaders.filesystem.Loader',
-                    'django.template.loaders.app_directories.Loader',
-                    'django.template.loaders.eggs.Loader',
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+    'django.template.loaders.eggs.Loader',
 )
 
 # the project-level url patterns
 ROOT_URLCONF = "urls"
-
-MAP_KEY = [
-    ('ureport.rapidsms.org', "ABQIAAAAYimH_excdTjwGjM6LcP-DhRaLfBBEB0nsUEuMGz01RTfbwPCxRRUSCN6nz739wEN1rNcAJTRg8vTHg"),
-    ('www.ureport.ug', "ABQIAAAAmd7V71yw9ZddA0s8Z3wSKBTrSx965opJTPiXgouUw7qSi_I44xRzCENKBqv3-FQaLEhbpp2KvfIj-w"),
-    ('ureport.ug', "ABQIAAAAmd7V71yw9ZddA0s8Z3wSKBTrSx965opJTPiXgouUw7qSi_I44xRzCENKBqv3-FQaLEhbpp2KvfIj-w"),
-]
 
 #caching stuff
 CACHES = {
@@ -286,5 +271,4 @@ if 'test' in sys.argv:
         DATABASES[db_name]['TEST_NAME'] = os.path.join(
             tempfile.gettempdir(),
             "%s.ureport.test.sqlite3" % db_name)
-
 

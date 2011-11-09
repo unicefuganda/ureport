@@ -203,7 +203,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.cache.CacheMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.transaction.TransactionMiddleware',
-    'tracking.middleware.UserTrackingMiddleware',
+#    'tracking.middleware.UserTrackingMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 

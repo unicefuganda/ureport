@@ -37,6 +37,7 @@ TIME_ZONE = "Africa/Kampala"
 EMAIL_HOST_USER = ''
 EMAIL_HOST = '127.0.0.1'
 OPT_IN_WORDS = ['join']
+OPT_IN_WORDS_LUO=["Donyo","dony","donyo"]
 OPT_IN_CONFIRMATION = "Welcome to UReport! Ureport is a community of Ugandan youth that are dedicated to working for positive change in their communities. Stay tuned for more info."
 OPT_OUT_WORDS = ['stop', 'unjoin', 'quit']
 OPT_OUT_CONFIRMATION = "Your UReport opt out is confirmed.If you made a mistake,or you want your voice to be heard again,text in JOIN and send it to 8500!All SMS messages are free"
@@ -51,6 +52,13 @@ CATEGORY_COLORS = ['#AA4643', '#4572A7', '#89A54E', '#80699B', '#3D96AE', '#DB84
 
 ADMINS = (
     (),
+)
+
+gettext = lambda s: s
+
+LANGUAGES = (
+    ('ach', gettext('luo')),
+    ('en', gettext('English')),
 )
 
 # you should configure your database here before doing any real work.
@@ -247,6 +255,8 @@ CACHES = {
 
 #south stuff
 SOUTH_TESTS_MIGRATE = False
+
+USE_I18N = True
 
 # since we might hit the database from any thread during testing, the
 # in-memory sqlite database isn't sufficient. it spawns a separate

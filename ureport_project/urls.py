@@ -9,6 +9,7 @@ from django.contrib.auth.views import password_change
 from tracking.urls import urlpatterns as tracking_urls
 from generic.urls import urlpatterns as generic_urls
 from django.views.generic.simple import direct_to_template
+from ussd.urls import urlpatterns as ussd_urls
 admin.autodiscover()
 
 urlpatterns = patterns('',
@@ -36,7 +37,7 @@ urlpatterns = patterns('',
     (r'^registration/', include('auth.urls')),
     (r'^scheduler/', include('rapidsms.contrib.scheduler.urls')),
     (r'^polls/', include('poll.urls')),
-) + router_urls + ureport_urls + contact_urls + tracking_urls + generic_urls
+) + router_urls + ureport_urls + contact_urls + tracking_urls + generic_urls+ ussd_urls
 
 if settings.DEBUG:
     urlpatterns += patterns('',

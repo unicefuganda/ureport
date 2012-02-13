@@ -27,6 +27,7 @@ sys.path.append(os.path.join(filedir, 'rapidsms_unregister'))
 sys.path.append(os.path.join(filedir, 'rapidsms_xforms_src'))
 sys.path.append(os.path.join(filedir, 'rapidsms_tracking'))
 sys.path.append(os.path.join(filedir, 'django_eav'))
+sys.path.append(os.path.join(filedir, 'rapidsms_uganda_ussd'))
 
 
 # -------------------------------------------------------------------- #
@@ -124,6 +125,7 @@ INSTALLED_APPS = [
     "uganda_common",
     "rapidsms",
     "rapidsms_xforms",
+    "ussd",
    # nothing after south
     "south",
 ]
@@ -256,6 +258,7 @@ CACHES = {
 SOUTH_TESTS_MIGRATE = False
 
 USE_I18N = True
+INITIAL_USSD_SCREEN='ussd_root'
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 

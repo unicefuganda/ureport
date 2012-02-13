@@ -40,3 +40,6 @@
 [submodule "ureport_project/rapidsms_geoserver"]
 	path = ureport_project/rapidsms_geoserver
 	url = git://github.com/unicefuganda/rapidsms-geoserver
+[submodule "ureport_project/rapidsms_uganda_ussd"]
+	path = ureport_project/rapidsms_uganda_ussd
+	url = git://github.com/unicefuganda/rapidsms-uganda-ussd.git

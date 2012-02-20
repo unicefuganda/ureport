@@ -43,3 +43,6 @@
 [submodule "ureport_project/rapidsms_uganda_ussd"]
 	path = ureport_project/rapidsms_uganda_ussd
 	url = git://github.com/unicefuganda/rapidsms-uganda-ussd.git
+[submodule "ureport_project/django_background_task"]
+	path = ureport_project/django_background_task
+	url = git://github.com/lilspikey/django-background-task.git

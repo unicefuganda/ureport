@@ -135,7 +135,7 @@ SMS_APPS = [
     "ureport",
     "script",
     "poll",
-    "rapidsms_xforms",
+    #"rapidsms_xforms",
 ]
 
 
@@ -189,6 +189,9 @@ SITE_ID = 1
 # this is used for geoserver to tell which website this viz should be for (and prevents clashing of
 # polls across different websites with the same id
 DEPLOYMENT_ID = 1
+
+#model containing blacklisted contacts
+BLACKLIST_MODEL= "unregister.Blacklist"
 
 # these weird dependencies should be handled by their respective apps,
 # but they're not, so here they are. most of them are for django admin.

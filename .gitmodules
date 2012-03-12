@@ -46,3 +46,6 @@
 [submodule "ureport_project/django_background_task"]
 	path = ureport_project/django_background_task
 	url = git://github.com/lilspikey/django-background-task.git
+[submodule "monitor_src"]
+	path = monitor_src
+	url = git://github.com/unicefuganda/monitor_src.git

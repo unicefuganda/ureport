@@ -28,6 +28,7 @@ sys.path.append(os.path.join(filedir, 'rapidsms_xforms_src'))
 sys.path.append(os.path.join(filedir, 'rapidsms_tracking'))
 sys.path.append(os.path.join(filedir, 'django_eav'))
 sys.path.append(os.path.join(filedir, 'rapidsms_uganda_ussd'))
+sys.path.append(os.path.join(filedir, 'qos_monitor'))
 
 
 # -------------------------------------------------------------------- #
@@ -126,6 +127,7 @@ INSTALLED_APPS = [
     "rapidsms",
     "rapidsms_xforms",
     "ussd",
+    "monitor",
    # nothing after south
     "south",
 ]

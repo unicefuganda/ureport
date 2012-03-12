@@ -50,3 +50,6 @@
 [submodule "ureport_project/qos_monitor"]
 	path = ureport_project/qos_monitor
 	url = git://github.com/unicefuganda/monitor_src.git
+[submodule "ureport_project/rapidsms_message_classifier"]
+	path = ureport_project/rapidsms_message_classifier
+	url = git://github.com/unicefuganda/rapidsms-message-classifier.git

@@ -28,6 +28,8 @@ sys.path.append(os.path.join(filedir, 'rapidsms_xforms_src'))
 sys.path.append(os.path.join(filedir, 'rapidsms_tracking'))
 sys.path.append(os.path.join(filedir, 'django_eav'))
 sys.path.append(os.path.join(filedir, 'rapidsms_uganda_ussd'))
+sys.path.append(os.path.join(filedir, 'rapidsms_message_classifier'))
+
 sys.path.append(os.path.join(filedir, 'qos_monitor'))
 
 
@@ -128,11 +130,13 @@ INSTALLED_APPS = [
     "rapidsms_xforms",
     "ussd",
     "monitor",
+    "message_classifier",
    # nothing after south
     "south",
 ]
 
 SMS_APPS = [
+    "monitor",
     "unregister",
     "ureport",
     "script",

@@ -39,6 +39,7 @@ urlpatterns = patterns('',
     (r'^polls/', include('poll.urls')),
 ) + router_urls + ureport_urls + contact_urls + tracking_urls + generic_urls+ ussd_urls
 
+
 if settings.DEBUG:
     urlpatterns += patterns('',
         # helper URLs file that automatically serves the 'static' folder in

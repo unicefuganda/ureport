@@ -131,6 +131,8 @@ INSTALLED_APPS = [
     "ussd",
     "monitor",
     "message_classifier",
+    "celery",
+    "djcelery",
    # nothing after south
     "south",
 ]

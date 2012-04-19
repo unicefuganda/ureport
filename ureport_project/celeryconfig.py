@@ -1,6 +1,9 @@
 #BROKER_URL = 'amqp://guest:guest@localhost:5672//'
 
-CELERY_IMPORTS = ("message_classifier.tasks", )
+#CELERY_ALWAYS_EAGER = True
+
+
+
 CELERY_RESULT_BACKEND = 'amqp'
 CELERY_RESULT_PERSISTENT = True
 CELERY_TASK_RESULT_EXPIRES = None
@@ -10,12 +13,15 @@ CELERY_QUEUES = {
     'default': {
         'binding_key': 'task.#',
     },
-    'message_classifier.tasks.HandleExcelClassification': {
-        'binding_key': 'upload.#',
+    'upload_responses': {
+        'binding_key': 'upload_responses.#',
     },
-    'message_classifier.tasks.UploadResponsesTask': {
-        'binding_key': 'poll.#',
+    'classify_excel': {
+        'binding_key': 'classify_excel.#',
     },
+    'message_export': {
+           'binding_key': 'message_export.#',
+       },
 }
 CELERY_DEFAULT_EXCHANGE = 'tasks'
 CELERY_DEFAULT_EXCHANGE_TYPE = 'topic'
@@ -32,3 +38,22 @@ AMQP_PORT = 5672
 AMQP_USER = "ureport"
 AMQP_PASSWORD = "ureport"
 AMQP_VHOST = "ureport"
+
+
+
+
+CELERY_ROUTES = {
+    'message_classifier.tasks.upload_responses': {
+        'queue': 'upload_responses',
+        'routing_key': 'upload_responses.result'
+    },
+    'message_classifier.tasks.classify_excel': {
+           'queue': 'classify_excel',
+           'routing_key': 'classify_excel.result'
+       },
+    'message_classifier.tasks.message_export': {
+           'queue': 'message_export',
+           'routing_key': 'message_export.result'
+       },
+
+}

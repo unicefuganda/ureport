@@ -133,6 +133,7 @@ INSTALLED_APPS = [
     "message_classifier",
     "celery",
     "djcelery",
+    #"permission",
    # nothing after south
     "south",
 ]
@@ -225,6 +226,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.transaction.TransactionMiddleware',
     #'tracking.middleware.UserTrackingMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+     "ureport.middleware.permissions.RequirePermissionMiddleware",
 )
 
 # -------------------------------------------------------------------- #
@@ -265,6 +267,22 @@ CACHES = {
     }
 }
 
+ALLOWED = (
+    r'/accounts/login(.*)$',
+    r'/accounts/logout(.*)$',
+    r'/static/(.*)$',
+    r'^/$',
+    r'/about/$',
+    r'/signup/$',
+    r'^/bestviz(.*)'
+
+    )
+
+#AUTHENTICATION_BACKENDS = (
+#    'django.contrib.auth.backends.ModelBackend',
+#    'permission.backends.RoleBackend',
+#    'permission.backends.PermissionBackend',
+#    )
 #south stuff
 SOUTH_TESTS_MIGRATE = False
 

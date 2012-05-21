@@ -22,6 +22,9 @@ CELERY_QUEUES = {
     'message_export': {
            'binding_key': 'message_export.#',
        },
+    'start_poll': {
+        'binding_key': 'start_poll.#',
+        },
 }
 CELERY_DEFAULT_EXCHANGE = 'tasks'
 CELERY_DEFAULT_EXCHANGE_TYPE = 'topic'
@@ -56,5 +59,11 @@ CELERY_ROUTES = {
            'queue': 'message_export',
            'routing_key': 'message_export.result'
        },
+    'ureport.tasks.start_poll': {
+        'queue': 'start_poll',
+        'routing_key': 'start_poll.result'
+    },
 
 }
+
+CELERY_TIMEZONE = 'Africa/Kampala'

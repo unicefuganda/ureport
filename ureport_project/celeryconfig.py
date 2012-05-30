@@ -25,6 +25,9 @@ CELERY_QUEUES = {
     'start_poll': {
         'binding_key': 'start_poll.#',
         },
+    'process_message': {
+        'binding_key': 'process_message.#',
+        },
 }
 CELERY_DEFAULT_EXCHANGE = 'tasks'
 CELERY_DEFAULT_EXCHANGE_TYPE = 'topic'
@@ -62,6 +65,10 @@ CELERY_ROUTES = {
     'ureport.tasks.start_poll': {
         'queue': 'start_poll',
         'routing_key': 'start_poll.result'
+    },
+    'ureport.tasks.process_message': {
+        'queue': 'process_message',
+        'routing_key': 'process_message.result'
     },
 
 }

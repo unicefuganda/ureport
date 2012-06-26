@@ -66,4 +66,4 @@ CELERY_ROUTES = {
 
 }
 
-CELERY_TIMEZONE = 'Africa/Kampala'
+

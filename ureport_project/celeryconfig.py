@@ -28,6 +28,9 @@ CELERY_QUEUES = {
     'process_message': {
         'binding_key': 'process_message.#',
         },
+    'handle_incoming': {
+        'binding_key': 'handle_incoming.#',
+        },
 }
 CELERY_DEFAULT_EXCHANGE = 'tasks'
 CELERY_DEFAULT_EXCHANGE_TYPE = 'topic'
@@ -62,6 +65,10 @@ CELERY_ROUTES = {
     'ureport.tasks.process_message': {
         'queue': 'process_message',
         'routing_key': 'process_message.result'
+    },
+    'rapidsms_httprouter.tasks.handle_incoming': {
+        'queue': 'handle_incoming',
+        'routing_key': 'handle_incoming.result'
     },
 
 }

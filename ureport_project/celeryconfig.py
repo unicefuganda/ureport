@@ -6,7 +6,8 @@
 
 CELERY_RESULT_BACKEND = 'amqp'
 CELERY_RESULT_PERSISTENT = True
-CELERY_TASK_RESULT_EXPIRES = 3000
+CELERY_TASK_RESULT_EXPIRES = 80000
+CELERY_DISABLE_RATE_LIMITS = True
 
 CELERY_DEFAULT_QUEUE = 'default'
 CELERY_QUEUES = {
@@ -30,6 +31,9 @@ CELERY_QUEUES = {
         },
     'handle_incoming': {
         'binding_key': 'handle_incoming.#',
+        },
+    'reprocess_responses': {
+        'binding_key': 'reprocess_responses.#',
         },
 }
 CELERY_DEFAULT_EXCHANGE = 'tasks'
@@ -70,7 +74,12 @@ CELERY_ROUTES = {
         'queue': 'handle_incoming',
         'routing_key': 'handle_incoming.result'
     },
+    'ureport.tasks.reprocess_responses': {
+        'queue': 'reprocess_responses',
+        'routing_key': 'reprocess_responses.result'
+    },
 
 }
 
 
+CELERY_IMPORTS = ('tasks',)

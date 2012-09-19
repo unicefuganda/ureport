@@ -11,6 +11,8 @@ from generic.urls import urlpatterns as generic_urls
 from django.views.generic.simple import direct_to_template
 from ussd.urls import urlpatterns as ussd_urls
 from message_classifier.urls import urlpatterns as class_urls
+#from script.urls import urlpatterns as script_urls
+from django_statsd.urls import urlpatterns as statsd_patterns
 admin.autodiscover()
 
 urlpatterns = patterns('',
@@ -38,6 +40,7 @@ urlpatterns = patterns('',
     (r'^registration/', include('auth.urls')),
     (r'^scheduler/', include('rapidsms.contrib.scheduler.urls')),
     (r'^polls/', include('poll.urls')),
+    ('^services/timing/', include(statsd_patterns)),
     
 ) + router_urls + ureport_urls + contact_urls + tracking_urls + generic_urls+ ussd_urls+class_urls
 

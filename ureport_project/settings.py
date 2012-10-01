@@ -140,10 +140,10 @@ INSTALLED_APPS = [
 
 SMS_APPS = [
     "monitor",
-    "unregister",
     "ureport",
     "script",
     "poll",
+    "unregister",
     #"rapidsms_xforms",
 ]
 

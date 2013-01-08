@@ -16,4 +16,6 @@ django-mptt==0.4.2
 python-memcached
 nltk
 httplib2
-
+djtables
+django-celery
+django-tastypie

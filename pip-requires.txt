@@ -20,3 +20,4 @@ djtables
 django-celery
 django-tastypie
 mock
+django-picklefield

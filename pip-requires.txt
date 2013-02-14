@@ -21,3 +21,4 @@ django-celery
 django-tastypie
 mock
 django-picklefield
+openpyxl

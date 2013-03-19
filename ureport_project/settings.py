@@ -227,6 +227,7 @@ MIDDLEWARE_CLASSES = (
     #'tracking.middleware.UserTrackingMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     "ureport.middleware.permissions.RequirePermissionMiddleware",
+     "uganda_common.middleware.accessmiddleware.accessmiddleware.AccessMiddleWare"
 )
 
 # -------------------------------------------------------------------- #

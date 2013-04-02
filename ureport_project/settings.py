@@ -100,6 +100,7 @@ INSTALLED_APPS = [
     "mptt",
     "uni_form",
     "django_extensions",
+    "django_nose",
     "rapidsms.contrib.handlers",
 
     "django.contrib.sites",

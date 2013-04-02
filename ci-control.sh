@@ -17,8 +17,8 @@ function command.update-python-env() {
 }
 
 function command.run-unit-tests() {
-    echo "Running the unit tests"
     cd ureport_project
+    echo "Running the unit tests from [`pwd`]"
     rm -rf target/reports
     mkdir -p target/reports
     bash -c "source ${VIRTUALENV_ACTIVATE} && manage.py test"

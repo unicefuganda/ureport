@@ -9,3 +9,4 @@ dist
 ureport.egg-info
 .idea
 target
+binary

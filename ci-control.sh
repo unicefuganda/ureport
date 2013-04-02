@@ -10,11 +10,16 @@ function command.help() {
 }
 
 function command.update-python-env() {
-    echo "Going to update the virtual env"
+    echo "Updating virtual environment in ${VIRTUALENV_ACTIVATE}"
+    bash -c "source ${VIRTUALENV_ACTIVATE} && pip install -r pip-requires.txt"
+    echo -e "\nNow the dependencies look like this:\n"
+    pip freeze
 }
 
 function command.run-unit-tests() {
     echo "Running the unit tests"
+    bash -c "source ${VIRTUALENV_ACTIVATE} && nosetests"
+    LAST_COMMAND=$?
 }
 
 
@@ -35,6 +40,18 @@ function defaultArg() {
         setVar ${argname} ${argvalue}
     fi
 }
+
+function defaultEnv() {
+    local envname=$1
+    local default=$2    
+    eval "local currentValue=\"\${${envname}}\""
+         
+    if [ -z ${currentValue} ]; then
+        echo -e "No environment variable called [${envname}] set, defaulting to [${default}]\n"
+        setVar ${envname} ${default}        
+    fi      
+}
+
 
 function title() {
     local message=$1
@@ -73,16 +90,25 @@ function processCommand() {
 }
 
 function init() {   
+    echo -e "\n-----------------------------------------------------------------------------"
+    echo -e "CI-Control Script"
+    echo "-----------------------------------------------------------------------------"
     CURRENT_DIR=`pwd`
+    LAST_COMMAND=0
+    defaultEnv "UREPORT_VIRTUAL_ENV_HOME" "/home/ureport/virtualenv/ureport"
+
+    VIRTUALENV_ACTIVATE="${UREPORT_VIRTUAL_ENV_HOME}/bin/activate"
+
 }
 
 function report.config() {
-    echo -e "\n-----------------------------------------------------------------------------"
-    echo -e "CI Control Script"
-    echo "-----------------------------------------------------------------------------"
+    
     echo "Running in     : [`pwd`]"
-    echo "Command        : [${COMMAND}]"
+
+    echo "Virtual Env    : [${UREPORT_VIRTUAL_ENV_HOME}]"
+
     echo "Args           : [$*]"
+    echo "Command        : [${COMMAND}]"
     echo "-----------------------------------------------------------------------------"
 }
 
@@ -91,16 +117,24 @@ function report.completed() {
     CURRENT_DATE=$(date "+%a %d %b %Y")
     CURRENT_TIME=$(date "+%H:%M:%S")
     echo "-----------------------------------------------------------------------------"
-    echo "CI-Control Complete at $CURRENT_TIME on $CURRENT_DATE.CI "
+    echo "CI-Control Complete at $CURRENT_TIME on $CURRENT_DATE.CI Exiting with [${LAST_COMMAND}]"
     echo -e "-----------------------------------------------------------------------------\n"
 
+}
+
+function exit.with.last.command.status() {
+    if [ ${LAST_COMMAND} == 0 ]; then
+        echo "Last command was successful"
+    fi
+    
+    exit ${LAST_COMMAND}
 }
 
 init
 report.config $*
 processCommand $*
 report.completed
-
+exit.with.last.command.status
 
 
 

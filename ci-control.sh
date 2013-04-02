@@ -13,7 +13,7 @@ function command.update-python-env() {
     echo "Updating virtual environment in ${VIRTUALENV_ACTIVATE}"
     bash -c "source ${VIRTUALENV_ACTIVATE} && pip install -r pip-requires.txt"
     echo -e "\nNow the dependencies look like this:\n"
-    pip freeze
+    bash -c "source ${VIRTUALENV_ACTIVATE} && pip freeze"
 }
 
 function command.run-unit-tests() {

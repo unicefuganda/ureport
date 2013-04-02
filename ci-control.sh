@@ -17,8 +17,9 @@ function command.update-python-env() {
 }
 
 function command.run-unit-tests() {
-    echo "Running the unit tests"    
-    bash -c "source ${VIRTUALENV_ACTIVATE} && nosetests --with-xunit --xunit-file target/nosetests.xml"
+    echo "Running the unit tests"
+    mkdir -p target/reports
+    bash -c "source ${VIRTUALENV_ACTIVATE} && nosetests --with-xunit --xunit-file target/reports/nosetests-unit.xml"
     LAST_COMMAND=$?
 }
 

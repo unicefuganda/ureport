@@ -295,6 +295,12 @@ MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 SHOW_CONTACT_INFO = False
 
+
+## Testing settings:
+## http://hustoknow.blogspot.com/2011/02/setting-up-django-nose-on-hudson.html
+NOSE_ARGS = ('--with-xunit', '--xunit-file=target/reports/nosetests.xml')
+
+
 # since we might hit the database from any thread during testing, the
 # in-memory sqlite database isn't sufficient. it spawns a separate
 # virtual database for each thread, and syncdb is only called for the
@@ -315,3 +321,5 @@ except ImportError:
     pass
 if 'test' in sys.argv:
     DATABASES['default'] = {'ENGINE': 'django.db.backends.sqlite3'}
+
+

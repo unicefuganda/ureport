@@ -17,8 +17,8 @@ function command.update-python-env() {
 }
 
 function command.run-unit-tests() {
-    echo "Running the unit tests"
-    bash -c "source ${VIRTUALENV_ACTIVATE} && nosetests"
+    echo "Running the unit tests"    
+    bash -c "source ${VIRTUALENV_ACTIVATE} && nosetests --with-xunit --xunit-file target/nosetests.xml"
     LAST_COMMAND=$?
 }
 
@@ -98,6 +98,9 @@ function init() {
     defaultEnv "UREPORT_VIRTUAL_ENV_HOME" "/home/ureport/virtualenv/ureport"
 
     VIRTUALENV_ACTIVATE="${UREPORT_VIRTUAL_ENV_HOME}/bin/activate"
+
+    rm -rf target
+    mkdir target
 
 }
 

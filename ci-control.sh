@@ -21,7 +21,7 @@ function command.run-unit-tests() {
     echo "Running the unit tests from [`pwd`]"
     rm -rf target/reports
     mkdir -p target/reports
-    bash -c "source ${VIRTUALENV_ACTIVATE} && manage.py test"
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test"
     LAST_COMMAND=$?
 }
 

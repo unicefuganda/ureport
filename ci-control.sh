@@ -25,6 +25,7 @@ function command.run-unit-tests() {
     mkdir -p target/reports
     bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test"
     LAST_COMMAND=$?
+    tidy -xml -o target/reports/nosetests.xml target/reports/nosetests.xml
 }
 
 

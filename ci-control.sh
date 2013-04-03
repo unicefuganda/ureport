@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script is used to execute various build activities
+
 COMMAND=$1
 
 

@@ -22,8 +22,6 @@ function command.run-unit-tests() {
     cd ureport_project
     echo "Running the unit tests from [`pwd`]"
     cp /home/ureport/localsettings.py .
-    rm -rf /var/log/uwsgi/app
-    mkdir -p /var/log/uwsgi/app
     rm -rf target/reports
     mkdir -p target/reports
     bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test"

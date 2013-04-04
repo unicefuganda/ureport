@@ -295,7 +295,7 @@ MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 SHOW_CONTACT_INFO = False
 
-
+USE_NEW_START_POLL = False
 ## Testing settings:
 ## http://hustoknow.blogspot.com/2011/02/setting-up-django-nose-on-hudson.html
 NOSE_ARGS = ('--with-xunit', '--xunit-file=target/reports/nosetests.xml')

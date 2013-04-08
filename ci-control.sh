@@ -24,7 +24,7 @@ function command.run-unit-tests() {
     cp /home/ureport/localsettings.py .
     rm -rf target/reports
     mkdir -p target/reports
-    bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test"
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test --settings=ci_settings"
     LAST_COMMAND=$?
     tidy -xml -o target/reports/nosetests.xml target/reports/nosetests.xml
 }

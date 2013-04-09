@@ -100,6 +100,4 @@ SMS_APPS = [
 #TEST_RUNNER = 'django_test_coverage.runner.run_tests'
 COMPUTE_COVERAGE="ureport"
 
-if 'test' in sys.argv:
-    SOUTH_TESTS_MIGRATE = True
 

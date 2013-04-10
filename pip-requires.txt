@@ -9,7 +9,6 @@ nose-exclude
 python-dateutil==1.5
 pytz==2010b
 south==0.7.2
-virtualenv==1.4.5
 xlutils
 psycopg2==2.4.1
 django-mptt==0.4.2

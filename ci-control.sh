@@ -24,7 +24,7 @@ function command.run-unit-tests() {
     cp /home/ureport/localsettings.py .
     rm -rf target/reports
     mkdir -p target/reports
-    bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test --settings=ci_settings"
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test --settings=${UREPORT_SETTINGS_FILE}"
     LAST_COMMAND=$?
     tidy -xml -o target/reports/nosetests.xml target/reports/nosetests.xml
 }
@@ -103,6 +103,7 @@ function init() {
     CURRENT_DIR=`pwd`
     LAST_COMMAND=0
     defaultEnv "UREPORT_VIRTUAL_ENV_HOME" "/home/ureport/virtualenv/ureport"
+    defaultEnv "UREPORT_SETTINGS_FILE" "ci_settings.py"
 
     VIRTUALENV_ACTIVATE="${UREPORT_VIRTUAL_ENV_HOME}/bin/activate"
 
@@ -113,6 +114,7 @@ function report.config() {
     echo "Running in     : [`pwd`]"
 
     echo "Virtual Env    : [${UREPORT_VIRTUAL_ENV_HOME}]"
+    echo "Settings FIle  : [${UREPORT_SETTINGS_FILE}]"
 
     echo "Args           : [$*]"
     echo "Command        : [${COMMAND}]"

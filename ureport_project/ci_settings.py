@@ -36,62 +36,6 @@ INSTALLED_BACKENDS = {
 
 STATIC_URL="/static/media/"
 
-# to help you get started quickly, many django/rapidsms apps are enabled
-# by default. you may wish to remove some and/or add your own.
-INSTALLED_APPS = [
-    "ureport",
-    "djtables",
-    "mptt",
-    "uni_form",
-    "django_extensions",
-    "rapidsms.contrib.handlers",
-
-    "django.contrib.sites",
-    "django.contrib.auth",
-    "django.contrib.admin",
-    "django.contrib.sessions",
-    "django.contrib.contenttypes",
-    "django.contrib.humanize",
-    "django.contrib.staticfiles",
-
-    # the rapidsms contrib apps.
-    "rapidsms.contrib.default",
-    "rapidsms.contrib.locations",
-    "rapidsms.contrib.locations.nested",
-    "geoserver",
-    "rapidsms.contrib.messaging",
-    "rapidsms.contrib.registration",
-    "eav",
-    "auth",
-    "rapidsms_httprouter",
-    "poll",
-    "generic",
-    "contact",
-    "script",
-    "unregister",
-    "tracking",
-    "uganda_common",
-    "rapidsms",
-    "rapidsms_xforms",
-    "ussd",
-    "monitor",
-    "message_classifier",
-    "celery",
-    "djcelery",
-    #"permission",
-   # nothing after south
-    "south",
-    "debug_toolbar",
-]
-
-SMS_APPS = [
-    "monitor",
-    "ureport",
-    "script",
-    "poll",
-    "unregister",
-    #"rapidsms_xforms",
-]
 #TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 #NOSE_ARGS = [
 #    '--with-coverage',

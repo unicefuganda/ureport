@@ -21,7 +21,6 @@ function command.update-python-env() {
 function command.run-unit-tests() {
     cd ureport_project
     echo "Running the unit tests from [`pwd`]"
-    cp /home/ureport/localsettings.py .
     rm -rf target/reports
     mkdir -p target/reports
     bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test --settings=${UREPORT_SETTINGS_FILE}"
@@ -103,7 +102,7 @@ function init() {
     CURRENT_DIR=`pwd`
     LAST_COMMAND=0
     defaultEnv "UREPORT_VIRTUAL_ENV_HOME" "/home/ureport/virtualenv/ureport"
-    defaultEnv "UREPORT_SETTINGS_FILE" "ci_settings.py"
+    defaultEnv "UREPORT_SETTINGS_FILE" "ci_settings"
 
     VIRTUALENV_ACTIVATE="${UREPORT_VIRTUAL_ENV_HOME}/bin/activate"
 

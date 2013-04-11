@@ -1,13 +1,13 @@
 from settings import *
 IBM_TABLES_MANAGED = True
-USE_NEW_START_POLL = True
+USE_NEW_START_POLL = False
 INTERNAL_IPS = ('127.0.0.1')
 
 GEOSERVER_URL = ""
 DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'local_test',
+        'NAME': 'ureport',
         'HOST': 'localhost',
         'USER': 'postgres',
         'ROUTER_URL' : "http://95.138.170.64:13013/cgi-bin/sendsms?from=8500&username=kannel&password=kannel&text=%(text)s&to=%(recipient)s&smsc=SMPPSim"

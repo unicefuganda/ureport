@@ -56,7 +56,13 @@ function command.run-functional-tests() {
     echo "Running the functional tests from [${FUNCTIONAL_TEST_FILE}]"
     rm -rf target/reports/functional-test
     mkdir -p target/reports/functional-test
-    bash -c "source ${VIRTUALENV_ACTIVATE} && DISPLAY=:1 xvfb-run ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=${UREPORT_SETTINGS_FILE}"
+
+
+    if [[ `uname` == "Darwin" ]]; then
+        bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
+    else
+        bash -c "source ${VIRTUALENV_ACTIVATE} && DISPLAY=:1 xvfb-run ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
+    fi
     LAST_COMMAND=$?
     tidy -xml -o ${NOSE_TEST_REPORT} ${NOSE_TEST_REPORT}
 
@@ -65,16 +71,17 @@ function command.run-functional-tests() {
     mv ${NOSE_TEST_REPORT}.replaced ${NOSE_TEST_REPORT}
 
     cd ..
-    ant -f ci-reports.xml
+    ant -f ci-reports.xml report-functional-tests
 
 
     if [[ `uname` == "Darwin" ]]; then
-        open ureport_project/target/reports/unit-test/html/index.html
+        open ureport_project/target/reports/functional-test/html/index.html
+        open ureport_project/target/reports/functional-test/coverage/index.html 
     else
-        echo "To see the reports: open ureport_project/target/reports/functional-test/html/index.html "
+        echo "To see the reports: open ureport_project/target/reports/functional-test/html/index.html"
+        echo "To see the reports: open ureport_project/target/reports/functional-test/coverage/index.html "
     fi
-
-    ./manage.py test /Users/jmdb/Code/clients/unicef/ureport/original-repo/ --settings=ci_settings
+    
 }
 
 

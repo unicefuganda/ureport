@@ -3,9 +3,11 @@
   <property name="project.dir" value="${basedir}/ureport_project" />
 
 
+
   <property name="target.dir" value="${project.dir}/target" />
   <property name="target.reports.dir" value="${target.dir}/reports" />
   <property name="target.reports.unit-test.dir" value="${target.reports.dir}/unit-test" />
+  <property name="target.reports.functional-test.dir" value="${target.reports.dir}/functional-test" />
 
   <target name="report-unit-tests">
     <mkdir dir="${target.reports.unit-test.dir}/html" />
@@ -16,5 +18,16 @@
       <report format="frames" todir="${target.reports.unit-test.dir}/html"/>
     </junitreport>
   </target>
+
+  <target name="report-functional-tests">
+    <mkdir dir="${target.reports.functional-test.dir}/html" />
+    <junitreport todir="${target.reports.functional-test.dir}">
+      <fileset dir="${target.reports.functional-test.dir}">
+        <include name="nosetests.*.xml"/>
+      </fileset>
+      <report format="frames" todir="${target.reports.functional-test.dir}/html"/>
+    </junitreport>
+  </target>
+
 
 </project>

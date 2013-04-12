@@ -300,7 +300,7 @@ ADMIN_UNREGISTER = False
 
 ## Testing settings:
 ## http://hustoknow.blogspot.com/2011/02/setting-up-django-nose-on-hudson.html
-NOSE_ARGS = ('--with-xunit', '--xunit-file=target/reports/nosetests.xml')
+NOSE_ARGS = ('--with-xunit', '--xunit-file=target/reports/unit-test/nosetests.ureport.xml')
 
 
 # since we might hit the database from any thread during testing, the

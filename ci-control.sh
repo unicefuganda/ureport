@@ -22,10 +22,13 @@ function command.run-unit-tests() {
     cd ureport_project
     echo "Running the unit tests from [`pwd`]"
     rm -rf target/reports
-    mkdir -p target/reports
+    mkdir -p target/reports/unit-test
     bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test --noinput --verbosity=2 --settings=${UREPORT_SETTINGS_FILE}"
     LAST_COMMAND=$?
-    tidy -xml -o target/reports/nosetests.xml target/reports/nosetests.xml
+    tidy -xml -o target/reports/unit-test/nosetests.ureport.xml target/reports/unit-test/nosetests.ureport.xml
+
+    cd ..
+    ant -f ci-reports.xml
 }
 
 

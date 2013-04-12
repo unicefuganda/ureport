@@ -1,0 +1,20 @@
+<project name="ci-reports" default="report-unit-tests">
+
+  <property name="project.dir" value="${basedir}/ureport_project" />
+
+
+  <property name="target.dir" value="${project.dir}/target" />
+  <property name="target.reports.dir" value="${target.dir}/reports" />
+  <property name="target.reports.unit-test.dir" value="${target.reports.dir}/unit-test" />
+
+  <target name="report-unit-tests">
+    <mkdir dir="${target.reports.unit-test.dir}/html" />
+    <junitreport todir="${target.reports.unit-test.dir}">
+      <fileset dir="${target.reports.unit-test.dir}">
+        <include name="nosetests.*.xml"/>
+      </fileset>
+      <report format="frames" todir="${target.reports.unit-test.dir}/html"/>
+    </junitreport>
+  </target>
+
+</project>

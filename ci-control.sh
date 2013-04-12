@@ -19,16 +19,30 @@ function command.update-python-env() {
 }
 
 function command.run-unit-tests() {
+    local NOSE_TEST_REPORT="target/reports/unit-test/nosetests.ureport.xml"
+
     cd ureport_project
     echo "Running the unit tests from [`pwd`]"
     rm -rf target/reports
     mkdir -p target/reports/unit-test
     bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test --noinput --verbosity=2 --settings=${UREPORT_SETTINGS_FILE}"
     LAST_COMMAND=$?
-    tidy -xml -o target/reports/unit-test/nosetests.ureport.xml target/reports/unit-test/nosetests.ureport.xml
+    tidy -xml -o ${NOSE_TEST_REPORT} ${NOSE_TEST_REPORT}
+
+    cat ${NOSE_TEST_REPORT} | sed 's_name\=\"nosetests\"_name\=\"tests.ureport\"_'> ${NOSE_TEST_REPORT}.replaced
+    mv ${NOSE_TEST_REPORT} ${NOSE_TEST_REPORT}.before
+    mv ${NOSE_TEST_REPORT}.replaced ${NOSE_TEST_REPORT}
 
     cd ..
     ant -f ci-reports.xml
+
+
+    if [[ `uname` == "Darwin" ]]; then
+        open ureport_project/target/reports/unit-test/html/index.html
+    else
+        echo "To see the reports: open ureport_project/target/reports/unit-test/html/index.html "
+    fi
+
 }
 
 

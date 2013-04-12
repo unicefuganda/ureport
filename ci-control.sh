@@ -57,6 +57,7 @@ function command.run-functional-tests() {
     rm -rf target/reports/functional-test
     mkdir -p target/reports/functional-test
 
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-start-celery.sh"   
 
     if [[ `uname` == "Darwin" ]]; then
         bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
@@ -64,6 +65,9 @@ function command.run-functional-tests() {
         bash -c "source ${VIRTUALENV_ACTIVATE} && DISPLAY=:1 xvfb-run ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
     fi
     LAST_COMMAND=$?
+
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-stop-celery.sh"
+
     tidy -xml -o ${NOSE_TEST_REPORT} ${NOSE_TEST_REPORT}
 
     cat ${NOSE_TEST_REPORT} | sed 's_name\=\"nosetests\"_name\=\"functional-tests.ureport\"_'> ${NOSE_TEST_REPORT}.replaced
@@ -82,6 +86,7 @@ function command.run-functional-tests() {
         echo "To see the reports: open ureport_project/target/reports/functional-test/coverage/index.html "
     fi
     
+
 }
 
 

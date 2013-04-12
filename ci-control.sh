@@ -69,6 +69,7 @@ function command.run-functional-tests() {
 
     cd ..
     bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-stop-celery.sh"
+    cd ureport_project
 
     tidy -xml -o ${NOSE_TEST_REPORT} ${NOSE_TEST_REPORT}
 

@@ -52,12 +52,13 @@ function command.run-functional-tests() {
     local NOSE_TEST_REPORT="target/reports/functional-test/nosetests.ureport.xml"
     local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/tests.py"
 
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-start-celery.sh"   
+
     cd ureport_project
     echo "Running the functional tests from [${FUNCTIONAL_TEST_FILE}]"
     rm -rf target/reports/functional-test
     mkdir -p target/reports/functional-test
 
-    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-start-celery.sh"   
 
     if [[ `uname` == "Darwin" ]]; then
         bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
@@ -66,6 +67,7 @@ function command.run-functional-tests() {
     fi
     LAST_COMMAND=$?
 
+    cd ..
     bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-stop-celery.sh"
 
     tidy -xml -o ${NOSE_TEST_REPORT} ${NOSE_TEST_REPORT}

@@ -85,7 +85,7 @@ class UreportE2ETest(SplinterE2E):
         self.select_by_text('groups', group_name)
         self.browser.find_by_id('createPoll').first.click()
 
-    def test_should_match_poll_question_to_message_text(self):
+    def should_match_poll_question_to_message_text(self):
         username = "ureport"
         password = "ureport"
         self.create_and_sign_in_admin(username,password)

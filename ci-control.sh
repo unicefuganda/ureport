@@ -23,13 +23,13 @@ function command.run-unit-tests() {
 
     cd ureport_project
     echo "Running the unit tests from [`pwd`]"
-    rm -rf target/reports
+    rm -rf target/reports/unit-test
     mkdir -p target/reports/unit-test
     bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test --noinput --verbosity=2 --settings=${UREPORT_SETTINGS_FILE}"
     LAST_COMMAND=$?
     tidy -xml -o ${NOSE_TEST_REPORT} ${NOSE_TEST_REPORT}
 
-    cat ${NOSE_TEST_REPORT} | sed 's_name\=\"nosetests\"_name\=\"tests.ureport\"_'> ${NOSE_TEST_REPORT}.replaced
+    cat ${NOSE_TEST_REPORT} | sed 's_name\=\"nosetests\"_name\=\"unit-tests.ureport\"_'> ${NOSE_TEST_REPORT}.replaced
     mv ${NOSE_TEST_REPORT} ${NOSE_TEST_REPORT}.before
     mv ${NOSE_TEST_REPORT}.replaced ${NOSE_TEST_REPORT}
 
@@ -43,6 +43,35 @@ function command.run-unit-tests() {
         echo "To see the reports: open ureport_project/target/reports/unit-test/html/index.html "
     fi
 
+}
+
+function command.run-functional-tests() {
+    local NOSE_TEST_REPORT="target/reports/functional-test/nosetests.ureport.xml"
+    local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/tests.py"
+
+    cd ureport_project
+    echo "Running the functional tests from [${FUNCTIONAL_TEST_FILE}]"
+    rm -rf target/reports/functional-test
+    mkdir -p target/reports/functional-test
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=${UREPORT_SETTINGS_FILE}"
+    LAST_COMMAND=$?
+    tidy -xml -o ${NOSE_TEST_REPORT} ${NOSE_TEST_REPORT}
+
+    cat ${NOSE_TEST_REPORT} | sed 's_name\=\"nosetests\"_name\=\"functional-tests.ureport\"_'> ${NOSE_TEST_REPORT}.replaced
+    mv ${NOSE_TEST_REPORT} ${NOSE_TEST_REPORT}.before
+    mv ${NOSE_TEST_REPORT}.replaced ${NOSE_TEST_REPORT}
+
+    cd ..
+    ant -f ci-reports.xml
+
+
+    if [[ `uname` == "Darwin" ]]; then
+        open ureport_project/target/reports/unit-test/html/index.html
+    else
+        echo "To see the reports: open ureport_project/target/reports/functional-test/html/index.html "
+    fi
+
+    ./manage.py test /Users/jmdb/Code/clients/unicef/ureport/original-repo/ --settings=ci_settings
 }
 
 

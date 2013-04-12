@@ -10,3 +10,4 @@ ureport.egg-info
 .idea
 target
 binary
+.coverage

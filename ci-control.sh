@@ -24,7 +24,7 @@ function command.run-unit-tests() {
     cd ureport_project
     echo "Running the unit tests from [`pwd`]"
     rm -rf target/reports/unit-test
-    mkdir -p target/reports/unit-test
+    mkdir -p target/reports/unit-test/coverage
     bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test --noinput --verbosity=2 --settings=${UREPORT_SETTINGS_FILE}"
     LAST_COMMAND=$?
     tidy -xml -o ${NOSE_TEST_REPORT} ${NOSE_TEST_REPORT}
@@ -39,8 +39,10 @@ function command.run-unit-tests() {
 
     if [[ `uname` == "Darwin" ]]; then
         open ureport_project/target/reports/unit-test/html/index.html
+        open ureport_project/target/reports/unit-test/coverage/index.html 
     else
-        echo "To see the reports: open ureport_project/target/reports/unit-test/html/index.html "
+        echo "To see the reports: open ureport_project/target/reports/unit-test/html/index.html"
+        echo "To see the reports: open ureport_project/target/reports/unit-test/coverage/index.html "
     fi
 
 }

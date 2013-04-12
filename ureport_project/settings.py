@@ -300,7 +300,8 @@ ADMIN_UNREGISTER = False
 
 ## Testing settings:
 ## http://hustoknow.blogspot.com/2011/02/setting-up-django-nose-on-hudson.html
-NOSE_ARGS = ('--with-xunit', '--xunit-file=target/reports/unit-test/nosetests.ureport.xml')
+NOSE_ARGS = ('--with-xunit', '--xunit-file=target/reports/unit-test/nosetests.ureport.xml', 
+             '--with-coverage', '--cover-html', '--cover-html-dir=target/reports/unit-test/coverage', '--cover-package=ureport_project,poll,uganda_common,unregister,message_classifier,contact')
 
 
 # since we might hit the database from any thread during testing, the

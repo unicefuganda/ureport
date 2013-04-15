@@ -11,3 +11,4 @@ ureport.egg-info
 target
 binary
 .coverage
+**/.DS_Store

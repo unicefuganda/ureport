@@ -100,9 +100,7 @@ INSTALLED_APPS = [
     "mptt",
     "uni_form",
     "django_extensions",
-    "django_nose",
     "rapidsms.contrib.handlers",
-
     "django.contrib.sites",
     "django.contrib.auth",
     "django.contrib.admin",
@@ -137,6 +135,7 @@ INSTALLED_APPS = [
     #"permission",
    # nothing after south
     "south",
+    "django_nose" #Except nose!!
 ]
 
 SMS_APPS = [
@@ -185,6 +184,7 @@ LOGIN_REDIRECT_URL = "/"
 # modules which django does not find automatically, and importing them
 # all manually is tiresome and error-prone.
 TEST_RUNNER = "django_nose.NoseTestSuiteRunner"
+#TEST_RUNNER = "testrunner.NoDbNoseTestSuiteRunner"
 
 
 # for some reason this setting is blank in django's global_settings.py,
@@ -285,8 +285,6 @@ ALLOWED = (
 #    'permission.backends.RoleBackend',
 #    'permission.backends.PermissionBackend',
 #    )
-#south stuff
-SOUTH_TESTS_MIGRATE = False
 
 USE_I18N = True
 INITIAL_USSD_SCREEN='ussd_root'
@@ -301,6 +299,7 @@ ADMIN_UNREGISTER = False
 ## Testing settings:
 ## http://hustoknow.blogspot.com/2011/02/setting-up-django-nose-on-hudson.html
 # https://nose.readthedocs.org/en/latest/plugins/cover.html
+# this is supposed to exclude a dir '--exclude-dir=',
 NOSE_ARGS = ('--with-xunit', '--xunit-file=target/reports/unit-test/nosetests.ureport.xml', 
              '--with-coverage', '--cover-html', '--cover-html-dir=target/reports/unit-test/coverage', '--cover-package=ureport_project,poll,uganda_common,unregister,message_classifier,contact')
 

@@ -4,7 +4,18 @@ IBM_TABLES_MANAGED = True
 USE_NEW_START_POLL = False
 INTERNAL_IPS = ('127.0.0.1')
 
+#INSTALLED_APPS +=  ("django_nose",)
+
+print "APPS : " + str(INSTALLED_APPS)
+
+#south stuff
+SOUTH_TESTS_MIGRATE = False
+
 GEOSERVER_URL = ""
+
+#Use the real dbs, don't create them
+#os.environ['REUSE_DB'] = "1"
+
 DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql_psycopg2',
@@ -19,7 +30,7 @@ DATABASES = {
     'HOST': 'localhost',
     'USER': 'postgres',
     'ROUTER_URL':'http://95.138.170.64:13013/cgi-bin/sendsms?from=8500&username=kannel&password=kannel&text=%(text)s&to=%(recipient)s&smsc=SMPPSim'
-    }
+   }
 }
 
 CACHES = {
@@ -37,12 +48,6 @@ INSTALLED_BACKENDS = {
 
 STATIC_URL="/static/media/"
 
-#TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
-#NOSE_ARGS = [
-#    '--with-coverage',
-#    '--cover-package=ureport',
-#    ]
-#TEST_RUNNER = 'django_test_coverage.runner.run_tests'
 COMPUTE_COVERAGE="ureport"
 
 

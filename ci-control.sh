@@ -18,6 +18,29 @@ function command.update-python-env() {
     bash -c "source ${VIRTUALENV_ACTIVATE} && pip freeze"
 }
 
+function command.syncdb() {
+    echo "Syncing a db, make sure you create an empty one first!"
+
+    cd ureport_project
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py syncdb --noinput --verbosity=1 --settings=${UREPORT_SETTINGS_FILE}"   
+    cd ..
+}
+
+function command.migratedb() {
+    echo "Migrating a db, make sure you create an empty one first!"
+
+    cd ureport_project
+
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py migrate --noinput --verbosity=1 --settings=${UREPORT_SETTINGS_FILE}"
+
+    cd ..
+}
+
+function command.init-db() {
+    command.syncdb
+    command.migratedb
+}
+
 function command.run-unit-tests() {
     local NOSE_TEST_REPORT="target/reports/unit-test/nosetests.ureport.xml"
 

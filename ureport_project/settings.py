@@ -135,7 +135,7 @@ INSTALLED_APPS = [
     #"permission",
    # nothing after south
     "south",
-    "django_nose" #Except nose!!
+    "django_nose" #Except nose must come after south so that it runs migrations properly!!
 ]
 
 SMS_APPS = [

@@ -82,4 +82,4 @@ CELERY_ROUTES = {
 }
 
 
-#CELERY_IMPORTS = ('tasks',)
+CELERY_IMPORTS = ('tasks',)

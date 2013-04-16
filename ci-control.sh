@@ -73,7 +73,7 @@ function command.run-unit-tests() {
 #http://stackoverflow.com/questions/6183276/how-do-i-run-selenium-in-xvfb
 function command.run-functional-tests() {
     local NOSE_TEST_REPORT="target/reports/functional-test/nosetests.ureport.xml"
-    local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/tests.py"
+    local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/*tests.py"
 
     bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-start-celery.sh"   
 

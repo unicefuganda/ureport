@@ -70,7 +70,7 @@ LOGGING = {
             'class':'logging.StreamHandler',
             'formatter': 'simple'
         },
-        'django_log_file': {
+        'application_log_file': {
             'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': '/var/log/ureport/ureport_log.log',
@@ -78,34 +78,46 @@ LOGGING = {
             'backupCount': 50,
             'maxBytes': 2 ** 20,
         },
+        'application_access_file': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': '/var/log/ureport/ureport_access.log',
+            'formatter': 'simple',
+            'backupCount': 50,
+            'maxBytes': 2 ** 20,
+        },
     },
     'loggers': {
+    
+        'django.request': {
+            'handlers': ['application_access_file'],
+            'level': 'DEBUG',
+            'propagate': True,
+            },
+    
         'ureport.tasks': {
-            'handlers': ['django_log_file'],
+            'handlers': ['application_log_file'],
             'level': 'INFO',
             'propagate': True,
             },
         'ureport.views.poll_views': {
-            'handlers': ['django_log_file'],
+            'handlers': ['application_log_file'],
             'level': 'INFO',
             'propagate': True,
             },
         'poll.models': {
-            'handlers': ['django_log_file'],
+            'handlers': ['application_log_file'],
             'level': 'INFO',
             'propagate': True,
             },
         'unregister.models': {
-            'handlers': ['django_log_file'],
+            'handlers': ['application_log_file'],
             'level': 'INFO',
             'propagate': True,
             },
-
-    'loggers': {
         'command': {
             'level': 'INFO',
             'handlers': ['command']
         }
-    }
      }
 }

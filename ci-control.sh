@@ -41,6 +41,19 @@ function command.init-db() {
     command.migratedb
 }
 
+function command.shell-celery() {    
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-start-celery.sh ci_settings"   
+
+    cd ureport_project
+    
+    echo "Running the python shell from [`pwd`]"
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py shell_plus --settings=${UREPORT_SETTINGS_FILE}"
+
+    cd ..
+
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-stop-celery.sh"   
+}
+
 function command.run-unit-tests() {
     local NOSE_TEST_REPORT="target/reports/unit-test/nosetests.ureport.xml"
 
@@ -75,7 +88,7 @@ function command.run-functional-tests() {
     local NOSE_TEST_REPORT="target/reports/functional-test/nosetests.ureport.xml"
     local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/funct_*.py"
 
-    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-start-celery.sh"   
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-start-celery.sh celery_test_settings"   
 
     cd ureport_project
     echo "Running the functional tests from [${FUNCTIONAL_TEST_FILE}]"

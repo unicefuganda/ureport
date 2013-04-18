@@ -95,6 +95,12 @@ LOGGING = {
             'level': 'INFO',
             'propagate': True,
             },
+        'unregister.models': {
+            'handlers': ['django_log_file'],
+            'level': 'INFO',
+            'propagate': True,
+            },
+
     'loggers': {
         'command': {
             'level': 'INFO',

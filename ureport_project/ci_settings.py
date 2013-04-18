@@ -51,3 +51,50 @@ STATIC_URL="/static/media/"
 COMPUTE_COVERAGE="ureport"
 
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'simple': {
+            'format': '%(levelname)s %(message)s'
+        },
+    },
+    'handlers': {
+        'command': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': '/var/log/ureport/command_log'
+        },
+        'console':{
+            'level':'INFO',
+            'class':'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+        'django_log_file': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': '/var/log/ureport/ureport_log.log',
+            'formatter': 'simple',
+            'backupCount': 50,
+            'maxBytes': 2 ** 20,
+        },
+    },
+    'loggers': {
+        'rapidsms_ureport': {
+            'handlers': ['django_log_file'],
+            'level': 'INFO',
+            'propagate': True,
+            },
+        'rapidsms_polls': {
+            'handlers': ['django_log_file'],
+            'level': 'INFO',
+            'propagate': True,
+            },
+    'loggers': {
+        'command': {
+            'level': 'INFO',
+            'handlers': ['command']
+        }
+    }
+     }
+}

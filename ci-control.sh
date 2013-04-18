@@ -54,6 +54,29 @@ function command.shell-celery() {
     bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-stop-celery.sh"   
 }
 
+function command.run-server() {
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-start-celery.sh ci_settings"   
+
+    cd ureport_project
+    
+    echo "Running the python shell from [`pwd`]"
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py runserver --settings=${UREPORT_SETTINGS_FILE}"
+
+    cd ..
+
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-stop-celery.sh"       
+}
+
+function command.create-superuser() {
+    cd ureport_project
+    
+    echo "Running the python shell from [`pwd`]"
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py createsuperuser --settings=${UREPORT_SETTINGS_FILE}"
+
+    cd ..
+}
+
+
 function command.run-unit-tests() {
     local NOSE_TEST_REPORT="target/reports/unit-test/nosetests.ureport.xml"
 

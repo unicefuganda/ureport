@@ -63,7 +63,7 @@ LOGGING = {
         'command': {
             'level': 'INFO',
             'class': 'logging.FileHandler',
-            'filename': '/var/log/ureport/command_log'
+            'filename': '/var/log/ureport/command.log'
         },
         'console':{
             'level':'INFO',
@@ -73,7 +73,7 @@ LOGGING = {
         'application_log_file': {
             'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': '/var/log/ureport/ureport_log.log',
+            'filename': '/var/log/ureport/ureport_application.log',
             'formatter': 'simple',
             'backupCount': 50,
             'maxBytes': 2 ** 20,

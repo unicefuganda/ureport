@@ -80,12 +80,17 @@ LOGGING = {
         },
     },
     'loggers': {
-        'rapidsms_ureport': {
+        'ureport.tasks': {
             'handlers': ['django_log_file'],
             'level': 'INFO',
             'propagate': True,
             },
-        'rapidsms_polls': {
+        'ureport.views.poll_views': {
+            'handlers': ['django_log_file'],
+            'level': 'INFO',
+            'propagate': True,
+            },
+        'poll.models': {
             'handlers': ['django_log_file'],
             'level': 'INFO',
             'propagate': True,

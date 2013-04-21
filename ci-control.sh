@@ -42,7 +42,7 @@ function command.init-db() {
 }
 
 function command.shell-celery() {    
-    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-start-celery.sh ci_settings"   
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-start-celery.sh ${UREPORT_SETTINGS_FILE}"   
 
     cd ureport_project
     

@@ -18,15 +18,19 @@ echo -e "\nStarting Server...\n" > target/ureport-server.log
 #      --plugin-dir=/usr/lib/uwsgi  \
 #      --plugins=python \
 #       --env DJANGO_SETTINGS_MODULE=ci_settings \
+# --chdir=${UREPORT_HOME}/ureport_project \
 
-DJANGO_SETTINGS_MODULE=ci_settings
+# http://projects.unbit.it/uwsgi/wiki/Example - Good list of different ways to start uwsgi
 
-uwsgi --chdir="${UREPORT_HOME}/ureport_project" \
-      --master --pidfile=target/server.pid \
+uwsgi --master \
+      --pp .. \
+      --pidfile=target/server.pid \
+      --env="DJANGO_SETTINGS_MODULE=ureport_project.ci_settings" \
       --module=wsgi_app \
       --socket=0.0.0.0:8001 \
       --vacuum \
       --virtualenv=${UREPORT_VIRTUAL_ENV_HOME} \
+      -w django_wsgi \
       --daemonize=target/ureport-server.log 
      
 

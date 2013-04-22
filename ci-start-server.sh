@@ -2,11 +2,16 @@
 
 SETTINGS_FILE=$1
 
+if [[ -z "${SETTINGS_FILE}" ]]; then
+    echo "You must pass in a settings file to run with, e.g. 'ci_settings'"
+    exit -1
+fi
+
 VIRTUALENV_ACTIVATE="${UREPORT_VIRTUAL_ENV_HOME}/bin/activate"
 
 cd ureport_project
 
-echo "Starting server deamon with ${SETTINGS_FILE}.py running in [`pwd`]"
+echo "Starting server deamon with settings [${SETTINGS_FILE}.py] running in [`pwd`]"
 
 
 if [ ! -d "target" ]; then
@@ -25,7 +30,7 @@ echo -e "\nStarting Server...\n" > target/ureport-server.log
 uwsgi --master \
       --pp .. \
       --pidfile=target/server.pid \
-      --env="DJANGO_SETTINGS_MODULE=ureport_project.ci_settings" \
+      --env="DJANGO_SETTINGS_MODULE=ureport_project.${SETTINGS_FILE}" \
       --module=wsgi_app \
       --socket=0.0.0.0:8001 \
       --vacuum \

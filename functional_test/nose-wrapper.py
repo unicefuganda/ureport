@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# EASY-INSTALL-ENTRY-SCRIPT: 'nose==0.11.4','console_scripts','nosetests'
+# EASY-INSTALL-ENTRY-SCRIPT: 'nose==1.2.1','console_scripts','nosetests'
 __requires__ = 'nose==0.11.4'
 import sys
 from pkg_resources import load_entry_point

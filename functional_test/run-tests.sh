@@ -9,9 +9,15 @@ source "${UREPORT_VIRTUAL_ENV_HOME}/bin/activate"
 echo -e " "
 pip freeze | grep nose
 
+if [[ -z "${UREPORT_HOME}" ]]; then
+    echo -e "\nERROR: You must specify UREPORT_HOME as a bash environment variable (points to root of the repo) \n"
+    exit -1
+fi
+
+
 echo -e "\n----------------------------------------------------------------------"
 
-echo -e "\nUREPORT_HOME is [${UREPORT_HOME}"
+echo -e "\nUREPORT_HOME is [${UREPORT_HOME}]"
 
 echo -e "\n----------------------------------------------------------------------\n"
 

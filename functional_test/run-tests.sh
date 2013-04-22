@@ -39,8 +39,8 @@ PYTHONPATH="fixtures:${PYTHONPATH}"
 
 NOSE_ARGS="--with-xunit --xunit-file=target/reports/functional-test/nosetests.ureport.xml"
 NOSE_ARGS="${NOSE_ARGS} --verbosity=2"
-
-./nose-wrapper.py ${NOSE_ARGS} scenarios
+pip freeze | grep nose
+${UREPORT_VIRTUAL_ENV_HOME}/bin/python ./nose-wrapper.py ${NOSE_ARGS} scenarios
 
 TEST_SUCCESS=$?
 

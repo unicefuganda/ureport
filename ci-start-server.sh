@@ -3,7 +3,7 @@
 SETTINGS_FILE=$1
 
 if [[ -z "${SETTINGS_FILE}" ]]; then
-    echo "You must pass in a settings file to run with, e.g. 'ci_settings'"
+    echo -e "\nERROR: You must pass in a settings file to run with, e.g. 'ci_settings'\n"
     exit -1
 fi
 

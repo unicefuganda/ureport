@@ -9,9 +9,6 @@
 
 import sys, os
 
-print "LOADING SETTINGS FILE - ENSURE THAT YOU EITHER USE localsettings.py OR OVERRIDE THIS FILE."
-print "DJANGO_SETTINGS_MODULE is set to be [" + os.environ['DJANGO_SETTINGS_MODULE'] + "]"
-
 
 filedir = os.path.dirname(__file__)
 sys.path.append(os.path.join(filedir))

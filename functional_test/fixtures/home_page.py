@@ -12,4 +12,3 @@ class HomePage(AbstractPage):
 
     def is_poll_list_present(self):
         return self.browser.is_element_present_by_id("list_of_polls")
-

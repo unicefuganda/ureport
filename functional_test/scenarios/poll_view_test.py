@@ -1,3 +1,4 @@
+
 import time
 from fixtures.create_poll_utils import if_it_exists_delete_poll_called, create_poll_called
 from fixtures.home_page import HomePage
@@ -25,3 +26,4 @@ class TestPollView():
 
     def test_that_poll_list_is_present(self):
         assert_true(self.home_page.is_poll_list_present())
+

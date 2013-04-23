@@ -2,6 +2,8 @@ from ci_settings import *
 
 print "!!! RUNNING AGAINST THE PERFORMANCE DB!!!!"
 
+DEBUG = False # You want this on if we are going to see exceptions in the logs
+
 DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.postgresql_psycopg2',

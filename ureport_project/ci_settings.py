@@ -4,6 +4,8 @@ IBM_TABLES_MANAGED = True
 USE_NEW_START_POLL = False
 INTERNAL_IPS = ('127.0.0.1')
 
+
+
 #INSTALLED_APPS +=  ("django_nose",)
 
 print "APPS : " + str(INSTALLED_APPS)
@@ -56,7 +58,7 @@ LOGGING = {
     'disable_existing_loggers': False,
     'formatters': {
         'simple': {
-            'format': '%(levelname)s %(message)s'
+            'format': '%(asctime)-15s %(levelname)-8s [%(module)-20s] %(message)s'
         },
     },
     'handlers': {
@@ -88,12 +90,32 @@ LOGGING = {
         },
     },
     'loggers': {
-    
-        'django.request': {
-            'handlers': ['application_access_file'],
+
+        'django' : {
+            'handlers': ['application_log_file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        
+        },
+
+        'django.middleware': {
+            'handlers': ['application_log_file'],
             'level': 'DEBUG',
             'propagate': True,
             },
+    
+        'django.db.backends': {
+            'handlers': ['application_log_file'],
+            'level': 'DEBUG',
+            'propagate': True,
+            },
+
+        'django.request': {
+            'handlers': ['application_log_file'],
+            'level': 'DEBUG',
+            'propagate': True,
+            },
+
     
         'ureport.tasks': {
             'handlers': ['application_log_file'],
@@ -105,12 +127,19 @@ LOGGING = {
             'level': 'INFO',
             'propagate': True,
             },
+        'ureport.middleware.access_log': {
+            'handlers': ['application_log_file'],
+            'level': 'INFO',
+            'propagate': True,
+            },
+
         'poll.models': {
             'handlers': ['application_log_file'],
             'level': 'INFO',
             'propagate': True,
             },
-        'unregister.models': {
+
+        'unregister': {
             'handlers': ['application_log_file'],
             'level': 'INFO',
             'propagate': True,

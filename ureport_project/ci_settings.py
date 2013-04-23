@@ -138,6 +138,12 @@ LOGGING = {
             'level': 'INFO',
             'propagate': True,
             },
+        'rapidsms_httprouter.models': {
+            'handlers': ['application_log_file'],
+            'level': 'INFO',
+            'propagate': True,
+            },
+
 
         'unregister': {
             'handlers': ['application_log_file'],

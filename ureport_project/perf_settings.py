@@ -10,7 +10,8 @@ DATABASES = {
         'NAME': 'ureport_prod',
         'HOST': 'localhost',
         'USER': 'postgres',
-        'ROUTER_URL' : "http://95.138.170.64:13013/cgi-bin/sendsms?from=8500&username=kannel&password=kannel&text=%(text)s&to=%(recipient)s&smsc=SMPPSim"
+        'ROUTER_URL' : "http://95.138.170.64:13013/cgi-bin/sendsms?from=8500&username=kannel&password=kannel&text=%(text)s&to=%(recipient)s&smsc=SMPPSim",
+        'AUTOCOMMIT' : 'False'
     },
     'geoserver': {
     'ENGINE' : 'django.db.backends.postgresql_psycopg2',

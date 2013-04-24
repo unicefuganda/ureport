@@ -7,3 +7,6 @@ print "django_wsgi.py : DJANGO_SETTINGS_MODULE is set to be [" + os.environ['DJA
 import django.core.handlers.wsgi
 
 application = django.core.handlers.wsgi.WSGIHandler()
+
+import djcelery
+djcelery.setup_loader()

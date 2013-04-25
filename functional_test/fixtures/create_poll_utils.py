@@ -1,6 +1,6 @@
 from splinter import Browser
 from django.contrib.auth.models import Group, User
-from rapidsms.models import Connection
+from rapidsms.models import Connection, Backend
 from poll.models import Poll
 from rapidsms_httprouter.models import Message
 from rapidsms_httprouter.router import get_router
@@ -48,17 +48,17 @@ def get_browser():
     return Browser('firefox')
 
 
-def if_exists_delete_group():
+def if_exists_delete_group(groupname):
     try:
-        group = Group.objects.get(name='Pagination Group')
+        group = Group.objects.get(name=groupname)
         Group.delete(group)
     except Group.DoesNotExist:
         pass
 
 
-def if_exists_delete_user():
+def if_exists_delete_user(username):
     try:
-        user = User.objects.get(username='foo')
+        user = User.objects.get(username=username)
         User.delete(user)
     except User.DoesNotExist:
         pass
@@ -74,6 +74,13 @@ def if_it_exists_delete_poll_called(poll_name):
     if_exists_delete_group()
     if_exists_delete_user()
 
+
+def if_exists_delete_backend(name):
+    try:
+        backend = Backend.objects.get(name=name)
+        Backend.delete(backend)
+    except Backend.DoesNotExist:
+        pass
 
 def create_poll_called(poll_name):
     group = create_group(group_name='Pagination Group')

@@ -63,17 +63,15 @@ LOGGING = {
     },
     'handlers': {
         'command': {
-            'level': 'INFO',
             'class': 'logging.FileHandler',
-            'filename': '/var/log/ureport/command.log'
+            'filename': '/var/log/ureport/command.log',
+            'formatter' : 'simple'
         },
         'console':{
-            'level':'INFO',
             'class':'logging.StreamHandler',
             'formatter': 'simple'
         },
         'application_log_file': {
-            'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': '/var/log/ureport/ureport_application.log',
             'formatter': 'simple',
@@ -81,7 +79,6 @@ LOGGING = {
             'maxBytes': 2 ** 20,
         },
         'application_access_file': {
-            'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': '/var/log/ureport/ureport_access.log',
             'formatter': 'simple',
@@ -150,9 +147,14 @@ LOGGING = {
             'level': 'INFO',
             'propagate': True,
             },
-        'command': {
-            'level': 'INFO',
-            'handlers': ['command']
+        # 'command': {
+        #     'level': 'DEBUG',
+        #     'handlers': ['command']
+        # },
+        'command' : {
+            'handlers': ['command'],
+            'level' : 'DEBUG',
+            'propogate' : True
         }
      }
 }

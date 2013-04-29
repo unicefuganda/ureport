@@ -7,6 +7,8 @@ if [[ -z "${SETTINGS_FILE}" ]]; then
     exit -1
 fi
 
+echo "Ensure you have uwsgi installed (brew install uwsgi)"
+
 VIRTUALENV_ACTIVATE="${UREPORT_VIRTUAL_ENV_HOME}/bin/activate"
 
 cd ureport_project

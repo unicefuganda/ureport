@@ -108,6 +108,13 @@ LOGGING = {
         
         },
 
+        'app/ureport' : {
+            'handlers': ['application_log_file'],
+            'level': 'INFO',
+            'propagate': True,
+        
+        },
+
         'django.middleware': {
             'handlers': ['application_log_file'],
             'level': 'ERROR',
@@ -128,6 +135,11 @@ LOGGING = {
         'ureport.app': {
             'handlers': ['application_log_file'],
             'level': 'INFO',
+            'propagate': True,
+            },
+        'ureport.app': {
+            'handlers': ['application_log_file'],
+            'level': 'DEBUG',
             'propagate': True,
             },
 

@@ -4,7 +4,13 @@ IBM_TABLES_MANAGED = True
 USE_NEW_START_POLL = False
 INTERNAL_IPS = ('127.0.0.1')
 
-
+# These MUST be set or the message will not be classified!
+NO_WORDS = {'en':['no', 'nope', 'nah', 'nay', 'n'],
+            'ach':['ku', 'k','pe'],
+            'kdj':["emam",'ema'],
+}
+OPT_IN_WORDS_KDJ=["togeu","togu",'tog']
+OPT_OUT_WORDS = ['stop', 'unjoin', 'quit','giki','unsub','unsubscribe','stop ureport','unregister','deactivate']
 
 #INSTALLED_APPS +=  ("django_nose",)
 
@@ -78,7 +84,7 @@ LOGGING = {
             'backupCount': 50,
             'maxBytes': 2 ** 20,
         },
-        'application_access_file': {
+        'application_access_log_file': {
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': '/var/log/ureport/ureport_access.log',
             'formatter': 'simple',
@@ -90,24 +96,36 @@ LOGGING = {
 
         'django' : {
             'handlers': ['application_log_file'],
-            'level': 'DEBUG',
+            'level': 'ERROR',
+            'propagate': True,
+        
+        },
+
+        'app/ureport' : {
+            'handlers': ['application_log_file'],
+            'level': 'INFO',
             'propagate': True,
         
         },
 
         'django.middleware': {
             'handlers': ['application_log_file'],
-            'level': 'DEBUG',
+            'level': 'ERROR',
             'propagate': True,
             },
     
         'django.db.backends': {
             'handlers': ['application_log_file'],
-            'level': 'DEBUG',
+            'level': 'ERROR',
             'propagate': True,
             },
 
         'django.request': {
+            'handlers': ['application_log_file'],
+            'level': 'ERROR',
+            'propagate': True,
+            },
+        'ureport.app': {
             'handlers': ['application_log_file'],
             'level': 'DEBUG',
             'propagate': True,
@@ -125,17 +143,34 @@ LOGGING = {
             'propagate': True,
             },
         'ureport.middleware.access_log': {
-            'handlers': ['application_log_file'],
+            'handlers': ['application_access_log_file'],
             'level': 'INFO',
+            'propagate': True,
+            },
+
+
+        'poll.app': {
+            'handlers': ['application_log_file'],
+            'level': 'DEBUG',
             'propagate': True,
             },
 
         'poll.models': {
             'handlers': ['application_log_file'],
-            'level': 'INFO',
+            'level': 'DEBUG',
             'propagate': True,
             },
         'rapidsms_httprouter.models': {
+            'handlers': ['application_log_file'],
+            'level': 'INFO',
+            'propagate': True,
+            },
+        'rapidsms_httprouter.views': {
+            'handlers': ['application_log_file'],
+            'level': 'INFO',
+            'propagate': True,
+            },
+        'rapidsms_httprouter.router': {
             'handlers': ['application_log_file'],
             'level': 'INFO',
             'propagate': True,

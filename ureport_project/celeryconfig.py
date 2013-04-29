@@ -21,20 +21,23 @@ CELERY_QUEUES = {
         'binding_key': 'classify_excel.#',
     },
     'message_export': {
-           'binding_key': 'message_export.#',
-       },
+        'binding_key': 'message_export.#',
+    },
     'start_poll': {
         'binding_key': 'start_poll.#',
-        },
+    },
     'process_message': {
         'binding_key': 'process_message.#',
-        },
+    },
     'handle_incoming': {
         'binding_key': 'handle_incoming.#',
-        },
+    },
     'reprocess_responses': {
         'binding_key': 'reprocess_responses.#',
-        },
+    },
+    'push_to_mtrac': {
+        'binding_key': 'push_to_mtrac.#'
+    }
 }
 CELERY_DEFAULT_EXCHANGE = 'tasks'
 CELERY_DEFAULT_EXCHANGE_TYPE = 'topic'
@@ -47,21 +50,19 @@ BROKER_USER = "ureport"
 BROKER_PASSWORD = "ureport"
 BROKER_VHOST = "ureport"
 
-
-
 CELERY_ROUTES = {
     'message_classifier.tasks.upload_responses': {
         'queue': 'upload_responses',
         'routing_key': 'upload_responses.result'
     },
     'message_classifier.tasks.classify_excel': {
-           'queue': 'classify_excel',
-           'routing_key': 'classify_excel.result'
-       },
+        'queue': 'classify_excel',
+        'routing_key': 'classify_excel.result'
+    },
     'message_classifier.tasks.message_export': {
-           'queue': 'message_export',
-           'routing_key': 'message_export.result'
-       },
+        'queue': 'message_export',
+        'routing_key': 'message_export.result'
+    },
     'ureport.tasks.start_poll': {
         'queue': 'start_poll',
         'routing_key': 'start_poll.result'
@@ -78,6 +79,10 @@ CELERY_ROUTES = {
         'queue': 'reprocess_responses',
         'routing_key': 'reprocess_responses.result'
     },
+    'ureport.tasks.push_to_mtrac': {
+        'queue': 'push_to_mtrac',
+        'routing_key': 'push_to_mtrac.result'
+    }
 
 }
 

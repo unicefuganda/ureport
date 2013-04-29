@@ -127,7 +127,7 @@ LOGGING = {
             },
         'ureport.app': {
             'handlers': ['application_log_file'],
-            'level': 'DEBUG',
+            'level': 'INFO',
             'propagate': True,
             },
 

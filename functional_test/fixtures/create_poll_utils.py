@@ -1,6 +1,6 @@
 from splinter import Browser
 from django.contrib.auth.models import Group, User
-from rapidsms.models import Connection, Backend
+from rapidsms.models import Connection, Backend, Contact
 from poll.models import Poll
 from rapidsms_httprouter.models import Message
 from rapidsms_httprouter.router import get_router
@@ -38,7 +38,7 @@ def add_contacts_to_poll(poll, contacts):
     poll.save()
 
 
-def create_fake_response(connection, incoming_message):
+def simulate_response(connection, incoming_message):
     router = get_router()
     incoming = router.handle_incoming(connection.backend.name, connection.identity, incoming_message)
     return incoming
@@ -61,6 +61,13 @@ def if_exists_delete_user(username):
         user = User.objects.get(username=username)
         User.delete(user)
     except User.DoesNotExist:
+        pass
+
+def if_exists_delete_contact(name):
+    try:
+        contact = Contact.objects.get(name=name)
+        Contact.delete(contact)
+    except Contact.DoesNotExist:
         pass
 
 

@@ -4,7 +4,7 @@ from fixtures.abstract_page import AbstractPage
 class HomePage(AbstractPage):
 
     def __init__(self):
-        self.url = "http://localhost:8000/"
+        self.url = "http://localhost:8088/"
 
     def get_list_of_polls(self):
         polls = []

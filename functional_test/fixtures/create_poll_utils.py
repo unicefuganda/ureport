@@ -4,6 +4,8 @@ from rapidsms.models import Connection, Backend, Contact
 from poll.models import Poll
 from rapidsms_httprouter.models import Message
 from rapidsms_httprouter.router import get_router
+from ureport.models import PollAttribute, PollAttributeValue
+from ureport_project.rapidsms_ureport.ureport.models import UPoll
 
 
 def create_group(group_name):
@@ -25,10 +27,18 @@ def create_connection(identity, contact, backend):
     return connection
 
 
-def create_poll(user):
-    poll_name = "functional_test"
-    question = "from FT with love!"
+def create_poll(user, name, question):
+    poll_name = name
+    question = question
     poll = Poll.objects.create(name=poll_name, question=question, user=user, type=Poll.TYPE_TEXT)
+
+    if not PollAttribute.objects.filter(key='viewable').exists():
+        PollAttribute.objects.create(key='viewable', key_type='bool', default=True)
+
+    upoll = UPoll.objects.get(pk=poll.pk)
+    upoll.set_attr('viewable', True)
+    upoll.save()
+
     return poll
 
 

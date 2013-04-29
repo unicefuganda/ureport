@@ -1,33 +1,25 @@
 from nose.tools import assert_equal
 from nose.tools import assert_true
 
-from fixtures.create_poll_utils import simulate_response
-from fixtures.create_polls_for_view_poll import  create_polls
-from fixtures.home_page import HomePage
+from fixtures.create_polls_for_view_poll import  create_and_start_polls
+from fixtures.home_page import HomePage, UreportApplication
 
 
 class TestPollView():
 
-    @classmethod
-    def setUpClass(cls):
-        cls.home_page = HomePage().load()
-        pass
+    def setUp(self):
+        self.ureport_application = UreportApplication()
 
-    @classmethod
-    def tearDownClass(cls):
-        cls.home_page.close_page()
+    def tearDown(self):
+        self.ureport_application.close()
 
-    def test_that_poll_list_is_present(self):
-        polls = create_polls(11)
-        for poll in polls:
-            poll.start()
+    def test_that_there_should_be_only(self):
+        expected_number_of_polls = 10 # TODO load this from the settings
 
-            lastResponseText = 'yes'
-            for contact in poll.contacts.all():
-                responseText = 'yes' if (lastResponseText == 'no') else 'no'
-                lastResponseText = responseText
-                simulate_response(contact.default_connection, responseText)
+        create_and_start_polls(expected_number_of_polls + 1)
 
-            assert(poll.messages.count() > 0)
-            poll.end()
-        assert_true(True)
+        home_page = self.ureport_application.navigate_to_home_page()
+
+        assert_equal(expected_number_of_polls, home_page.number_of_previous_polls())
+
+

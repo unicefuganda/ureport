@@ -1,9 +1,22 @@
 from datetime import datetime
 from rapidsms.models import Connection, Contact, Backend
-from ureport.tests.functional.test_utils import create_group, create_user, create_connection, create_poll,\
-    create_fake_response, add_contacts_to_poll
-from fixtures.create_poll_utils import if_exists_delete_user, if_exists_delete_group, if_exists_delete_backend, if_exists_delete_contact, simulate_response
-from ureport_project.rapidsms_ureport.ureport.models import UreportContact
+from fixtures.create_poll_utils import if_exists_delete_user, if_exists_delete_group, \
+    if_exists_delete_backend, if_exists_delete_contact, create_poll, create_group, create_user, create_connection, \
+    add_contacts_to_poll, simulate_response
+
+
+def create_and_start_polls(number_of_polls):
+        polls = create_polls(number_of_polls)
+        for poll in polls:
+            poll.start()
+
+            lastResponseText = 'yes'
+            for contact in poll.contacts.all():
+                responseText = 'yes' if (lastResponseText == 'no') else 'no'
+                lastResponseText = responseText
+                simulate_response(contact.default_connection, responseText)
+
+            poll.end()
 
 
 def create_polls(number_of_polls):
@@ -36,13 +49,12 @@ def create_polls(number_of_polls):
 
     backend = Backend.objects.create(name=backend)
 
-    connection1 = create_connection('0794339344', contact1, backend)
-    connection2 = create_connection('0794339427', contact2, backend)
-    connections = [connection1, connection2]
+    create_connection('0794339344', contact1, backend)
+    create_connection('0794339427', contact2, backend)
 
     polls = []
-    for poll in range(1, number_of_polls):
-        poll = create_poll(user1)
+    for i in range(1, number_of_polls):
+        poll = create_poll(user1, "FT_HP_POLL_" + str(i), "WHAT IS THE ANSWER?")
         add_contacts_to_poll(poll, contacts)
         poll.add_yesno_categories()
         poll.save()

@@ -137,12 +137,6 @@ LOGGING = {
             'level': 'INFO',
             'propagate': True,
             },
-        'ureport.app': {
-            'handlers': ['application_log_file'],
-            'level': 'DEBUG',
-            'propagate': True,
-            },
-
     
         'ureport.tasks': {
             'handlers': ['application_log_file'],
@@ -179,7 +173,7 @@ LOGGING = {
             },
         'rapidsms_httprouter.views': {
             'handlers': ['application_log_file'],
-            'level': 'INFO',
+            'level': 'DEBUG',
             'propagate': True,
             },
         'rapidsms_httprouter.router': {

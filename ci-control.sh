@@ -84,7 +84,7 @@ function command.run-unit-tests() {
     echo "Running the unit tests from [`pwd`]"
     rm -rf target/reports/unit-test
     mkdir -p target/reports/unit-test/coverage
-    bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test --noinput --verbosity=2 --settings=${UREPORT_SETTINGS_FILE}"
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test --noinput --settings=${UREPORT_SETTINGS_FILE}"
     LAST_COMMAND=$?
     tidy -xml -o ${NOSE_TEST_REPORT} ${NOSE_TEST_REPORT}
 

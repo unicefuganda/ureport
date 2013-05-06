@@ -1,5 +1,6 @@
 from splinter import Browser
 
+
 class UreportApplication:
 
     def __init__(self):
@@ -21,12 +22,6 @@ class HomePage():
         self.browser.visit("http://localhost:8088/")
         return self
 
-    def get_list_of_polls(self):
-        polls = []
-        return polls
-
-    def number_of_previous_polls(self):
-        return len(self.get_list_of_polls())
-
-    def is_poll_list_present(self):
-        return self.browser.is_element_present_by_id("list_of_polls")
+    def get_number_of_previous_polls(self):
+        list_of_polls = self.browser.find_by_id("list_of_polls")
+        return len(list_of_polls.find_by_name("poll"))

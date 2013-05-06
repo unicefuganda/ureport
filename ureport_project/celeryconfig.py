@@ -8,6 +8,7 @@ CELERY_RESULT_BACKEND = 'amqp'
 CELERY_RESULT_PERSISTENT = False
 CELERY_TASK_RESULT_EXPIRES = 10
 CELERY_DISABLE_RATE_LIMITS = True
+CELERY_SEND_TASK_ERROR_EMAILS = True
 
 CELERY_DEFAULT_QUEUE = 'default'
 CELERY_QUEUES = {
@@ -85,6 +86,13 @@ CELERY_ROUTES = {
     }
 
 }
+
+SERVER_EMAIL = 'Ureport Background Tasks<background@ureport.ug>'
+
+ADMINS = (
+    ('Kenneth Matovu', 'kbonky@gmail.com'),
+    ('Arga', 'arghacha@thoughtworks.com'),
+)
 
 
 #CELERY_IMPORTS = ('tasks',)

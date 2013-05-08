@@ -303,7 +303,8 @@ ADMIN_UNREGISTER = False
 # https://nose.readthedocs.org/en/latest/plugins/cover.html
 # this is supposed to exclude a dir '--exclude-dir=',
 NOSE_ARGS = ('--with-xunit', '--xunit-file=target/reports/unit-test/nosetests.ureport.xml', 
-             '--with-coverage', '--cover-html', '--cover-html-dir=target/reports/unit-test/coverage', '--cover-package=ureport_project,poll,uganda_common,unregister,message_classifier,contact')
+             '--with-coverage', '--cover-html', '--cover-html-dir=target/reports/unit-test/coverage', '--cover-package=poll,uganda_common,unregister,message_classifier,contact',
+             '--verbosity=2')
 
 
 # since we might hit the database from any thread during testing, the

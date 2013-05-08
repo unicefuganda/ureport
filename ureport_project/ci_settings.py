@@ -1,7 +1,6 @@
 from settings import *
 ADMIN_UNREGISTER = True
 IBM_TABLES_MANAGED = True
-USE_NEW_START_POLL = False
 INTERNAL_IPS = ('127.0.0.1')
 
 # These MUST be set or the message will not be classified!

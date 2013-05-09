@@ -2,7 +2,7 @@ from settings import *
 ADMIN_UNREGISTER = True
 IBM_TABLES_MANAGED = True
 INTERNAL_IPS = ('127.0.0.1')
-FEATURE_PREPARE_POLL=False
+FEATURE_PREPARE_SEND_POLL=False
 
 # These MUST be set or the message will not be classified!
 NO_WORDS = {'en':['no', 'nope', 'nah', 'nay', 'n'],

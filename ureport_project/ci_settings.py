@@ -188,6 +188,17 @@ LOGGING = {
             'level': 'INFO',
             'propagate': True,
             },
+        'script.utils.outgoing': {
+            'handlers': ['application_log_file'],
+            'level': 'DEBUG',
+            'propagate': True,
+            },
+        'script.managers': {
+            'handlers': ['application_log_file'],
+            'level': 'DEBUG',
+            'propagate': True,
+            },
+
         # 'command': {
         #     'level': 'DEBUG',
         #     'handlers': ['command']

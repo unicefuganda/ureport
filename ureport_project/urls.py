@@ -30,6 +30,7 @@ urlpatterns = patterns('',
     url('^accounts/logout', 'rapidsms.views.logout'),
     url('^accounts/change_password', login_required(password_change), {'template_name':'ureport/change_password.html', 'post_change_redirect':'/'}),
     url(r'^national-pulse/$', direct_to_template, {'template': 'ureport/national_pulse.html'}, name='pulse'),
+    url(r'^national-pulse-mock/$', direct_to_template, {'template': 'ureport/national_pulse_mock.html'}),
     # RapidSMS contrib app URLs
     url(r'^ajax/', include('rapidsms.contrib.ajax.urls')),
     url(r'^export/', include('rapidsms.contrib.export.urls')),

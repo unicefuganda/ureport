@@ -316,6 +316,8 @@ import os
 import tempfile
 import sys
 
+PAGINATION_LIMIT = 10
+
 try:
     if os.environ.has_key('LOCAL_SETTINGS'):
         # the LOCAL_SETTINGS environment variable is used by the build server

@@ -12,3 +12,4 @@ target
 binary
 .coverage
 .DS_Store
+ureport_project/excel_contacts

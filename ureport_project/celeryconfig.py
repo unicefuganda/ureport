@@ -38,6 +38,9 @@ CELERY_QUEUES = {
     },
     'push_to_mtrac': {
         'binding_key': 'push_to_mtrac.#'
+    },
+    'process_uploaded_contacts':{
+        'binding_key': 'process_uploaded_contacts.#'
     }
 }
 CELERY_DEFAULT_EXCHANGE = 'tasks'
@@ -83,6 +86,10 @@ CELERY_ROUTES = {
     'ureport.tasks.push_to_mtrac': {
         'queue': 'push_to_mtrac',
         'routing_key': 'push_to_mtrac.result'
+    },
+    'ureport.tasks.process_uploaded_contacts': {
+        'queue': 'process_uploaded_contacts',
+        'routing_key': 'process_uploaded_contacts.result'
     }
 
 }

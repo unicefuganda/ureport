@@ -316,7 +316,7 @@ import os
 import tempfile
 import sys
 
-PAGINATION_LIMIT = 10
+PAGINATION_LIMIT = None
 
 try:
     if os.environ.has_key('LOCAL_SETTINGS'):

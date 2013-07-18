@@ -14,3 +14,4 @@ binary
 .DS_Store
 ureport_project/excel_contacts
 tags
+*log*

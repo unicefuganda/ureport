@@ -19,10 +19,10 @@ print "APPS : " + str(INSTALLED_APPS)
 #south stuff
 SOUTH_TESTS_MIGRATE = False
 
-GEOSERVER_URL = ""
-
 #Use the real dbs, don't create them
 #os.environ['REUSE_DB'] = "1"
+
+GEOSERVER_URL = "/geoserver/"
 
 DATABASES = {
     'default': {

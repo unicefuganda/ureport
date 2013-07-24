@@ -302,8 +302,8 @@ ADMIN_UNREGISTER = False
 ## http://hustoknow.blogspot.com/2011/02/setting-up-django-nose-on-hudson.html
 # https://nose.readthedocs.org/en/latest/plugins/cover.html
 # this is supposed to exclude a dir '--exclude-dir=',
-NOSE_ARGS = ('--with-xunit', '--xunit-file=target/reports/unit-test/nosetests.ureport.xml', 
-             '--with-coverage', '--cover-html', '--cover-html-dir=target/reports/unit-test/coverage', '--cover-package=poll,uganda_common,unregister,message_classifier,contact',
+NOSE_ARGS = ('--with-xunit', '--xunit-file=target/reports/unit-test/nosetests.ureport.xml',
+             '--with-coverage', '--cover-html', '--cover-html-dir=target/reports/unit-test/coverage', '--cover-package=poll,uganda_common,unregister,message_classifier,contact,rapidsms_httprouter',
              '--verbosity=2')
 
 

@@ -41,6 +41,9 @@ CELERY_QUEUES = {
     },
     'process_uploaded_contacts':{
         'binding_key': 'process_uploaded_contacts.#'
+    },
+    'process_assign_group':{
+        'binding_key': 'process_assign_group.#'
     }
 }
 CELERY_DEFAULT_EXCHANGE = 'tasks'
@@ -90,6 +93,10 @@ CELERY_ROUTES = {
     'ureport.tasks.process_uploaded_contacts': {
         'queue': 'process_uploaded_contacts',
         'routing_key': 'process_uploaded_contacts.result'
+    },
+    'ureport.tasks.process_assign_group': {
+        'queue': 'process_assign_group',
+        'routing_key': 'process_assign_group.result'
     }
 
 }

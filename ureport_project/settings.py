@@ -306,7 +306,10 @@ NOSE_ARGS = ('--with-xunit', '--xunit-file=target/reports/unit-test/nosetests.ur
              '--with-coverage', '--cover-html', '--cover-html-dir=target/reports/unit-test/coverage', '--cover-package=poll,uganda_common,unregister,message_classifier,contact,rapidsms_httprouter',
              '--verbosity=2')
 
+MAP_BOUNDS = {'bottom_left': {'lon': 3292022.5, 'lat': -164636.828},
 
+              'top_right': {'lon': 3896216.5, 'lat': 471764.844}
+              }
 # since we might hit the database from any thread during testing, the
 # in-memory sqlite database isn't sufficient. it spawns a separate
 # virtual database for each thread, and syncdb is only called for the

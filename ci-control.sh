@@ -141,8 +141,8 @@ function command.run-functional-tests() {
 
 
     if [[ `uname` == "Darwin" ]]; then
-        open ureport_project/target/reports/functional-test/html/index.html
-        open ureport_project/target/reports/functional-test/coverage/index.html 
+        #open ureport_project/target/reports/functional-test/html/index.html
+        #open ureport_project/target/reports/functional-test/coverage/index.html 
     else
         echo "To see the reports: open ureport_project/target/reports/functional-test/html/index.html"
         echo "To see the reports: open ureport_project/target/reports/functional-test/coverage/index.html "

@@ -141,6 +141,7 @@ function command.run-functional-tests() {
 
 
     if [[ `uname` == "Darwin" ]]; then
+			  echo "Disabled the printing of lines"
         #open ureport_project/target/reports/functional-test/html/index.html
         #open ureport_project/target/reports/functional-test/coverage/index.html 
     else

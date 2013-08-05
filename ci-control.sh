@@ -117,7 +117,8 @@ function command.run-functional-tests() {
     echo "Running the functional tests from [${FUNCTIONAL_TEST_FILE}]"
     rm -rf target/reports/functional-test
     mkdir -p target/reports/functional-test
-
+		rm -rf target/reports/functional-test/screenshots
+		mkdir -p target/reports/functional-test/screenshots
 
     if [[ `uname` == "Darwin" ]]; then
         bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"

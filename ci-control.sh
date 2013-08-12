@@ -111,7 +111,7 @@ function command.run-functional-tests() {
     local NOSE_TEST_REPORT="target/reports/functional-test/nosetests.ureport.xml"
     local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/funct_*.py"
 
-    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-start-celery.sh celery_test_settings"   
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-start-celery.sh ${UREPORT_SETTINGS_FILE}"   
 
     cd ureport_project
     echo "Running the functional tests from [${FUNCTIONAL_TEST_FILE}]"

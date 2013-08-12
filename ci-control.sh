@@ -111,13 +111,14 @@ function command.run-functional-tests() {
     local NOSE_TEST_REPORT="target/reports/functional-test/nosetests.ureport.xml"
     local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/funct_*.py"
 
-    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-start-celery.sh celery_test_settings"   
+    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-start-celery.sh ${UREPORT_SETTINGS_FILE}"   
 
     cd ureport_project
     echo "Running the functional tests from [${FUNCTIONAL_TEST_FILE}]"
     rm -rf target/reports/functional-test
     mkdir -p target/reports/functional-test
-
+		rm -rf target/reports/functional-test/screenshots
+		mkdir -p target/reports/functional-test/screenshots
 
     if [[ `uname` == "Darwin" ]]; then
         bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
@@ -141,8 +142,9 @@ function command.run-functional-tests() {
 
 
     if [[ `uname` == "Darwin" ]]; then
-        open ureport_project/target/reports/functional-test/html/index.html
-        open ureport_project/target/reports/functional-test/coverage/index.html 
+			  echo "Disabled the printing of lines"
+        #open ureport_project/target/reports/functional-test/html/index.html
+        #open ureport_project/target/reports/functional-test/coverage/index.html 
     else
         echo "To see the reports: open ureport_project/target/reports/functional-test/html/index.html"
         echo "To see the reports: open ureport_project/target/reports/functional-test/coverage/index.html "

@@ -303,7 +303,7 @@ ADMIN_UNREGISTER = False
 # https://nose.readthedocs.org/en/latest/plugins/cover.html
 # this is supposed to exclude a dir '--exclude-dir=',
 NOSE_ARGS = ('--with-xunit', '--xunit-file=target/reports/unit-test/nosetests.ureport.xml',
-             '--with-coverage', '--cover-html', '--cover-html-dir=target/reports/unit-test/coverage', '--cover-package=poll,uganda_common,unregister,message_classifier,contact,rapidsms_httprouter',
+	     '--with-coverage', '--cover-html', '--cover-html-dir=target/reports/unit-test/coverage', '--cover-package=poll,uganda_common,unregister,message_classifier,contact,rapidsms_httprouter,rapidsms_ureport',
              '--verbosity=2')
 
 MAP_BOUNDS = {'bottom_left': {'lon': 3292022.5, 'lat': -164636.828},

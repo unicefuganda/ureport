@@ -44,6 +44,8 @@ CELERY_QUEUES = {
     },
     'process_assign_group':{
         'binding_key': 'process_assign_group.#'
+    },'export_poll':{
+        'binding_key': 'export_poll.#'
     }
 }
 CELERY_DEFAULT_EXCHANGE = 'tasks'
@@ -97,6 +99,10 @@ CELERY_ROUTES = {
     'ureport.tasks.process_assign_group': {
         'queue': 'process_assign_group',
         'routing_key': 'process_assign_group.result'
+    },
+    'ureport.tasks.export_poll': {
+        'queue': 'export_poll',
+        'routing_key': 'export_poll.result'
     }
 
 }

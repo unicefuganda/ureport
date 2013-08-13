@@ -1,4 +1,5 @@
 from settings import *
+CELERY_ALWAYS_EAGER = True
 ADMIN_UNREGISTER = True
 IBM_TABLES_MANAGED = True
 INTERNAL_IPS = ('127.0.0.1')

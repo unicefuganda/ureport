@@ -271,6 +271,10 @@ CACHES = {
     }
 }
 
+CACHE_MIDDLEWARE_ALIAS = 'default'
+CACHE_MIDDLEWARE_SECONDS = 2 * 60 * 60
+CACHE_MIDDLEWARE_KEY_PREFIX = ''
+
 ALLOWED = (
     r'/accounts/login(.*)$',
     r'/accounts/logout(.*)$',

@@ -1,6 +1,7 @@
 from django.conf.urls.defaults import *
 from django.conf import settings
 from django.contrib import admin
+from django.views.decorators.cache import cache_page
 from rapidsms_httprouter.urls import urlpatterns as router_urls
 from ureport.urls import urlpatterns as ureport_urls
 from contact.urls import urlpatterns as contact_urls
@@ -22,7 +23,7 @@ urlpatterns = patterns('',
 
     # RapidSMS core URLs
     (r'^account/', include('rapidsms.urls.login_logout')),
-    url(r'^$', direct_to_template, {'template':'ureport/home.html'}, name="new_home"),
+    url(r'^$', cache_page(direct_to_template), {'template':'ureport/home.html'}, name="new_home"),
     url(r'^join/$', direct_to_template, {'template':'ureport/how_to_join.html'}),
     url(r'^about_ureport/$', direct_to_template, {'template':'ureport/about.html'}),
     url(r'^ureport-admin$', 'ureport.views.ureport_content', {'slug':'ureport_home', 'base_template':'ureport/three-square.html', 'num_columns':3}, name='rapidsms-dashboard'),

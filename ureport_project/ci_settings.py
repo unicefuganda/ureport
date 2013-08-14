@@ -18,7 +18,7 @@ OPT_OUT_WORDS = ['stop', 'unjoin', 'quit','giki','unsub','unsubscribe','stop ure
 print "APPS : " + str(INSTALLED_APPS)
 
 #south stuff
-SOUTH_TESTS_MIGRATE = False
+SOUTH_TESTS_MIGRATE = True
 
 #Use the real dbs, don't create them
 #os.environ['REUSE_DB'] = "1"

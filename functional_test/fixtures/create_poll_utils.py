@@ -53,11 +53,6 @@ def simulate_response(connection, incoming_message):
     incoming = router.handle_incoming(connection.backend.name, connection.identity, incoming_message)
     return incoming
 
-
-def get_browser():
-    return Browser('firefox')
-
-
 def if_exists_delete_group(groupname):
     try:
         group = Group.objects.get(name=groupname)

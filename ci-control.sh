@@ -121,7 +121,7 @@ function command.run-functional-tests() {
 		rm -rf target/reports/functional-test/screenshots
 		mkdir -p target/reports/functional-test/screenshots
     
-    if [[ "$RUN_ON_DEV_BOX" == "y" ]]; then
+    if [[ "$RUN_ON_DEV_BOX" == "local" ]]; then
    	bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
     else
 	bash -c "source ${VIRTUALENV_ACTIVATE} && DISPLAY=:1 xvfb-run ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
@@ -143,7 +143,7 @@ function command.run-functional-tests() {
     ant -f ci-reports.xml report-functional-tests
 
 
-    if [[ `uname` == "Darwin" ]]; then
+    if [[ "$RUN_ON_DEV_BOX" == "local" ]]; then
 			  echo "Disabled the printing of lines"
         #open ureport_project/target/reports/functional-test/html/index.html
         #open ureport_project/target/reports/functional-test/coverage/index.html 

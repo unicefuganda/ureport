@@ -108,6 +108,7 @@ function command.run-unit-tests() {
 
 #http://stackoverflow.com/questions/6183276/how-do-i-run-selenium-in-xvfb
 function command.run-functional-tests() {
+    RUN_ON_DEV_BOX=$1
     local NOSE_TEST_REPORT="target/reports/functional-test/nosetests.ureport.xml"
     local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/funct_*.py"
 
@@ -119,12 +120,13 @@ function command.run-functional-tests() {
     mkdir -p target/reports/functional-test
 		rm -rf target/reports/functional-test/screenshots
 		mkdir -p target/reports/functional-test/screenshots
-
-    if [[ `uname` == "Darwin" ]]; then
-        bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
+    
+    if [[ "$RUN_ON_DEV_BOX" == "y" ]]; then
+   	bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
     else
-        bash -c "source ${VIRTUALENV_ACTIVATE} && DISPLAY=:1 xvfb-run ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
+	bash -c "source ${VIRTUALENV_ACTIVATE} && DISPLAY=:1 xvfb-run ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
     fi
+ 
     LAST_COMMAND=$?
 
     cd ..

@@ -317,7 +317,7 @@ MAP_BOUNDS = {'bottom_left': {'lon': 3292022.5, 'lat': -164636.828},
 
 #MAP_BOUNDS SHOULD MOVE INTO HERE (BEFORE GEOSERVER IS KILLED)
 MAP_ARGS = {'center': {'longitude': 33.0, 'latitude': 0.0},
-            'scale': 20000
+            'scale': 36000
             }
 
 # since we might hit the database from any thread during testing, the

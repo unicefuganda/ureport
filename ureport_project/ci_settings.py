@@ -15,7 +15,7 @@ OPT_OUT_WORDS = ['stop', 'unjoin', 'quit','giki','unsub','unsubscribe','stop ure
 
 #INSTALLED_APPS +=  ("django_nose",)
 
-print "APPS : " + str(INSTALLED_APPS)
+#print "APPS : " + str(INSTALLED_APPS)
 
 #south stuff
 SOUTH_TESTS_MIGRATE = False

@@ -97,8 +97,9 @@ function command.run-unit-tests() {
 
 
     if [[ `uname` == "Darwin" ]]; then
-        open ureport_project/target/reports/unit-test/html/index.html
-        open ureport_project/target/reports/unit-test/coverage/index.html 
+        #open ureport_project/target/reports/unit-test/html/index.html
+        #open ureport_project/target/reports/unit-test/coverage/index.html 
+	echo "Disabled open of browser to show test results"
     else
         echo "To see the reports: open ureport_project/target/reports/unit-test/html/index.html"
         echo "To see the reports: open ureport_project/target/reports/unit-test/coverage/index.html "

@@ -61,7 +61,8 @@ ADMINS = (
 gettext = lambda s: s
 
 LANGUAGES = (
-    ('ach', gettext('luo')),
+    ('fr', gettext('French')),
+    ('ar', gettext('Arabic')),
     ('en', gettext('English')),
 )
 
@@ -133,6 +134,7 @@ INSTALLED_APPS = [
     "message_classifier",
     "celery",
     "djcelery",
+    "debug_toolbar",
     #"permission",
    # nothing after south
     "south",
@@ -219,10 +221,11 @@ TEMPLATE_CONTEXT_PROCESSORS = [
 
 MIDDLEWARE_CLASSES = (
     'ureport.middleware.access_log.UreportAccessLogMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.cache.FetchFromCacheMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.cache.CacheMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -260,16 +263,16 @@ TEMPLATE_LOADERS = (
 ROOT_URLCONF = "urls"
 
 #caching stuff
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-        'LOCATION': '127.0.0.1:11211',
-        'TIMEOUT': 6000,
-        'OPTIONS': {
-            'MAX_ENTRIES': 1000
-        }
-    }
-}
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+#         'LOCATION': '127.0.0.1:11211',
+#         'TIMEOUT': 6000,
+#         'OPTIONS': {
+#             'MAX_ENTRIES': 1000
+#         }
+#     }
+# }
 
 CACHE_MIDDLEWARE_ALIAS = 'default'
 CACHE_MIDDLEWARE_SECONDS = 2 * 60 * 60

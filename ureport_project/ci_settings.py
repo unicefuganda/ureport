@@ -42,12 +42,12 @@ DATABASES = {
    }
 }
 
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-        'LOCATION': '127.0.0.1:11211',
-        }
-}
+#CACHES = {
+#    'default': {
+#        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+#        'LOCATION': '127.0.0.1:11211',
+#        }
+#}
 
 INSTALLED_BACKENDS = {
     "message_tester": {
@@ -210,4 +210,24 @@ LOGGING = {
             'propogate' : True
         }
      }
+}
+
+
+
+# Delete this 
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+    }
+}
+
+
+INTERNAL_IPS = ('127.0.0.1',)
+INSTALLED_APPS +=("debug_toolbar",)
+MIDDLEWARE_CLASSES +=("debug_toolbar.middleware.DebugToolbarMiddleware",)
+DEBUG_TOOLBAR_CONFIG = {
+    'INTERCEPT_REDIRECTS': False,
+    'HIDE_DJANGO_SQL': False,
+    'TAG': 'div',
+    'ENABLE_STACKTRACES' : True,
 }

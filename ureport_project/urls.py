@@ -20,7 +20,7 @@ urlpatterns = patterns('',
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     (r'^admin/', include(admin.site.urls)),
-
+    (r'^i18n/', include('django.conf.urls.i18n')),
     # RapidSMS core URLs
     (r'^account/', include('rapidsms.urls.login_logout')),
     url(r'^$', cache_page(direct_to_template), {'template':'ureport/home.html'}, name="new_home"),

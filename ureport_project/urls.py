@@ -23,7 +23,8 @@ urlpatterns = patterns('',
 
     # RapidSMS core URLs
     (r'^account/', include('rapidsms.urls.login_logout')),
-    url(r'^$', cache_page(direct_to_template), {'template':'ureport/home.html'}, name="new_home"),
+    #url(r'^$', cache_page(direct_to_template), {'template':'ureport/home.html'}, name="new_home"),
+    url(r'^$', 'ureport.views.dashboard_views.home', name="new_home"),
     url(r'^join/$', direct_to_template, {'template':'ureport/how_to_join.html'}),
     url(r'^about_ureport/$', direct_to_template, {'template':'ureport/about.html'}),
     url(r'^ureport-admin$', 'ureport.views.ureport_content', {'slug':'ureport_home', 'base_template':'ureport/three-square.html', 'num_columns':3}, name='rapidsms-dashboard'),

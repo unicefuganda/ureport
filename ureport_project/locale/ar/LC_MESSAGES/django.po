@@ -1,0 +1,487 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-03 15:26+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5\n"
+
+#: localsettings.py:196 settings.py:64
+msgid "luo"
+msgstr ""
+
+#: localsettings.py:197 settings.py:65
+msgid "English"
+msgstr ""
+
+#: django_eav/eav/fields.py:54
+msgid ""
+"Must be all lower case, start with a letter, and contain only letters, "
+"numbers, or underscores."
+msgstr ""
+
+#: django_eav/eav/fields.py:87
+msgid "You cannot change the datatype of an attribute that is already in use."
+msgstr ""
+
+#: django_eav/eav/forms.py:109
+#, python-format
+msgid "The %s could not be saved because the datadidn't validate."
+msgstr ""
+
+#: django_eav/eav/models.py:79
+msgid "value"
+msgstr ""
+
+#: django_eav/eav/models.py:95 django_eav/eav/models.py:175
+msgid "name"
+msgstr ""
+
+#: django_eav/eav/models.py:97
+msgid "enum group"
+msgstr ""
+
+#: django_eav/eav/models.py:166
+msgid "Text"
+msgstr ""
+
+#: django_eav/eav/models.py:167
+msgid "Float"
+msgstr ""
+
+#: django_eav/eav/models.py:168
+msgid "Integer"
+msgstr ""
+
+#: django_eav/eav/models.py:169
+msgid "Date"
+msgstr ""
+
+#: django_eav/eav/models.py:170
+msgid "True / False"
+msgstr ""
+
+#: django_eav/eav/models.py:171
+msgid "Django Object"
+msgstr ""
+
+#: django_eav/eav/models.py:172
+msgid "Multiple Choice"
+msgstr ""
+
+#: django_eav/eav/models.py:176
+msgid "User-friendly attribute name"
+msgstr ""
+
+#: django_eav/eav/models.py:178
+msgid "site"
+msgstr ""
+
+#: django_eav/eav/models.py:181
+msgid "slug"
+msgstr ""
+
+#: django_eav/eav/models.py:182
+msgid "Short unique attribute label"
+msgstr ""
+
+#: django_eav/eav/models.py:184
+msgid "description"
+msgstr ""
+
+#: django_eav/eav/models.py:186
+msgid "Short description"
+msgstr ""
+
+#: django_eav/eav/models.py:188
+msgid "choice group"
+msgstr ""
+
+#: django_eav/eav/models.py:191
+msgid "type"
+msgstr ""
+
+#: django_eav/eav/models.py:197
+msgid "data type"
+msgstr ""
+
+#: django_eav/eav/models.py:200 django_eav/eav/models.py:356
+msgid "created"
+msgstr ""
+
+#: django_eav/eav/models.py:203 django_eav/eav/models.py:357
+msgid "modified"
+msgstr ""
+
+#: django_eav/eav/models.py:205
+msgid "required"
+msgstr ""
+
+#: django_eav/eav/models.py:242
+#, python-format
+msgid "%(enum)s is not a valid choice for %(attr)s"
+msgstr ""
+
+#: django_eav/eav/models.py:264
+msgid "You must set the choice group for multiple choiceattributes"
+msgstr ""
+
+#: django_eav/eav/models.py:269
+msgid "You can only assign a choice group to multiple choice attributes"
+msgstr ""
+
+#: django_eav/eav/models.py:360
+msgid "attribute"
+msgstr ""
+
+#: django_eav/eav/models.py:377
+msgid "%(choice)s is not a valid choice for %s(attribute)"
+msgstr ""
+
+#: django_eav/eav/models.py:430
+#, python-format
+msgid "%(obj)s has no EAV attribute named '%(attr)s'"
+msgstr ""
+
+#: django_eav/eav/models.py:466
+#, python-format
+msgid "%(attr)s EAV field cannot be blank"
+msgstr ""
+
+#: django_eav/eav/models.py:473
+#, python-format
+msgid "%(attr)s EAV field %(err)s"
+msgstr ""
+
+#: django_eav/eav/validators.py:49
+msgid "Must be str or unicode"
+msgstr ""
+
+#: django_eav/eav/validators.py:59
+msgid "Must be a float"
+msgstr ""
+
+#: django_eav/eav/validators.py:69
+msgid "Must be an integer"
+msgstr ""
+
+#: django_eav/eav/validators.py:78
+msgid "Must be a date or datetime"
+msgstr ""
+
+#: django_eav/eav/validators.py:86
+msgid "Must be a boolean"
+msgstr ""
+
+#: django_eav/eav/validators.py:95
+msgid "Must be a django model object instance"
+msgstr ""
+
+#: django_eav/eav/validators.py:97
+msgid "Model has not been saved yet"
+msgstr ""
+
+#: django_eav/eav/validators.py:107
+msgid "Must be an EnumValue model object instance"
+msgstr ""
+
+#: django_eav/eav/validators.py:109
+msgid "EnumValue has not been saved yet"
+msgstr ""
+
+#: django_taggit/taggit/forms.py:21
+msgid "Please provide a comma-separated list of tags."
+msgstr ""
+
+#: django_taggit/taggit/managers.py:39 django_taggit/taggit/models.py:57
+msgid "Tags"
+msgstr ""
+
+#: django_taggit/taggit/managers.py:40
+msgid "A comma-separated list of tags."
+msgstr ""
+
+#: django_taggit/taggit/models.py:10
+msgid "Name"
+msgstr ""
+
+#: django_taggit/taggit/models.py:11
+msgid "Slug"
+msgstr ""
+
+#: django_taggit/taggit/models.py:56
+msgid "Tag"
+msgstr ""
+
+#: django_taggit/taggit/models.py:63
+#, python-format
+msgid "%(object)s tagged with %(tag)s"
+msgstr ""
+
+#: django_taggit/taggit/models.py:113
+msgid "Object id"
+msgstr ""
+
+#: django_taggit/taggit/models.py:117 django_taggit/taggit/models.py:123
+msgid "Content type"
+msgstr ""
+
+#: django_taggit/taggit/models.py:159
+msgid "Tagged Item"
+msgstr ""
+
+#: django_taggit/taggit/models.py:160
+msgid "Tagged Items"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/locations/forms.py:36
+msgid "Enter a valid latitude."
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/locations/forms.py:37
+msgid "Enter a valid longitude."
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/scheduler/views.py:35
+#, python-format
+msgid "Schedule '%(name)s' successfully updated"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/edit.html:35
+msgid "Submit"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/edit.html:38
+msgid "Return to the list of schedules"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:14
+msgid "Event"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:15
+msgid "Description"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:16
+msgid "Month"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:17
+msgid "Day of Month"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:18
+msgid "Day of Week"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:19
+msgid "Hour"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:20
+msgid "Minute"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:21
+msgid "Start Time"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:22
+msgid "End Time"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:23
+msgid "Count"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:24
+msgid "Active"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:53
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:64
+msgid "Add a Schedule"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:61
+msgid "No schedules yet"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/templates/layout.html:37
+#: rapidsms_uganda_common/uganda_common/templates/layout.html:37
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/templates/layout.html:45
+#: rapidsms_uganda_common/uganda_common/templates/layout.html:45
+msgid "Log out"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/templates/layout.html:46
+#: rapidsms_uganda_common/uganda_common/templates/layout.html:46
+msgid "Log in"
+msgstr ""
+
+#: rapidsms_polls/poll/models.py:167
+msgid "question"
+msgstr ""
+
+#: rapidsms_polls/poll/models.py:174
+msgid "default_response"
+msgstr ""
+
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:29
+#, python-format
+msgid "full_tree_for_model tag was given an invalid model: %s"
+msgstr ""
+
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:50
+#, python-format
+msgid "drilldown_tree_for_node tag was given an invalid model: %s"
+msgstr ""
+
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:54
+#, python-format
+msgid "drilldown_tree_for_node tag was given an invalid model field: %s"
+msgstr ""
+
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:79
+#, python-format
+msgid "%s tag requires three arguments"
+msgstr ""
+
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:81
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:133
+#, python-format
+msgid "second argument to %s tag must be 'as'"
+msgstr ""
+
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:131
+#, python-format
+msgid "%s tag requires either three, seven or eight arguments"
+msgstr ""
+
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:136
+#, python-format
+msgid "if seven arguments are given, fourth argument to %s tag must be 'with'"
+msgstr ""
+
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:138
+#, python-format
+msgid "if seven arguments are given, sixth argument to %s tag must be 'in'"
+msgstr ""
+
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:142
+#, python-format
+msgid ""
+"if eight arguments are given, fourth argument to %s tag must be 'cumulative'"
+msgstr ""
+
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:144
+#, python-format
+msgid "if eight arguments are given, fifth argument to %s tag must be 'count'"
+msgstr ""
+
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:146
+#, python-format
+msgid "if eight arguments are given, seventh argument to %s tag must be 'in'"
+msgstr ""
+
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:288
+#, python-format
+msgid "%s tag requires a queryset"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:6
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:38
+msgid "Voice Matters"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:41
+msgid "members to date"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:53
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:109
+msgid "HOME"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:54
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:110
+msgid "POLL RESULTS"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:55
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:111
+msgid "ABOUT UREPORT"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:56
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:112
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:113
+msgid "HOW TO JOIN"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:57
+msgid "NATIONAL PULSE"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:66
+msgid ""
+"\n"
+"                        Ureport is a free SMS-based system that allows young "
+"Ugandans to speak out on what's happening\n"
+"                    in communities across the country, and work together "
+"with other community leaders for positive change.\n"
+"                    "
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:79
+msgid "YOUR SAY:"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:115
+msgid "POLL ADMIN"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:116
+msgid "MESSAGE LOG"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:117
+msgid "UREPORTERS"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:118
+msgid "FLAGGED MESSAGES"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:119
+msgid "A-CLASS"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:120
+msgid "REAL TIME"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:122
+msgid "LOGIN"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:126
+msgid "&copy; 2010 - 2012 UNICEF et al."
+msgstr ""

@@ -24,6 +24,7 @@ SOUTH_TESTS_MIGRATE = False
 #os.environ['REUSE_DB'] = "1"
 
 GEOSERVER_URL = "/geoserver/"
+TEST_SERVER_URL = "http://127.0.0.1"
 
 DATABASES = {
     'default': {
@@ -31,14 +32,13 @@ DATABASES = {
         'NAME': 'ureport',
         'HOST': 'localhost',
         'USER': 'postgres',
-        'ROUTER_URL' : "http://95.138.170.64:13013/cgi-bin/sendsms?from=8500&username=kannel&password=kannel&text=%(text)s&to=%(recipient)s&smsc=SMPPSim"
+        'ROUTER_URL': "http://127.0.0.1:13013/cgi-bin/sendsms?from=8500&username=kannel&password=kannel&text=%(text)s&to=%(recipient)s&smsc=SMPPSim"
     },
     'geoserver': {
     'ENGINE' : 'django.db.backends.postgresql_psycopg2',
     'NAME': 'geoserver',
-    'HOST': 'localhost',
+    'HOST': '127.0.0.1',
     'USER': 'postgres',
-    'ROUTER_URL':'http://95.138.170.64:13013/cgi-bin/sendsms?from=8500&username=kannel&password=kannel&text=%(text)s&to=%(recipient)s&smsc=SMPPSim'
    }
 }
 

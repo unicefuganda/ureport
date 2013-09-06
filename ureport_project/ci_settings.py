@@ -37,7 +37,7 @@ DATABASES = {
     'geoserver': {
     'ENGINE' : 'django.db.backends.postgresql_psycopg2',
     'NAME': 'geoserver',
-    'HOST': 'localhost',
+    'HOST': '127.0.0.1',
     'USER': 'postgres',
    }
 }

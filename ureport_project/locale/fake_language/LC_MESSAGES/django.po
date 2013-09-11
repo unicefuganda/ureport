@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-06 11:38+0300\n"
+"POT-Creation-Date: 2013-09-11 17:23+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -532,6 +532,7 @@ msgid "Why Join Ureport"
 msgstr ""
 
 #: rapidsms_ureport/ureport/templates/ureport/about.html:11
+#, fuzzy
 msgid ""
 "<ul>\n"
 "\t    <li>Speak out on what's happening in your community</li>\n"
@@ -540,16 +541,17 @@ msgid ""
 "\t    <li>Participate in nationwide campaigns to help improve your country</"
 "li>\n"
 "\t    <li>Share what's happening around Uganda with other Ureporters</li>\n"
-"        </ul>"
+"\t</ul>"
 msgstr ""
 "<ul>\n"
-"\t    <li>U-report is the first tool of its kind in TW--Be part of Something new</li>\n"
-"\t    <li>You can use U-report to raise your voice and participate in a national discussion with youth like you</li>\n"
-"\t    <li>Share information about the positive things happening in your community, and raise awareness about issues that need attention </"
-"li>\n"
+"\t    <li>U-report is the first tool of its kind in TW--Be part of Something "
+"new</li>\n"
+"\t    <li>You can use U-report to raise your voice and participate in a "
+"national discussion with youth like you</li>\n"
+"\t    <li>Share information about the positive things happening in your "
+"community, and raise awareness about issues that need attention </li>\n"
 "\t    <li>Tell your story and be heard by youth across South Sudan!</li>\n"
 "        </ul>"
-
 
 #: rapidsms_ureport/ureport/templates/ureport/about.html:24
 msgid "About Ureport"
@@ -703,14 +705,7 @@ msgstr ""
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:16
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:21
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:26
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:189
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:210
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:211
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:213
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:214
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:247
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:256
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:258
 msgid "No"
 msgstr ""
 
@@ -724,14 +719,16 @@ msgstr ""
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:61
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:66
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:71
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:206
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:208
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:257
 msgid "Yes"
 msgstr ""
 
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:75
 msgid "Split Results"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:204
+msgid "District"
 msgstr ""
 
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:6

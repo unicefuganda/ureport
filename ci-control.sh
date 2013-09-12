@@ -115,14 +115,12 @@ function command.run-functional-tests() {
     #local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/funct_*.py"
     local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/funct_poll_flow.py"
 
-    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-start-celery.sh ${UREPORT_SETTINGS_FILE}"   
-
     cd ureport_project
     echo "Running the functional tests from [${FUNCTIONAL_TEST_FILE}]"
     rm -rf target/reports/functional-test
     mkdir -p target/reports/functional-test
-		rm -rf target/reports/functional-test/screenshots
-		mkdir -p target/reports/functional-test/screenshots
+    rm -rf target/reports/functional-test/screenshots
+    mkdir -p target/reports/functional-test/screenshots
     
     if [[ "$RUN_ON_DEV_BOX" == "local" ]]; then
    	bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
@@ -132,10 +130,7 @@ function command.run-functional-tests() {
  
     LAST_COMMAND=$?
 
-    cd ..
-    bash -c "source ${VIRTUALENV_ACTIVATE} && ./ci-stop-celery.sh"
     cd ureport_project
-
     tidy -xml -o ${NOSE_TEST_REPORT} ${NOSE_TEST_REPORT}
 
     cat ${NOSE_TEST_REPORT} | sed 's_name\=\"nosetests\"_name\=\"functional-tests.ureport\"_'> ${NOSE_TEST_REPORT}.replaced

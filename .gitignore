@@ -14,5 +14,6 @@ binary
 .coverage
 .DS_Store
 ureport_project/excel_contacts
+ureport_project/media
 tags
 *log*

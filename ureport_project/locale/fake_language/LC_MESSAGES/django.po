@@ -1,14 +1,9 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-11 17:23+0300\n"
+"POT-Creation-Date: 2011-05-26 18:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,523 +12,247 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: localsettings.py:196 settings.py:64
-msgid "luo"
-msgstr ""
-
-#: localsettings.py:197 settings.py:65
-msgid "English"
-msgstr ""
-
-#: django_eav/eav/fields.py:54
-msgid ""
+msgid  "luo"
+msgstr  "lno"
+msgid  "English"
+msgstr  "Ǝuƃlısɥ"
+msgid  ""
 "Must be all lower case, start with a letter, and contain only letters, "
 "numbers, or underscores."
-msgstr ""
-
-#: django_eav/eav/fields.py:87
-msgid "You cannot change the datatype of an attribute that is already in use."
-msgstr ""
-
-#: django_eav/eav/forms.py:109
-#, python-format
-msgid "The %s could not be saved because the datadidn't validate."
-msgstr ""
-
-#: django_eav/eav/models.py:79
-msgid "value"
-msgstr ""
-
-#: django_eav/eav/models.py:95 django_eav/eav/models.py:175
-msgid "name"
-msgstr ""
-
-#: django_eav/eav/models.py:97
-msgid "enum group"
-msgstr ""
-
-#: django_eav/eav/models.py:166
-msgid "Text"
-msgstr ""
-
-#: django_eav/eav/models.py:167
-msgid "Float"
-msgstr ""
-
-#: django_eav/eav/models.py:168
-msgid "Integer"
-msgstr ""
-
-#: django_eav/eav/models.py:169
-msgid "Date"
-msgstr ""
-
-#: django_eav/eav/models.py:170
-msgid "True / False"
-msgstr ""
-
-#: django_eav/eav/models.py:171
-msgid "Django Object"
-msgstr ""
-
-#: django_eav/eav/models.py:172
-msgid "Multiple Choice"
-msgstr ""
-
-#: django_eav/eav/models.py:176
-msgid "User-friendly attribute name"
-msgstr ""
-
-#: django_eav/eav/models.py:178
-msgid "site"
-msgstr ""
-
-#: django_eav/eav/models.py:181
-msgid "slug"
-msgstr ""
-
-#: django_eav/eav/models.py:182
-msgid "Short unique attribute label"
-msgstr ""
-
-#: django_eav/eav/models.py:184
-msgid "description"
-msgstr ""
-
-#: django_eav/eav/models.py:186
-msgid "Short description"
-msgstr ""
-
-#: django_eav/eav/models.py:188
-msgid "choice group"
-msgstr ""
-
-#: django_eav/eav/models.py:191
-msgid "type"
-msgstr ""
-
-#: django_eav/eav/models.py:197
-msgid "data type"
-msgstr ""
-
-#: django_eav/eav/models.py:200 django_eav/eav/models.py:356
-msgid "created"
-msgstr ""
-
-#: django_eav/eav/models.py:203 django_eav/eav/models.py:357
-msgid "modified"
-msgstr ""
-
-#: django_eav/eav/models.py:205
-msgid "required"
-msgstr ""
-
-#: django_eav/eav/models.py:242
-#, python-format
-msgid "%(enum)s is not a valid choice for %(attr)s"
-msgstr ""
-
-#: django_eav/eav/models.py:264
-msgid "You must set the choice group for multiple choiceattributes"
-msgstr ""
-
-#: django_eav/eav/models.py:269
-msgid "You can only assign a choice group to multiple choice attributes"
-msgstr ""
-
-#: django_eav/eav/models.py:360
-msgid "attribute"
-msgstr ""
-
-#: django_eav/eav/models.py:377
-msgid "%(choice)s is not a valid choice for %s(attribute)"
-msgstr ""
-
-#: django_eav/eav/models.py:430
-#, python-format
-msgid "%(obj)s has no EAV attribute named '%(attr)s'"
-msgstr ""
-
-#: django_eav/eav/models.py:466
-#, python-format
-msgid "%(attr)s EAV field cannot be blank"
-msgstr ""
-
-#: django_eav/eav/models.py:473
-#, python-format
-msgid "%(attr)s EAV field %(err)s"
-msgstr ""
-
-#: django_eav/eav/validators.py:49
-msgid "Must be str or unicode"
-msgstr ""
-
-#: django_eav/eav/validators.py:59
-msgid "Must be a float"
-msgstr ""
-
-#: django_eav/eav/validators.py:69
-msgid "Must be an integer"
-msgstr ""
-
-#: django_eav/eav/validators.py:78
-msgid "Must be a date or datetime"
-msgstr ""
-
-#: django_eav/eav/validators.py:86
-msgid "Must be a boolean"
-msgstr ""
-
-#: django_eav/eav/validators.py:95
-msgid "Must be a django model object instance"
-msgstr ""
-
-#: django_eav/eav/validators.py:97
-msgid "Model has not been saved yet"
-msgstr ""
-
-#: django_eav/eav/validators.py:107
-msgid "Must be an EnumValue model object instance"
-msgstr ""
-
-#: django_eav/eav/validators.py:109
-msgid "EnumValue has not been saved yet"
-msgstr ""
-
-#: django_taggit/taggit/forms.py:21
-msgid "Please provide a comma-separated list of tags."
-msgstr ""
-
-#: django_taggit/taggit/managers.py:39 django_taggit/taggit/models.py:57
-msgid "Tags"
-msgstr ""
-
-#: django_taggit/taggit/managers.py:40
-msgid "A comma-separated list of tags."
-msgstr ""
-
-#: django_taggit/taggit/models.py:10
-msgid "Name"
-msgstr ""
-
-#: django_taggit/taggit/models.py:11
-msgid "Slug"
-msgstr ""
-
-#: django_taggit/taggit/models.py:56
-msgid "Tag"
-msgstr ""
-
-#: django_taggit/taggit/models.py:63
-#, python-format
-msgid "%(object)s tagged with %(tag)s"
-msgstr ""
-
-#: django_taggit/taggit/models.py:113
-msgid "Object id"
-msgstr ""
-
-#: django_taggit/taggit/models.py:117 django_taggit/taggit/models.py:123
-msgid "Content type"
-msgstr ""
-
-#: django_taggit/taggit/models.py:159
-msgid "Tagged Item"
-msgstr ""
-
-#: django_taggit/taggit/models.py:160
-msgid "Tagged Items"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/locations/forms.py:36
-msgid "Enter a valid latitude."
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/locations/forms.py:37
-msgid "Enter a valid longitude."
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/scheduler/views.py:35
-#, python-format
-msgid "Schedule '%(name)s' successfully updated"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/edit.html:35
-msgid "Submit"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/edit.html:38
-msgid "Return to the list of schedules"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:14
-msgid "Event"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:15
-msgid "Description"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:16
-msgid "Month"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:17
-msgid "Day of Month"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:18
-msgid "Day of Week"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:19
-msgid "Hour"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:20
-msgid "Minute"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:21
-msgid "Start Time"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:22
-msgid "End Time"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:23
-msgid "Count"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:24
-msgid "Active"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:53
-#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:64
-msgid "Add a Schedule"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:61
-msgid "No schedules yet"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/templates/layout.html:37
-#: rapidsms_uganda_common/uganda_common/templates/layout.html:37
-msgid "Return to the Dashboard"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/templates/layout.html:45
-#: rapidsms_uganda_common/uganda_common/templates/layout.html:45
-msgid "Log out"
-msgstr ""
-
-#: rapidsms/lib/rapidsms/templates/layout.html:46
-#: rapidsms_uganda_common/uganda_common/templates/layout.html:46
-msgid "Log in"
-msgstr ""
-
-#: rapidsms_polls/poll/models.py:167
-msgid "question"
-msgstr ""
-
-#: rapidsms_polls/poll/models.py:174
-msgid "default_response"
-msgstr ""
-
-#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:29
-#, python-format
-msgid "full_tree_for_model tag was given an invalid model: %s"
-msgstr ""
-
-#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:50
-#, python-format
-msgid "drilldown_tree_for_node tag was given an invalid model: %s"
-msgstr ""
-
-#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:54
-#, python-format
-msgid "drilldown_tree_for_node tag was given an invalid model field: %s"
-msgstr ""
-
-#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:79
-#, python-format
-msgid "%s tag requires three arguments"
-msgstr ""
-
-#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:81
-#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:133
-#, python-format
-msgid "second argument to %s tag must be 'as'"
-msgstr ""
-
-#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:131
-#, python-format
-msgid "%s tag requires either three, seven or eight arguments"
-msgstr ""
-
-#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:136
-#, python-format
-msgid "if seven arguments are given, fourth argument to %s tag must be 'with'"
-msgstr ""
-
-#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:138
-#, python-format
-msgid "if seven arguments are given, sixth argument to %s tag must be 'in'"
-msgstr ""
-
-#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:142
-#, python-format
-msgid ""
+msgstr  ""
+"Wnsʇ qə ɐll loʍəɹ ɔɐsə' sʇɐɹʇ ʍıʇɥ ɐ ləʇʇəɹ' ɐup ɔouʇɐıu oulʎ ləʇʇəɹs' "
+"unɯqəɹs' oɹ nupəɹsɔoɹəs˙"
+msgid  "You cannot change the datatype of an attribute that is already in use."
+msgstr  "ʎon ɔɐuuoʇ ɔɥɐuƃə ʇɥə pɐʇɐʇʎdə oɟ ɐu ɐʇʇɹıqnʇə ʇɥɐʇ ıs ɐlɹəɐpʎ ıu nsə˙"
+msgid  "The %s could not be saved because the datadidn't validate."
+msgstr  "⊥ɥə %s could not be saved because the datadidn't validate."
+msgid  "value"
+msgstr  "ʌɐlnə"
+msgid  "name"
+msgstr  "uɐɯə"
+msgid  "enum group"
+msgstr  "əunɯ ƃɹond"
+msgid  "Text"
+msgstr  "⊥əxʇ"
+msgid  "Float"
+msgstr  "Ⅎloɐʇ"
+msgid  "Integer"
+msgstr  "Iuʇəƃəɹ"
+msgid  "Date"
+msgstr  "pɐʇə"
+msgid  "True / False"
+msgstr  "⊥ɹnə \\ Ⅎɐlsə"
+msgid  "Django Object"
+msgstr  "pɾɐuƃo Oqɾəɔʇ"
+msgid  "Multiple Choice"
+msgstr  "Wnlʇıdlə Ɔɥoıɔə"
+msgid  "User-friendly attribute name"
+msgstr  "∩səɹ-ɟɹıəuplʎ ɐʇʇɹıqnʇə uɐɯə"
+msgid  "site"
+msgstr  "sıʇə"
+msgid  "slug"
+msgstr  "slnƃ"
+msgid  "Short unique attribute label"
+msgstr  "Sɥoɹʇ nuıbnə ɐʇʇɹıqnʇə lɐqəl"
+msgid  "description"
+msgstr  "pəsɔɹıdʇıou"
+msgid  "Short description"
+msgstr  "Sɥoɹʇ pəsɔɹıdʇıou"
+msgid  "choice group"
+msgstr  "ɔɥoıɔə ƃɹond"
+msgid  "type"
+msgstr  "ʇʎdə"
+msgid  "data type"
+msgstr  "pɐʇɐ ʇʎdə"
+msgid  "created"
+msgstr  "ɔɹəɐʇəp"
+msgid  "modified"
+msgstr  "ɯopıɟıəp"
+msgid  "required"
+msgstr  "ɹəbnıɹəp"
+msgid  "%(enum)s is not a valid choice for %(attr)s"
+msgstr  "%(enum)s ıs uoʇ ɐ ʌɐlıp ɔɥoıɔə ɟoɹ %(attr)s"
+msgid  "You must set the choice group for multiple choiceattributes"
+msgstr  "ʎon ɯnsʇ səʇ ʇɥə ɔɥoıɔə ƃɹond ɟoɹ ɯnlʇıdlə ɔɥoıɔəɐʇʇɹıqnʇəs"
+msgid  "You can only assign a choice group to multiple choice attributes"
+msgstr  "ʎon ɔɐu oulʎ ɐssıƃu ɐ ɔɥoıɔə ƃɹond ʇo ɯnlʇıdlə ɔɥoıɔə ɐʇʇɹıqnʇəs"
+msgid  "attribute"
+msgstr  "ɐʇʇɹıqnʇə"
+msgid  "%(choice)s is not a valid choice for %s(attribute)"
+msgstr  "%(choice)s ıs uoʇ ɐ ʌɐlıp ɔɥoıɔə ɟoɹ %s(attribute)"
+msgid  "%(obj)s has no EAV attribute named '%(attr)s'"
+msgstr  "%(obj)s ɥɐs uo Ǝ∀Λ ɐʇʇɹıqnʇə uɐɯəp ,%(attr)s,"
+msgid  "%(attr)s EAV field cannot be blank"
+msgstr  "%(attr)s Ǝ∀Λ ɟıəlp ɔɐuuoʇ qə qlɐuʞ"
+msgid  "%(attr)s EAV field %(err)s"
+msgstr  "%(attr)s Ǝ∀Λ ɟıəlp %(err)s"
+msgid  "Must be str or unicode"
+msgstr  "Wnsʇ qə sʇɹ oɹ nuıɔopə"
+msgid  "Must be a float"
+msgstr  "Wnsʇ qə ɐ ɟloɐʇ"
+msgid  "Must be an integer"
+msgstr  "Wnsʇ qə ɐu ıuʇəƃəɹ"
+msgid  "Must be a date or datetime"
+msgstr  "Wnsʇ qə ɐ pɐʇə oɹ pɐʇəʇıɯə"
+msgid  "Must be a boolean"
+msgstr  "Wnsʇ qə ɐ qooləɐu"
+msgid  "Must be a django model object instance"
+msgstr  "Wnsʇ qə ɐ pɾɐuƃo ɯopəl oqɾəɔʇ ıusʇɐuɔə"
+msgid  "Model has not been saved yet"
+msgstr  "Wopəl ɥɐs uoʇ qəəu sɐʌəp ʎəʇ"
+msgid  "Must be an EnumValue model object instance"
+msgstr  "Wnsʇ qə ɐu ƎunɯΛɐlnə ɯopəl oqɾəɔʇ ıusʇɐuɔə"
+msgid  "EnumValue has not been saved yet"
+msgstr  "ƎunɯΛɐlnə ɥɐs uoʇ qəəu sɐʌəp ʎəʇ"
+msgid  "Please provide a comma-separated list of tags."
+msgstr  "Ԁləɐsə dɹoʌıpə ɐ ɔoɯɯɐ-sədɐɹɐʇəp lısʇ oɟ ʇɐƃs˙"
+msgid  "Tags"
+msgstr  "⊥ɐƃs"
+msgid  "A comma-separated list of tags."
+msgstr  "∀ ɔoɯɯɐ-sədɐɹɐʇəp lısʇ oɟ ʇɐƃs˙"
+msgid  "Name"
+msgstr  "Nɐɯə"
+msgid  "Slug"
+msgstr  "Slnƃ"
+msgid  "Tag"
+msgstr  "⊥ɐƃ"
+msgid  "%(object)s tagged with %(tag)s"
+msgstr  "%(object)s ʇɐƃƃəp ʍıʇɥ %(tag)s"
+msgid  "Object id"
+msgstr  "Oqɾəɔʇ ıp"
+msgid  "Content type"
+msgstr  "Ɔouʇəuʇ ʇʎdə"
+msgid  "Tagged Item"
+msgstr  "⊥ɐƃƃəp Iʇəɯ"
+msgid  "Tagged Items"
+msgstr  "⊥ɐƃƃəp Iʇəɯs"
+msgid  "Enter a valid latitude."
+msgstr  "Ǝuʇəɹ ɐ ʌɐlıp lɐʇıʇnpə˙"
+msgid  "Enter a valid longitude."
+msgstr  "Ǝuʇəɹ ɐ ʌɐlıp louƃıʇnpə˙"
+msgid  "Schedule '%(name)s' successfully updated"
+msgstr  "Sɔɥəpnlə ,%(name)s, snɔɔəssɟnllʎ ndpɐʇəp"
+msgid  "Submit"
+msgstr  "Snqɯıʇ"
+msgid  "Return to the list of schedules"
+msgstr  "ᴚəʇnɹu ʇo ʇɥə lısʇ oɟ sɔɥəpnləs"
+msgid  "Event"
+msgstr  "Ǝʌəuʇ"
+msgid  "Description"
+msgstr  "pəsɔɹıdʇıou"
+msgid  "Month"
+msgstr  "Wouʇɥ"
+msgid  "Day of Month"
+msgstr  "pɐʎ oɟ Wouʇɥ"
+msgid  "Day of Week"
+msgstr  "pɐʎ oɟ Məəʞ"
+msgid  "Hour"
+msgstr  "Honɹ"
+msgid  "Minute"
+msgstr  "Wıunʇə"
+msgid  "Start Time"
+msgstr  "Sʇɐɹʇ ⊥ıɯə"
+msgid  "End Time"
+msgstr  "Ǝup ⊥ıɯə"
+msgid  "Count"
+msgstr  "Ɔonuʇ"
+msgid  "Active"
+msgstr  "∀ɔʇıʌə"
+msgid  "Add a Schedule"
+msgstr  "∀pp ɐ Sɔɥəpnlə"
+msgid  "No schedules yet"
+msgstr  "No sɔɥəpnləs ʎəʇ"
+msgid  "Return to the Dashboard"
+msgstr  "ᴚəʇnɹu ʇo ʇɥə pɐsɥqoɐɹp"
+msgid  "Log out"
+msgstr  "˥oƃ onʇ"
+msgid  "Log in"
+msgstr  "˥oƃ ıu"
+msgid  "question"
+msgstr  "bnəsʇıou"
+msgid  "default_response"
+msgstr  "pəɟɐnlʇ‾ɹəsdousə"
+msgid  "full_tree_for_model tag was given an invalid model: %s"
+msgstr  "ɟnll‾ʇɹəə‾ɟoɹ‾ɯopəl ʇɐƃ ʍɐs ƃıʌəu ɐu ıuʌɐlıp ɯopəl: %s"
+msgid  "drilldown_tree_for_node tag was given an invalid model: %s"
+msgstr  "pɹıllpoʍu‾ʇɹəə‾ɟoɹ‾uopə ʇɐƃ ʍɐs ƃıʌəu ɐu ıuʌɐlıp ɯopəl: %s"
+msgid  "drilldown_tree_for_node tag was given an invalid model field: %s"
+msgstr  "pɹıllpoʍu‾ʇɹəə‾ɟoɹ‾uopə ʇɐƃ ʍɐs ƃıʌəu ɐu ıuʌɐlıp ɯopəl ɟıəlp: %s"
+msgid  "%s tag requires three arguments"
+msgstr  "%s tag requires three arguments"
+msgid  "second argument to %s tag must be 'as'"
+msgstr  "səɔoup ɐɹƃnɯəuʇ ʇo %s tag must be 'as'"
+msgid  "%s tag requires either three, seven or eight arguments"
+msgstr  "%s tag requires either three, seven or eight arguments"
+msgid  "if seven arguments are given, fourth argument to %s tag must be 'with'"
+msgstr  "ıɟ səʌəu ɐɹƃnɯəuʇs ɐɹə ƃıʌəu' ɟonɹʇɥ ɐɹƃnɯəuʇ ʇo %s tag must be 'with'"
+msgid  "if seven arguments are given, sixth argument to %s tag must be 'in'"
+msgstr  "ıɟ səʌəu ɐɹƃnɯəuʇs ɐɹə ƃıʌəu' sıxʇɥ ɐɹƃnɯəuʇ ʇo %s tag must be 'in'"
+msgid  ""
 "if eight arguments are given, fourth argument to %s tag must be 'cumulative'"
-msgstr ""
-
-#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:144
-#, python-format
-msgid "if eight arguments are given, fifth argument to %s tag must be 'count'"
-msgstr ""
-
-#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:146
-#, python-format
-msgid "if eight arguments are given, seventh argument to %s tag must be 'in'"
-msgstr ""
-
-#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:288
-#, python-format
-msgid "%s tag requires a queryset"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:5
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:6
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:38
-msgid "Voice Matters"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:44
-msgid "VOICE MATTERS"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:47
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:41
-msgid "members to date"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:53
-#: rapidsms_ureport/ureport/templates/layout.html:86
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:53
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:101
-msgid "HOME"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:55
-#: rapidsms_ureport/ureport/templates/layout.html:93
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:107
-msgid "POLL ADMIN"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:56
-#: rapidsms_ureport/ureport/templates/layout.html:94
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:108
-msgid "MESSAGE LOG"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:57
-#: rapidsms_ureport/ureport/templates/layout.html:95
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:109
-msgid "UREPORTERS"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:58
-#: rapidsms_ureport/ureport/templates/layout.html:96
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:110
-msgid "FLAGGED MESSAGES"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:59
-#: rapidsms_ureport/ureport/templates/layout.html:97
-msgid "MP BARAZA"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:60
-#: rapidsms_ureport/ureport/templates/layout.html:98
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:111
-msgid "A-CLASS"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:61
-msgid "Real Time"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:63
-#: rapidsms_ureport/ureport/templates/layout.html:101
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:114
-msgid "LOGIN"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:75
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:95
-msgid "Supported by"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:87
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:54
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:102
-msgid "POLL RESULTS"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:88
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:55
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:103
-msgid "ABOUT UREPORT"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:89
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:56
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:104
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:105
-msgid "HOW TO JOIN"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:99
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:112
-msgid "REAL TIME"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:105
-msgid "Copyright &copy; 2010 - 2012 UNICEF et al"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/layout.html:106
-msgid "RapidSMS and Ureport are available under the BSD license"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:57
-msgid "NATIONAL PULSE"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:66
-msgid ""
+msgstr  ""
+"ıɟ əıƃɥʇ ɐɹƃnɯəuʇs ɐɹə ƃıʌəu' ɟonɹʇɥ ɐɹƃnɯəuʇ ʇo %s tag must be 'cumulative'"
+msgid  "if eight arguments are given, fifth argument to %s tag must be 'count'"
+msgstr  "ıɟ əıƃɥʇ ɐɹƃnɯəuʇs ɐɹə ƃıʌəu' ɟıɟʇɥ ɐɹƃnɯəuʇ ʇo %s tag must be 'count'"
+msgid  "if eight arguments are given, seventh argument to %s tag must be 'in'"
+msgstr  "ıɟ əıƃɥʇ ɐɹƃnɯəuʇs ɐɹə ƃıʌəu' səʌəuʇɥ ɐɹƃnɯəuʇ ʇo %s tag must be 'in'"
+msgid  "%s tag requires a queryset"
+msgstr  "%s tag requires a queryset"
+msgid  "Voice Matters"
+msgstr  "Λoıɔə Wɐʇʇəɹs"
+msgid  "VOICE MATTERS"
+msgstr  "ΛOIƆƎ W∀⊥⊥ƎᴚS"
+msgid  "members to date"
+msgstr  "ɯəɯqəɹs ʇo pɐʇə"
+msgid  "HOME"
+msgstr  "HOWƎ"
+msgid  "POLL ADMIN"
+msgstr  "ԀO˥˥ ∀pWIN"
+msgid  "MESSAGE LOG"
+msgstr  "WƎSS∀פƎ ˥Oפ"
+msgid  "UREPORTERS"
+msgstr  "∩ᴚƎԀOᴚ⊥ƎᴚS"
+msgid  "FLAGGED MESSAGES"
+msgstr  "Ⅎ˥∀פפƎp WƎSS∀פƎS"
+msgid  "MP BARAZA"
+msgstr  "WԀ q∀ᴚ∀Z∀"
+msgid  "A-CLASS"
+msgstr  "∀-Ɔ˥∀SS"
+msgid  "Real Time"
+msgstr  "ᴚəɐl ⊥ıɯə"
+msgid  "LOGIN"
+msgstr  "˥OפIN"
+msgid  "Supported by"
+msgstr  "Snddoɹʇəp qʎ"
+msgid  "POLL RESULTS"
+msgstr  "ԀO˥˥ ᴚƎS∩˥⊥S"
+msgid  "ABOUT UREPORT"
+msgstr  "∀qO∩⊥ ∩ᴚƎԀOᴚ⊥"
+msgid  "HOW TO JOIN"
+msgstr  "HOM ⊥O ſOIN"
+msgid  "REAL TIME"
+msgstr  "ᴚƎ∀˥ ⊥IWƎ"
+msgid  "Copyright &copy; 2010 - 2012 UNICEF et al"
+msgstr  "Ɔodʎɹıƃɥʇ &ɔodʎ; ᄅ0Ɩ0 - ᄅ0Ɩᄅ ∩NIƆƎℲ əʇ ɐl"
+msgid  "RapidSMS and Ureport are available under the BSD license"
+msgstr  "ᴚɐdıpSWS ɐup ∩ɹədoɹʇ ɐɹə ɐʌɐılɐqlə nupəɹ ʇɥə qSp lıɔəusə"
+msgid  "NATIONAL PULSE"
+msgstr  "N∀⊥ION∀˥ Ԁ∩˥SƎ"
+msgid  ""
 "Ureport is a free SMS-based system that allows young Ugandans to speak out "
 "on what's happening in communities across the country, and work together "
 "with other community leaders for positive change."
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:76
-msgid "YOUR SAY:"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:118
-msgid "&copy; 2010 - 2012 UNICEF et al."
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/about.html:7
-msgid "Why Join Ureport"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/about.html:11
-#, fuzzy
-msgid ""
+msgstr  ""
+"∩ɹədoɹʇ ıs ɐ ɟɹəə SWS-qɐsəp sʎsʇəɯ ʇɥɐʇ ɐlloʍs ʎonuƃ ∩ƃɐupɐus ʇo sdəɐʞ onʇ "
+"ou ʍɥɐʇ,s ɥɐddəuıuƃ ıu ɔoɯɯnuıʇıəs ɐɔɹoss ʇɥə ɔonuʇɹʎ' ɐup ʍoɹʞ ʇoƃəʇɥəɹ "
+"ʍıʇɥ oʇɥəɹ ɔoɯɯnuıʇʎ ləɐpəɹs ɟoɹ dosıʇıʌə ɔɥɐuƃə˙"
+msgid  "YOUR SAY:"
+msgstr  "ʎO∩ᴚ S∀ʎ:"
+msgid  "&copy; 2010 - 2012 UNICEF et al."
+msgstr  "&ɔodʎ; ᄅ0Ɩ0 - ᄅ0Ɩᄅ ∩NIƆƎℲ əʇ ɐl˙"
+msgid  "Why Join Ureport"
+msgstr  "Mɥʎ ſoıu ∩ɹədoɹʇ"
+msgid  ""
 "<ul>\n"
 "\t    <li>Speak out on what's happening in your community</li>\n"
 "\t    <li>Use Ureport results and information to update and increase "
@@ -542,57 +261,50 @@ msgid ""
 "li>\n"
 "\t    <li>Share what's happening around Uganda with other Ureporters</li>\n"
 "\t</ul>"
-msgstr ""
-"<ul>\n"
-"\t    <li>U-report is the first tool of its kind in TW--Be part of Something "
-"new</li>\n"
-"\t    <li>You can use U-report to raise your voice and participate in a "
-"national discussion with youth like you</li>\n"
-"\t    <li>Share information about the positive things happening in your "
-"community, and raise awareness about issues that need attention </li>\n"
-"\t    <li>Tell your story and be heard by youth across South Sudan!</li>\n"
-"        </ul>"
-
-#: rapidsms_ureport/ureport/templates/ureport/about.html:24
-msgid "About Ureport"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/about.html:28
-msgid ""
+msgstr  ""
+"<ul>/u"
+"/ʇ    <li>Sdəɐʞ onʇ ou ʍɥɐʇ,s ɥɐddəuıuƃ ıu ʎonɹ ɔoɯɯnuıʇʎ</li>/u"
+"/ʇ    <li>∩sə ∩ɹədoɹʇ ɹəsnlʇs ɐup ıuɟoɹɯɐʇıou ʇo ndpɐʇə ɐup ıuɔɹəɐsə "
+"ɔıʇızəu,s ɐʍɐɹəuəss</li>/u"
+"/ʇ    <li>Ԁɐɹʇıɔıdɐʇə ıu uɐʇıouʍıpə ɔɐɯdɐıƃus ʇo ɥəld ıɯdɹoʌə ʎonɹ ɔonuʇɹʎ</"
+"li>/u"
+"/ʇ    <li>Sɥɐɹə ʍɥɐʇ,s ɥɐddəuıuƃ ɐɹonup ∩ƃɐupɐ ʍıʇɥ oʇɥəɹ ∩ɹədoɹʇəɹs</li>/u"
+"/ʇ</ul>"
+msgid  "About Ureport"
+msgstr  "∀qonʇ ∩ɹədoɹʇ"
+msgid  ""
 "Ureport is a free SMS-based system that allows\n"
 "                young Ugandans to speak out on what's happening in\n"
 "                communities across the country, and work together\n"
 "\t\twith other community leaders for positive change."
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/about.html:37
-msgid "Ureport is made up of"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/about.html:39
-msgid ""
+msgstr  ""
+"∩ɹədoɹʇ ıs ɐ ɟɹəə SWS-qɐsəp sʎsʇəɯ ʇɥɐʇ ɐlloʍs/u"
+"                ʎonuƃ ∩ƃɐupɐus ʇo sdəɐʞ onʇ ou ʍɥɐʇ,s ɥɐddəuıuƃ ıu/u"
+"                ɔoɯɯnuıʇıəs ɐɔɹoss ʇɥə ɔonuʇɹʎ' ɐup ʍoɹʞ ʇoƃəʇɥəɹ/u"
+"/ʇ/ʇʍıʇɥ oʇɥəɹ ɔoɯɯnuıʇʎ ləɐpəɹs ɟoɹ dosıʇıʌə ɔɥɐuƃə˙"
+msgid  "Ureport is made up of"
+msgstr  "∩ɹədoɹʇ ıs ɯɐpə nd oɟ"
+msgid  ""
 "Weekly SMS messages and polls to and from\n"
 "\t\t\ta growing community of Ureporters"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/about.html:43
-msgid ""
+msgstr  ""
+"Məəʞlʎ SWS ɯəssɐƃəs ɐup dolls ʇo ɐup ɟɹoɯ/u"
+"/ʇ/ʇ/ʇɐ ƃɹoʍıuƃ ɔoɯɯnuıʇʎ oɟ ∩ɹədoɹʇəɹs"
+msgid  ""
 "Regular radio programs that will broadcast\n"
 "\t\t\tstories gathered by Ureport"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/about.html:47
-msgid ""
+msgstr  ""
+"ᴚəƃnlɐɹ ɹɐpıo dɹoƃɹɐɯs ʇɥɐʇ ʍıll qɹoɐpɔɐsʇ/u"
+"/ʇ/ʇ/ʇsʇoɹıəs ƃɐʇɥəɹəp qʎ ∩ɹədoɹʇ"
+msgid  ""
 "Newspaper articles that will publish stories from\n"
 "\t\t\tthe Ureport community."
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/about.html:53
-msgid "The mission of Ureport"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/about.html:56
-msgid ""
+msgstr  ""
+"Nəʍsdɐdəɹ ɐɹʇıɔləs ʇɥɐʇ ʍıll dnqlısɥ sʇoɹıəs ɟɹoɯ/u"
+"/ʇ/ʇ/ʇʇɥə ∩ɹədoɹʇ ɔoɯɯnuıʇʎ˙"
+msgid  "The mission of Ureport"
+msgstr  "⊥ɥə ɯıssıou oɟ ∩ɹədoɹʇ"
+msgid  ""
 "Inspire action within our communities to unite\n"
 "                    and share the responsibility of creating a better\n"
 "                    environment for eveyone.<br/>\n"
@@ -602,155 +314,101 @@ msgid ""
 "                    Share info that Ureport gathers through different\n"
 "                    mediums (radio, TV, community dialogue, website,\n"
 "\t\t    and youth events)"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/home.html:21
-msgid "PREVIOUS POLLS"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/home.html:33
-msgid "See results"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:5
-msgid "How To Join"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:10
-msgid "Step 2"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:12
-msgid ""
+msgstr  ""
+"Iusdıɹə ɐɔʇıou ʍıʇɥıu onɹ ɔoɯɯnuıʇıəs ʇo nuıʇə/u"
+"                    ɐup sɥɐɹə ʇɥə ɹəsdousıqılıʇʎ oɟ ɔɹəɐʇıuƃ ɐ qəʇʇəɹ/u"
+"                    əuʌıɹouɯəuʇ ɟoɹ əʌəʎouə˙<br/>/u"
+"                    Iusdıɹə ɐɔʇıou ɟɹoɯ onɹ ləɐpəɹs - ləʇ ʇɥəɯ ʞuoʍ/u"
+"                    ʍɥɐʇ,s ƃoıuƃ ou ɐup ʍɥɐʇ ɐɔʇıou ʎonɹ ɔoɯɯnuıʇʎ ʍɐuʇs˙<br/"
+">/u"
+"                    Sɥɐɹə ıuɟo ʇɥɐʇ ∩ɹədoɹʇ ƃɐʇɥəɹs ʇɥɹonƃɥ pıɟɟəɹəuʇ/u"
+"                    ɯəpınɯs )ɹɐpıo' ⊥Λ' ɔoɯɯnuıʇʎ pıɐloƃnə' ʍəqsıʇə'/u"
+"/ʇ/ʇ    ɐup ʎonʇɥ əʌəuʇs("
+msgid  "PREVIOUS POLLS"
+msgstr  "ԀᴚƎΛIO∩S ԀO˥˥S"
+msgid  "See results"
+msgstr  "Səə ɹəsnlʇs"
+msgid  "How To Join"
+msgstr  "Hoʍ ⊥o ſoıu"
+msgid  "Step 2"
+msgstr  "Sʇəd ᄅ"
+msgid  ""
 "You will receive a greeting message and a series of quetions , to find out "
 "more about you\n"
 "    (Ureport needs to know your District but all other quetions are optional)"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:21
-msgid "Step 1"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:21
-msgid ""
+msgstr  ""
+"ʎon ʍıll ɹəɔəıʌə ɐ ƃɹəəʇıuƃ ɯəssɐƃə ɐup ɐ səɹıəs oɟ bnəʇıous ' ʇo ɟıup onʇ "
+"ɯoɹə ɐqonʇ ʎon/u"
+"    )∩ɹədoɹʇ uəəps ʇo ʞuoʍ ʎonɹ pısʇɹıɔʇ qnʇ ɐll oʇɥəɹ bnəʇıous ɐɹə odʇıouɐl("
+msgid  "Step 1"
+msgstr  "Sʇəd Ɩ"
+msgid  ""
 "Text the word Join to 8500\n"
 "    - all Ureport SMSs are free!"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:30
-msgid "Step 4"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:32
-msgid ""
+msgstr  ""
+"⊥əxʇ ʇɥə ʍoɹp ſoıu ʇo 8ϛ00/u"
+"    - ɐll ∩ɹədoɹʇ SWSs ɐɹə ɟɹəə¡"
+msgid  "Step 4"
+msgstr  "Sʇəd ㄣ"
+msgid  ""
 " As a Ureporter, you will get weekly poll results, and meaningful "
 "information to assist you to enact change in\n"
 "    your community."
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:40
-msgid "Step 3"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:42
-msgid "After you answer the quetions about you, you are a member of Ureport!"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:3
-msgid "National Pulse"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:46
-msgid "Reset All"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:50
-msgid ""
+msgstr  ""
+" ∀s ɐ ∩ɹədoɹʇəɹ' ʎon ʍıll ƃəʇ ʍəəʞlʎ doll ɹəsnlʇs' ɐup ɯəɐuıuƃɟnl "
+"ıuɟoɹɯɐʇıou ʇo ɐssısʇ ʎon ʇo əuɐɔʇ ɔɥɐuƃə ıu/u"
+"    ʎonɹ ɔoɯɯnuıʇʎ˙"
+msgid  "Step 3"
+msgstr  "Sʇəd Ɛ"
+msgid  "After you answer the quetions about you, you are a member of Ureport!"
+msgstr  "∀ɟʇəɹ ʎon ɐusʍəɹ ʇɥə bnəʇıous ɐqonʇ ʎon' ʎon ɐɹə ɐ ɯəɯqəɹ oɟ ∩ɹədoɹʇ¡"
+msgid  "National Pulse"
+msgstr  "Nɐʇıouɐl Ԁnlsə"
+msgid  "Reset All"
+msgstr  "ᴚəsəʇ ∀ll"
+msgid  ""
 "Welcome to National Pulse where you can see what is trending within the U-"
 "report community."
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:50
-msgid ""
+msgstr  ""
+"Məlɔoɯə ʇo Nɐʇıouɐl Ԁnlsə ʍɥəɹə ʎon ɔɐu səə ʍɥɐʇ ıs ʇɹəupıuƃ ʍıʇɥıu ʇɥə ∩-"
+"ɹədoɹʇ ɔoɯɯnuıʇʎ˙"
+msgid  ""
 "Click on your district to see what the young people are talking about where "
 "you live."
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:52
-msgid "Current filter"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/partials/tag_cloud/tag_cloud.html:148
-msgid "edit excluded tags"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/best_visualization.html:4
-msgid "CURRENT POLL"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/best_visualization.html:18
-msgid "Responses out of"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/best_visualization.html:18
-msgid "Participants"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/best_visualization.html:55
-msgid "More"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:6
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:11
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:16
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:21
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:26
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:211
-msgid "No"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:31
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:35
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:39
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:43
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:47
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:51
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:56
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:61
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:66
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:71
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:208
-msgid "Yes"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:75
-msgid "Split Results"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:204
-msgid "District"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:6
-msgid "Male"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:7
-msgid "Female"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:13
-msgid "Start Age"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:16
-msgid "End Age"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:19
-msgid "Filter By Age"
-msgstr ""
-
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/top_responses.html:2
-msgid "Top Responses"
-msgstr ""
+msgstr  ""
+"Ɔlıɔʞ ou ʎonɹ pısʇɹıɔʇ ʇo səə ʍɥɐʇ ʇɥə ʎonuƃ dəodlə ɐɹə ʇɐlʞıuƃ ɐqonʇ ʍɥəɹə "
+"ʎon lıʌə˙"
+msgid  "Current filter"
+msgstr  "Ɔnɹɹəuʇ ɟılʇəɹ"
+msgid  "edit excluded tags"
+msgstr  "əpıʇ əxɔlnpəp ʇɐƃs"
+msgid  "CURRENT POLL"
+msgstr  "Ɔ∩ᴚᴚƎN⊥ ԀO˥˥"
+msgid  "Responses out of"
+msgstr  "ᴚəsdousəs onʇ oɟ"
+msgid  "Participants"
+msgstr  "Ԁɐɹʇıɔıdɐuʇs"
+msgid  "More"
+msgstr  "Woɹə"
+msgid  "No"
+msgstr  "No"
+msgid  "Yes"
+msgstr  "ʎəs"
+msgid  "Split Results"
+msgstr  "Sdlıʇ ᴚəsnlʇs"
+msgid  "District"
+msgstr  "pısʇɹıɔʇ"
+msgid  "unknown"
+msgstr  "nuʞuoʍu"
+msgid  "Male"
+msgstr  "Wɐlə"
+msgid  "Female"
+msgstr  "Ⅎəɯɐlə"
+msgid  "Start Age"
+msgstr  "Sʇɐɹʇ ∀ƃə"
+msgid  "End Age"
+msgstr  "Ǝup ∀ƃə"
+msgid  "Filter By Age"
+msgstr  "Ⅎılʇəɹ qʎ ∀ƃə"
+msgid  "Top Responses"
+msgstr  "⊥od ᴚəsdousəs"

@@ -108,7 +108,7 @@ function command.run-unit-tests() {
 
 function set-test-server-url() {
     TEST_SERVER_IPADDRESS=$(knife search node ci-dev-appserver -a ipaddress | awk '/ipaddress/ {print $2;}')
-    sed -i '' "s#TEST_SERVER_URL = \"http://127\.0\.0\.1\"#TEST_SERVER_URL = \"http://$TEST_SERVER_IPADDRESS\"#" ureport_project/ci_settings.py
+    awk "/TEST_SERVER_URL/ { \$3=\"\\\"http://${TEST_SERVER_IPADDRESS}\\\"\";print;next; } 1" ureport_project/ci_settings.py > tmp_settings && mv tmp_settings ureport_project/ci_settings.py
 }
 
 function command.run-functional-tests-against-ci() {

@@ -24,7 +24,7 @@ SOUTH_TESTS_MIGRATE = False
 #os.environ['REUSE_DB'] = "1"
 
 GEOSERVER_URL = "/geoserver/"
-TEST_SERVER_URL = "http://127.0.0.1"
+TEST_SERVER_URL = "http://localhost:8088"
 
 DATABASES = {
     'default': {
@@ -56,6 +56,7 @@ INSTALLED_BACKENDS = {
 }
 
 STATIC_URL="/static/media/"
+ADMIN_MEDIA_PREFIX="/media/"
 
 COMPUTE_COVERAGE="ureport"
 

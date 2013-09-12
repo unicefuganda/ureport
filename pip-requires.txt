@@ -40,7 +40,7 @@ python-dateutil==1.5
 python-digest==1.7
 python-memcached==1.48
 pytz==2012h
-selenium==2.32.0
+selenium==2.355555.0
 simplejson==3.0.7
 splinter==0.5.0
 six==1.3.0

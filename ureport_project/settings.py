@@ -112,6 +112,7 @@ INSTALLED_APPS = [
     # the rapidsms contrib apps.
     "rapidsms.contrib.default",
     "rapidsms.contrib.locations",
+    "rapidsms.contrib.messagelog",
     "rapidsms.contrib.locations.nested",
     "geoserver",
     "rapidsms.contrib.messaging",

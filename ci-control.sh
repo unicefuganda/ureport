@@ -106,8 +106,24 @@ function command.run-unit-tests() {
 
 }
 
-#http://stackoverflow.com/questions/6183276/how-do-i-run-selenium-in-xvfb
+function set-test-server-url() {
+    TEST_SERVER_IPADDRESS=$(knife search node ci-dev-appserver -a ipaddress | awk '/ipaddress/ {print $2;}')
+    sed -i '' "s#TEST_SERVER_URL = \"http://127\.0\.0\.1\"#TEST_SERVER_URL = \"http://$TEST_SERVER_IPADDRESS\"#" ureport_project/ci_settings.py
+}
+
+function command.run-functional-tests-against-ci() {
+    set-test-server-url
+    RUN_ON_DEV_BOX=$1
+    run-functional-tests $RUN_ON_DEV_BOX
+}
+
 function command.run-functional-tests() {
+    RUN_ON_DEV_BOX=$1
+    run-functional-tests $RUN_ON_DEV_BOX
+}
+
+#http://stackoverflow.com/questions/6183276/how-do-i-run-selenium-in-xvfb
+function run-functional-tests() {
     RUN_ON_DEV_BOX=$1
     local NOSE_TEST_REPORT="target/reports/functional-test/nosetests.ureport.xml"
 
@@ -130,7 +146,6 @@ function command.run-functional-tests() {
  
     LAST_COMMAND=$?
 
-    cd ureport_project
     tidy -xml -o ${NOSE_TEST_REPORT} ${NOSE_TEST_REPORT}
 
     cat ${NOSE_TEST_REPORT} | sed 's_name\=\"nosetests\"_name\=\"functional-tests.ureport\"_'> ${NOSE_TEST_REPORT}.replaced

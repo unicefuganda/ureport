@@ -96,6 +96,12 @@ LOGGING = {
     },
     'loggers': {
 
+        'selenium.webdriver.remote.remote_connection' : {
+            'handlers': ['application_log_file'],
+            'level': 'ERROR',
+            'propagate': True,
+         },
+
         'django' : {
             'handlers': ['application_log_file'],
             'level': 'ERROR',

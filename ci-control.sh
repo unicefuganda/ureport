@@ -107,12 +107,19 @@ function command.run-unit-tests() {
 }
 
 function set-test-server-url() {
-    TEST_SERVER_IPADDRESS=$(knife search node ci-dev-appserver -a ipaddress | awk '/ipaddress/ {print $2;}')
+    TEST_SERVER_IPADDRESS=$1
     awk "/TEST_SERVER_URL/ { \$3=\"\\\"http://${TEST_SERVER_IPADDRESS}\\\"\";print;next; } 1" ureport_project/ci_settings.py > tmp_settings && mv tmp_settings ureport_project/ci_settings.py
 }
 
+function command.run-functional-tests-against() {
+    set-test-server-url $1
+    RUN_ON_DEV_BOX=$2
+    run-functional-tests $RUN_ON_DEV_BOX
+}
+
 function command.run-functional-tests-against-ci() {
-    set-test-server-url
+    IPADDRESS=$(knife search node ci-dev-appserver -a ipaddress | awk '/ipaddress/ {print $2;}')
+    set-test-server-url $IPADDRESS
     RUN_ON_DEV_BOX=$1
     run-functional-tests $RUN_ON_DEV_BOX
 }
@@ -137,9 +144,12 @@ function run-functional-tests() {
     mkdir -p target/reports/functional-test
     rm -rf target/reports/functional-test/screenshots
     mkdir -p target/reports/functional-test/screenshots
-    
+   
+    #Do not recreate database on each test run
+    export REUSE_DB="1"
+ 
     if [[ "$RUN_ON_DEV_BOX" == "local" ]]; then
-   	bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
+   	bash -c "source ${VIRTUALENV_ACTIVATE} &&  ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
     else
 	bash -c "source ${VIRTUALENV_ACTIVATE} && DISPLAY=:1 xvfb-run ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
     fi

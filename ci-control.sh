@@ -144,9 +144,12 @@ function run-functional-tests() {
     mkdir -p target/reports/functional-test
     rm -rf target/reports/functional-test/screenshots
     mkdir -p target/reports/functional-test/screenshots
-    
+   
+    #Do not recreate database on each test run
+    export REUSE_DB="1"
+ 
     if [[ "$RUN_ON_DEV_BOX" == "local" ]]; then
-   	bash -c "source ${VIRTUALENV_ACTIVATE} && ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
+   	bash -c "source ${VIRTUALENV_ACTIVATE} &&  ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
     else
 	bash -c "source ${VIRTUALENV_ACTIVATE} && DISPLAY=:1 xvfb-run ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
     fi

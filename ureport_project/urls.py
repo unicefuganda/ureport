@@ -1,7 +1,8 @@
 from django.conf.urls.defaults import *
 from django.conf import settings
 from django.contrib import admin
-from django.views.decorators.cache import cache_page
+from django.views.decorators.cache import never_cache
+import rapidsms
 from rapidsms_httprouter.urls import urlpatterns as router_urls
 from ureport.urls import urlpatterns as ureport_urls
 from contact.urls import urlpatterns as contact_urls
@@ -10,6 +11,7 @@ from django.contrib.auth.views import password_change
 from tracking.urls import urlpatterns as tracking_urls
 from generic.urls import urlpatterns as generic_urls
 from django.views.generic.simple import direct_to_template
+from ureport.views import national_pulse
 from ussd.urls import urlpatterns as ussd_urls
 from message_classifier.urls import urlpatterns as class_urls
 #from script.urls import urlpatterns as script_urls
@@ -32,6 +34,7 @@ urlpatterns = patterns('',
     url('^accounts/logout', 'rapidsms.views.logout'),
     url('^accounts/change_password', login_required(password_change), {'template_name':'ureport/change_password.html', 'post_change_redirect':'/'}),
     url(r'^national-pulse/$', direct_to_template, {'template': 'ureport/national_pulse.html'}, name='pulse'),
+    url(r'^national-pulse/(?P<period>\w+)/$', national_pulse, name='pulse'),
     url(r'^national-pulse-mock/$', direct_to_template, {'template': 'ureport/national_pulse_mock.html'}),
     # RapidSMS contrib app URLs
     url(r'^ajax/', include('rapidsms.contrib.ajax.urls')),

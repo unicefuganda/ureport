@@ -8,7 +8,7 @@ COMMAND=$1
 function command.help() {
     echo -e "\nUSAGE:\n"
     echo -e "\nci-control <COMMAND>"
-    echo -e "\nCommand is one of [help|update-python-env|run-unit-tests]\n"
+    echo -e "\nCommand is [help|update-python-env|run-server|run-unit-tests|run-functional-tests] or one of many others.\n"
 }
 
 function command.update-python-env() {

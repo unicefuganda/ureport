@@ -149,7 +149,7 @@ function run-functional-tests() {
     if [[ "$RUN_ON_DEV_BOX" == "local" ]]; then
    	bash -c "source ${VIRTUALENV_ACTIVATE} &&  ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
     else
-	bash -c "source ${VIRTUALENV_ACTIVATE} && Xvfb :5 -ac -screen 0 1024x768x8 -extension GLX -kb & ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
+	bash -c "source ${VIRTUALENV_ACTIVATE} && DISPLAY=:1 xvfb-run ./manage.py test ${FUNCTIONAL_TEST_FILE} --noinput --verbosity=2 --settings=functional_test_settings"
     fi
  
     LAST_COMMAND=$?
@@ -249,7 +249,7 @@ function init() {
     echo "-----------------------------------------------------------------------------"
     CURRENT_DIR=`pwd`
     LAST_COMMAND=0
-    defaultEnv "UREPORT_VIRTUAL_ENV_HOME" "/Users/lnunes/ureport/virtualenv/ureport"
+    defaultEnv "UREPORT_VIRTUAL_ENV_HOME" "/home/ureport/virtualenv/ureport"
     defaultEnv "UREPORT_SETTINGS_FILE" "ci_settings"
 
     VIRTUALENV_ACTIVATE="${UREPORT_VIRTUAL_ENV_HOME}/bin/activate"

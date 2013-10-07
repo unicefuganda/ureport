@@ -17,3 +17,4 @@ ureport_project/excel_contacts
 ureport_project/media
 tags
 *log*
+*celerybeat-schedule

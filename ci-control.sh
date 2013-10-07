@@ -134,7 +134,7 @@ function run-functional-tests() {
     RUN_ON_DEV_BOX=$1
     local NOSE_TEST_REPORT="target/reports/functional-test/nosetests.ureport.xml"
 
-    local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/funct_poll_flow.py"
+    local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/funct_*.py"
 
     cd ureport_project
     echo "Running the functional tests from [${FUNCTIONAL_TEST_FILE}]"

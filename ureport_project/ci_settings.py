@@ -24,7 +24,7 @@ SOUTH_TESTS_MIGRATE = False
 #os.environ['REUSE_DB'] = "1"
 
 GEOSERVER_URL = "/geoserver/"
-TEST_SERVER_URL = "http://localhost"
+TEST_SERVER_URL = "http://162.13.95.58"
 
 DATABASES = {
     'default': {

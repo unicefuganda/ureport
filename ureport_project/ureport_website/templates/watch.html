@@ -3,6 +3,7 @@
 {% block watch-active %}current-page{% endblock %}
 
 {% load websitetags %}
+{% load url from future %}
 
 {% block content %}
 
@@ -16,7 +17,7 @@
                     <div class="viewport">
                         <ul class="overview">
                             {% for watch in watchList reversed %}
-                                <li><a href="/watch/{{watch.slug}}"><img src="{{watch.videourl|youtube_thumbnail:'l'}}" title="{{watch.title}}" /></a>
+			        <li><a href="{% url 'website-watch-detail' watch.slug %}"><img src="{{watch.videourl|youtube_thumbnail:'l'}}" title="{{watch.title}}" /></a>
                                     <p>{{watch.title}}</p>
                                 </li>
                             {% empty %}

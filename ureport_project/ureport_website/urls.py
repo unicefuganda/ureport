@@ -28,5 +28,5 @@ urlpatterns = patterns(
     url(r'^read/(?P<slug>[\w\-]+)/$', 'ureport_website.views.readDetail'),
 
     url(r'^watch$', 'ureport_website.views.watch', name='website-watch'),
-    url(r'^watch/(?P<slug>[\w\-]+)/$', 'ureport_website.views.watchDetail'),
+    url(r'^watch/(?P<slug>[\w\-]+)/$', 'ureport_website.views.watchDetail', name='website-watch-detail'),
 )

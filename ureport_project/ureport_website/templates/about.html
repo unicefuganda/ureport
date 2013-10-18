@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+<!-- add active tag to main navigation -->
+{% block about-active %}current-page{% endblock %}
+
+{% block content %}
+
+<!-- About Ureport content -->
+<div class="site-wrapper">
+  <div class="row-content">
+    <div class="page-title">About UReport</div>
+    <div class="main-content">
+      <p>Ureport is a free SMS-based system that allows young Ugandans to speak out on what's happening in communities across the country, and work together with other community leaders for positive change.</p>
+      <p><b>Ureport is made up of:</b><br>
+      <ul>
+        <li>Weekly SMS messages and polls to and from a growing community of Ureporters</li>
+        <li>Regular radio programs that will broadcast stories gathered by Ureport</li>
+        <li>Newspaper articles that will publish stories from the Ureport community.</li>
+      </ul>
+      </p>
+      <p>
+      <b>The mission of Ureport</b>
+      <ul>
+        <li>Inspire action within our communities to unite and share the responsibility of creating a better environment for eveyone.</li>
+        <li>Inspire action from our leaders - let them know what's going on and what action your community wants.</li>
+        <li>Share info that Ureport gathers through different mediums (radio, TV, community dialogue, website, and youth events)</li>
+      </ul>
+      </p>
+      <p><a href="engage" class="btn btn-primary btn-lg">How to join</a></p>
+      <div class="ureport_globally">
+        <div class="ureport_globally_title">Ureport Globally</div>
+        <div class="country-drop">
+          <form class="navbar-form pull-left">
+            <select name id class="form-control" style="width:200px;">
+            <option calue="Kenya">Kenya</option>
+            <option calue="Tanzania">Tanzania</option>
+            <option calue="Rwanda">Rwanda</option>
+            <option calue="Ethiopia">Ethiopia</option>
+            <option calue="Ghana">Ghana</option>
+            <option calue="Nigeria">Nigeria</option>
+            </select>
+            <button type="submit" class="btn btn-default">Go</button>
+          </form>
+        </div>
+        <img src="{{ STATIC_URL }}ureport_website/img/map.png" height="196" width="630"/>
+      </div>
+    </div>
+          
+      <!-- AddThis Button BEGIN -->
+    <div class="sharebar">
+      <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+        <div class="sharetext">Share this</div>
+            <a class="addthis_button_facebook"></a>
+            <a class="addthis_button_twitter"></a>
+            <a class="addthis_button_google_plusone_share"></a>
+            <a class="addthis_button_email"></a>
+            <a class="addthis_button_linkedin"></a>
+            <a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+      </div>
+          <script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+          <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+    </div>
+  </div>
+      <!-- AddThis Button END -->
+
+  <div class="sidebar">
+    <div class="page-picture"><img src="{{ STATIC_URL }}ureport_website/img/about_image.jpg" height="341" width="350"/></div>
+    <div class="page-quote">
+      {% with  quoteList|random as randomQuote %}
+        <div class="quote-question">{{randomQuote.question}}</div>
+        <div class="quote-answer">{{randomQuote.content}}</div>
+        <div class="quote-author"> ~ {{randomQuote.author}}</div>
+      {% endwith %}
+    </div>
+    <div class="page-ad"><img src="{{ STATIC_URL }}ureport_website/img/become_rest.gif" height="135" width="350"/></div>
+  </div>
+</div>
+
+{% endblock %}

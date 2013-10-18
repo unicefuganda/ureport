@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+<!-- add active tag to main navigation -->
+{% block watch-active %}current-page{% endblock %}
+
+{% load websitetags %}
+
+{% block content %}
+
+<!-- About Ureport content -->
+<div class="site-wrapper">
+    <div class="row-content">
+        <div class="page-title">Partners</div>
+        <div class="page-text">
+            <div id="slider3">
+                <a class="buttons prev" href="#">left</a>
+                    <div class="viewport">
+                        <ul class="overview">
+                            {% for watch in watchList reversed %}
+                                <li><a href="/watch/{{watch.slug}}"><img src="{{watch.videourl|youtube_thumbnail:'l'}}" title="{{watch.title}}" /></a>
+                                    <p>{{watch.title}}</p>
+                                </li>
+                            {% empty %}
+                            <div class="no-entries">Sorry, no videos listed</div>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                <a class="buttons next" href="#">right</a>
+            </div>
+            <div class="page-content">
+                {% if watchLatest %}
+                <h2>{{watchLatest.title}}</h2>
+                <div><iframe width="100%" height="315" src="{{watchLatest.videourl|youtube_embed}}" frameborder="0" allowfullscreen></iframe></div>
+                <div class="page-content-inline">{{watchLatest.content|linebreaks}}</div>
+                {% else %}
+                <div class="no-entries">Sorry, no videos listed yet</div>
+                {% endif %}
+            </div>
+        </div>
+          
+        <!-- AddThis Button BEGIN -->
+        <div class="sharebar">
+            <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+                <div class="sharetext">Share this</div>
+                    <a class="addthis_button_facebook"></a>
+                    <a class="addthis_button_twitter"></a>
+                    <a class="addthis_button_google_plusone_share"></a>
+                    <a class="addthis_button_email"></a>
+                    <a class="addthis_button_linkedin"></a>
+                    <a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+                </div>
+            <script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+        </div>
+    </div>
+    <!-- AddThis Button END -->
+
+    <div class="sidebar">
+        <div class="page-picture"><img src="{{ STATIC_URL }}ureport_website/img/watch_image.jpg" height="341" width="350"/></div>
+        <div class="page-quote">
+            {% with  quoteList|random as randomQuote %}
+                <div class="quote-question">{{randomQuote.question}}</div>
+                <div class="quote-answer">{{randomQuote.content}}</div>
+                <div class="quote-author"> ~ {{randomQuote.author}}</div>
+            {% endwith %}
+        </div>
+    <div class="page-ad"><img src="{{ STATIC_URL }}ureport_website/img/become_rest.gif" height="135" width="350"/></div>
+  </div>
+</div>
+
+<!-- Javascript for scroller -->
+<script type="text/javascript" src="{{ STATIC_URL }}ureport_website/js/jquery.tinycarousel.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#slider3').tinycarousel({ display: 3 }); 
+    });
+</script>
+
+{% endblock %}

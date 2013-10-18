@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% load websitetags %}
+{% block content %}
+
+<!-- Image slider -->
+    
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+	    <img src="{{ STATIC_URL }}ureport_website/img/slider/slide1.jpg" alt="">
+          <div class="site-wrapper">
+            <div class="carousel-caption">
+              <h1>Allowing young Ugandans to speak out.</h1>
+              <p class="lead">UReport allows us to engage on what's happening in our communities across the country, and work together with other community leaders for positive change</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+	    <img src="{{ STATIC_URL }}ureport_website/img/slider/slide2.jpg" alt="">
+          <div class="site-wrapper">
+            <div class="carousel-caption">
+              <h1>Inspiring action within our communities via SMS.</h1>
+              <p class="lead">UReport  helps us unite and share the responsibility of creating a better environment for eveyone.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+	    <img src="{{ STATIC_URL }}ureport_website/img/slider/slide3.jpg" alt="">
+          <div class="site-wrapper">
+            <div class="carousel-caption">
+              <h1>Inspiring action from our leaders.</h1>
+              <p class="lead">UReport lets our leaders know what's going on and what action our communities want.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+    
+    <!-- Image slider end -->
+
+    <!-- Homepage widgets -->
+    
+    <div class="widgets-container site-wrapper">
+        <div class="row">
+            <div class="about 3columns">
+                <h4>About Ureport</h4>
+                <p>Ureport is a free SMS-based system that allows young Ugandans to speak out on what's happening in communities across the country, and work together with other community leaders for positive change.</p>
+		<img src="{{ STATIC_URL }}ureport_website/img/about_us_home.jpg" width="345"/>
+                <a href="about-ureport">Read more about the project</a>
+            </div>
+            <div class="whyjoin 3columns">
+                <h4>Why join Ureport</h4>
+                <ul>
+                    <li>Speak out on what's happening in your community</li>
+                    <li>Use Ureport results and information to update and increase citizen's awareness</li>
+                    <li>Participate in nationwide campaigns to help improve your country</li>
+                    <li>Share what's happening around Uganda with other UReporters</li>
+                </ul>
+            </div>
+            <div class="latestpoll 3columns">
+                <h4>Latest polls</h4>
+                <div class="question">Hello U-reporter! Do you know of any child (below 18yrs) marriages in the community you live in, Yes or No and if Yes how many</div>
+                <div class="date">18th June 2013</div>
+                <div class="responses">27,168 responses out of 208,453 participants (13%)</div>
+                <div class="link"><a href="polls">View this poll</a></div>
+                  
+                <div class="linky_polls"><a href="polls-list">View all poll results</a></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="read 3columns">
+                <h4>Read</h4>
+                <div class="read-content">
+
+                {% if readList %}
+                {% with readList|first as latestRead %}
+                <span>{{latestRead.title}}</span>
+                <p class="date">{{latestRead.created|date}}</p>
+		<img src="{{ MEDIA_URL}}{{latestRead.image}}" title="{{latestRead.title}}" align="left" />{{latestRead.content|truncatewords:50}}
+                <a href="/read/{{latestRead.slug}}">read more</a>
+                {% endwith %}
+                {% else %}
+                <div class="no-entries">Sorry, no news articles listed yet</div>
+                {% endif %}
+
+                </div>
+                <div class="linky_read"><a href="read">Read all stories</a></div>
+            </div>
+            <div class="watch 3columns">
+                <h4>Watch</h4>
+                <div class="watchbox">
+               {% if watchLatest %}
+                    <div class="tube"><iframe width="345" height="190" src="{{watchLatest.videourl|youtube_embed}}" frameborder="0" allowfullscreen></iframe></div>
+                {% else %}
+                    <div class="no-entries">Sorry, no videos listed yet</div>
+                {% endif %}
+                </div>
+                <div class="linky"><a href="watch">Watch all videos</a></div>
+            </div>
+            <div class="engagebox 3columns">
+                <div class="engage">
+                    <h4>Engage</h4>
+		    <a href="engage"><img src="{{ STATIC_URL }}ureport_website/img/engage_home.gif" height="109" width="303"/></a>
+                </div>
+                <div class="becomeureporter">
+                    <h4>Become a Ureporter</h4>
+		    <img src="{{ STATIC_URL }}ureport_website/img/become_home.gif" height="36" width="303"/>
+                </div>
+                <div class="socialmedia">
+                    <div class="social">
+                        <a class="facebook" href="https://facebook.com/UReportUganda‎" target="_blank"></a>
+                        <a class="googleplus" href=""></a>
+                        <a class="flickr" href=""></a>
+                        <a class="twitter" href="https://twitter.com/UReportUganda" target="_blank"></a>
+                        <a class="youtube" href="https://youtube.com/user/UNICEFUganda‎" target="_blank"></a>
+                    </div>
+                </div>                    
+            </div>
+        </div>            
+    </div>
+
+{% endblock %}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load websitetags %}
+{% load url from future %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>UReport - Voice Matters</title>
+    <meta name="description" content="">
+    <meta name="author" content="Alan Kawamara">
+    {% favicon_tag %}
+    {% bootstrap_stylesheet_tag %}
+    {% theme_stylesheet_tag %}
+    {% bootstrap_stylesheet_tag "responsive" %}
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    {% block extra_head %}{% endblock %}
+</head>
+
+<body>
+<!-- Header - logo and navigation -->
+<div class="site-wrapper">
+    <div class="header row">
+            <div class="navbar">
+                <!-- Ureporter logo -->
+		<a href="{% url 'website-index' %}"><div id="logo">Ureport</div></a>
+                
+                <!-- Placement of UReporter counter code -->
+                
+                <div id="ureporters-stat"><div>123,313</div><div id="ureporters-stat-sub">Ureporters and counting</div></div>
+
+                <!-- Main website navigation -->
+                <div> 
+
+
+		    <ul class="nav pull-right">
+			<li class="{% block about-active %}{% endblock %}"><a href={% url 'website-about-ureport' %}>About UReport</a></li>
+			<li class="{% block partners-active %}{% endblock %}"><a href={% url 'website-partners' %}>Partners</a></li>
+			<li class="{% block polls-active %}{% endblock %}"><a href={% url 'website-polls' %}>Polls</a></li>
+			<li class="{% block national-pulse-active %}{% endblock %}"><a href={% url 'website-national-pulse' %}>National Pulse</a></li>
+			<li class="{% block read-active %}{% endblock %}"><a href={% url 'website-read' %}>Read</a></li>
+			<li class="{% block watch-active %}{% endblock %}"><a href={% url 'website-watch' %}>Watch</a></li>
+			<li class="{% block engage-active %}{% endblock %}"><a href={% url 'website-engage' %}>Engage</a></li>
+		    </ul>
+                </div>
+            </div>
+    </div>
+</div> 
+
+<div class="">
+    <!-- Main content area -->
+    
+    {% block content %}Empty page{% endblock %}
+
+    <!-- Footer section -->
+
+    <footer>
+        <div class="site-wrapper">
+            <div class="footer-border"></div>
+            <div class="row">
+                <div class="copyright">
+		    <p>UReport &copy; {% now "Y" %} - All rights reserved. &nbsp;&nbsp;<a href="{% url 'website-about-ureport' %}">About Ureport</a> | <a href="{% url 'website-engage' %}">How to join</a> | <a href="{% url 'website-partners' %}">Our partners</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div> 
+<!-- container -->
+
+    <script src="{{ STATIC_URL }}ureport_website/js/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    {% bootstrap_javascript_tag %}
+</body>
+</html>

@@ -14,7 +14,8 @@ from ussd.urls import urlpatterns as ussd_urls
 from message_classifier.urls import urlpatterns as class_urls
 admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = patterns(
+    '',
     # Uncomment the admin/doc line below to enable admin documentation:
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
@@ -24,12 +25,12 @@ urlpatterns = patterns('',
     (r'^account/', include('rapidsms.urls.login_logout')),
     #url(r'^$', cache_page(direct_to_template), {'template':'ureport/home.html'}, name="new_home"),
     url(r'^$', 'ureport.views.dashboard_views.home', name="new_home"),
-    url(r'^join/$', direct_to_template, {'template':'ureport/how_to_join.html'}),
-    url(r'^about_ureport/$', direct_to_template, {'template':'ureport/about.html'}),
-    url(r'^ureport-admin$', 'ureport.views.ureport_content', {'slug':'ureport_home', 'base_template':'ureport/three-square.html', 'num_columns':3}, name='rapidsms-dashboard'),
+    url(r'^join/$', direct_to_template, {'template': 'ureport/how_to_join.html'}),
+    url(r'^about_ureport/$', direct_to_template, {'template': 'ureport/about.html'}),
+    url(r'^ureport-admin$', 'ureport.views.ureport_content', {'slug': 'ureport_home', 'base_template': 'ureport/three-square.html', 'num_columns': 3}, name='rapidsms-dashboard'),
     url('^accounts/login', 'rapidsms.views.login'),
     url('^accounts/logout', 'rapidsms.views.logout'),
-    url('^accounts/change_password', login_required(password_change), {'template_name':'ureport/change_password.html', 'post_change_redirect':'/'}),
+    url('^accounts/change_password', login_required(password_change), {'template_name': 'ureport/change_password.html', 'post_change_redirect': '/'}),
     url(r'^national-pulse/$', direct_to_template, {'template': 'ureport/national_pulse.html'}, name='pulse'),
     url(r'^national-pulse/(?P<period>\w+)/$', national_pulse, name='pulse'),
     url(r'^national-pulse-mock/$', direct_to_template, {'template': 'ureport/national_pulse_mock.html'}),
@@ -43,12 +44,16 @@ urlpatterns = patterns('',
     url(r'^registration/', include('auth.urls')),
     url(r'^scheduler/', include('rapidsms.contrib.scheduler.urls')),
     url(r'^polls/', include('poll.urls')),
-    
-) + router_urls + ureport_urls + contact_urls + tracking_urls + generic_urls+ ussd_urls+class_urls
+    # Ureport Website
+    url(r'^site/', include('ureport_website.urls')),
+) + router_urls + ureport_urls + contact_urls + tracking_urls + generic_urls + ussd_urls + class_urls
 
 
 if settings.DEBUG:
-    urlpatterns += patterns('',
+    # static files (images, css, javascript, etc.)
+    urlpatterns += patterns(
+        '',
+        (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
         # helper URLs file that automatically serves the 'static' folder in
         # INSTALLED_APPS via the Django static media server (NOT for use in
         # production)

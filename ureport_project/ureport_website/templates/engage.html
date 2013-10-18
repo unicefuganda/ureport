@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+<!-- add active tag to main navigation -->
+{% block engage-active %}current-page{% endblock %}
+
+{% block content %}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=2646791150";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Engage content -->
+<div class="site-wrapper">
+  <div class="row-content">
+    <div class="page-title">Engage</div>
+    <div class="main-content"> 
+      
+      <div class="socialmedia-box">
+        <div class="row">
+          <div class="2columns">
+            <h4>Like, comment and share our Facebook posts</h4>
+            <div class="fb-like-box" data-href="https://www.facebook.com/UReportUganda" data-width="350" data-height="300" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false">
+            </div>                      
+          </div>
+          <div class="2columns">
+            <h4>Join the conversation on Twitter</h4>
+            <a class="twitter-timeline" href="https://twitter.com/UReportUganda" data-widget-id="366864940595826688">Tweets by @UReportUganda</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+        </div>
+      </div>
+
+      <h4>How to join Ureport</h4>
+      <div class="how-to-join">
+        <div class="row">
+          <div class="engage_columns"><img src="{{ STATIC_URL }}ureport_website/img/join_step1.jpg" width="150" height="216" align="top"/>
+            <h4>Step One</h4>Test the word JOIN to 8500. All UReport SMSes are free!
+          </div>   
+          <div class="engage_columns"><img src="{{ STATIC_URL }}ureport_website/img/join_step2.jpg" width="150" height="216" align="top"/>
+            <h4>Step Two</h4>Test the word JOIN to 8500. All UReport SMSes are free!
+          </div>         
+          <div class="engage_columns"><img src="{{ STATIC_URL }}ureport_website/img/join_step3.jpg" width="150" height="216" align="top"/>
+            <h4>Step Three</h4>After you answer the quetions about you, you are a member of Ureport!
+          </div>
+          <div class="engage_columns"><img src="{{ STATIC_URL }}ureport_website/img/join_step3.jpg" width="150" height="216" align="top"/>
+            <h4>Step Four</h4>As a UReporter, you will get weekly poll results and meaningful information to assist you to enact change in your community.
+          </div>
+        </div>
+      </div>
+    </div>
+          
+      <!-- AddThis Button BEGIN -->
+    <div class="sharebar">
+      <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+        <div class="sharetext">Share this</div>
+            <a class="addthis_button_facebook"></a>
+            <a class="addthis_button_twitter"></a>
+            <a class="addthis_button_google_plusone_share"></a>
+            <a class="addthis_button_email"></a>
+            <a class="addthis_button_linkedin"></a>
+            <a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+      </div>
+          <script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+          <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+    </div>
+  </div>
+      <!-- AddThis Button END -->
+
+  <div class="sidebar">
+    <div class="page-contacts">
+      <h4>How you can get in touch with us</h4>
+      <p>We always look forward to hearing from you. Send us your thoughts or queries on UReport using our contact details below.</p>
+      <p>United Nations Children’s Fund
+      Uganda Country Office</p>
+      <p>Plot 9 George Street<br>
+      P.O Box 7047, Kampala, Uganda
+      </p>
+      <p>Telephone: +256 4 1717 1000</p>
+      <p>Facsimile: +256 4 1717 1001</p>
+      <p>Email: info@ureport.ug</p>
+      <p>Twitter: <a href="https://twitter.com/UReportUganda" target="_blank">@ureportuganda</a></p>
+      <p>Facebook: <a href="https://facebook.com/UReportUganda" target="_blank">/UReportUganda</a></p>
+    </div>
+    <div class="page-ad"><img src="{{ STATIC_URL }}ureport_website/img/become_rest.gif" height="135" width="350"/></div>
+  </div>
+</div>
+
+
+{% endblock %}

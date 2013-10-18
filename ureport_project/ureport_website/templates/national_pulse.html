@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+<!-- add active tag to main navigation -->
+{% block national-pulse-active %}current-page{% endblock %}
+
+{% block content %}
+
+<!-- National Pulse page content -->
+
+<div class="site-wrapper">
+    <div class="row-content">
+        <div class="page-title">National Pulse</div>
+                <div class="main-content">
+                    <div class="poll-question">
+
+                    <!-- Placement of pulse question code -->
+
+                    Hello UReporter, you've been selected to be one of our special reporters on Education. Tell us if you are a Parent/Guardian, Student, Teacher or Other. Thank you.
+                    </div>
+                        
+                    <div class="poll-content">
+                        <div class="poll-key">
+
+                        <div class="reset-button">
+                            <div class="buttons"><button type="submit" value="1" class="btn btn-primary btn-mini">Today's pulse</button></div>
+                            <div class="buttons"><button type="submit" value="1" class="btn btn-primary btn-mini">This month's pulse</button></div>
+                            <div class="buttons"><button type="submit" value="1" class="btn btn-primary btn-mini">This year's pulse</button></div>
+                        </div>
+                        
+                        <!-- Placement of pulse pie code -->
+
+			<div class="poll-pie"><img src="{{ STATIC_URL }}ureport_website/img/pie_chart.png" width="225" height="205"/></div>
+                        <div>
+                            Key
+                                <ul>
+
+                        <!-- Placement of pulse pie and map legend code -->
+
+                                    <li class="key1">Water</li>
+                                    <li class="key2">Violence against children</li>
+                                    <li class="key3">Health & Nutrition</li>
+                                    <li class="key4">Education</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="poll-area">
+                            <div class="poll-map">
+
+                        <!-- Placement of pulse map code -->
+
+			       <img src="{{ STATIC_URL }}ureport_website/img/national_pulse_map.gif" width="435" height="383"/>
+                            </div>
+
+                        <!-- Placement of pulse location identifier code -->
+                        
+                            <div class="pulse-filter">
+                            
+                                Showing pulse for <span>Mpigi</span>
+
+                        <!-- Placement of pulse reset button code -->
+                        
+                                <div class="buttons"><button type="submit" value="1" class="btn btn-default btn-mini">Reset to national pulse</button></div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+          
+        <!-- AddThis Button BEGIN -->
+        <div class="sharebar">
+            <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+                <div class="sharetext">Share this</div>
+                    <a class="addthis_button_facebook"></a>
+                    <a class="addthis_button_twitter"></a>
+                    <a class="addthis_button_google_plusone_share"></a>
+                    <a class="addthis_button_email"></a>
+                    <a class="addthis_button_linkedin"></a>
+                    <a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+                </div>
+            <script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+        </div>
+    </div>
+    <!-- AddThis Button END -->
+
+    <div class="sidebar">
+	<div class="page-picture"><img src="{{ STATIC_URL }}ureport_website/img/national_pulse_image.jpg" height="341" width="350"/></div>
+	<div class="page-ad"><img src="{{ STATIC_URL }}ureport_website/img/become_rest.gif" height="135" width="350"/></div>
+    </div>
+</div>
+
+{% endblock %}

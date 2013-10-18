@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+<!-- add active tag to main navigation -->
+{% block polls-active %}current-page{% endblock %}
+
+{% block content %}
+
+<!-- Polls page content -->
+
+<div class="site-wrapper">
+    <div class="row-content">
+        <div class="page-title">Polls</div>
+                <div class="main-content">
+                    <div class="poll-question">
+
+                    <!-- Placement of poll question code -->
+
+                    Hello UReporter, you've been selected to be one of our special reporters on Education. Tell us if you are a Parent/Guardian, Student, Teacher or Other. Thank you.
+                    </div>
+                    
+                    <div class="poll-content">
+                        <div class="poll-key">                    
+
+                            <!-- Placement of poll date code -->
+
+                            <div class="date_orange">18th June 2013</div>
+
+                            <!-- Placement of poll reponse rate code -->
+
+                            <div class="responses_orange">27,168 responses out of <br>208,453 participants (13%)</div>
+                            <div>
+                            Key
+                                <ul>
+
+                                <!-- Placement of data legend code -->
+
+                                    <li class="key1">Parent</li>
+                                    <li class="key2">Student</li>
+                                    <li class="key3">Teacher</li>
+                                    <li class="key4">Other</li>
+                                </ul>
+                            </div>
+                            <div class="poll-responses">                               
+                                <div class="poll-responses-title">Responses to poll</div>
+                                <ul>
+                                    
+                                <!-- Placement of responses list code -->
+
+                                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</li>
+                                    <li>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </li>
+                                    <li>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</li>
+                                    <li>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt </li>
+                                </ul>                           
+                            </div>
+                        </div>
+                        <div class="poll-area">
+                            <div class="poll-chart">
+                                <div class="span2">
+
+                                <!-- Placement of filtering tools -->
+
+                                    <input type="text" class="input-block-level" placeholder="lower age limit">
+                                    <input type="text" class="input-block-level" placeholder="upper age limit">
+                                    <div class="btn-group" data-toggle-name="is_private" data-toggle="buttons-radio" >
+                                      <button type="button" value="0" class="btn" data-toggle="button">Male</button>
+                                      <button type="button" value="1" class="btn" data-toggle="button">Female</button>
+                                    </div>
+                                    <div class="submit-button">
+                                    <button type="submit" value="1" class="btn">Filter results</button>
+                                    </div>
+                                </div>
+
+                                <!-- Placement of pie chart code -->
+
+				<div class="poll-pie"><img src="{{ STATIC_URL }}ureport_website/img/pie_chart.png" width="225" height="205"/></div>
+
+                            </div>
+                            <div class="poll-map">
+                                
+                                <!-- Placement of country map code -->
+
+				<img src="{{ STATIC_URL }}/img/poll_map.gif" width="435" height="385"/>
+
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+          
+        <!-- AddThis Button BEGIN -->
+        <div class="sharebar">
+            <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+                <div class="sharetext">Share this</div>
+                    <a class="addthis_button_facebook"></a>
+                    <a class="addthis_button_twitter"></a>
+                    <a class="addthis_button_google_plusone_share"></a>
+                    <a class="addthis_button_email"></a>
+                    <a class="addthis_button_linkedin"></a>
+                    <a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+                </div>
+            <script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+        </div>
+    </div>
+    <!-- AddThis Button END -->
+
+    <div class="sidebar">
+        <div class="poll-recent">
+            <div class="poll-recent-title">Recent polls</div>
+            <div id="poll-recent-content" class="poll-recent-content">
+                <ul>
+                    <li><div class="date">31st July 2013</div>Breast milk is the best food for babies even though the mother is HIV +ve. The baby has 2 be breastfed the first 6 months. From Ministry of Health <a href="">see results</a></li>
+                    <li><div class="date">31st July 2013</div>Hello U-reporter! Have you borrowed any textbooks from school to be used at home in the last 5 days? Please reply with Yes or No <a href="">see results</a></li>
+                    <li><div class="date">31st July 2013</div>Who do you think should be responsible for solving community conflicts?. a) Community leaders, b) Police, c) Local government. IF other, please specify? <a href="">see results</a></li>
+                    <li><div class="date">31st July 2013</div>July 12th is 'Malala day'. Malala from Pakistan will be speaking at the UN advocating for global education. What is the importance of education to you? <a href="">see results</a></li>
+                    <li><div class="date">31st July 2013</div>Have you heard of &quot;Family Health Days (FHDs)&quot; YES or NO? Respond to find out about free health services in your Kampala. <a href="">see results</a></li>
+                    <li><div class="date">31st July 2013</div>Hello U-reporter, you've been selected to be one of our special reporters on Education. Tell us if you are Parent/guardian, Student, Teacher or Other. Thank you. <a href="">see results</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-searchtools">
+            <form class="" action="polls-list">
+                <input type="text" class="input-block-level" placeholder="search polls by question or keyword">
+                <div class="endmonth"><button type="submit" value="1" class="btn">Search</button></div>                   
+            </form>
+        </div>        
+	<div class="page-ad"><img src="{{ STATIC_URL }}ureport_website/img/become_rest.gif" height="135" width="350"/></div>
+    </div>
+</div>
+
+<!-- Javascript for custom scroll bar on poll list -->
+
+<script src="{{ STATIC_URL }}ureport_website/js/jquery.slimscroll.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('#poll-recent-content').slimScroll({
+          distance: '5px',
+        });       
+     });
+</script>
+
+{% endblock %}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load websitetags %}
+{% load humanize %}
 {% load url from future %}
 <html lang="en">
 <head>
@@ -27,7 +28,7 @@
                 
                 <!-- Placement of UReporter counter code -->
                 
-                <div id="ureporters-stat"><div>123,313</div><div id="ureporters-stat-sub">Ureporters and counting</div></div>
+		<div id="ureporters-stat"><div>{{ total_ureporters|intcomma }}</div><div id="ureporters-stat-sub">Ureporters and counting</div></div>
 
                 <!-- Main website navigation -->
                 <div> 

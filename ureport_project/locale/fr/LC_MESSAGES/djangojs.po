@@ -1,0 +1,11 @@
+#: rapidsms_generic/generic/static/javascripts/generic.js:98
+msgid "All "
+msgstr ""
+
+#: rapidsms_generic/generic/static/javascripts/generic.js:98
+msgid " items are selected."
+msgstr ""
+
+#: rapidsms_generic/generic/static/javascripts/generic.js:98
+msgid "Clear selection"
+msgstr ""

@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 <!-- add active tag to main navigation -->
 {% block partners-active %}current-page{% endblock %}
+{% load url from future %}
 
 {% block content %}
 
@@ -14,7 +15,7 @@
                     <div class="viewport">
                         <ul class="overview">
                             {% for partner in partnersList %}
-			    <li><a href="/partners/{{partner.slug}}"><img src="{{ MEDIA_URL }}/{{partner.image}}" title="{{partner.title}}" /></a></li>
+			    <li><a href="{% url 'website-partners-detail' partner.slug %}"><img src="{{ MEDIA_URL }}/{{partner.image}}" title="{{partner.title}}" /></a></li>
                             {% empty %}
                             <div class="no-entries">Sorry, no partners listed</div>
                             {% endfor %}

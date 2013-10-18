@@ -22,7 +22,7 @@ urlpatterns = patterns(
     url(r'^national-pulse$', TemplateView.as_view(template_name='national_pulse.html'), name='website-national-pulse'),
 
     url(r'^partners$', 'ureport_website.views.partners', name='website-partners'),
-    url(r'^partners/(?P<slug>[\w\-]+)/$', 'ureport_website.views.partnersDetail'),
+    url(r'^partners/(?P<slug>[\w\-]+)/$', 'ureport_website.views.partnersDetail', name='website-partners-detail'),
 
     url(r'^read$', 'ureport_website.views.readArticles', name='website-read'),
     url(r'^read/(?P<slug>[\w\-]+)/$', 'ureport_website.views.readDetail'),

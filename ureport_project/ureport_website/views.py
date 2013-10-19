@@ -19,6 +19,11 @@ def about(request):
     return render(request, 'about.html', {'quoteList': quoteList})
 
 
+
+def pollsDetail(request):
+    return render(request, 'polls.html')
+
+
 def partners(request):
 # get the partners and quote posts that are published
     partnersList = Partners.objects.filter(published=True)

@@ -15,7 +15,7 @@
                     <div class="viewport">
                         <ul class="overview">
                             {% for partner in partnersList %}
-			    <li><a href="{% url 'website-partners-detail' partner.slug %}"><img src="{{ MEDIA_URL }}/{{partner.image}}" title="{{partner.title}}" /></a></li>
+			    <li><a href="{% url 'website-partners-detail' partner.slug %}"><img src="{{ STATIC_URL }}/{{partner.image}}" title="{{partner.title}}" /></a></li>
                             {% empty %}
                             <div class="no-entries">Sorry, no partners listed</div>
                             {% endfor %}
@@ -25,7 +25,7 @@
             </div>
             <div class="page-content">
                 <h2> {{partnerDetails.title}} </h2>
-		<p><img src="{{ MEDIA_URL }}/{{partnerDetails.image}}" title="{{partnerDetails.title}}" align="left" />{{partnerDetails.content|linebreaks}}</p><p><a href="{{partnerDetails.website}}" target="_blank">{{partnerDetails.website}}</p></a>
+		<p><img src="{{ STATIC_URL }}/{{partnerDetails.image}}" title="{{partnerDetails.title}}" align="left" />{{partnerDetails.content|linebreaks}}</p><p><a href="{{partnerDetails.website}}" target="_blank">{{partnerDetails.website}}</p></a>
             </div>
         </div>
           

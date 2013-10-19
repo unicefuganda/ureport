@@ -79,7 +79,7 @@
                 {% with readList|first as latestRead %}
                 <span>{{latestRead.title}}</span>
                 <p class="date">{{latestRead.created|date}}</p>
-		<img src="{{ MEDIA_URL}}{{latestRead.image}}" title="{{latestRead.title}}" align="left" />{{latestRead.content|truncatewords:50}}
+		<img src="{{ STATIC_URL}}{{latestRead.image}}" title="{{latestRead.title}}" align="left" />{{latestRead.content|truncatewords:50}}
                 <a href="/read/{{latestRead.slug}}">read more</a>
                 {% endwith %}
                 {% else %}

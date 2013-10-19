@@ -14,7 +14,7 @@
                     <div class="viewport">
                         <ul class="overview">
                             {% for readArticle in readList %}
-			        <li><a href="/read/{{readArticle.slug}}"><img src="{{ MEDIA_URL}}/{{readArticle.image}}" title="{{readArticle.title}}" /></a>
+			        <li><a href="/read/{{readArticle.slug}}"><img src="{{ STATIC_URL}}/{{readArticle.image}}" title="{{readArticle.title}}" /></a>
                                     <p class="scroller-title">{{readArticle.title}}</p>
                                 </li>
                             {% empty %}
@@ -27,7 +27,7 @@
             <div class="page-content">
                 <h2> {{readDetails.title}} </h2>
                 <p>{{readDetails.created|date}}</p>
-		<p><img src="{{ MEDIA_URL }}/{{readDetails.image}}" title="{{readDetails.title}}" align="left" />{{readDetails.content|linebreaks}}</p>
+		<p><img src="{{ STATIC_URL }}/{{readDetails.image}}" title="{{readDetails.title}}" align="left" />{{readDetails.content|linebreaks}}</p>
             </div>
         </div>
           

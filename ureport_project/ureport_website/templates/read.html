@@ -14,7 +14,7 @@
                     <div class="viewport">
                         <ul class="overview">
                             {% for readArticle in readList reversed %}
-			<li><a href="/read/{{readArticle.slug}}"><img src="{{ MEDIA_URL }}/{{readArticle.image}}" title="{{readArticle.title}}" /></a>
+			<li><a href="/read/{{readArticle.slug}}"><img src="{{ STATIC_URL }}/{{readArticle.image}}" title="{{readArticle.title}}" /></a>
                                     <p class="scroller-title">{{readArticle.title}}</p>
                                 </li>
                             {% empty %}
@@ -28,7 +28,7 @@
                 {% if readLatest %}
                 <h2>{{readLatest.title}}</h2>
                 <p>{{readLatest.created|date}}</p>
-		<p><img src="{{ MEDIA_URL }}/{{readLatest.image}}" title="{{readLatest.title}}" align="left" />{{readLatest.content|linebreaks}}</p>
+		<p><img src="{{ STATIC_URL }}/{{readLatest.image}}" title="{{readLatest.title}}" align="left" />{{readLatest.content|linebreaks}}</p>
                 {% else %}
                 <div class="no-entries">Sorry, no news articles listed yet</div>
                 {% endif %}

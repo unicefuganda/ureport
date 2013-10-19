@@ -1,14 +1,9 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-17 16:54+0300\n"
+"POT-Creation-Date: 2011-05-26 18:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +12,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: rapidsms_generic/generic/static/javascripts/generic.js:98
-msgid "All "
-msgstr "asasd"
-
-#: rapidsms_ureport/ureport/static/javascripts/ureport.js:472
-#: rapidsms_ureport/ureport/static/javascripts/ureport.min.js:19
-msgid "All"
-msgstr "alls"
+msgid  "All "
+msgstr  "∀ll "
+msgid  " items are selected."
+msgstr  " ıʇəɯs ɐɹə sələɔʇəp˙"
+msgid  "Clear selection"
+msgstr  "Ɔləɐɹ sələɔʇıou"

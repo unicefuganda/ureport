@@ -325,6 +325,10 @@ MAP_ARGS = {'center': {'longitude': 33.0, 'latitude': 0.0},
 COUNTRY_SPECIFIC_TOKENS = {
     "district" : "district"
 }
+
+LOCALE_PATHS = (
+    os.path.join(filedir, 'locale'),
+)
 # since we might hit the database from any thread during testing, the
 # in-memory sqlite database isn't sufficient. it spawns a separate
 # virtual database for each thread, and syncdb is only called for the

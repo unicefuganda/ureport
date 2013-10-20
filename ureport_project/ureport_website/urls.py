@@ -1,19 +1,10 @@
 # ureport_website/urls.py
 
 from django.conf.urls.defaults import patterns, url
-from django.contrib import admin
 from django.views.generic import TemplateView
-from django.contrib.sites.models import Site
-from django.contrib.auth.models import Group
-
 from django.views.generic.list_detail import object_list, object_detail
 
 from poll.models import Poll
-
-
-admin.autodiscover()
-admin.site.unregister(Site)
-admin.site.unregister(Group)
 
 poll_dict = {
     'queryset': Poll.objects.all(),

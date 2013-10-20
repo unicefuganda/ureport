@@ -24,7 +24,7 @@
     <div class="header row">
             <div class="navbar">
                 <!-- Ureporter logo -->
-		<a href="{% url 'website-index' %}"><div id="logo">Ureport</div></a>
+		<div id="logo"><a href="{% url 'website-index' %}">Ureport</a></div>
                 
                 <!-- Placement of UReporter counter code -->
                 
@@ -69,7 +69,7 @@
 </div> 
 <!-- container -->
 
-    <script src="{{ STATIC_URL }}ureport_website/js/jquery.min.js"></script>
+    <script src="{{ MEDIA_URL }}ureport_website/js/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     {% bootstrap_javascript_tag %}
 </body>

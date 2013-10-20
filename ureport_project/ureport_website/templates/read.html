@@ -14,7 +14,7 @@
                     <div class="viewport">
                         <ul class="overview">
                             {% for readArticle in readList reversed %}
-			<li><a href="/read/{{readArticle.slug}}"><img src="{{ STATIC_URL }}/{{readArticle.image}}" title="{{readArticle.title}}" /></a>
+			<li><a href="/read/{{readArticle.slug}}"><img src="{{ MEDIA_URL }}/{{readArticle.image}}" title="{{readArticle.title}}" /></a>
                                     <p class="scroller-title">{{readArticle.title}}</p>
                                 </li>
                             {% empty %}
@@ -28,7 +28,7 @@
                 {% if readLatest %}
                 <h2>{{readLatest.title}}</h2>
                 <p>{{readLatest.created|date}}</p>
-		<p><img src="{{ STATIC_URL }}/{{readLatest.image}}" title="{{readLatest.title}}" align="left" />{{readLatest.content|linebreaks}}</p>
+		<p><img src="{{ MEDIA_URL }}/{{readLatest.image}}" title="{{readLatest.title}}" align="left" />{{readLatest.content|linebreaks}}</p>
                 {% else %}
                 <div class="no-entries">Sorry, no news articles listed yet</div>
                 {% endif %}
@@ -53,7 +53,7 @@
     <!-- AddThis Button END -->
 
     <div class="sidebar">
-	<div class="page-picture"><img src="{{ STATIC_URL }}ureport_website/img/read_image.jpg" height="341" width="350"/></div>
+	<div class="page-picture"><img src="{{ MEDIA_URL }}ureport_website/img/read_image.jpg" height="341" width="350"/></div>
         <div class="page-quote">
             {% with  quoteList|random as randomQuote %}
                 <div class="quote-question">{{randomQuote.question}}</div>
@@ -61,12 +61,12 @@
                 <div class="quote-author"> ~ {{randomQuote.author}}</div>
             {% endwith %}
         </div>
-	<div class="page-ad"><img src="{{ STATIC_URL }}ureport_website/img/become_rest.gif" height="135" width="350"/></div>
+	<div class="page-ad"><img src="{{ MEDIA_URL }}ureport_website/img/become_rest.gif" height="135" width="350"/></div>
   </div>
 </div>
 
 <!-- Javascript for scroller -->
-<script type="text/javascript" src="{{ STATIC_URL }}ureport_website/js/jquery.tinycarousel.min.js"></script>
+<script type="text/javascript" src="{{ MEDIA_URL }}ureport_website/js/jquery.tinycarousel.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         $('#slider2').tinycarousel({ display: 1 }); 

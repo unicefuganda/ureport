@@ -7,7 +7,7 @@
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
-	    <img src="{{ STATIC_URL }}ureport_website/img/slider/slide1.jpg" alt="">
+	    <img src="{{ MEDIA_URL }}ureport_website/img/slider/slide1.jpg" alt="">
           <div class="site-wrapper">
             <div class="carousel-caption">
               <h1>Allowing young Ugandans to speak out.</h1>
@@ -16,7 +16,7 @@
           </div>
         </div>
         <div class="item">
-	    <img src="{{ STATIC_URL }}ureport_website/img/slider/slide2.jpg" alt="">
+	    <img src="{{ MEDIA_URL }}ureport_website/img/slider/slide2.jpg" alt="">
           <div class="site-wrapper">
             <div class="carousel-caption">
               <h1>Inspiring action within our communities via SMS.</h1>
@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="item">
-	    <img src="{{ STATIC_URL }}ureport_website/img/slider/slide3.jpg" alt="">
+	    <img src="{{ MEDIA_URL }}ureport_website/img/slider/slide3.jpg" alt="">
           <div class="site-wrapper">
             <div class="carousel-caption">
               <h1>Inspiring action from our leaders.</h1>
@@ -47,7 +47,7 @@
             <div class="about 3columns">
                 <h4>About Ureport</h4>
                 <p>Ureport is a free SMS-based system that allows young Ugandans to speak out on what's happening in communities across the country, and work together with other community leaders for positive change.</p>
-		<img src="{{ STATIC_URL }}ureport_website/img/about_us_home.jpg" width="345"/>
+		<img src="{{ MEDIA_URL }}ureport_website/img/about_us_home.jpg" width="345"/>
                 <a href="about-ureport">Read more about the project</a>
             </div>
             <div class="whyjoin 3columns">
@@ -79,7 +79,7 @@
                 {% with readList|first as latestRead %}
                 <span>{{latestRead.title}}</span>
                 <p class="date">{{latestRead.created|date}}</p>
-		<img src="{{ STATIC_URL}}{{latestRead.image}}" title="{{latestRead.title}}" align="left" />{{latestRead.content|truncatewords:50}}
+		<img src="{{ MEDIA_URL}}{{latestRead.image}}" title="{{latestRead.title}}" align="left" />{{latestRead.content|truncatewords:50}}
                 <a href="/read/{{latestRead.slug}}">read more</a>
                 {% endwith %}
                 {% else %}
@@ -103,19 +103,19 @@
             <div class="engagebox 3columns">
                 <div class="engage">
                     <h4>Engage</h4>
-		    <a href="engage"><img src="{{ STATIC_URL }}ureport_website/img/engage_home.gif" height="109" width="303"/></a>
+		    <a href="engage"><img src="{{ MEDIA_URL }}ureport_website/img/engage_home.gif" height="109" width="303"/></a>
                 </div>
                 <div class="becomeureporter">
                     <h4>Become a Ureporter</h4>
-		    <img src="{{ STATIC_URL }}ureport_website/img/become_home.gif" height="36" width="303"/>
+		    <img src="{{ MEDIA_URL }}ureport_website/img/become_home.gif" height="36" width="303"/>
                 </div>
                 <div class="socialmedia">
                     <div class="social">
-                        <a class="facebook" href="https://facebook.com/UReportUganda‎" target="_blank"></a>
+                        <a class="facebook" href="https://facebook.com/UReportUganda" target="_blank"></a>
                         <a class="googleplus" href=""></a>
                         <a class="flickr" href=""></a>
                         <a class="twitter" href="https://twitter.com/UReportUganda" target="_blank"></a>
-                        <a class="youtube" href="https://youtube.com/user/UNICEFUganda‎" target="_blank"></a>
+                        <a class="youtube" href="https://youtube.com/user/UNICEFUganda" target="_blank"></a>
                     </div>
                 </div>                    
             </div>

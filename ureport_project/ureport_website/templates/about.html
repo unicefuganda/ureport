@@ -42,7 +42,7 @@
             <button type="submit" class="btn btn-default">Go</button>
           </form>
         </div>
-        <img src="{{ STATIC_URL }}ureport_website/img/map.png" height="196" width="630"/>
+        <img src="{{ MEDIA_URL }}ureport_website/img/map.png" height="196" width="630"/>
       </div>
     </div>
           
@@ -64,7 +64,7 @@
       <!-- AddThis Button END -->
 
   <div class="sidebar">
-    <div class="page-picture"><img src="{{ STATIC_URL }}ureport_website/img/about_image.jpg" height="341" width="350"/></div>
+    <div class="page-picture"><img src="{{ MEDIA_URL }}ureport_website/img/about_image.jpg" height="341" width="350"/></div>
     <div class="page-quote">
       {% with  quoteList|random as randomQuote %}
         <div class="quote-question">{{randomQuote.question}}</div>
@@ -72,7 +72,7 @@
         <div class="quote-author"> ~ {{randomQuote.author}}</div>
       {% endwith %}
     </div>
-    <div class="page-ad"><img src="{{ STATIC_URL }}ureport_website/img/become_rest.gif" height="135" width="350"/></div>
+    <div class="page-ad"><img src="{{ MEDIA_URL }}ureport_website/img/become_rest.gif" height="135" width="350"/></div>
   </div>
 </div>
 

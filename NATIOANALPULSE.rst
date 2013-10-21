@@ -60,7 +60,7 @@ This is drawn using the `Geo Choropleth Chart <https://github.com/NickQiZhu/dc.j
 
 The Pie Chart
 ^^^^^^^^^^^^^
-This is drawn using the `Pie Chart <https://github.com/NickQiZhu/dc.js/blob/master/web/docs/api-1.6.0.md#pie-chart>`_ with same data source as the map. With the dc.js api, this makes the Pie Chart responsive to events triggered on the map. Hence making it change variables when specific regions are selected on the map are selected.
+This is drawn using the `Pie Chart <https://github.com/NickQiZhu/dc.js/blob/master/web/docs/api-1.6.0.md#pie-chart>`_ with same data source as the map. With the dc.js api, this makes the Pie Chart responsive to events triggered on the map. Hence making it change variables when specific regions are selected on the map.
 
 The Word Cloud
 ^^^^^^^^^^^^^^

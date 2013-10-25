@@ -44,7 +44,7 @@ EMAIL_HOST_USER = ''
 EMAIL_HOST = '127.0.0.1'
 OPT_IN_WORDS = ['join']
 OPT_IN_WORDS_LUO=["donyo","dony","donyo","doyo",]
-OPT_IN_CONFIRMATION = "Welcome to UReport! Ureport is a community of Ugandan youth that are dedicated to working for positive change in their communities. Stay tuned for more info."
+OPT_IN_CONFIRMATION = gettext("Welcome to UReport! Ureport is a community of Ugandan youth that are dedicated to working for positive change in their communities. Stay tuned for more info.")
 OPT_OUT_WORDS = ['stop', 'unjoin', 'quit','giki']
 OPT_OUT_CONFIRMATION = gettext("Your UReport opt out is confirmed.If you made a mistake,or you want your voice to be heard again,text in JOIN and send it to 8500!All SMS messages are free")
 
@@ -142,12 +142,11 @@ INSTALLED_APPS = [
 ]
 
 SMS_APPS = [
+    "unregister",
     "monitor",
     "ureport",
     "script",
     "poll",
-    "unregister",
-    #"rapidsms_xforms",
 ]
 
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 12:49+0300\n"
+"POT-Creation-Date: 2013-10-25 15:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,12 +11,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: settings.py:47
+msgid ""
+"Welcome to UReport! Ureport is a community of Ugandan youth that are "
+"dedicated to working for positive change in their communities. Stay tuned "
+"for more info."
+msgstr ""
+
 #: settings.py:49
 msgid ""
 "Your UReport opt out is confirmed.If you made a mistake,or you want your "
 "voice to be heard again,text in JOIN and send it to 8500!All SMS messages "
 "are free"
 msgstr ""
+"Bienvenue à UReport! Ureport est une communauté de jeunes ougandais qui "
+"travaillent exclusivement pour des changements positifs dans leurs communautés. "
+"Restez à l'écoute pour plus d'informations."
 
 #: settings.py:64
 msgid "luo"

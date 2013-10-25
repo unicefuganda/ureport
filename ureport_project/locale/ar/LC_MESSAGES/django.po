@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-21 11:35+0300\n"
+"POT-Creation-Date: 2013-10-25 12:44+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,18 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5\n"
 
-#: localsettings.py:196 settings.py:64
+#: settings.py:49
+msgid ""
+"Your UReport opt out is confirmed.If you made a mistake,or you want your "
+"voice to be heard again,text in JOIN and send it to 8500!All SMS messages "
+"are free"
+msgstr "تأكيد الخاص UReport التقيد بها. إذا كنت ارتكب خطأ، أو إذا كنت تريد صوتك في أن يستمع إليه مرة أخرى، والنص في الانضمام إليها وإرسالها إلى 8500! كل رسائل SMS أحرار"
+
+#: settings.py:64
 msgid "luo"
 msgstr ""
 
-#: localsettings.py:197 settings.py:65
+#: settings.py:65
 msgid "English"
 msgstr ""
 
@@ -61,11 +68,11 @@ msgstr ""
 #: rapidsms_ureport/ureport/forms.py:313
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:121
 #: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:399
-#: rapidsms_ureport/ureport/views/message_views.py:44
-#: rapidsms_ureport/ureport/views/message_views.py:79
-#: rapidsms_ureport/ureport/views/message_views.py:114
-#: rapidsms_ureport/ureport/views/message_views.py:149
-#: rapidsms_ureport/ureport/views/message_views.py:184
+#: rapidsms_ureport/ureport/views/message_views.py:46
+#: rapidsms_ureport/ureport/views/message_views.py:81
+#: rapidsms_ureport/ureport/views/message_views.py:116
+#: rapidsms_ureport/ureport/views/message_views.py:151
+#: rapidsms_ureport/ureport/views/message_views.py:186
 #: rapidsms_ureport/ureport/views/poll_views.py:353
 msgid "Text"
 msgstr ""
@@ -82,12 +89,12 @@ msgstr ""
 #: rapidsms_message_classifier/message_classifier/views.py:38
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:122
 #: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:400
-#: rapidsms_ureport/ureport/views/message_views.py:46
-#: rapidsms_ureport/ureport/views/message_views.py:81
-#: rapidsms_ureport/ureport/views/message_views.py:116
-#: rapidsms_ureport/ureport/views/message_views.py:151
-#: rapidsms_ureport/ureport/views/message_views.py:186
-#: rapidsms_ureport/ureport/views/message_views.py:331
+#: rapidsms_ureport/ureport/views/message_views.py:48
+#: rapidsms_ureport/ureport/views/message_views.py:83
+#: rapidsms_ureport/ureport/views/message_views.py:118
+#: rapidsms_ureport/ureport/views/message_views.py:153
+#: rapidsms_ureport/ureport/views/message_views.py:188
+#: rapidsms_ureport/ureport/views/message_views.py:333
 #: rapidsms_ureport/ureport/views/poll_views.py:352
 msgid "Date"
 msgstr ""
@@ -277,113 +284,91 @@ msgid "Tagged Items"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/locations/forms.py:36
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/locations/forms.py:36
 msgid "Enter a valid latitude."
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/locations/forms.py:37
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/locations/forms.py:37
 msgid "Enter a valid longitude."
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/views.py:35
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/views.py:31
 #, python-format
 msgid "Schedule '%(name)s' successfully updated"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/edit.html:35
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/edit.html:35
 msgid "Submit"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/edit.html:38
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/edit.html:38
 msgid "Return to the list of schedules"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:14
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:14
 msgid "Event"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:15
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:15
 msgid "Description"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:16
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:16
 msgid "Month"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:17
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:17
 msgid "Day of Month"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:18
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:18
 msgid "Day of Week"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:19
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:19
 msgid "Hour"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:20
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:20
 msgid "Minute"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:21
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:21
 msgid "Start Time"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:22
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:22
 msgid "End Time"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:23
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:23
 msgid "Count"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:24
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:24
 msgid "Active"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:53
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:64
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:45
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:56
 msgid "Add a Schedule"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:61
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:53
 msgid "No schedules yet"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/templates/layout.html:38
 #: rapidsms_uganda_common/uganda_common/templates/layout.html:37
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/templates/layout.html:36
 msgid "Return to the Dashboard"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/templates/layout.html:46
 #: rapidsms_uganda_common/uganda_common/templates/layout.html:45
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/templates/layout.html:44
 msgid "Log out"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/templates/layout.html:47
 #: rapidsms_uganda_common/uganda_common/templates/layout.html:46
-#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/templates/layout.html:45
 msgid "Log in"
 msgstr ""
 
@@ -551,12 +536,12 @@ msgstr ""
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:119
 #: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:398
 #: rapidsms_ureport/ureport/views/contact_views.py:361
-#: rapidsms_ureport/ureport/views/message_views.py:45
-#: rapidsms_ureport/ureport/views/message_views.py:80
-#: rapidsms_ureport/ureport/views/message_views.py:115
-#: rapidsms_ureport/ureport/views/message_views.py:150
-#: rapidsms_ureport/ureport/views/message_views.py:185
-#: rapidsms_ureport/ureport/views/message_views.py:329
+#: rapidsms_ureport/ureport/views/message_views.py:47
+#: rapidsms_ureport/ureport/views/message_views.py:82
+#: rapidsms_ureport/ureport/views/message_views.py:117
+#: rapidsms_ureport/ureport/views/message_views.py:152
+#: rapidsms_ureport/ureport/views/message_views.py:187
+#: rapidsms_ureport/ureport/views/message_views.py:331
 msgid "Identifier"
 msgstr ""
 
@@ -634,11 +619,11 @@ msgstr ""
 #: rapidsms_polls/poll/forms.py:96
 #: rapidsms_polls/poll/templates/polls/poll_report_text.html:12
 #: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:170
-#: rapidsms_ureport/ureport/views/message_views.py:48
-#: rapidsms_ureport/ureport/views/message_views.py:83
-#: rapidsms_ureport/ureport/views/message_views.py:118
-#: rapidsms_ureport/ureport/views/message_views.py:153
-#: rapidsms_ureport/ureport/views/message_views.py:188
+#: rapidsms_ureport/ureport/views/message_views.py:50
+#: rapidsms_ureport/ureport/views/message_views.py:85
+#: rapidsms_ureport/ureport/views/message_views.py:120
+#: rapidsms_ureport/ureport/views/message_views.py:155
+#: rapidsms_ureport/ureport/views/message_views.py:190
 msgid "Response"
 msgstr ""
 
@@ -958,12 +943,12 @@ msgstr ""
 #: rapidsms_ureport/ureport/forms.py:385
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:99
 #: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:46
-#: rapidsms_ureport/ureport/views/message_views.py:47
-#: rapidsms_ureport/ureport/views/message_views.py:82
-#: rapidsms_ureport/ureport/views/message_views.py:117
-#: rapidsms_ureport/ureport/views/message_views.py:152
-#: rapidsms_ureport/ureport/views/message_views.py:187
-#: rapidsms_ureport/ureport/views/message_views.py:217
+#: rapidsms_ureport/ureport/views/message_views.py:49
+#: rapidsms_ureport/ureport/views/message_views.py:84
+#: rapidsms_ureport/ureport/views/message_views.py:119
+#: rapidsms_ureport/ureport/views/message_views.py:154
+#: rapidsms_ureport/ureport/views/message_views.py:189
+#: rapidsms_ureport/ureport/views/message_views.py:219
 msgid "Type"
 msgstr ""
 
@@ -1388,6 +1373,18 @@ msgstr ""
 
 #: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:3
 msgid "National Pulse"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:65
+msgid "Today's Pulse"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:66
+msgid "Month's Pulse"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:67
+msgid "Year's Pulse"
 msgstr ""
 
 #: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:70
@@ -1818,52 +1815,52 @@ msgstr ""
 msgid "uReporters"
 msgstr ""
 
-#: rapidsms_ureport/ureport/views/message_views.py:60
+#: rapidsms_ureport/ureport/views/message_views.py:62
 msgid "Message Log"
 msgstr ""
 
-#: rapidsms_ureport/ureport/views/message_views.py:96
+#: rapidsms_ureport/ureport/views/message_views.py:98
 msgid "Autoreg Messages"
 msgstr ""
 
-#: rapidsms_ureport/ureport/views/message_views.py:132
+#: rapidsms_ureport/ureport/views/message_views.py:134
 msgid "Unsolicitized Messages"
 msgstr ""
 
-#: rapidsms_ureport/ureport/views/message_views.py:167
+#: rapidsms_ureport/ureport/views/message_views.py:169
 msgid "Poll Messages"
 msgstr ""
 
-#: rapidsms_ureport/ureport/views/message_views.py:202
+#: rapidsms_ureport/ureport/views/message_views.py:204
 msgid "Quit Messages"
 msgstr ""
 
-#: rapidsms_ureport/ureport/views/message_views.py:214
-#: rapidsms_ureport/ureport/views/message_views.py:330
+#: rapidsms_ureport/ureport/views/message_views.py:216
+#: rapidsms_ureport/ureport/views/message_views.py:332
 msgid "Message"
 msgstr ""
 
-#: rapidsms_ureport/ureport/views/message_views.py:215
+#: rapidsms_ureport/ureport/views/message_views.py:217
 msgid "Time"
 msgstr ""
 
-#: rapidsms_ureport/ureport/views/message_views.py:215
+#: rapidsms_ureport/ureport/views/message_views.py:217
 msgid "User"
 msgstr ""
 
-#: rapidsms_ureport/ureport/views/message_views.py:216
+#: rapidsms_ureport/ureport/views/message_views.py:218
 msgid "Recipients"
 msgstr ""
 
-#: rapidsms_ureport/ureport/views/message_views.py:232
+#: rapidsms_ureport/ureport/views/message_views.py:234
 msgid "Mass Messages"
 msgstr ""
 
-#: rapidsms_ureport/ureport/views/message_views.py:324
+#: rapidsms_ureport/ureport/views/message_views.py:326
 msgid "Flagged Messages"
 msgstr ""
 
-#: rapidsms_ureport/ureport/views/message_views.py:332
+#: rapidsms_ureport/ureport/views/message_views.py:334
 msgid "Flags"
 msgstr ""
 
@@ -1878,7 +1875,4 @@ msgstr ""
 
 #: rapidsms_ureport/ureport/views/poll_views.py:469
 msgid "Closing Date"
-msgstr ""
-
-msgid "This field is required."
 msgstr ""

@@ -1,31 +1,71 @@
 # ureport_website/urls.py
 
-from django.conf.urls.defaults import patterns, url
-from django.views.generic import TemplateView
-from django.views.generic.list_detail import object_list, object_detail
+from django.conf.urls.defaults import patterns
+from django.conf.urls.defaults import url
 
-from poll.models import Poll
-
-poll_dict = {
-    'queryset': Poll.objects.all(),
-    'template_object_name': 'polls',
-    'paginate_by': 25
-}
+from .views import SiteIndexView
+from .views import AboutView
+from .views import EngageView
+from .views import NationalPulseView
+from .views import PollsListView
+from .views import PollDetailView
+from .views import PartnersListView
+from .views import PartnersDetailView
+from .views import ReadListView
 
 urlpatterns = patterns(
     '',
-    url(r'^$', 'ureport_website.views.index', name="website-index"),
-    url(r'^about-ureport$', 'ureport_website.views.about', name='website-about-ureport'),
+    url(
+        r'^$',
+        SiteIndexView.as_view(),
+        name="website-index"
+    ),
+    url(
+        '^about-ureport$',
+        AboutView.as_view(),
+        name="website-about-ureport"
+    ),
+    url(
+        r'^engage$',
+        EngageView.as_view(),
+        name='website-engage'
+    ),
+    url(
+        r'^national-pulse$',
+        NationalPulseView.as_view(),
+        name='website-national-pulse'
+    ),
 
-    url(r'^engage$', TemplateView.as_view(template_name='engage.html'), name='website-engage'),
-    url(r'^polls/$', object_list, poll_dict, name='website-polls'),
-    url(r'^polls/(?P<object_id>\d+)/$', object_detail, poll_dict, name='website-polls-detail'),
-    url(r'^national-pulse$', TemplateView.as_view(template_name='national_pulse.html'), name='website-national-pulse'),
+    # Polls
+    url(
+        r'^polls/$',
+        PollsListView.as_view(),
+        name='website-polls'
+    ),
+    url(
+        r'^polls/(?P<object_id>\d+)/$',
+        PollDetailView.as_view(),
+        name='website-polls-detail'
+    ),
 
-    url(r'^partners$', 'ureport_website.views.partners', name='website-partners'),
-    url(r'^partners/(?P<slug>[\w\-]+)/$', 'ureport_website.views.partnersDetail', name='website-partners-detail'),
+    # Partners
+    url(
+        r'^partners$',
+        PartnersListView.as_view(),
+        name='website-partners'
+    ),
+    url(
+        r'^partners/(?P<slug>[\w\-]+)/$',
+        PartnersDetailView.as_view(),
+        name='website-partners-detail'
+    ),
 
-    url(r'^read$', 'ureport_website.views.readArticles', name='website-read'),
+    # Read
+    url(
+        r'^read$',
+        ReadListView.as_view(),
+        name='website-read'
+    ),
     url(r'^read/(?P<slug>[\w\-]+)/$', 'ureport_website.views.readDetail'),
 
     url(r'^watch$', 'ureport_website.views.watch', name='website-watch'),

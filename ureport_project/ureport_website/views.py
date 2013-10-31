@@ -1,54 +1,112 @@
 from django.shortcuts import render, get_object_or_404
+from django.views.generic import TemplateView, DetailView, ListView
+
+from poll.models import Poll
+
 from .models import Partners, Quotes, Read, Watch
 
 
-def index(request):
-# get the latest Read and Watch posts that are published
-    readList = Read.objects.filter(published=True)
-    try:
-        watchLatest = Watch.objects.latest('id')
-    except Watch.DoesNotExist:
-        watchLatest = None
-    # now return the rendered template
-    return render(request, 'index.html', {'readList': readList, 'watchLatest': watchLatest})
+def get_read_list():
+    return Read.objects.filter(published=True)
 
 
-def about(request):
-# get the quote posts that are published
-    quoteList = Quotes.objects.filter(published=True)
-    return render(request, 'about.html', {'quoteList': quoteList})
+def get_quote_list():
+    return Quotes.objects.filter(published=True)
 
 
+class SiteIndexView(TemplateView):
+    template_name = 'ureport_website/index.html'
 
-def pollsDetail(request):
-    return render(request, 'polls.html')
+    def get_context_data(self, **kwargs):
+        try:
+            watchLatest = Watch.objects.latest('id')
+        except Watch.DoesNotExist:
+            watchLatest = None
 
-
-def partners(request):
-# get the partners and quote posts that are published
-    partnersList = Partners.objects.filter(published=True)
-    quoteList = Quotes.objects.filter(published=True)
-    return render(request, 'partners.html', {'partnersList': partnersList, 'quoteList': quoteList})
-
-
-def partnersDetail(request, slug):
-# get the partner object and quote posts
-    partnersList = Partners.objects.filter(published=True)
-    quoteList = Quotes.objects.filter(published=True)
-    partnerDetails = get_object_or_404(Partners, slug=slug)
-# now return the rendered template
-    return render(request, 'partners_detail.html', {'partnersList': partnersList, 'partnerDetails': partnerDetails, 'quoteList': quoteList})
+        params = {
+            'readList': get_read_list(),
+            'watchLatest': watchLatest
+        }
+        return params
 
 
-def readArticles(request):
-# get the read and quote posts that are published
-    readList = Read.objects.filter(published=True)
-    quoteList = Quotes.objects.filter(published=True)
-    try:
-        readLatest = Read.objects.latest('id')
-    except Read.DoesNotExist:
-        readLatest = None
-    return render(request, 'read.html', {'readList': readList, 'readLatest': readLatest, 'quoteList': quoteList})
+class EngageView(TemplateView):
+    template_name = 'ureport_website/engage.html'
+
+
+class NationalPulseView(TemplateView):
+    template_name = 'ureport_website/national_pulse.html'
+
+
+class AboutView(TemplateView):
+    template_name = 'ureport_website/about.html'
+
+    def get_context_data(self, **kwargs):
+        context = {
+            'quoteList': get_quote_list()
+        }
+        return context
+
+
+class PollsListView(ListView):
+    model = Poll
+    template_name = 'ureport_website/polls_list.html'
+
+
+class PollDetailView(DetailView):
+    model = Poll
+
+
+class PartnersListView(ListView):
+    model = Partners
+    context_object_name = 'partnersList'
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super(PartnersListView, self).get_context_data(**kwargs)
+        context['quoteList'] = get_quote_list()
+        return context
+
+
+class PartnersDetailView(DetailView):
+    model = Partners
+    context_object_name = 'partnerDetails'
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super(PartnersDetailView, self).get_context_data(**kwargs)
+        context['quoteList'] = get_quote_list()
+        context['partnersList'] = Partners.objects.filter(published=True)
+        return context
+
+
+class ReadListView(ListView):
+    model = Read
+    context_object_name = 'readList'
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super(ReadListView, self).get_context_data(**kwargs)
+        context['quoteList'] = get_quote_list()
+
+        try:
+            readLatest = Read.objects.latest('id')
+        except Read.DoesNotExist:
+            readLatest = None
+        context['readLatest'] = readLatest
+        return context
+
+
+class ReadDetailView(DetailView):
+    model = Read
+    context_object_name = 'readDetails'
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super(PartnersDetailView, self).get_context_data(**kwargs)
+        context['quoteList'] = get_quote_list()
+        context['readList'] = Read.objects.filter(published=True)
+        return context
 
 
 def readDetail(request, slug):

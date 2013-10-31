@@ -12,6 +12,10 @@
     {% bootstrap_stylesheet_tag %}
     {% theme_stylesheet_tag %}
     {% bootstrap_stylesheet_tag "responsive" %}
+
+    <script src="{{ MEDIA_URL }}ureport_website/js/jquery.min.js"></script>
+    <script src="{{ MEDIA_URL }}ureport_website/jquery-ui/jquery-ui.min.js"></script>
+    {% bootstrap_javascript_tag %}
     <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -35,8 +39,8 @@
 
 
 		    <ul class="nav pull-right">
-			<li class="{% block about-active %}{% endblock %}"><a href={% url 'website-about-ureport' %}>About UReport</a></li>
-			<li class="{% block partners-active %}{% endblock %}"><a href={% url 'website-partners' %}>Partners</a></li>
+		        <li class="{% block about-active %}{% endblock %}"><a href="{% url 'website-about-ureport' %}">About UReport</a></li>
+		        <li class="{% block partners-active %}{% endblock %}"><a href="{% url 'website-partners' %}">Partners</a></li>
 			<li class="{% block polls-active %}{% endblock %}"><a href={% url 'website-polls' %}>Polls</a></li>
 			<li class="{% block national-pulse-active %}{% endblock %}"><a href={% url 'website-national-pulse' %}>National Pulse</a></li>
 			<li class="{% block read-active %}{% endblock %}"><a href={% url 'website-read' %}>Read</a></li>
@@ -60,7 +64,7 @@
             <div class="footer-border"></div>
             <div class="row">
                 <div class="copyright">
-		    <p>UReport &copy; {% now "Y" %} - All rights reserved. &nbsp;&nbsp;<a href="{% url 'website-about-ureport' %}">About Ureport</a> | <a href="{% url 'website-engage' %}">How to join</a> | <a href="{% url 'website-partners' %}">Our partners</a></p>
+		    <p>UReport &copy; {% now "Y" %} - All rights reserved. &nbsp;&nbsp;<a href="{% url 'website-about-ureport' %}" %}">About Ureport</a> | <a href="{% url 'website-engage' %}">How to join</a> | <a href="{% url 'website-partners' %}">Our partners</a></p>
                 </div>
             </div>
         </div>
@@ -69,8 +73,5 @@
 </div> 
 <!-- container -->
 
-    <script src="{{ MEDIA_URL }}ureport_website/js/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    {% bootstrap_javascript_tag %}
 </body>
 </html>

@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+<!-- add active tag to main navigation -->
+{% block polls-active %}current-page{% endblock %}
+
+{% block content %}
+
+<!-- Polls list page content -->
+
+<div class="site-wrapper">
+    <div class="row-content">
+        <div class="page-title">Polls - Search Results</div>
+                <div class="main-content">
+                    <div class="poll-search-content">
+                        <ul>
+			    {% for poll in polls %}
+			    <li>{{ poll.question }}
+				<div>
+				    <div class="date_orange2">{{ poll.start_date }}</div>
+			            <div class="responses_orange2">{{ poll.responses.count }} responses from {{ poll.contacts.count }} participants ({{ poll.response_rate }}%)</div>
+	  		        </div>
+			    </li>
+
+			    {% endfor %}
+			</ul>
+                    </div>
+	    {% if is_paginated %}
+		<div class="pagination">
+		    <span class="step-links">
+			{% if page_obj.has_previous %}
+			    <a href="?page={{ page_obj.previous_page_number }}">Prev</a>
+			{% endif %}
+
+			<span class="current">
+			    Page {{ page_obj.number }} of {{ paginator.num_pages }}.
+			</span>
+
+			{% if page_obj.has_next %}
+			    <a href="?page={{ page_obj.next_page_number }}">Next</a>
+			{% endif %}
+		    </span>
+		</div>
+	    {% endif %}
+        </div>
+          
+        <!-- AddThis Button BEGIN -->
+        <div class="sharebar">
+            <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+                <div class="sharetext">Share this</div>
+                    <a class="addthis_button_facebook"></a>
+                    <a class="addthis_button_twitter"></a>
+                    <a class="addthis_button_google_plusone_share"></a>
+                    <a class="addthis_button_email"></a>
+                    <a class="addthis_button_linkedin"></a>
+                    <a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+                </div>
+            <script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+        </div>
+    </div>
+    <!-- AddThis Button END -->
+
+    <div class="sidebar">
+        <div class="poll-recent">
+            <div class="poll-recent-title">Recent polls</div>
+            <div id="poll-recent-content" class="poll-recent-content">
+                <ul>
+                    <li><div class="date">31st July 2013</div>Breast milk is the best food for babies even though the mother is HIV +ve. The baby has 2 be breastfed the first 6 months. From Ministry of Health <a href="">see results</a></li>
+                    <li><div class="date">31st July 2013</div>Hello U-reporter! Have you borrowed any textbooks from school to be used at home in the last 5 days? Please reply with Yes or No <a href="">see results</a></li>
+                    <li><div class="date">31st July 2013</div>Who do you think should be responsible for solving community conflicts?. a) Community leaders, b) Police, c) Local government. IF other, please specify? <a href="">see results</a></li>
+                    <li><div class="date">31st July 2013</div>July 12th is 'Malala day'. Malala from Pakistan will be speaking at the UN advocating for global education. What is the importance of education to you? <a href="">see results</a></li>
+                    <li><div class="date">31st July 2013</div>Have you heard of &quot;Family Health Days (FHDs)&quot; YES or NO? Respond to find out about free health services in your Kampala. <a href="">see results</a></li>
+                    <li><div class="date">31st July 2013</div>Hello U-reporter, you've been selected to be one of our special reporters on Education. Tell us if you are Parent/guardian, Student, Teacher or Other. Thank you. <a href="">see results</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-searchtools">
+            <form class="" action="poll-search-results.html">
+                <input type="text" class="input-block-level" placeholder="search polls by question or keyword">
+                <div class="endmonth"><button type="submit" value="1" class="btn">Search</button></div>                   
+            </form>
+        </div>        
+	<div class="page-ad"><img src="{{ MEDIA_URL }}ureport_website/img/become_rest.gif" height="135" width="350"/></div>
+    </div>
+</div>
+
+<!-- Javascript for custom scroll bar on poll list -->
+
+<script src="{{ MEDIA_URL }}ureport_website/js/jquery.slimscroll.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('#poll-recent-content').slimScroll({
+          distance: '5px',
+        });       
+     });
+</script>
+
+{% endblock %}

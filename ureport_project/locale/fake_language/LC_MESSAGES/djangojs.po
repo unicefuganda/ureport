@@ -1,9 +1,8 @@
-
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-26 18:56+0100\n"
+"POT-Creation-Date: 2013-11-06 16:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,11 +11,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid  "All "
-msgstr  "∀ll "
-msgid  " items are selected."
-msgstr  " ıʇəɯs ɐɹə sələɔʇəp˙"
-msgid  "Clear selection"
-msgstr  "Ɔləɐɹ sələɔʇıou"
-msgid  "  contacts selected"
-msgstr  "  ɔouʇɐɔʇs sələɔʇəp"
+#: rapidsms_generic/generic/static/javascripts/generic.js:98
+#: rapidsms_ureport/ureport/static/javascripts/ureport.js:472
+msgid "All "
+msgstr "∀ll "
+
+#: rapidsms_generic/generic/static/javascripts/generic.js:98
+#: rapidsms_ureport/ureport/static/javascripts/ureport.js:472
+msgid " items are selected."
+msgstr " ıʇəɯs ɐɹə sələɔʇəp˙"
+
+#: rapidsms_generic/generic/static/javascripts/generic.js:98
+#: rapidsms_ureport/ureport/static/javascripts/ureport.js:472
+msgid "Clear selection"
+msgstr "Ɔləɐɹ sələɔʇıou"
+
+#: rapidsms_ureport/ureport/static/javascripts/mp_dashboard.js:29
+msgid "  contacts selected"
+msgstr "  ɔouʇɐɔʇs sələɔʇəp"

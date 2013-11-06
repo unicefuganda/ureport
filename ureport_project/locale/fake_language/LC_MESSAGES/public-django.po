@@ -1,0 +1,338 @@
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:7
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:39
+msgid "Voice Matters"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:42
+msgid "members to date"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:54
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:103
+msgid "HOME"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:109
+msgid "POLL ADMIN"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:110
+msgid "MESSAGE LOG"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:111
+msgid "UREPORTERS"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:112
+msgid "FLAGGED MESSAGES"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:113
+msgid "A-CLASS"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:116
+msgid "LOGIN"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:97
+msgid "Supported by"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:55
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:104
+msgid "POLL RESULTS"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:56
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:105
+msgid "ABOUT UREPORT"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:57
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:106
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:107
+msgid "HOW TO JOIN"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:114
+msgid "REAL TIME"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:58
+msgid "NATIONAL PULSE"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:67
+#: rapidsms_ureport/ureport/templates/ureport/about.html:30
+msgid "Ugandans"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:68
+#, python-format
+msgid ""
+"Ureport is a free SMS-based system that allows young %(citizens_trans)s to "
+"speak out on what's happening in communities across the country, and work "
+"together with other community leaders for positive change."
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:78
+msgid "YOUR SAY:"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:120
+msgid "&copy; 2010 - 2012 UNICEF et al."
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/about.html:8
+msgid "Why Join Ureport"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/about.html:12
+msgid "Uganda"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/about.html:13
+#, python-format
+msgid ""
+"<ul>\n"
+"\t    <li>Speak out on what's happening in your community</li>\n"
+"\t    <li>Use Ureport results and information to update and increase "
+"citizen's awareness</li>\n"
+"\t    <li>Participate in nationwide campaigns to help improve your country</"
+"li>\n"
+"\t    <li>Share what's happening around %(country_trans)s with other "
+"Ureporters</li>\n"
+"\t</ul>"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/about.html:26
+msgid "About Ureport"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/about.html:31
+#, python-format
+msgid ""
+"Ureport is a free SMS-based system that allows\n"
+"                young %(citizens_trans)s to speak out on what's happening "
+"in\n"
+"                communities across the country, and work together\n"
+"\t\twith other community leaders for positive change."
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/about.html:40
+msgid "Ureport is made up of"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/about.html:42
+msgid ""
+"Weekly SMS messages and polls to and from\n"
+"\t\t\ta growing community of Ureporters"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/about.html:46
+msgid ""
+"Regular radio programs that will broadcast\n"
+"\t\t\tstories gathered by Ureport"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/about.html:50
+msgid ""
+"Newspaper articles that will publish stories from\n"
+"\t\t\tthe Ureport community."
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/about.html:56
+msgid "The mission of Ureport"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/about.html:59
+msgid ""
+"Inspire action within our communities to unite\n"
+"                    and share the responsibility of creating a better\n"
+"                    environment for eveyone.<br/>\n"
+"                    Inspire action from our leaders - let them know\n"
+"                    what's going on and what action your community wants.<br/"
+">\n"
+"                    Share info that Ureport gathers through different\n"
+"                    mediums (radio, TV, community dialogue, website,\n"
+"\t\t    and youth events)"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/home.html:22
+msgid "PREVIOUS POLLS"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/home.html:34
+msgid "See results"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:5
+msgid "How To Join"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:10
+msgid "Step 2"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:12
+msgid ""
+"You will receive a greeting message and a series of quetions , to find out "
+"more about you\n"
+"    (Ureport needs to know your District but all other quetions are optional)"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:21
+msgid "Step 1"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:21
+msgid ""
+"Text the word Join to 8500\n"
+"    - all Ureport SMSs are free!"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:30
+msgid "Step 4"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:32
+msgid ""
+" As a Ureporter, you will get weekly poll results, and meaningful "
+"information to assist you to enact change in\n"
+"    your community."
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:40
+msgid "Step 3"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:42
+msgid "After you answer the quetions about you, you are a member of Ureport!"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:204
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:3
+msgid "National Pulse"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:74
+msgid "Today's Pulse"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:75
+msgid "Week's Pulse"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:76
+msgid "Month's Pulse"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:77
+msgid "Year's Pulse"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:80
+msgid "Reset All"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:84
+msgid ""
+"Welcome to National Pulse where you can see what is trending within the U-"
+"report community."
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:84
+msgid ""
+"Click on your district to see what the young people are talking about where "
+"you live."
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:86
+msgid "Click on on current filter("
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:86
+msgid ") to see word cloud"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:117
+msgid "Filter word cloud with"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:19
+msgid "Filter By Age"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/tag_cloud/tag_cloud.html:148
+msgid "edit excluded tags"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/best_visualization.html:4
+msgid "CURRENT POLL"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/best_visualization.html:18
+msgid "Responses out of"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/best_visualization.html:18
+msgid "Participants"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/best_visualization.html:55
+msgid "More"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:6
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:11
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:16
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:21
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:26
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:211
+msgid "No"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:31
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:35
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:39
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:43
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:47
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:51
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:56
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:61
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:66
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:71
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:208
+msgid "Yes"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:75
+msgid "Split Results"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:214
+msgid "unknown"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:6
+msgid "Male"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:7
+msgid "Female"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:13
+msgid "Start Age"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:16
+msgid "End Age"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/top_responses.html:2
+msgid "Top Responses"
+msgstr ""
+

@@ -841,8 +841,8 @@ msgstr "الفلترة من منطقة"
 msgid "Show Mass Messages"
 msgstr "تظهر رسائل جماعية"
 
-msgid "Show Unsolicitized Messages"
-msgstr "تظهر رسائل Unsolicitized"
+msgid "Show Unsolicited Messages"
+msgstr "تظهر الرسائل غير المرغوب فيها"
 
 msgid "Show Poll Messages"
 msgstr "تظهر الرسائل الإستطلاع"
@@ -1267,8 +1267,8 @@ msgstr "رسالة دخول"
 msgid "Autoreg Messages"
 msgstr "رسائل Autoreg"
 
-msgid "Unsolicitized Messages"
-msgstr "رسائل Unsolicitized"
+msgid "Unsolicited Messages"
+msgstr "الرسائل غير المرغوب فيها"
 
 msgid "Poll Messages"
 msgstr "الرسائل الاستطلاع"

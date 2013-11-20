@@ -1231,7 +1231,7 @@ msgid "Show Mass Messages"
 msgstr ""
 
 #: rapidsms_ureport/ureport/templates/ureport/contact_message_base.html:49
-msgid "Show Unsolicitized Messages"
+msgid "Show Unsolicited Messages"
 msgstr ""
 
 #: rapidsms_ureport/ureport/templates/ureport/contact_message_base.html:50
@@ -1837,7 +1837,7 @@ msgid "Autoreg Messages"
 msgstr ""
 
 #: rapidsms_ureport/ureport/views/message_views.py:134
-msgid "Unsolicitized Messages"
+msgid "Unsolicited Messages"
 msgstr ""
 
 #: rapidsms_ureport/ureport/views/message_views.py:169

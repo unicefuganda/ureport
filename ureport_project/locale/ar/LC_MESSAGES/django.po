@@ -529,49 +529,43 @@ msgid "District Response"
 msgstr "استجابة حي"
 
 msgid "full_tree_for_model tag was given an invalid model: %s"
-msgstr "أعطيت علامة full_tree_for_model نموذج غير صالح:٪ ق"
+msgstr "شجرة_الكامل_لنموذج أعطيت علامة نموذجا غير صالح: %s "
 
 msgid "drilldown_tree_for_node tag was given an invalid model: %s"
-msgstr "أعطيت drilldown_tree_for_node علامة نموذجا غير صالح:٪ S"
+msgstr "انتقل_لأسفل_الشجرة_لعقدة أعطيت علامة نموذجا غير صالح: %s"
 
 msgid "drilldown_tree_for_node tag was given an invalid model field: %s"
-msgstr "أعطيت drilldown_tree_for_node علامة حقل نموذج غير صالح:٪ S"
+msgstr "انتقل_لأسفل_الشجرة_لعقدة أعطيت علامة حقل نموذج غير صالح: %s"
 
 msgid "%s tag requires three arguments"
-msgstr "العلامة٪ S يتطلب ثلاث حجج"
+msgstr "يتطلب %s العلامة ثلاث حجج"
 
 msgid "second argument to %s tag must be 'as'"
-msgstr "الحجة الثانية لعلامة٪ و يجب أن يكون &#39;ك&#39;"
+msgstr "الحجة الثانية ل %s العلامة يجب أن يكون 'ك'"
 
 msgid "%s tag requires either three, seven or eight arguments"
-msgstr "ق٪ العلامة يتطلب إما ثلاثة، سبعة أو ثمانية الحجج"
+msgstr "يتطلب %s العلامة إما ثلاثة، سبعة أو ثمانية الحجج"
 
 msgid "if seven arguments are given, fourth argument to %s tag must be 'with'"
-msgstr ""
-"إذا أعطيت سبعة الحجج، ويجب أن تكون الوسيطة الرابعة إلى٪ s علامة &#39;مع&#39;"
+msgstr "إذا أعطيت سبعة الحجج، الوسيطة الرابعة إلى %s العلامة يجب أن يكون 'مع'"
 
 msgid "if seven arguments are given, sixth argument to %s tag must be 'in'"
-msgstr "إذا أعطيت سبعة الحجج، حجة السادسة لعلامة٪ و يجب أن تكون &#39;في&#39;"
+msgstr "إذا أعطيت سبعة الحجج، حجة السادسة إلى %s العلامة يجب أن يكون 'في'"
 
-msgid ""
-"if eight arguments are given, fourth argument to %s tag must be 'cumulative'"
-msgstr ""
-"إذا أعطيت ثمانية الحجج، الوسيطة الرابعة إلى علامة٪ و يجب أن يكون "
-"&quot;التراكمي&quot;"
+msgid "if eight arguments are given, fourth argument to %s tag must be 'cumulative'"
+msgstr "إذا أعطيت ثمانية الحجج، الوسيطة الرابعة إلى %s العلامة يجب أن يكون 'التراكمي'"
 
 msgid "if eight arguments are given, fifth argument to %s tag must be 'count'"
-msgstr ""
-"إذا أعطيت ثماني حجج، يجب أن يكون حجة الخامسة إلى٪ s علامة &#39;العد&#39;"
+msgstr "إذا أعطيت ثمانية الحجج، حجة الخامس إلى %s العلامة يجب أن 'الاعتماد'"
 
 msgid "if eight arguments are given, seventh argument to %s tag must be 'in'"
-msgstr ""
-"إذا أعطيت ثمانية الحجج، حجة السابع إلى علامة٪ و يجب أن تكون &#39;في&#39;"
+msgstr "إذا أعطيت ثمانية الحجج، حجة السابع إلى %s العلامة يجب أن يكون 'في'"
 
 msgid "%s tag requires a queryset"
-msgstr "العلامة٪ S يتطلب queryset"
+msgstr "يتطلب %s علامة على queryset"
 
 msgid "'You blacklisted %(connections)d numbers'"
-msgstr "&#39;على القائمة السوداء٪ (وصلات) د أرقام&#39;"
+msgstr "على القائمة السوداء أرقام %(connections)d"
 
 msgid "You don't have permissions to blacklist numbers"
 msgstr "لم يكن لديك أذونات إلى لائحتك السوداء أرقام"
@@ -583,7 +577,7 @@ msgid "Assign selected to poll"
 msgstr "تعيين المحدد إلى استطلاع"
 
 msgid "%(length)d responses assigned to  %(poll)s poll"
-msgstr "٪ (طول) د الردود تعيين إلى٪ s الاستطلاع (استطلاع)"
+msgstr "ردود %(length)d تعيين %(poll)s الاستطلاع"
 
 msgid "Delete Selected"
 msgstr "حذف مختارة"
@@ -613,7 +607,7 @@ msgid "Default response"
 msgstr "الاستجابة الافتراضية"
 
 msgid "%(results)d participants added to  %(poll)s poll"
-msgstr "واضاف٪ (النتائج) د المشاركين إلى٪ (استطلاع) ليالي الاستطلاع"
+msgstr "وأضاف المشاركون %(results)d إلى %(poll)s الاستطلاع"
 
 msgid "Reply to selected"
 msgstr "الرد على اختيارها"
@@ -631,7 +625,7 @@ msgid "text luo"
 msgstr "النص لوه"
 
 msgid "Message successfully sent to %(connections)d numbers"
-msgstr "رسالة أرسلت بنجاح إلى٪ (اتصالات) د أرقام"
+msgstr "رسالة أرسلت بنجاح إلى %(connections)d أرقام"
 
 msgid "You don't have permission to send messages!"
 msgstr "ليس لديك الإذن لإرسال الرسائل!"
@@ -947,10 +941,8 @@ msgstr "مجموعة (ق)"
 msgid "previous"
 msgstr "سابق"
 
-msgid "Page %(messages_number)sof %(messages_paginator_num_pages)s. "
-msgstr ""
-"الصفحة٪ (messages_number)٪ قوات العمليات الخاصة "
-"(messages_paginator_num_pages) ق."
+msgid "Page %(messages_number)s of %(messages_paginator_num_pages)s. "
+msgstr "الصفحة %(messages_number)s من %(messages_paginator_num_pages)s. "
 
 msgid "National Pulse"
 msgstr "نبض وطني"
@@ -1184,7 +1176,7 @@ msgid "Delete"
 msgstr "حذف"
 
 msgid "No rules for %(category_name)s yet"
-msgstr "أية قواعد ل٪ (CATEGORY_NAME) ليالي حتى الآن"
+msgstr "أية قواعد ل %(category_name)s حتى الآن"
 
 msgid "Add  a rule"
 msgstr "إضافة قاعدة"

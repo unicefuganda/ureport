@@ -955,6 +955,15 @@ msgstr "نبض العام"
 msgid "Reset All"
 msgstr "إعادة تعيين جميع"
 
+msgid "Welcome to National Pulse"
+msgstr "مرحبا بكم في نبض الوطنية"
+
+msgid "This is What is trending in the Ureport Community"
+msgstr "هذا هو ما تتجه في الجماعة Ureport"
+
+msgid "Loading National Pulse... Please wait, This may take a while."
+msgstr "تحميل نبض الوطنية ... يرجى الانتظار، وهذا قد يستغرق فترة من الوقت."
+
 msgid ""
 "Welcome to National Pulse where you can see what is trending within the "
 "U-report community."

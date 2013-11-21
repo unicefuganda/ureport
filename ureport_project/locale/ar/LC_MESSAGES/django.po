@@ -609,6 +609,12 @@ msgstr "الاستجابة الافتراضية"
 msgid "%(results)d participants added to  %(poll)s poll"
 msgstr "وأضاف المشاركون %(results)d إلى %(poll)s الاستطلاع"
 
+msgid "Message is going to be sent to %(contacts)d contacts."
+msgstr "الرسالة سوف يتم إرسالها إلى جهات الاتصال %(contacts)d."
+
+msgid "Confirm Sending"
+msgstr "إرسال تأكيد"
+
 msgid "Reply to selected"
 msgstr "الرد على اختيارها"
 

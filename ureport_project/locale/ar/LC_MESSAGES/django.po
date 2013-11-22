@@ -609,6 +609,12 @@ msgstr "الاستجابة الافتراضية"
 msgid "%(results)d participants added to  %(poll)s poll"
 msgstr "وأضاف المشاركون %(results)d إلى %(poll)s الاستطلاع"
 
+msgid "Message is going to be sent to %(contacts)d contacts."
+msgstr "الرسالة سوف يتم إرسالها إلى جهات الاتصال %(contacts)d."
+
+msgid "Confirm Sending"
+msgstr "إرسال تأكيد"
+
 msgid "Reply to selected"
 msgstr "الرد على اختيارها"
 
@@ -900,6 +906,27 @@ msgstr "الخطوة 3"
 
 msgid "After you answer the quetions about you, you are a member of Ureport!"
 msgstr "بعد الإجابة على الأسئلة عنك، كنت عضوا في Ureport!"
+
+msgid "Thanks for visiting RapidSMS!"
+msgstr "شكرا لزيارتكم الرسائل القصيرة السريعة!"
+
+msgid "Please come again."
+msgstr "يرجى تأتي مرة أخرى."
+
+msgid "Log in again"
+msgstr "تسجيل الدخول مرة أخرى"
+
+msgid "Login"
+msgstr "دخول"
+
+msgid "Oops. Your username and password didn't match. Please try again."
+msgstr "عفوا. لم اسم المستخدم وكلمة المرور الخاصة بك غير متطابقة. يرجى المحاولة مرة أخرى."
+
+msgid "You're already logged in!"
+msgstr "كنت بالفعل في تسجيل!"
+
+msgid "Please log in to RapidSMS"
+msgstr "يرجى تسجيل الدخول إلى الرسائل القصيرة السريعة"
 
 msgid "Filter Poll Contacts"
 msgstr "مرشح الإستطلاع اتصالات"

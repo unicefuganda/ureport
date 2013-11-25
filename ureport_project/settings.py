@@ -311,10 +311,9 @@ NOSE_ARGS = ('--with-xunit', '--xunit-file=target/reports/unit-test/nosetests.ur
 	     '--with-coverage', '--cover-html', '--cover-html-dir=target/reports/unit-test/coverage', '--cover-package=poll,uganda_common,unregister,message_classifier,contact,rapidsms_httprouter,rapidsms_ureport',
              '--verbosity=2')
 
-MAP_BOUNDS = {'bottom_left': {'lon': 3292022.5, 'lat': -164636.828},
-
-              'top_right': {'lon': 3896216.5, 'lat': 471764.844}
-              }
+MAP_BOUNDS = {'bottom_left': {'lon': 28.6963, 'lat': -1.8015},
+              'top_right': {'lon': 35.8592, 'lat': 4.9}
+             }
 
 #MAP_BOUNDS SHOULD MOVE INTO HERE (BEFORE GEOSERVER IS KILLED)
 MAP_ARGS = {'center': {'longitude': 33.0, 'latitude': 0.0},

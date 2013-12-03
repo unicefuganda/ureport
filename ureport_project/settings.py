@@ -316,8 +316,8 @@ MAP_BOUNDS = {'bottom_left': {'lon': 28.6963, 'lat': -1.8015},
              }
 
 #MAP_BOUNDS SHOULD MOVE INTO HERE (BEFORE GEOSERVER IS KILLED)
-MAP_ARGS = {'center': {'longitude': 33.0, 'latitude': 0.0},
-            'scale': 36000
+MAP_ARGS = {'center': {'longitude': 32.27, 'latitude': 0.95},
+            'scale': 23000
             }
 
 COUNTRY_SPECIFIC_TOKENS = {

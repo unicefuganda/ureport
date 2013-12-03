@@ -121,4 +121,4 @@ ADMINS = (
 )
 
 
-#CELERY_IMPORTS = ('tasks',)
+CELERY_IMPORTS = ('ureport.tasks','message_classifier.tasks','rapidsms_httprouter.tasks')

@@ -338,6 +338,15 @@ import sys
 
 PAGINATION_LIMIT = None
 
+BACKENDS_CONFIGURATION = {
+    "vumi": {
+        "ENGINE": "rapidsms.backends.vumi.VumiBackend",
+        "sendsms_url": "http://2.2.2.1:9000/send/",
+        "sendsms_user": "username",
+        "sendsms_pass": "password",
+    }
+}
+
 try:
     if os.environ.has_key('LOCAL_SETTINGS'):
         # the LOCAL_SETTINGS environment variable is used by the build server

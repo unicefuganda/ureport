@@ -420,35 +420,29 @@ msgstr "أفضلية"
 msgid "Color"
 msgstr "اللون"
 
-msgid "yes"
-msgstr "نعم"
-
-msgid "yeah"
-msgstr "نعم"
-
-msgid "yep"
-msgstr "موافق"
-
-msgid "yay"
-msgstr "ياي"
-
-msgid "y"
-msgstr "و"
-
 msgid "no"
-msgstr "لا"
+msgstr "ﻻ"
 
 msgid "nope"
 msgstr "كلا"
 
 msgid "nah"
-msgstr "قريب"
-
-msgid "nay"
-msgstr "تقديم"
+msgstr "ناه"
 
 msgid "n"
 msgstr "ن"
+
+msgid "yes"
+msgstr "ﻦﻌﻣ"
+
+msgid "ya"
+msgstr "يا"
+
+msgid "y"
+msgstr "ذ"
+
+msgid "yep"
+msgstr "موافق"
 
 msgid "Allow all"
 msgstr "السماح لجميع"

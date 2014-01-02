@@ -6,6 +6,6 @@ try:
 except:
     pass
 
-DEBUG = TEMPLATE_DEBUG = False
+DEBUG = TEMPLATE_DEBUG = True
 
 GEOSERVER_URL = ''

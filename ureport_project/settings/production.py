@@ -66,12 +66,13 @@ MIDDLEWARE_CLASSES = tuple(TEMP)
 
 INSTALLED_APPS += ("raven.contrib.django.raven_compat",)
 
+# TODO we should support SSL
 RAVEN_CONFIG = {
-    'dsn': 'https://fa310d8c078c40cb9881fdb787ba21c1:'
+    'dsn': 'http://fa310d8c078c40cb9881fdb787ba21c1:'
            '42d834d6923740ee88e1027e7e213941@sentry.unicefuganda.org/2',
 }
 
-SENTRY_URL = "https://sentry.unicefuganda.org/t4d/ureport/"
+SENTRY_URL = "http://sentry.unicefuganda.org/t4d/ureport/"
 
 CELERY_QUEUES["sentry"] = {
     "exchange": "default",

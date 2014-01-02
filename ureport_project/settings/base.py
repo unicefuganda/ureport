@@ -252,22 +252,122 @@ LOGGING = {
             'level': 'DEBUG',
             'class': 'django.utils.log.NullHandler',
         },
+        'command': {
+            'class': 'logging.FileHandler',
+            'filename': '/var/log/ureport/command.log',
+            'formatter': 'simple'
+        },
         'console': {
             'level': 'DEBUG',
             'class': 'logging.StreamHandler',
             'formatter': 'simple'
         },
-        'mail_admins': {
-            'level': 'ERROR',
-            'class': 'django.utils.log.AdminEmailHandler'
+        'application_log_file': {
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': '/var/log/ureport/ureport_application.log',
+            'formatter': 'verbose',
+            'backupCount': 50,
+            'maxBytes': 2 ** 20,
+        },
+        'application_access_log_file': {
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': '/var/log/ureport/ureport_access.log',
+            'formatter': 'verbose',
+            'backupCount': 50,
+            'maxBytes': 2 ** 20,
         },
     },
     'loggers': {
-        'django.request': {
-            'handlers': ['mail_admins'],
+        'django': {
+            'handlers': ['application_log_file'],
             'level': 'ERROR',
             'propagate': True,
         },
+        'ureport': {
+            'handlers': ['application_log_file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'django.middleware': {
+            'handlers': ['application_log_file'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+        'django.db.backends': {
+            'handlers': ['application_log_file'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+        'django.request': {
+            'handlers': ['application_log_file'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+        'ureport.app': {
+            'handlers': ['application_log_file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'ureport.tasks': {
+            'handlers': ['application_log_file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'ureport.views.poll_views': {
+            'handlers': ['application_log_file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'ureport.middleware.access_log': {
+            'handlers': ['application_access_log_file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'poll.app': {
+            'handlers': ['application_log_file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'poll.models': {
+            'handlers': ['application_log_file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'rapidsms_httprouter.models': {
+            'handlers': ['application_log_file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'rapidsms_httprouter.views': {
+            'handlers': ['application_log_file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'rapidsms_httprouter.router': {
+            'handlers': ['application_log_file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'unregister': {
+            'handlers': ['application_log_file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'script.utils.outgoing': {
+            'handlers': ['application_log_file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'script.managers': {
+            'handlers': ['application_log_file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'command': {
+            'handlers': ['command'],
+            'level': 'DEBUG',
+            'propogate': True
+        }
     }
 }
 
@@ -456,7 +556,8 @@ NOSE_ARGS = ('--with-xunit', '--with-coverage',
              '--cover-html', '--verbosity=2',
              '--xunit-file=target/reports/unit-test/nosetests.ureport.xml',
              '--cover-html-dir=target/reports/unit-test/coverage',
-             '--cover-package=poll,uganda_common,unregister,message_classifier,contact,rapidsms_httprouter,rapidsms_ureport',
+             '--cover-package=poll,uganda_common,unregister,'
+             'message_classifier,contact,rapidsms_httprouter,rapidsms_ureport',
              )
 
 MAP_BOUNDS = {

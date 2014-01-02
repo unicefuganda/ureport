@@ -1,4 +1,4 @@
-from settings import *
+from settings.base import *
 CELERY_ALWAYS_EAGER = True
 ADMIN_UNREGISTER = True
 IBM_TABLES_MANAGED = True
@@ -106,21 +106,21 @@ LOGGING = {
             'handlers': ['application_log_file'],
             'level': 'ERROR',
             'propagate': True,
-        
+
         },
 
         'app/ureport' : {
             'handlers': ['application_log_file'],
             'level': 'INFO',
             'propagate': True,
-        
+
         },
 
         'app/ureport' : {
             'handlers': ['application_log_file'],
             'level': 'INFO',
             'propagate': True,
-        
+
         },
 
         'django.middleware': {
@@ -128,7 +128,7 @@ LOGGING = {
             'level': 'ERROR',
             'propagate': True,
             },
-    
+
         'django.db.backends': {
             'handlers': ['application_log_file'],
             'level': 'ERROR',
@@ -145,7 +145,7 @@ LOGGING = {
             'level': 'INFO',
             'propagate': True,
             },
-    
+
         'ureport.tasks': {
             'handlers': ['application_log_file'],
             'level': 'INFO',

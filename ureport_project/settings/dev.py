@@ -7,5 +7,6 @@ except:
     pass
 
 DEBUG = TEMPLATE_DEBUG = True
+CELERY_ALWAYS_EAGER = True
 
 GEOSERVER_URL = ''

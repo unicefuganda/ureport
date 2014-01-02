@@ -2,6 +2,8 @@
 # vim: ai ts=4 sts=4 et sw=4
 # encoding=utf-8
 
+import djcelery
+djcelery.setup_loader()
 
 # -------------------------------------------------------------------- #
 #                          PATH CONFIGURATION                          #
@@ -374,11 +376,8 @@ LOGGING = {
 # -------------------------------------------------------------------- #
 #                         CELERY CONFIGURATION                         #
 # -------------------------------------------------------------------- #
-# TODO this duplicates celeryconfig.py! do we need that file?
-# if djcelery will pick up celery conf here?
 
-#BROKER_URL = 'amqp://guest:guest@localhost:5672//'
-#CELERY_ALWAYS_EAGER = True
+# djcelery can load config from here, so this replaces celeryconfig.py
 
 CELERY_RESULT_BACKEND = 'amqp'
 CELERY_RESULT_PERSISTENT = False

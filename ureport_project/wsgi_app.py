@@ -7,7 +7,7 @@ sys.path.append(os.path.join(filedir))
 #print sys.path
 
 os.environ["CELERY_LOADER"] = "django"
-os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'settings.production'
 import sys
 print sys.path
 

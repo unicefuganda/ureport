@@ -132,16 +132,18 @@ function command.run-functional-tests() {
 #http://stackoverflow.com/questions/6183276/how-do-i-run-selenium-in-xvfb
 function run-functional-tests() {
     RUN_ON_DEV_BOX=$1
+    FUNCT_FILE=$2
     local NOSE_TEST_REPORT="target/reports/functional-test/nosetests.ureport.xml"
 
     # Making it possible to run a specific functional test at a time
-    if [[ -z "$2" ]];▫
+    #local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/funct_*.py"
+    if [[ -z "$FUNCT_FILE" ]]
     then
         local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/funct_*.py"
     else
         local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/$2"
     fi
-
+    
     cd ureport_project
     echo "Running the functional tests from [${FUNCTIONAL_TEST_FILE}]"
     rm -rf target/reports/functional-test

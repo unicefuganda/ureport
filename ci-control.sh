@@ -114,7 +114,7 @@ function set-test-server-url() {
 function command.run-functional-tests-against() {
     set-test-server-url $1
     RUN_ON_DEV_BOX=$2
-    run-functional-tests $RUN_ON_DEV_BOX
+    run-functional-tests $RUN_ON_DEV_BOX $3
 }
 
 function command.run-functional-tests-against-ci() {
@@ -134,7 +134,13 @@ function run-functional-tests() {
     RUN_ON_DEV_BOX=$1
     local NOSE_TEST_REPORT="target/reports/functional-test/nosetests.ureport.xml"
 
-    local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/funct_*.py"
+    # Making it possible to run a specific functional test at a time
+    if [[ -z "$2" ]];▫
+    then
+        local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/funct_*.py"
+    else
+        local FUNCTIONAL_TEST_FILE="`pwd`/ureport_project/rapidsms_ureport/ureport/tests/functional/$2"
+    fi
 
     cd ureport_project
     echo "Running the functional tests from [${FUNCTIONAL_TEST_FILE}]"

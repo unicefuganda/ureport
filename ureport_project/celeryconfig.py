@@ -2,14 +2,15 @@
 
 #CELERY_ALWAYS_EAGER = True
 
-
-
 CELERY_RESULT_BACKEND = 'amqp'
 CELERY_RESULT_PERSISTENT = False
 CELERY_TASK_RESULT_EXPIRES = 10
 CELERY_DISABLE_RATE_LIMITS = True
 CELERY_SEND_TASK_ERROR_EMAILS = True
 
+CELERY_ACKS_LATE = True
+CELERYD_PREFETCH_MULTIPLIER = 1  # limit number of tasks a worker can reserve
+CELERY_IGNORE_RESULT = True  # results wastes time and resources
 CELERY_DEFAULT_QUEUE = 'default'
 CELERY_QUEUES = {
     'default': {
@@ -39,14 +40,16 @@ CELERY_QUEUES = {
     'push_to_mtrac': {
         'binding_key': 'push_to_mtrac.#'
     },
-    'process_uploaded_contacts':{
+    'process_uploaded_contacts': {
         'binding_key': 'process_uploaded_contacts.#'
     },
-    'process_assign_group':{
+    'process_assign_group': {
         'binding_key': 'process_assign_group.#'
-    },'export_poll':{
+    },
+    'export_poll': {
         'binding_key': 'export_poll.#'
-    },'extract_gen_reports':{
+    },
+    'extract_gen_reports': {
         'binding_key': 'extract_gen_reports.#'
     }
 }
@@ -120,5 +123,8 @@ ADMINS = (
     ('Arga', 'arghacha@thoughtworks.com'),
 )
 
-
-CELERY_IMPORTS = ('ureport.tasks','message_classifier.tasks','rapidsms_httprouter.tasks')
+CELERY_IMPORTS = (
+    'ureport.tasks',
+    'message_classifier.tasks',
+    'rapidsms_httprouter.tasks'
+)

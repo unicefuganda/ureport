@@ -12,5 +12,7 @@ import sys
 print sys.path
 
 from django.core.handlers.wsgi import WSGIHandler
+from linesman.middleware import make_linesman_middleware
 
 application = WSGIHandler()
+application = make_linesman_middleware(application)

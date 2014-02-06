@@ -347,6 +347,9 @@ BACKENDS_CONFIGURATION = {
     }
 }
 UREPORT_JSON_API_USERS = {"test": "nakulabye"}
+
+GEOSERVER_URL = '/'
+
 try:
     if os.environ.has_key('LOCAL_SETTINGS'):
         # the LOCAL_SETTINGS environment variable is used by the build server

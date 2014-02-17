@@ -35,6 +35,8 @@ sys.path.append(os.path.join(filedir, 'qos_monitor'))
 
 gettext = lambda s: s
 
+SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
+
 # -------------------------------------------------------------------- #
 #                          MAIN CONFIGURATION                          #
 # -------------------------------------------------------------------- #
@@ -109,6 +111,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.contenttypes",
     "django.contrib.humanize",
+    "django.contrib.staticfiles",
 
     # the rapidsms contrib apps.
     "rapidsms.contrib.default",
@@ -135,6 +138,7 @@ INSTALLED_APPS = [
     "message_classifier",
     "celery",
     "djcelery",
+    "tastypie",
     #"permission",
    # nothing after south
     "south",
@@ -257,6 +261,9 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.eggs.Loader',
 )
 
+STATIC_ROOT = os.path.join(SITE_ROOT, 'static')
+STATIC_URL = '/assets/static/'
+
 # the project-level url patterns
 ROOT_URLCONF = "urls"
 
@@ -346,6 +353,9 @@ BACKENDS_CONFIGURATION = {
         "sendsms_pass": "password",
     }
 }
+UREPORT_JSON_API_USERS = {"test": "nakulabye"}
+
+GEOSERVER_URL = '/'
 
 try:
     if os.environ.has_key('LOCAL_SETTINGS'):

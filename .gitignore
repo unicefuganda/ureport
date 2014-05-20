@@ -18,3 +18,4 @@ ureport_project/media
 tags
 *log*
 *celerybeat-schedule
+ureport.psql

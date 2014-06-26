@@ -7,7 +7,8 @@
 #                          PATH CONFIGURATION                          #
 # -------------------------------------------------------------------- #
 
-import sys, os
+import sys
+import os
 
 
 filedir = os.path.dirname(__file__)
@@ -76,7 +77,7 @@ DATABASES = {
         'NAME': 'ureport',
         'HOST': 'dbserver',
         'USER': 'postgres',
-    }
+        }
 }
 
 # the rapidsms backend configuration is designed to resemble django's
@@ -92,8 +93,8 @@ DATABASES = {
 INSTALLED_BACKENDS = {
     "message_tester": {
         "ENGINE": "rapidsms.backends.bucket",
-    },
-}
+        },
+    }
 
 
 # to help you get started quickly, many django/rapidsms apps are enabled
@@ -140,7 +141,7 @@ INSTALLED_APPS = [
     "djcelery",
     "tastypie",
     #"permission",
-   # nothing after south
+    # nothing after south
     "south",
     "django_nose" #Except nose must come after south so that it runs migrations properly!!
 ]
@@ -151,25 +152,25 @@ SMS_APPS = [
     "ureport",
     "script",
     "poll",
-]
+    ]
 
 
 # this rapidsms-specific setting defines which views are linked by the
 # tabbed navigation. when adding an app to INSTALLED_APPS, you may wish
 # to add it here, also, to expose it in the rapidsms ui.
 RAPIDSMS_TABS = [
-     ("rapidsms-dashboard", "Home"),
-     ("ureport-about", "About"),
-     ("polls-summary", "Polls"),
-     ("ureport-stories", "Stories"),
-]
+    ("rapidsms-dashboard", "Home"),
+    ("ureport-about", "About"),
+    ("polls-summary", "Polls"),
+    ("ureport-stories", "Stories"),
+    ]
 
 AUTHENTICATED_TABS = [
     ("ureport-polls", "Poll Admin"),
     ("messagelog", "Message Log"),
     ("ureport-contact", "uReporters"),
-     ("flaggedmessages", "Flagged Messages"),
-]
+    ("flaggedmessages", "Flagged Messages"),
+    ]
 
 # -------------------------------------------------------------------- #
 #                         BORING CONFIGURATION                         #
@@ -220,7 +221,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "generic.context_processors.map_params",
     "uganda_common.context_processors.authtabs",
     "ureport.context_processors.voices",
-]
+    ]
 
 MIDDLEWARE_CLASSES = (
     'ureport.middleware.access_log.UreportAccessLogMiddleware',
@@ -229,13 +230,14 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.cache.FetchFromCacheMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'serrano.middleware.SessionMiddleware',
     'django.middleware.cache.CacheMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.transaction.TransactionMiddleware',
     #'tracking.middleware.UserTrackingMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     # "ureport.middleware.permissions.RequirePermissionMiddleware",
-     "uganda_common.middleware.accessmiddleware.accessmiddleware.AccessMiddleWare"
+    "uganda_common.middleware.accessmiddleware.accessmiddleware.AccessMiddleWare"
 )
 
 # -------------------------------------------------------------------- #
@@ -252,7 +254,7 @@ TEST_EXCLUDED_APPS = [
     "rapidsms",
     "rapidsms.contrib.ajax",
     "rapidsms.contrib.httptester",
-]
+    ]
 
 
 TEMPLATE_LOADERS = (
@@ -292,13 +294,12 @@ ALLOWED = (
     r'/signup/$',
     r'^/bestviz(.*)'
 
-    )
+)
 
-#AUTHENTICATION_BACKENDS = (
-#    'django.contrib.auth.backends.ModelBackend',
-#    'permission.backends.RoleBackend',
-#    'permission.backends.PermissionBackend',
-#    )
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'serrano.backends.TokenBackend',
+)
 
 USE_I18N = True
 INITIAL_USSD_SCREEN='ussd_root'
@@ -315,17 +316,17 @@ ADMIN_UNREGISTER = False
 # https://nose.readthedocs.org/en/latest/plugins/cover.html
 # this is supposed to exclude a dir '--exclude-dir=',
 NOSE_ARGS = ('--with-xunit', '--xunit-file=target/reports/unit-test/nosetests.ureport.xml',
-	     '--with-coverage', '--cover-html', '--cover-html-dir=target/reports/unit-test/coverage', '--cover-package=poll,uganda_common,unregister,message_classifier,contact,rapidsms_httprouter,rapidsms_ureport',
+             '--with-coverage', '--cover-html', '--cover-html-dir=target/reports/unit-test/coverage', '--cover-package=poll,uganda_common,unregister,message_classifier,contact,rapidsms_httprouter,rapidsms_ureport',
              '--verbosity=2')
 
 MAP_BOUNDS = {'bottom_left': {'lon': 28.6963, 'lat': -1.8015},
               'top_right': {'lon': 35.8592, 'lat': 4.9}
-             }
+}
 
 #MAP_BOUNDS SHOULD MOVE INTO HERE (BEFORE GEOSERVER IS KILLED)
 MAP_ARGS = {'center': {'longitude': 32.27, 'latitude': 0.95},
             'scale': 23000
-            }
+}
 
 COUNTRY_SPECIFIC_TOKENS = {
     "district" : "district"
@@ -339,9 +340,6 @@ LOCALE_PATHS = (
 # virtual database for each thread, and syncdb is only called for the
 # first. this leads to confusing "no such table" errors. We create
 # a named temporary instance instead.
-import os
-import tempfile
-import sys
 
 PAGINATION_LIMIT = None
 
@@ -351,7 +349,7 @@ BACKENDS_CONFIGURATION = {
         "sendsms_url": "http://2.2.2.1:9000/send/",
         "sendsms_user": "username",
         "sendsms_pass": "password",
-    }
+        }
 }
 UREPORT_JSON_API_USERS = {"test": "nakulabye"}
 

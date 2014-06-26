@@ -19,3 +19,5 @@ tags
 *log*
 *celerybeat-schedule
 ureport.psql
+whoosh.whoosh.index
+ureport_project/anonymise_dump.py

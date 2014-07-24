@@ -1,0 +1,18 @@
+#: rapidsms_generic/generic/static/javascripts/generic.js:98
+#: rapidsms_ureport/ureport/static/javascripts/ureport.js:472
+msgid "All "
+msgstr ""
+
+#: rapidsms_generic/generic/static/javascripts/generic.js:98
+#: rapidsms_ureport/ureport/static/javascripts/ureport.js:472
+msgid " items are selected."
+msgstr ""
+
+#: rapidsms_generic/generic/static/javascripts/generic.js:98
+#: rapidsms_ureport/ureport/static/javascripts/ureport.js:472
+msgid "Clear selection"
+msgstr ""
+
+#: rapidsms_ureport/ureport/static/javascripts/mp_dashboard.js:29
+msgid "  contacts selected"
+msgstr ""

@@ -34,9 +34,7 @@ msgid ""
 "voice to be heard again,text in JOIN and send it to 8500!All SMS messages "
 "are free"
 msgstr ""
-"Votre Unieleze désabonnement est confirmé. Si vous avez faites une erreur ou si vous "
-"voulez que votre voix soit entendue de nouveau, envoyer le message JOIN au "
-" 100! Tous les SMS sont gratuits"
+"Vous venez de vous désinscrire de UReport. Si vous voulez que votre voix soit entendue de nouveau, envoyer PARTICIPER au 100 ! Tous les SMS sont gratuits."
 
 #: settings.py:64
 msgid "luo"
@@ -1160,6 +1158,10 @@ msgstr "VOTRE OPINION:"
 #: rapidsms_ureport/ureport/templates/ureport_layout.html:118
 msgid "&copy; 2010 - 2012 UNICEF et al."
 msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/poll_summary.html:38
+msgid "Share This Poll"
+msgstr "Partager ce sondage"
 
 #: rapidsms_ureport/ureport/templates/ureport/about.html:7
 msgid "Why Join Ureport"

@@ -34,7 +34,13 @@ msgid ""
 "voice to be heard again,text in JOIN and send it to 8500!All SMS messages "
 "are free"
 msgstr ""
-"Vous venez de vous désinscrire de UReport. Si vous voulez que votre voix soit entendue de nouveau, envoyer PARTICIPER au 100 ! Tous les SMS sont gratuits."
+"Vous venez de vous désinscrire de Unieleze. Si vous voulez que votre voix soit entendue de nouveau, envoyer PARTICIPER au 100! Tous les SMS sont gratuits."
+
+#: settings.py:50
+msgid ""
+"CONGRATULATIONS!!! You are now a registered member of Ureport! With Ureport, you can make a real difference!  Speak Up and Be Heard! from UNICEF"
+msgstr ""
+"FELICITATIONS!!! Vous êtes maintenant un membre inscrit de Ureport! Avec Unieleze, vous pouvez faire la différence! Exprimez-vous et soyez entendu!"
 
 #: settings.py:64
 msgid "luo"

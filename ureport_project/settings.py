@@ -47,6 +47,7 @@ EMAIL_HOST = '127.0.0.1'
 OPT_IN_WORDS = ['join']
 OPT_IN_WORDS_LUO=["donyo","dony","donyo","doyo",]
 OPT_IN_CONFIRMATION = gettext("Welcome to UReport! Ureport is a community of %(citizen)s youth that are dedicated to working for positive change in their communities. Stay tuned for more info.") % {"citizen": gettext("Ugandan")}
+OPT_IN_WEB_CONFIRMATION = gettext("CONGRATULATIONS!!! You are now a registered member of Ureport! With Ureport, you can make a real difference!  Speak Up and Be Heard! from UNICEF")
 OPT_OUT_WORDS = ['stop', 'unjoin', 'quit','giki']
 OPT_OUT_CONFIRMATION = gettext("Your UReport opt out is confirmed.If you made a mistake,or you want your voice to be heard again,text in JOIN and send it to 8500!All SMS messages are free")
 

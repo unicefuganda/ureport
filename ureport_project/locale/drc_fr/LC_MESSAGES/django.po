@@ -1345,7 +1345,7 @@ msgstr "Etape 1"
 msgid ""
 "Text the word Join to 8500\n"
 "    - all Ureport SMSs are free!"
-msgstr "Envoyez le mot Join à 100\n - tous les SMS échangés avec Unieleze sont gratuits!"
+msgstr "Envoyez le mot Participer à 100\n - tous les SMS échangés avec Unieleze sont gratuits!"
 
 #: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:30
 msgid "Step 4"
@@ -1356,7 +1356,7 @@ msgid ""
 " As a Ureporter, you will get weekly poll results, and meaningful "
 "information to assist you to enact change in\n"
 "    your community."
-msgstr "En tant que Ureporter, vous recevrez les résultats des sondages hebdomadaires"
+msgstr "En tant que Ureporter, vous recevrez les résultats des sondages hebdomadaires "
 "ainsi que des informations utiles pouvant vous aider à susciter des changements positifs dans votre communauté."
 
 #: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:40
@@ -1365,7 +1365,7 @@ msgstr "Etape 3"
 
 #: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:42
 msgid "After you answer the quetions about you, you are a member of Ureport!"
-msgstr "Une fois que vous avez terminé a répondre aux questions vous concernant, vous êtes membre de Unieleze!"
+msgstr "Une fois que vous avez terminé de répondre aux questions vous concernant, vous êtes membre de Unieleze!"
 
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:46
 msgid "Filter Poll Contacts"

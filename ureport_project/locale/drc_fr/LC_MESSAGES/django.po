@@ -1213,7 +1213,7 @@ msgstr "Unieleze comprend:"
 msgid ""
 "Weekly SMS messages and polls to and from\n"
 "\t\t\ta growing community of Ureporters"
-msgstr "Des SMS hebdomadaires and des sondages vers et provenant d'une communauté grandissante de Ureporters"
+msgstr "Des SMS hebdomadaires et des sondages vers et provenant d'une communauté grandissante de Ureporters"
 
 #: rapidsms_ureport/ureport/templates/ureport/about.html:43
 msgid ""
@@ -1498,7 +1498,7 @@ msgstr "Réponses du Sondage"
 
 #: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:38
 msgid "Search Ureporters"
-msgstr "Recherche Unieleze"
+msgstr "Recherche Ureporters"
 
 #: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:38
 msgid "Filter By Group"
@@ -1917,7 +1917,7 @@ msgstr "Ne pas montrer a la page d'acceuil"
 #: rapidsms_ureport/ureport/views/poll_views.py:450
 #: rapidsms_ureport/ureport/views/poll_views.py:482
 msgid "Polls"
-msgstr "Sondage"
+msgstr "Sondages"
 
 #: rapidsms_ureport/ureport/views/poll_views.py:469
 msgid "Closing Date"

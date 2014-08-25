@@ -34,9 +34,13 @@ msgid ""
 "voice to be heard again,text in JOIN and send it to 8500!All SMS messages "
 "are free"
 msgstr ""
-"Votre Unieleze désabonnement est confirmé. Si vous avez faites une erreur ou si vous "
-"voulez que votre voix soit entendue de nouveau, envoyer le message JOIN au "
-" 100! Tous les SMS sont gratuits"
+"Vous venez de vous désinscrire de Unieleze. Si vous voulez que votre voix soit entendue de nouveau, envoyer PARTICIPER au 100! Tous les SMS sont gratuits."
+
+#: settings.py:50
+msgid ""
+"CONGRATULATIONS!!! You are now a registered member of Ureport! With Ureport, you can make a real difference!  Speak Up and Be Heard! from UNICEF"
+msgstr ""
+"FELICITATIONS!!! Vous êtes maintenant un membre inscrit de Ureport! Avec Unieleze, vous pouvez faire la différence! Exprimez-vous et soyez entendu!"
 
 #: settings.py:64
 msgid "luo"
@@ -1161,6 +1165,10 @@ msgstr "VOTRE OPINION:"
 msgid "&copy; 2010 - 2012 UNICEF et al."
 msgstr ""
 
+#: rapidsms_ureport/ureport/templates/ureport/poll_summary.html:38
+msgid "Share This Poll"
+msgstr "Partager ce sondage"
+
 #: rapidsms_ureport/ureport/templates/ureport/about.html:7
 msgid "Why Join Ureport"
 msgstr "Pourquoi participer à Unieleze"
@@ -1205,7 +1213,7 @@ msgstr "Unieleze comprend:"
 msgid ""
 "Weekly SMS messages and polls to and from\n"
 "\t\t\ta growing community of Ureporters"
-msgstr "Des SMS hebdomadaires and des sondages vers et provenant d'une communauté grandissante de Ureporters"
+msgstr "Des SMS hebdomadaires et des sondages vers et provenant d'une communauté grandissante de Ureporters"
 
 #: rapidsms_ureport/ureport/templates/ureport/about.html:43
 msgid ""
@@ -1337,7 +1345,7 @@ msgstr "Etape 1"
 msgid ""
 "Text the word Join to 8500\n"
 "    - all Ureport SMSs are free!"
-msgstr "Envoyez le mot Join à 100\n - tous les SMS échangés avec Unieleze sont gratuits!"
+msgstr "Envoyez le mot Participer à 100\n - tous les SMS échangés avec Unieleze sont gratuits!"
 
 #: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:30
 msgid "Step 4"
@@ -1348,7 +1356,7 @@ msgid ""
 " As a Ureporter, you will get weekly poll results, and meaningful "
 "information to assist you to enact change in\n"
 "    your community."
-msgstr "En tant que Ureporter, vous recevrez les résultats des sondages hebdomadaires"
+msgstr "En tant que Ureporter, vous recevrez les résultats des sondages hebdomadaires "
 "ainsi que des informations utiles pouvant vous aider à susciter des changements positifs dans votre communauté."
 
 #: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:40
@@ -1357,7 +1365,7 @@ msgstr "Etape 3"
 
 #: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:42
 msgid "After you answer the quetions about you, you are a member of Ureport!"
-msgstr "Une fois que vous avez terminé a répondre aux questions vous concernant, vous êtes membre de Unieleze!"
+msgstr "Une fois que vous avez terminé de répondre aux questions vous concernant, vous êtes membre de Unieleze!"
 
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:46
 msgid "Filter Poll Contacts"
@@ -1490,7 +1498,7 @@ msgstr "Réponses du Sondage"
 
 #: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:38
 msgid "Search Ureporters"
-msgstr "Recherche Unieleze"
+msgstr "Recherche Ureporters"
 
 #: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:38
 msgid "Filter By Group"
@@ -1909,7 +1917,7 @@ msgstr "Ne pas montrer a la page d'acceuil"
 #: rapidsms_ureport/ureport/views/poll_views.py:450
 #: rapidsms_ureport/ureport/views/poll_views.py:482
 msgid "Polls"
-msgstr "Sondage"
+msgstr "Sondages"
 
 #: rapidsms_ureport/ureport/views/poll_views.py:469
 msgid "Closing Date"

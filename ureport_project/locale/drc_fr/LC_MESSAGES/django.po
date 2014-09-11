@@ -34,9 +34,13 @@ msgid ""
 "voice to be heard again,text in JOIN and send it to 8500!All SMS messages "
 "are free"
 msgstr ""
-"Votre Unieleze désabonnement est confirmé. Si vous avez faites une erreur ou si vous "
-"voulez que votre voix soit entendue de nouveau, envoyer le message JOIN au "
-" 100! Tous les SMS sont gratuits"
+"Vous venez de vous désinscrire de Unieleze. Si vous voulez que votre voix soit entendue de nouveau, envoyer PARTICIPER au 100! Tous les SMS sont gratuits."
+
+#: settings.py:50
+msgid ""
+"CONGRATULATIONS!!! You are now a registered member of Ureport! With Ureport, you can make a real difference!  Speak Up and Be Heard! from UNICEF"
+msgstr ""
+"FELICITATIONS!!! Vous êtes maintenant un membre inscrit de Ureport! Avec Unieleze, vous pouvez faire la différence! Exprimez-vous et soyez entendu!"
 
 #: settings.py:64
 msgid "luo"
@@ -1034,11 +1038,11 @@ msgstr ""
 #: rapidsms_ureport/ureport/templates/ureport_layout.html:6
 #: rapidsms_ureport/ureport/templates/ureport_layout.html:38
 msgid "Voice Matters"
-msgstr "Votre voix compte"
+msgstr "Lobela biso! Votre voix compte!"
 
 #: rapidsms_ureport/ureport/templates/layout.html:45
 msgid "VOICE MATTERS"
-msgstr "VOTRE VOIX COMPTE"
+msgstr "Votre voix compte"
 
 #: rapidsms_ureport/ureport/templates/layout.html:48
 #: rapidsms_ureport/ureport/templates/ureport_layout.html:41
@@ -1101,6 +1105,9 @@ msgstr ""
 msgid "LOGIN"
 msgstr "SESSION"
 
+msgid "LOGOUT"
+msgstr "DECONNEXION"
+
 #: rapidsms_ureport/ureport/templates/layout.html:80
 #: rapidsms_ureport/ureport/templates/ureport_layout.html:95
 msgid "Supported by"
@@ -1143,13 +1150,12 @@ msgid "NATIONAL PULSE"
 msgstr "POULS NATIONAL"
 
 #: rapidsms_ureport/ureport/templates/ureport_layout.html:66
-msgid ""
-"Ureport is a free SMS-based system that allows young %(citizens_trans)s to speak out"
-"on what's happening in communities across the country, and work together with other community"
-"leaders for positive change."
-msgstr "Unieleze est un système de SMS gratuits permettant aux jeunes %(citizens_trans)s "
-"de s'exprimer sur ce qui se passe dans leurs communautés à travers le pays tout en travaillant"
-" avec les leaders communautaires pour un changement positif."
+#msgid ""
+#"Ureport is a free SMS-based system that allows young %(citizens_trans)s to speak out"
+#"on what's happening in communities across the country, and work together with other community"
+#"leaders for positive change."
+msgid "Ureport is a free SMS-based system that allows young %(citizens_trans)s to speak out on what's happening in communities across the country, and work together with other community leaders for positive change."
+msgstr "Unieleze est un système de SMS gratuits permettant aux jeunes %(citizens_trans)s de s'exprimer sur ce qui se passe dans leurs communautés à travers le pays tout en travaillant avec les leaders communautaires pour un changement positif."
 
 #: rapidsms_ureport/ureport/templates/ureport_layout.html:76
 msgid "YOUR SAY:"
@@ -1159,6 +1165,10 @@ msgstr "VOTRE OPINION:"
 msgid "&copy; 2010 - 2012 UNICEF et al."
 msgstr ""
 
+#: rapidsms_ureport/ureport/templates/ureport/poll_summary.html:38
+msgid "Share This Poll"
+msgstr "Partager ce sondage"
+
 #: rapidsms_ureport/ureport/templates/ureport/about.html:7
 msgid "Why Join Ureport"
 msgstr "Pourquoi participer à Unieleze"
@@ -1167,11 +1177,9 @@ msgstr "Pourquoi participer à Unieleze"
 msgid ""
 "<ul>\n"
 "\t    <li>Speak out on what's happening in your community</li>\n"
-"\t    <li>Use Ureport results and information to update and increase "
-"citizen's awareness</li>\n"
-"\t    <li>Participate in nationwide campaigns to help improve your country</"
-"li>\n"
-"\t    <li>Share what's happening around Uganda with other Ureporters</li>\n"
+"\t    <li>Use Ureport results and information to update and increase citizen's awareness</li>\n"
+"\t    <li>Participate in nationwide campaigns to help improve your country</li>\n"
+"\t    <li>Share what's happening around %(country_trans)s with other Ureporters</li>\n"
 "\t</ul>"
 msgstr ""
 "<ul>\n"
@@ -1179,8 +1187,8 @@ msgstr ""
 "\t    <li>Utiliser les résultats et informations de Unieleze pour se mettre soi-même"
 "à jour et accroitre son engagement citoyen. </li>\n"
 "\t    <li>Participer aux campagnes nationales visant l'amélioration des conditions de vie.</li>\n"
-"\t    <li>Noter vos observations sur ce qui se passe autour de vous et partager vos préoccupations "
-"%(country_trans)s avec d'autres Ureporters."
+"\t    <li>Noter vos observations sur ce qui se passe autour de vous et partager vos préoccupations %(country_trans)s avec d'autres Ureporters</li>\n"
+"\t</ul>"
 
 #: rapidsms_ureport/ureport/templates/ureport/about.html:24
 msgid "About Ureport"
@@ -1205,7 +1213,7 @@ msgstr "Unieleze comprend:"
 msgid ""
 "Weekly SMS messages and polls to and from\n"
 "\t\t\ta growing community of Ureporters"
-msgstr "Des SMS hebdomadaires and des sondages vers et provenant d'une communauté grandissante de Ureporters"
+msgstr "Des SMS hebdomadaires et des sondages vers et provenant d'une communauté grandissante de Ureporters"
 
 #: rapidsms_ureport/ureport/templates/ureport/about.html:43
 msgid ""
@@ -1304,8 +1312,8 @@ msgstr "SONDAGES PRECEDENTS"
 msgid "PREVIOUS POLLS."
 msgstr "SONDAGES PRECEDENTS."
 
-msgid " PREVIOUS POLLS.    The last message is received at : "
-msgstr "SONDAGES PRECEDENTS.    Le dernier message est recu à : "
+msgid " PREVIOUS POLLS.    The last message is received at : %(timelastmsg)s "
+msgstr "SONDAGES PRECEDENTS.    Le dernier message est recu à : %(timelastmsg)s"
 
 
 #: rapidsms_ureport/ureport/templates/ureport/home.html:34
@@ -1337,7 +1345,7 @@ msgstr "Etape 1"
 msgid ""
 "Text the word Join to 8500\n"
 "    - all Ureport SMSs are free!"
-msgstr "Envoyez le mot Join à 100\n - tous les SMS échangés avec Unieleze sont gratuits!"
+msgstr "Envoyez le mot Participer à 100\n - tous les SMS échangés avec Unieleze sont gratuits!"
 
 #: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:30
 msgid "Step 4"
@@ -1348,7 +1356,7 @@ msgid ""
 " As a Ureporter, you will get weekly poll results, and meaningful "
 "information to assist you to enact change in\n"
 "    your community."
-msgstr "En tant que Ureporter, vous recevrez les résultats des sondages hebdomadaires"
+msgstr "En tant que Ureporter, vous recevrez les résultats des sondages hebdomadaires "
 "ainsi que des informations utiles pouvant vous aider à susciter des changements positifs dans votre communauté."
 
 #: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:40
@@ -1357,7 +1365,7 @@ msgstr "Etape 3"
 
 #: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:42
 msgid "After you answer the quetions about you, you are a member of Ureport!"
-msgstr "Une fois que vous avez terminé a répondre aux questions vous concernant, vous êtes membre de Unieleze!"
+msgstr "Une fois que vous avez terminé de répondre aux questions vous concernant, vous êtes membre de Unieleze!"
 
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:46
 msgid "Filter Poll Contacts"
@@ -1490,7 +1498,7 @@ msgstr "Réponses du Sondage"
 
 #: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:38
 msgid "Search Ureporters"
-msgstr "Recherche Unieleze"
+msgstr "Recherche Ureporters"
 
 #: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:38
 msgid "Filter By Group"
@@ -1594,7 +1602,7 @@ msgstr "Modifier les tags exclus"
 
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/best_visualization.html:4
 msgid "CURRENT POLL"
-msgstr "SONDAGE En COURS"
+msgstr "SONDAGE EN COURS"
 
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/best_visualization.html:18
 msgid "Responses out of"
@@ -1633,15 +1641,15 @@ msgstr "Oui"
 
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:75
 msgid "Split Results"
-msgstr "Couper les résultats "
+msgstr "Résultats Departagés"
 
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:13
 msgid "Start Age"
-msgstr "Debut Age"
+msgstr "Age Inferieur"
 
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:16
 msgid "End Age"
-msgstr "Fin Age"
+msgstr "Age Superieur"
 
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/top_responses.html:2
 msgid "Top Responses"
@@ -1909,7 +1917,7 @@ msgstr "Ne pas montrer a la page d'acceuil"
 #: rapidsms_ureport/ureport/views/poll_views.py:450
 #: rapidsms_ureport/ureport/views/poll_views.py:482
 msgid "Polls"
-msgstr "Sondage"
+msgstr "Sondages"
 
 #: rapidsms_ureport/ureport/views/poll_views.py:469
 msgid "Closing Date"

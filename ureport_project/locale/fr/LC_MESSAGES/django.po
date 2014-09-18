@@ -788,7 +788,7 @@ msgstr ""
 msgid ""
 "We didn't recognize your %(district)s.  Please carefully type the name of "
 "your %(district)s and re-send."
-msgstr ""
+msgstr "Nous n'avons pas reconnu votre %(district)s. S'il vous plaît entrez soigneusement le nom de votre %(district)s et ré-envoyer."
 
 #: rapidsms_uganda_common/uganda_common/models.py:31
 #: rapidsms_uganda_common/uganda_common/utils.py:209

@@ -796,10 +796,12 @@ msgstr "caractère au dessus du limite"
 #: rapidsms_uganda_common/uganda_common/models.py:23
 #, python-format
 msgid ""
-"We didn't recognize your %(district)s.  Please carefully type the name of "
-"your %(district)s and re-send."
-msgstr "Nous n'avons pas reconnu votre %(district)s. S'il vous plaît entrez soigneusement le nom de "
-"Votre %(district)s et ré-envoyer. "
+"We didn't recognize your %(district)s.  Please carefully type the name of your %(district)s and re-send."
+msgstr "Nous n'avons pas reconnu votre %(district)s. S'il vous plaît entrez soigneusement le nom de votre %(district)s et ré-envoyer."
+
+msgid ""
+"We didn't recognize your %(location)s.  Please carefully type the name of your %(location)s and re-send."
+msgstr "Nous n'avons pas reconnu votre %(location)s. S'il vous plaît entrez soigneusement le nom de votre %(location)s et ré-envoyer."
 
 #: rapidsms_uganda_common/uganda_common/models.py:31
 #: rapidsms_uganda_common/uganda_common/utils.py:209

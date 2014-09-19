@@ -52,7 +52,7 @@ OPT_OUT_WORDS = ['stop', 'unjoin', 'quit','giki']
 OPT_OUT_CONFIRMATION = gettext("Your UReport opt out is confirmed.If you made a mistake,or you want your voice to be heard again,text in JOIN and send it to 8500!All SMS messages are free")
 
 UNRECOGNIZED_DISTRICT_RESPONSE_TEXT = gettext("We didn't recognize your %(district)s.  Please carefully type the name of your %(district)s and re-send.")
-UNRECOGNIZED_LOCATION_RESPONSE_TEXT = gettext("We didn't recognize your %(location)s.  Please carefully type the name of your %(location)s and re-send.")
+UNRECOGNIZED_LOCATION_RESPONSE_TEXT = gettext("We didn't recognize your %(location)s.  Please carefully type the name of your %(location)s and re-send.") % {'location':'location'}
 
 
 # map bounding box

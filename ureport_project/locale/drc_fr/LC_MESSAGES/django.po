@@ -796,10 +796,12 @@ msgstr "caractère au dessus du limite"
 #: rapidsms_uganda_common/uganda_common/models.py:23
 #, python-format
 msgid ""
-"We didn't recognize your %(district)s.  Please carefully type the name of "
-"your %(district)s and re-send."
-msgstr "Nous n'avons pas reconnu votre %(district)s. S'il vous plaît entrez soigneusement le nom de "
-"Votre %(district)s et ré-envoyer. "
+"We didn't recognize your %(district)s.  Please carefully type the name of your %(district)s and re-send."
+msgstr "Nous n'avons pas reconnu votre %(district)s. S'il vous plaît entrez soigneusement le nom de votre %(district)s et ré-envoyer."
+
+msgid ""
+"We didn't recognize your %(location)s.  Please carefully type the name of your %(location)s and re-send."
+msgstr "Nous n'avons pas reconnu votre %(location)s. S'il vous plaît entrez soigneusement le nom de votre %(location)s et ré-envoyer."
 
 #: rapidsms_uganda_common/uganda_common/models.py:31
 #: rapidsms_uganda_common/uganda_common/utils.py:209
@@ -1184,10 +1186,10 @@ msgid ""
 msgstr ""
 "<ul>\n"
 "\t    <li>S'exprimer sur ce qui se passe dans votre communauté.</li>\n"
-"\t    <li>Utiliser les résultats et informations de Unieleze pour se mettre soi-même"
+"\t    <li>Utiliser les résultats et informations de Unieleze pour se mettre soi-même "
 "à jour et accroitre son engagement citoyen. </li>\n"
 "\t    <li>Participer aux campagnes nationales visant l'amélioration des conditions de vie.</li>\n"
-"\t    <li>Noter vos observations sur ce qui se passe autour de vous et partager vos préoccupations %(country_trans)s avec d'autres Ureporters</li>\n"
+"\t    <li>Noter vos observations sur ce qui se passe autour de vous et partager vos préoccupations avec d'autres Ureporters</li>\n"
 "\t</ul>"
 
 #: rapidsms_ureport/ureport/templates/ureport/about.html:24
@@ -1207,7 +1209,7 @@ msgstr ""
 
 #: rapidsms_ureport/ureport/templates/ureport/about.html:37
 msgid "Ureport is made up of"
-msgstr "Unieleze comprend:"
+msgstr "Unieleze comprend"
 
 #: rapidsms_ureport/ureport/templates/ureport/about.html:39
 msgid ""
@@ -1243,9 +1245,9 @@ msgid ""
 "                    mediums (radio, TV, community dialogue, website,\n"
 "\t\t    and youth events)"
 msgstr ""
-"Inspirer l'action de nos communautés afin d'unir les efforts et partager la reponsabilité \n"
-"de création d'un environnement meilleur pour chacun. <br/>\n"
-"Inspirer l'action dans le chef de nos dirigeants - les mettre au courant \n"
+"Inspirer l'action de nos communautés afin d'unir les efforts et de partager la reponsabilité \n"
+"pour la création d'un environnement meilleur pour chacun. <br/>\n"
+"Inciter nos dirigeants de prendre des actions appropriées - les mettre au courant \n"
 "de ce qui se passe et des attentes des communautés quant aux actions à prendre. <br/>\n"
 "Partager sur divers media (radio, TV, sites web, assemblées communautaires \n"
  "et réunions de la communauté humanitaires, réunions des jeunes) les informations recueillies par Unieleze."
@@ -1334,8 +1336,7 @@ msgid ""
 "more about you\n"
 "    (Ureport needs to know your District but all other quetions are optional)"
 msgstr "Vous allez recevoir un message d'accueil et une série de questions, "
-"pour mieux vous connaître (Unieleze doit connaître votre Territoire ou Commune "
-"mais toutes les autres informations sont facultatives)."
+"pour mieux vous connaître."
 
 #: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:21
 msgid "Step 1"

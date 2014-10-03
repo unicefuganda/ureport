@@ -17,7 +17,7 @@ setup(
          "djappsettings",
         'xlrd',
         'psycopg2',
-        'django-mptt',
+        'django-mptt', 'requests',
     ],
 
     dependency_links = [],

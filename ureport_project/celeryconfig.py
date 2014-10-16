@@ -51,6 +51,9 @@ CELERY_QUEUES = {
     },
     'extract_gen_reports': {
         'binding_key': 'extract_gen_reports.#'
+    },
+    'export_alerts_task': {
+        'binding_key': 'export_alerts_task.#'
     }
 }
 CELERY_DEFAULT_EXCHANGE = 'tasks'
@@ -112,6 +115,10 @@ CELERY_ROUTES = {
     'ureport.tasks.extract_gen_reports': {
         'queue': 'extract_gen_reports',
         'routing_key': 'extract_gen_reports.result'
+    },
+    'ureport.tasks.export_alerts_task': {
+        'queue': 'export_alerts_task',
+        'routing_key': 'export_alerts_task.result'
     }
 
 }

@@ -362,6 +362,9 @@ UREPORT_JSON_API_USERS = {"test": "nakulabye"}
 
 GEOSERVER_URL = '/'
 
+DEFAULT_FROM_EMAIL = ''
+PROJECT_MANAGERS = ['', ]
+
 try:
     if os.environ.has_key('LOCAL_SETTINGS'):
         # the LOCAL_SETTINGS environment variable is used by the build server

@@ -2,39 +2,74 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 15:29+0300\n"
+"POT-Creation-Date: 2015-04-17 10:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5\n"
 
+#: localsettings.py:213 settings.py:71
+msgid "luo"
+msgstr "لوه"
+
+#: localsettings.py:214 settings.py:72
+msgid "English"
+msgstr "الإنجليزية"
+
+#: settings.py:49
+#, fuzzy, python-format
 msgid ""
-"Welcome to UReport! Ureport is a community of Ugandan youth that are "
+"Welcome to UReport! Ureport is a community of %(citizen)s youth that are "
 "dedicated to working for positive change in their communities. Stay tuned "
 "for more info."
 msgstr ""
 "مرحبا بكم في UReport! Ureport هو مجتمع من الشباب الأوغندي التي هي مخصصة "
 "للعمل من أجل التغيير الإيجابي في مجتمعاتهم. لا تنزعج لمزيد من المعلومات."
 
+#: settings.py:49
+msgid "Ugandan"
+msgstr ""
+
+#: settings.py:50
+msgid ""
+"CONGRATULATIONS!!! You are now a registered member of Ureport! With Ureport, "
+"you can make a real difference!  Speak Up and Be Heard! from UNICEF"
+msgstr ""
+
+#: settings.py:52
 msgid ""
 "Your UReport opt out is confirmed.If you made a mistake,or you want your "
 "voice to be heard again,text in JOIN and send it to 8500!All SMS messages "
 "are free"
 msgstr ""
-"تأكيد الخاص UReport التقيد بها. إذا كنت ارتكب خطأ، أو إذا كنت تريد الخاص بك"
-"خطأ، أو إذا كنت تريد صوتك في أن يستمع إليه مرة أخرى، والنص في الانضمام إليها"
-" وإرسالها إلى 8500! جميع رسائل SMS أحرار"
+"تأكيد الخاص UReport التقيد بها. إذا كنت ارتكب خطأ، أو إذا كنت تريد الخاص "
+"بكخطأ، أو إذا كنت تريد صوتك في أن يستمع إليه مرة أخرى، والنص في الانضمام "
+"إليها وإرسالها إلى 8500! جميع رسائل SMS أحرار"
 
-msgid "luo"
-msgstr "لوه"
+#: settings.py:54
+#, python-format
+msgid ""
+"We didn't recognize your %(district)s.  Please carefully type the name of "
+"your %(district)s and re-send."
+msgstr ""
+"لم نتعرف الخاص %(district)s. يرجى كتابة اسم بعناية %(district)s الخاص بك "
+"وإعادة إرسال."
 
-msgid "English"
-msgstr "الإنجليزية"
+#: settings.py:55
+#, fuzzy, python-format
+msgid ""
+"We didn't recognize your %(location)s.  Please carefully type the name of "
+"your %(location)s and re-send."
+msgstr ""
+"لم نتعرف الخاص %(district)s. يرجى كتابة اسم بعناية %(district)s الخاص بك "
+"وإعادة إرسال."
 
+#: django_eav/eav/fields.py:54
 msgid ""
 "Must be all lower case, start with a letter, and contain only letters, "
 "numbers, or underscores."
@@ -42,639 +77,1040 @@ msgstr ""
 "يجب أن تكون كافة الحالة الأدنى، تبدأ بحرف، وتحتوي فقط على الأحرف والأرقام، "
 "أو يؤكد."
 
+#: django_eav/eav/fields.py:87
 msgid "You cannot change the datatype of an attribute that is already in use."
 msgstr "لا يمكنك تغيير نوع البيانات من السمة التي هي قيد الاستخدام بالفعل."
 
+#: django_eav/eav/forms.py:109
+#, python-format
 msgid "The %s could not be saved because the datadidn't validate."
 msgstr "و%s لا يمكن أن يتم حفظها وذلك لأن البيانات لم تحقق."
 
+#: django_eav/eav/models.py:79
 msgid "value"
 msgstr "قيمة"
 
+#: django_eav/eav/models.py:95 django_eav/eav/models.py:175
+#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:44
+#: rapidsms_ureport/ureport/templates/ureport/new_flag.html:17
 msgid "name"
 msgstr "اسم"
 
+#: django_eav/eav/models.py:97
 msgid "enum group"
 msgstr "مجموعة التعداد"
 
+#: django_eav/eav/models.py:166
+#: rapidsms_message_classifier/message_classifier/views.py:37
+#: rapidsms_ureport/ureport/forms.py:343
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:121
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:381
+#: rapidsms_ureport/ureport/views/message_views.py:46
+#: rapidsms_ureport/ureport/views/message_views.py:81
+#: rapidsms_ureport/ureport/views/message_views.py:116
+#: rapidsms_ureport/ureport/views/message_views.py:151
+#: rapidsms_ureport/ureport/views/message_views.py:186
+#: rapidsms_ureport/ureport/views/poll_views.py:373
 msgid "Text"
 msgstr "نص"
 
+#: django_eav/eav/models.py:167
 msgid "Float"
 msgstr "عوامة"
 
+#: django_eav/eav/models.py:168
 msgid "Integer"
 msgstr "عدد صحيح"
 
+#: django_eav/eav/models.py:169
+#: rapidsms_message_classifier/message_classifier/views.py:38
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:122
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:382
+#: rapidsms_ureport/ureport/views/message_views.py:48
+#: rapidsms_ureport/ureport/views/message_views.py:83
+#: rapidsms_ureport/ureport/views/message_views.py:118
+#: rapidsms_ureport/ureport/views/message_views.py:153
+#: rapidsms_ureport/ureport/views/message_views.py:188
+#: rapidsms_ureport/ureport/views/message_views.py:333
+#: rapidsms_ureport/ureport/views/poll_views.py:372
 msgid "Date"
 msgstr "تاريخ"
 
+#: django_eav/eav/models.py:170
 msgid "True / False"
 msgstr "صحيح / خطأ"
 
+#: django_eav/eav/models.py:171
 msgid "Django Object"
 msgstr "جانغو كائن"
 
+#: django_eav/eav/models.py:172
 msgid "Multiple Choice"
 msgstr "الاختيار من متعدد"
 
+#: django_eav/eav/models.py:176
 msgid "User-friendly attribute name"
 msgstr "سهل الاستعمال اسم السمة"
 
+#: django_eav/eav/models.py:178
 msgid "site"
 msgstr "موقع"
 
+#: django_eav/eav/models.py:181
 msgid "slug"
 msgstr "رخوي"
 
+#: django_eav/eav/models.py:182
 msgid "Short unique attribute label"
 msgstr "قصيرة التسمية السمة الفريدة"
 
+#: django_eav/eav/models.py:184
 msgid "description"
 msgstr "وصف"
 
+#: django_eav/eav/models.py:186
 msgid "Short description"
 msgstr "وصف قصير"
 
+#: django_eav/eav/models.py:188
 msgid "choice group"
 msgstr "مجموعة خيار"
 
+#: django_eav/eav/models.py:191
 msgid "type"
 msgstr "نوع"
 
+#: django_eav/eav/models.py:197
 msgid "data type"
 msgstr "نوع البيانات"
 
+#: django_eav/eav/models.py:200 django_eav/eav/models.py:356
 msgid "created"
 msgstr "خلق"
 
+#: django_eav/eav/models.py:203 django_eav/eav/models.py:357
 msgid "modified"
 msgstr "تعديل"
 
+#: django_eav/eav/models.py:205
 msgid "required"
 msgstr "مطلوب"
 
+#: django_eav/eav/models.py:242
+#, python-format
 msgid "%(enum)s is not a valid choice for %(attr)s"
 msgstr "%(enum)s ليست خيارا صحيحا ل %(attr)s"
 
+#: django_eav/eav/models.py:264
 msgid "You must set the choice group for multiple choiceattributes"
 msgstr "يجب عليك تعيين مجموعة خيار لسمات متعددة الخيارات"
 
+#: django_eav/eav/models.py:269
 msgid "You can only assign a choice group to multiple choice attributes"
 msgstr "يمكنك فقط تعيين مجموعة خيار لسمات متعددة الخيارات"
 
+#: django_eav/eav/models.py:360
 msgid "attribute"
 msgstr "السمة"
 
+#: django_eav/eav/models.py:377
 msgid "%(choice)s is not a valid choice for %s(attribute)"
 msgstr "%(choice)s ليس خيارا صحيحا ل %s(attribute)"
 
+#: django_eav/eav/models.py:430
+#, python-format
 msgid "%(obj)s has no EAV attribute named '%(attr)s'"
 msgstr "%(obj)s لا يوجد لديه سمة EAV اسمه '%(attr)s'"
 
+#: django_eav/eav/models.py:466
+#, python-format
 msgid "%(attr)s EAV field cannot be blank"
 msgstr "مجال EAV %(attr)s لا يمكن أن تكون فارغة"
 
+#: django_eav/eav/models.py:473
+#, python-format
 msgid "%(attr)s EAV field %(err)s"
 msgstr "%(attr)s EAV مجال %(err)s"
 
+#: django_eav/eav/validators.py:49
 msgid "Must be str or unicode"
 msgstr "يجب أن تكون سلسلة أو يونيكود"
 
+#: django_eav/eav/validators.py:59
 msgid "Must be a float"
 msgstr "يجب أن يكون عدد عشري"
 
+#: django_eav/eav/validators.py:69
 msgid "Must be an integer"
 msgstr "يجب أن يكون صحيحا"
 
+#: django_eav/eav/validators.py:78
 msgid "Must be a date or datetime"
 msgstr "يجب أن يكون التاريخ أو التاريخ والوقت"
 
+#: django_eav/eav/validators.py:86
 msgid "Must be a boolean"
 msgstr "يجب أن تكون منطقية"
 
+#: django_eav/eav/validators.py:95
 msgid "Must be a django model object instance"
 msgstr "يجب أن يكون نموذج جانغو مثيل كائن"
 
+#: django_eav/eav/validators.py:97
 msgid "Model has not been saved yet"
 msgstr "لم يتم حفظ النموذج حتى الآن"
 
+#: django_eav/eav/validators.py:107
 msgid "Must be an EnumValue model object instance"
 msgstr "يجب أن يكون تعداد القيمة نموذج مثيل كائن"
 
+#: django_eav/eav/validators.py:109
 msgid "EnumValue has not been saved yet"
 msgstr "لم يتم حفظ قيمة التعداد حتى الآن"
 
+#: django_taggit/taggit/forms.py:21
 msgid "Please provide a comma-separated list of tags."
 msgstr "يرجى تقديم قائمة مفصولة بفواصل من الكلمات."
 
+#: django_taggit/taggit/managers.py:39 django_taggit/taggit/models.py:57
 msgid "Tags"
 msgstr "به"
 
+#: django_taggit/taggit/managers.py:40
 msgid "A comma-separated list of tags."
 msgstr "قائمة مفصولة بفواصل من الكلمات."
 
+#: django_taggit/taggit/models.py:10 rapidsms_contact/contact/models.py:41
+#: rapidsms_message_classifier/message_classifier/forms.py:24
+#: rapidsms_message_classifier/message_classifier/models.py:25
+#: rapidsms_polls/poll/forms.py:94 rapidsms_ureport/ureport/forms.py:427
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:98
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:120
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:250
+#: rapidsms_ureport/ureport/views/poll_views.py:461
+#: rapidsms_ureport/ureport/views/poll_views.py:487
 msgid "Name"
 msgstr "اسم"
 
+#: django_taggit/taggit/models.py:11
 msgid "Slug"
 msgstr "سبيكة"
 
+#: django_taggit/taggit/models.py:56
 msgid "Tag"
 msgstr "يوم"
 
+#: django_taggit/taggit/models.py:63
+#, python-format
 msgid "%(object)s tagged with %(tag)s"
 msgstr "%(object)s المفتاحية %(tag)s"
 
+#: django_taggit/taggit/models.py:113
 msgid "Object id"
 msgstr "معرف الكائن"
 
+#: django_taggit/taggit/models.py:117 django_taggit/taggit/models.py:123
 msgid "Content type"
 msgstr "نوع المحتوى"
 
+#: django_taggit/taggit/models.py:159
 msgid "Tagged Item"
 msgstr "الموسومة المدينة"
 
+#: django_taggit/taggit/models.py:160
 msgid "Tagged Items"
 msgstr "وحدات ذات الكلمات الدلالية"
 
+#: rapidsms/lib/rapidsms/contrib/locations/forms.py:36
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/locations/forms.py:36
 msgid "Enter a valid latitude."
 msgstr "إدخال خط العرض ساري المفعول."
 
+#: rapidsms/lib/rapidsms/contrib/locations/forms.py:37
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/locations/forms.py:37
 msgid "Enter a valid longitude."
 msgstr "إدخال خط الطول صالحة."
 
+#: rapidsms/lib/rapidsms/contrib/scheduler/views.py:35
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/views.py:31
+#, python-format
 msgid "Schedule '%(name)s' successfully updated"
 msgstr "الجدول الزمني '%(name)s' تحديثها بنجاح"
 
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/edit.html:35
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/edit.html:35
 msgid "Submit"
 msgstr "عرض"
 
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/edit.html:38
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/edit.html:38
 msgid "Return to the list of schedules"
 msgstr "العودة إلى قائمة جداول"
 
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:14
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:14
 msgid "Event"
 msgstr "حدث"
 
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:15
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:15
 msgid "Description"
 msgstr "وصف"
 
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:16
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:16
 msgid "Month"
 msgstr "شهر"
 
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:17
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:17
 msgid "Day of Month"
 msgstr "يوم من شهر"
 
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:18
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:18
 msgid "Day of Week"
 msgstr "يوم من الأسبوع"
 
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:19
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:19
 msgid "Hour"
 msgstr "ساعة"
 
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:20
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:20
 msgid "Minute"
 msgstr "دقيقة"
 
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:21
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:21
 msgid "Start Time"
 msgstr "بدء التوقيت"
 
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:22
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:22
 msgid "End Time"
 msgstr "نهاية الوقت"
 
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:23
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:23
 msgid "Count"
 msgstr "عد"
 
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:24
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:24
 msgid "Active"
 msgstr "نشط"
 
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:53
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:64
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:45
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:56
 msgid "Add a Schedule"
 msgstr "إضافة جدول"
 
+#: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:61
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:53
 msgid "No schedules yet"
 msgstr "لا مواعيد حتى الآن"
 
+#: rapidsms/lib/rapidsms/templates/layout.html:38
+#: rapidsms_uganda_common/uganda_common/templates/layout.html:37
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/templates/layout.html:36
 msgid "Return to the Dashboard"
 msgstr "العودة إلى لوحة التحكم الرئيسية"
 
+#: rapidsms/lib/rapidsms/templates/layout.html:46
+#: rapidsms_uganda_common/uganda_common/templates/layout.html:45
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/templates/layout.html:44
 msgid "Log out"
 msgstr "تسجيل الخروج"
 
+#: rapidsms/lib/rapidsms/templates/layout.html:47
+#: rapidsms_uganda_common/uganda_common/templates/layout.html:46
+#: rapidsms_ureport/ureport/templates/registration/password_reset_complete.html:10
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/templates/layout.html:45
 msgid "Log in"
 msgstr "تسجيل الدخول"
 
+#: rapidsms/lib/rapidsms/templates/rapidsms/loggedout.html:3
+msgid "Goodbye"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/templates/rapidsms/loggedout.html:6
+msgid "Thanks for visiting RapidSMS!"
+msgstr "شكرا لزيارتكم الرسائل القصيرة السريعة!"
+
+#: rapidsms/lib/rapidsms/templates/rapidsms/loggedout.html:8
+msgid "Please come again."
+msgstr "يرجى تأتي مرة أخرى."
+
+#: rapidsms/lib/rapidsms/templates/rapidsms/loggedout.html:10
+msgid "Log in again"
+msgstr "تسجيل الدخول مرة أخرى"
+
+#: rapidsms/lib/rapidsms/templates/rapidsms/login.html:5
+#: rapidsms/lib/rapidsms/templates/rapidsms/login.html:32
+msgid "Login"
+msgstr "دخول"
+
+#: rapidsms/lib/rapidsms/templates/rapidsms/login.html:9
+msgid "Oops. Your username and password didn't match. Please try again."
+msgstr ""
+"عفوا. لم اسم المستخدم وكلمة المرور الخاصة بك غير متطابقة. يرجى المحاولة مرة "
+"أخرى."
+
+#: rapidsms/lib/rapidsms/templates/rapidsms/login.html:13
+msgid "You're already logged in!"
+msgstr "كنت بالفعل في تسجيل!"
+
+#: rapidsms/lib/rapidsms/templates/rapidsms/login.html:17
+msgid "Please log in to RapidSMS"
+msgstr "يرجى تسجيل الدخول إلى الرسائل القصيرة السريعة"
+
+#: rapidsms_contact/contact/forms.py:76 rapidsms_contact/contact/forms.py:395
+#: rapidsms_ureport/ureport/forms.py:508
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:237
 msgid "Groups"
 msgstr "مجموعات"
 
+#: rapidsms_contact/contact/forms.py:256 rapidsms_ureport/ureport/forms.py:670
 msgid "Districts"
 msgstr "المناطق"
 
+#: rapidsms_contact/contact/forms.py:405
+#, python-format
 msgid "%(results)d Contacts assigned to %(groups)d groups."
 msgstr "%(results)d اتصالات المخصصة لمجموعات %(groups)d."
 
+#: rapidsms_contact/contact/forms.py:431
+#, python-format
 msgid "%(contacts)d Contacts removed from %(groups)d groups."
 msgstr "%(contacts)d اتصالات إزالتها من مجموعات %(groups)d."
 
+#: rapidsms_contact/contact/forms.py:471
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:6
 msgid "Male"
 msgstr "ذكر"
 
+#: rapidsms_contact/contact/forms.py:471
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:7
 msgid "Female"
 msgstr "أنثى"
 
+#: rapidsms_contact/contact/forms.py:471 rapidsms_contact/contact/forms.py:491
 msgid "N/A"
 msgstr "غير مطبق"
 
+#: rapidsms_contact/contact/forms.py:472
+#: rapidsms_ureport/ureport/views/contact_views.py:362
 msgid "Gender"
 msgstr "جنس"
 
+#: rapidsms_contact/contact/forms.py:489 rapidsms_ureport/ureport/forms.py:642
 msgid "Equal to"
 msgstr "يساوي"
 
+#: rapidsms_contact/contact/forms.py:489 rapidsms_ureport/ureport/forms.py:642
 msgid "Greater than"
 msgstr "أكبر من"
 
+#: rapidsms_contact/contact/forms.py:490 rapidsms_ureport/ureport/forms.py:643
 msgid "Less than"
 msgstr "أقل من"
 
+#: rapidsms_contact/contact/forms.py:492
+#: rapidsms_ureport/ureport/views/contact_views.py:361
 msgid "Age"
 msgstr "سن"
 
+#: rapidsms_contact/contact/models.py:42
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:9
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:32
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:48
 msgid "Words"
 msgstr "كلام"
 
+#: rapidsms_contact/contact/models.py:44 rapidsms_polls/poll/models.py:778
 msgid "contains_all_of"
 msgstr "يحتوي على كافة"
 
+#: rapidsms_contact/contact/models.py:44 rapidsms_polls/poll/models.py:778
 msgid "contains_one_of"
 msgstr "يحتوي على واحد من"
 
+#: rapidsms_contact/contact/models.py:45
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:9
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:32
 msgid "Rule"
 msgstr "حكم"
 
-msgid "Results"
-msgstr "النتائج"
-
+#: rapidsms_generic/generic/templates/generic/base.html:27
+#: rapidsms_ureport/ureport/templates/ureport/contact_message_base.html:21
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:34
 msgid "Filters"
 msgstr "مرشحات"
 
+#: rapidsms_generic/generic/templates/generic/base.html:53
+#: rapidsms_ureport/ureport/templates/ureport/contact_message_base.html:29
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:78
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:44
 msgid "Update"
 msgstr "التحديث"
 
+#: rapidsms_generic/generic/templates/generic/base.html:56
+#: rapidsms_ureport/ureport/templates/ureport/contact_message_base.html:34
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:49
 msgid "Clear"
 msgstr "مسح"
 
+#: rapidsms_generic/generic/templates/generic/base.html:69
+#: rapidsms_message_classifier/message_classifier/templates/message_classifier/message_classifier_base.html:280
+#: rapidsms_ureport/ureport/templates/ureport/base.html:69
 msgid "Actions"
 msgstr "تطبيقات"
 
+#: rapidsms_generic/generic/templates/generic/partials/partial_base.html:10
 msgid "Dismiss"
 msgstr "رفض"
 
+#: rapidsms_generic/generic/templates/generic/partials/partial_base.html:28
 msgid "No Results match your search.  Refresh to reset."
 msgstr "لا نتائج مطابقة لبحثك. تحديث لإعادة تعيين."
 
+#: rapidsms_generic/generic/templates/generic/partials/partial_header.html:47
 msgid "Select all"
 msgstr "تحديد كافة"
 
+#: rapidsms_generic/generic/templates/generic/partials/partial_header.html:50
 msgid "You have selected all items on this page."
 msgstr "لقد حددت جميع البنود المدرجة على هذه الصفحة."
 
+#: rapidsms_generic/generic/templates/generic/partials/partial_header.html:51
 msgid "Click here"
 msgstr "انقر هنا"
 
+#: rapidsms_generic/generic/templates/generic/partials/partial_header.html:51
+#, python-format
 msgid "to select all %(total)s items"
 msgstr "لتحديد كافة العناصر %(total)s"
 
-msgid "Start Date"
-msgstr "بدء التسجيل"
-
-msgid "End Date"
-msgstr "تاريخ انتهاء"
-
-msgid "Category"
-msgstr "فئة"
-
-msgid "Message action"
-msgstr "العمل رسالة"
-
-msgid "Set Action to Selected Messages"
-msgstr "مجموعة العمل لرسائل مختارة"
-
-msgid "Queue all Selected Messages For Download"
-msgstr "طابور جميع رسائل مختارة للتحميل"
-
-msgid "Identifier"
-msgstr "تحديد"
-
-msgid "Score"
-msgstr "نتيجة"
-
-msgid "Action"
-msgstr "عمل"
-
-msgid "Rating"
-msgstr "تصنيف"
-
-msgid "Classified Messages"
-msgstr "رسائل سرية"
-
-msgid "Powered by Text Analytics from IBM Research"
-msgstr "مدعوم من تحليلات نص من أبحاث IBM"
-
-msgid "Queue Download"
-msgstr "قائمة انتظار التحميل"
-
-msgid "add Action"
-msgstr "إضافة العمل"
-
-msgid "Edit Action"
-msgstr "تحرير العمل"
-
-msgid "Select Date range for messages to queue for download"
-msgstr "حدد نطاق التاريخ للرسائل إلى قائمة الانتظار للتحميل"
-
-msgid "Queue download"
-msgstr "انتظار التحميل"
-
-msgid "Queueing......"
-msgstr "تشكيل طابور ......"
-
-msgid "Add new Action"
-msgstr "إضافة عمل جديد"
-
-msgid "Add Category"
-msgstr "إضافة الفئة"
-
-msgid "Manage Category Flags"
-msgstr "إدارة الفئة أعلام"
-
-msgid "Edit"
-msgstr "تعديل"
-
-msgid "Default"
-msgstr "الافتراضي"
-
-msgid "Response"
-msgstr "استجابة"
-
-msgid "Priority"
-msgstr "أفضلية"
-
-msgid "Color"
-msgstr "اللون"
-
-msgid "no"
-msgstr "ﻻ"
-
-msgid "nope"
-msgstr "كلا"
-
-msgid "nah"
-msgstr "ناه"
-
-msgid "n"
-msgstr "ن"
-
+#: rapidsms_geoserver/geoserver/management/commands/export_poll_data.py:22
+#: rapidsms_polls/poll/models.py:46 rapidsms_polls/poll/models.py:263
+#: rapidsms_polls/poll/models.py:279 rapidsms_polls/poll/models.py:294
 msgid "yes"
 msgstr "ﻦﻌﻣ"
 
-msgid "ya"
-msgstr "يا"
+#: rapidsms_geoserver/geoserver/management/commands/export_poll_data.py:22
+#: rapidsms_polls/poll/models.py:51 rapidsms_polls/poll/models.py:264
+#: rapidsms_polls/poll/models.py:284 rapidsms_polls/poll/models.py:295
+msgid "no"
+msgstr "ﻻ"
 
-msgid "y"
-msgstr "ذ"
-
-msgid "yep"
-msgstr "موافق"
-
-msgid "Allow all"
-msgstr "السماح لجميع"
-
-msgid "Allow one"
-msgstr "تسمح لأحد"
-
-msgid "Location-based"
-msgstr "تعتمد على الموقع"
-
-msgid "Numeric Response"
-msgstr "الاستجابة الرقمية"
-
-msgid "Free-form"
-msgstr "خالية من شكل"
-
-msgid "Name/registration-based"
-msgstr "اسم / القائم على تسجيل"
-
-msgid "question"
-msgstr "سؤال"
-
-msgid "default_response"
-msgstr "الاستجابة الافتراضية"
-
+#: rapidsms_geoserver/geoserver/management/commands/export_poll_data.py:22
+#: rapidsms_polls/poll/models.py:265 rapidsms_polls/poll/models.py:296
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:221
 msgid "unknown"
 msgstr "غير معروف"
 
+#: rapidsms_message_classifier/message_classifier/forms.py:12
+#: rapidsms_ureport/ureport/forms.py:573 rapidsms_ureport/ureport/forms.py:594
+#: rapidsms_ureport/ureport/views/poll_views.py:463
+#: rapidsms_ureport/ureport/views/poll_views.py:489
+msgid "Start Date"
+msgstr "بدء التسجيل"
+
+#: rapidsms_message_classifier/message_classifier/forms.py:18
+#: rapidsms_ureport/ureport/forms.py:579 rapidsms_ureport/ureport/forms.py:600
+msgid "End Date"
+msgstr "تاريخ انتهاء"
+
+#: rapidsms_message_classifier/message_classifier/forms.py:49
+#: rapidsms_message_classifier/message_classifier/views.py:40
+#: rapidsms_ureport/ureport/views/poll_views.py:374
+msgid "Category"
+msgstr "فئة"
+
+#: rapidsms_message_classifier/message_classifier/forms.py:75
+msgid "Message action"
+msgstr "العمل رسالة"
+
+#: rapidsms_message_classifier/message_classifier/forms.py:76
+msgid "Set Action to Selected Messages"
+msgstr "مجموعة العمل لرسائل مختارة"
+
+#: rapidsms_message_classifier/message_classifier/forms.py:97
+msgid "Queue all Selected Messages For Download"
+msgstr "طابور جميع رسائل مختارة للتحميل"
+
+#: rapidsms_message_classifier/message_classifier/forms.py:105
+#, python-format
+msgid ""
+"%(count)d Messages have been queued for download, You'll be notified by "
+"email when download is ready"
+msgstr ""
+
+#: rapidsms_message_classifier/message_classifier/views.py:36
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:119
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:380
+#: rapidsms_ureport/ureport/views/contact_views.py:360
+#: rapidsms_ureport/ureport/views/message_views.py:47
+#: rapidsms_ureport/ureport/views/message_views.py:82
+#: rapidsms_ureport/ureport/views/message_views.py:117
+#: rapidsms_ureport/ureport/views/message_views.py:152
+#: rapidsms_ureport/ureport/views/message_views.py:187
+#: rapidsms_ureport/ureport/views/message_views.py:331
+msgid "Identifier"
+msgstr "تحديد"
+
+#: rapidsms_message_classifier/message_classifier/views.py:39
+msgid "Score"
+msgstr "نتيجة"
+
+#: rapidsms_message_classifier/message_classifier/views.py:41
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:384
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:9
+msgid "Action"
+msgstr "عمل"
+
+#: rapidsms_message_classifier/message_classifier/views.py:42
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:385
+msgid "Rating"
+msgstr "تصنيف"
+
+#: rapidsms_message_classifier/message_classifier/templates/message_classifier/message_classifier_base.html:228
+msgid "Powered by Text Analytics from IBM Research"
+msgstr "مدعوم من تحليلات نص من أبحاث IBM"
+
+#: rapidsms_message_classifier/message_classifier/templates/message_classifier/message_classifier_base.html:233
+msgid "Queue Download"
+msgstr "قائمة انتظار التحميل"
+
+#: rapidsms_message_classifier/message_classifier/templates/message_classifier/message_classifier_base.html:234
+msgid "add Action"
+msgstr "إضافة العمل"
+
+#: rapidsms_message_classifier/message_classifier/templates/message_classifier/message_classifier_base.html:235
+msgid "Edit Action"
+msgstr "تحرير العمل"
+
+#: rapidsms_message_classifier/message_classifier/templates/message_classifier/message_classifier_base.html:245
+msgid "Select Date range for messages to queue for download"
+msgstr "حدد نطاق التاريخ للرسائل إلى قائمة الانتظار للتحميل"
+
+#: rapidsms_message_classifier/message_classifier/templates/message_classifier/message_classifier_base.html:252
+msgid "Queue download"
+msgstr "انتظار التحميل"
+
+#: rapidsms_message_classifier/message_classifier/templates/message_classifier/message_classifier_base.html:252
+msgid "Queueing......"
+msgstr "تشكيل طابور ......"
+
+#: rapidsms_message_classifier/message_classifier/templates/message_classifier/message_classifier_base.html:264
+msgid "Add new Action"
+msgstr "إضافة عمل جديد"
+
+#: rapidsms_message_classifier/message_classifier/templates/message_classifier/message_classifier_base.html:270
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:318
+msgid "Add Category"
+msgstr "إضافة الفئة"
+
+#: rapidsms_message_classifier/message_classifier/templates/message_classifier/message_classifier_base.html:271
+msgid "Manage Category Flags"
+msgstr "إدارة الفئة أعلام"
+
+#: rapidsms_message_classifier/message_classifier/templates/message_classifier/message_classifier_base.html:288
+#: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_admin_row.html:22
+#: rapidsms_ureport/ureport/templates/ureport/partials/polls/response_row.html:22
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_category.html:19
+msgid "Edit"
+msgstr "تعديل"
+
+#: rapidsms_polls/poll/forms.py:95
+msgid "Default"
+msgstr "الافتراضي"
+
+#: rapidsms_polls/poll/forms.py:96
+#: rapidsms_polls/poll/templates/polls/poll_report_text.html:12
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:191
+#: rapidsms_ureport/ureport/views/message_views.py:50
+#: rapidsms_ureport/ureport/views/message_views.py:85
+#: rapidsms_ureport/ureport/views/message_views.py:120
+#: rapidsms_ureport/ureport/views/message_views.py:155
+#: rapidsms_ureport/ureport/views/message_views.py:190
+msgid "Response"
+msgstr "استجابة"
+
+#: rapidsms_polls/poll/forms.py:98
+msgid "Priority"
+msgstr "أفضلية"
+
+#: rapidsms_polls/poll/forms.py:100
+#, fuzzy
+msgid "red"
+msgstr "خلق"
+
+#: rapidsms_polls/poll/forms.py:101
+msgid "green"
+msgstr ""
+
+#: rapidsms_polls/poll/forms.py:102
+msgid "blue"
+msgstr ""
+
+#: rapidsms_polls/poll/forms.py:103
+msgid "yellow"
+msgstr ""
+
+#: rapidsms_polls/poll/forms.py:103
+msgid "Color"
+msgstr "اللون"
+
+#: rapidsms_polls/poll/models.py:46
+msgid "yeah"
+msgstr ""
+
+#: rapidsms_polls/poll/models.py:46
+msgid "yep"
+msgstr "موافق"
+
+#: rapidsms_polls/poll/models.py:46
+#, fuzzy
+msgid "yay"
+msgstr "يا"
+
+#: rapidsms_polls/poll/models.py:51
+msgid "nope"
+msgstr "كلا"
+
+#: rapidsms_polls/poll/models.py:51
+msgid "nah"
+msgstr "ناه"
+
+#: rapidsms_polls/poll/models.py:51
+#, fuzzy
+msgid "nay"
+msgstr "ناه"
+
+#: rapidsms_polls/poll/models.py:115
+msgid "Allow all"
+msgstr "السماح لجميع"
+
+#: rapidsms_polls/poll/models.py:116
+msgid "Allow one"
+msgstr "تسمح لأحد"
+
+#: rapidsms_polls/poll/models.py:122
+msgid "Numeric Response"
+msgstr "الاستجابة الرقمية"
+
+#: rapidsms_polls/poll/models.py:133
+msgid "Free-form"
+msgstr "خالية من شكل"
+
+#: rapidsms_polls/poll/models.py:143
+msgid "Name/registration-based"
+msgstr "اسم / القائم على تسجيل"
+
+#: rapidsms_polls/poll/models.py:156
+msgid "question"
+msgstr "سؤال"
+
+#: rapidsms_polls/poll/models.py:163
+msgid "default_response"
+msgstr "الاستجابة الافتراضية"
+
+#: rapidsms_polls/poll/models.py:763 rapidsms_polls/poll/models.py:768
 msgid "Starts With"
 msgstr "يبدأ ب"
 
+#: rapidsms_polls/poll/models.py:764 rapidsms_polls/poll/models.py:769
 msgid "Contains"
 msgstr "يحتوي على"
 
+#: rapidsms_polls/poll/models.py:765 rapidsms_polls/poll/models.py:770
 msgid "Regex (advanced)"
 msgstr "باستخدام التعابير المنطقية (متقدم)"
 
+#: rapidsms_polls/poll/templates/polls/poll_report_text.html:5
 msgid "Send Alerts"
 msgstr "إرسال تنبيهات"
 
+#: rapidsms_polls/poll/templates/polls/poll_report_text.html:9
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:178
 msgid "participant"
 msgstr "مشارك"
 
+#: rapidsms_polls/poll/templates/polls/poll_report_text.html:9
 msgid "total response"
 msgstr "استجابة المشاركات"
 
+#: rapidsms_polls/poll/templates/polls/poll_report_text.html:9
 msgid "response rate"
 msgstr "معدل الاستجابة"
 
+#: rapidsms_polls/poll/templates/polls/poll_report_text.html:16
 msgid "Location"
 msgstr "موقع"
 
+#: rapidsms_polls/poll/templates/polls/poll_report_text.html:20
 msgid "Uncategorized"
 msgstr "غير مصنف"
 
+#: rapidsms_uganda_common/uganda_common/forms.py:97
 msgid "characters left"
 msgstr "بقي من الأحرف"
 
+#: rapidsms_uganda_common/uganda_common/forms.py:98
 msgid "character left"
 msgstr "الحرف اليسار"
 
+#: rapidsms_uganda_common/uganda_common/forms.py:99
 msgid "No characters left"
 msgstr "لم يقم الأحرف"
 
+#: rapidsms_uganda_common/uganda_common/forms.py:100
 msgid "characters over limit"
 msgstr "أحرف أكثر من الحد"
 
+#: rapidsms_uganda_common/uganda_common/forms.py:101
 msgid "character over limit"
 msgstr "حرف على حد"
 
-msgid ""
-"We didn't recognize your %(district)s.  Please carefully type the name of "
-"your %(district)s and re-send."
-msgstr ""
-"لم نتعرف الخاص %(district)s. يرجى كتابة اسم بعناية %(district)s الخاص بك وإعادة إرسال."
-
+#: rapidsms_uganda_common/uganda_common/models.py:36
+#: rapidsms_uganda_common/uganda_common/utils.py:211
 msgid "District Response"
 msgstr "استجابة حي"
 
+#: rapidsms_uganda_common/uganda_common/models.py:45
+msgid "Location-based"
+msgstr "تعتمد على الموقع"
+
+#: rapidsms_uganda_common/uganda_common/utils.py:205
+#, fuzzy
+msgid "district"
+msgstr "المناطق"
+
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:29
+#, python-format
 msgid "full_tree_for_model tag was given an invalid model: %s"
 msgstr "شجرة_الكامل_لنموذج أعطيت علامة نموذجا غير صالح: %s "
 
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:50
+#, python-format
 msgid "drilldown_tree_for_node tag was given an invalid model: %s"
 msgstr "انتقل_لأسفل_الشجرة_لعقدة أعطيت علامة نموذجا غير صالح: %s"
 
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:54
+#, python-format
 msgid "drilldown_tree_for_node tag was given an invalid model field: %s"
 msgstr "انتقل_لأسفل_الشجرة_لعقدة أعطيت علامة حقل نموذج غير صالح: %s"
 
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:79
+#, python-format
 msgid "%s tag requires three arguments"
 msgstr "يتطلب %s العلامة ثلاث حجج"
 
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:81
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:133
+#, python-format
 msgid "second argument to %s tag must be 'as'"
 msgstr "الحجة الثانية ل %s العلامة يجب أن يكون 'ك'"
 
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:131
+#, python-format
 msgid "%s tag requires either three, seven or eight arguments"
 msgstr "يتطلب %s العلامة إما ثلاثة، سبعة أو ثمانية الحجج"
 
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:136
+#, python-format
 msgid "if seven arguments are given, fourth argument to %s tag must be 'with'"
 msgstr "إذا أعطيت سبعة الحجج، الوسيطة الرابعة إلى %s العلامة يجب أن يكون 'مع'"
 
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:138
+#, python-format
 msgid "if seven arguments are given, sixth argument to %s tag must be 'in'"
 msgstr "إذا أعطيت سبعة الحجج، حجة السادسة إلى %s العلامة يجب أن يكون 'في'"
 
-msgid "if eight arguments are given, fourth argument to %s tag must be 'cumulative'"
-msgstr "إذا أعطيت ثمانية الحجج، الوسيطة الرابعة إلى %s العلامة يجب أن يكون 'التراكمي'"
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:142
+#, python-format
+msgid ""
+"if eight arguments are given, fourth argument to %s tag must be 'cumulative'"
+msgstr ""
+"إذا أعطيت ثمانية الحجج، الوسيطة الرابعة إلى %s العلامة يجب أن يكون 'التراكمي'"
 
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:144
+#, python-format
 msgid "if eight arguments are given, fifth argument to %s tag must be 'count'"
 msgstr "إذا أعطيت ثمانية الحجج، حجة الخامس إلى %s العلامة يجب أن 'الاعتماد'"
 
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:146
+#, python-format
 msgid "if eight arguments are given, seventh argument to %s tag must be 'in'"
 msgstr "إذا أعطيت ثمانية الحجج، حجة السابع إلى %s العلامة يجب أن يكون 'في'"
 
+#: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:288
+#, python-format
 msgid "%s tag requires a queryset"
 msgstr "يتطلب %s علامة على queryset"
 
+#: rapidsms_unregister/unregister/forms.py:13
+#, python-format
 msgid "You blacklisted %(connections)d numbers"
 msgstr "على القائمة السوداء أرقام %(connections)d"
 
+#: rapidsms_unregister/unregister/forms.py:15
 msgid "You don't have permissions to blacklist numbers"
 msgstr "لم يكن لديك أذونات إلى لائحتك السوداء أرقام"
 
+#: rapidsms_ureport/ureport/forms.py:223 rapidsms_ureport/ureport/forms.py:709
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:92
 msgid "Poll"
 msgstr "تصويت"
 
-msgid "View AutoReg Polls"
-msgstr "عرض السيارات ريج استطلاعات الرأي"
-
-msgid "View Autoreg Group Rules"
-msgstr "عرض السيارات ريج قوانين المجموعة"
-
+#: rapidsms_ureport/ureport/forms.py:224
 msgid "Assign selected to poll"
 msgstr "تعيين المحدد إلى استطلاع"
 
+#: rapidsms_ureport/ureport/forms.py:233
+#, python-format
 msgid "%(length)d responses assigned to  %(poll)s poll"
 msgstr "ردود %(length)d تعيين %(poll)s الاستطلاع"
 
+#: rapidsms_ureport/ureport/forms.py:240
 msgid "Delete Selected"
 msgstr "حذف مختارة"
 
+#: rapidsms_ureport/ureport/forms.py:246 rapidsms_ureport/ureport/forms.py:274
 msgid "No contacts selected"
 msgstr "لا جهات الاتصال المحددة"
 
+#: rapidsms_ureport/ureport/forms.py:260
 msgid "Assign to New poll"
 msgstr "تعيين لاستطلاع جديد"
 
+#: rapidsms_ureport/ureport/forms.py:261
 msgid "Poll Name"
 msgstr "اسم الاستطلاع"
 
+#: rapidsms_ureport/ureport/forms.py:262 rapidsms_ureport/ureport/forms.py:417
 msgid "Yes/No Question"
 msgstr "نعم / لا سؤال"
 
+#: rapidsms_ureport/ureport/forms.py:266 rapidsms_ureport/ureport/forms.py:419
 msgid "Response type"
 msgstr "نوع الاستجابة"
 
+#: rapidsms_ureport/ureport/forms.py:267
 msgid "Poll type"
 msgstr "نوع الاستطلاع"
 
+#: rapidsms_ureport/ureport/forms.py:268
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:98
+#: rapidsms_ureport/ureport/views/poll_views.py:462
+#: rapidsms_ureport/ureport/views/poll_views.py:488
 msgid "Question"
 msgstr "سؤال"
 
+#: rapidsms_ureport/ureport/forms.py:269
 msgid "Default response"
 msgstr "الاستجابة الافتراضية"
 
+#: rapidsms_ureport/ureport/forms.py:304
+#, python-format
 msgid "%(results)d participants added to  %(poll)s poll"
 msgstr "وأضاف المشاركون %(results)d إلى %(poll)s الاستطلاع"
 
-msgid "Message is going to be sent to %(contacts)d contacts."
-msgstr "الرسالة سوف يتم إرسالها إلى جهات الاتصال %(contacts)d."
-
-msgid "Confirm Sending"
-msgstr "إرسال تأكيد"
-
+#: rapidsms_ureport/ureport/forms.py:344
 msgid "Reply to selected"
 msgstr "الرد على اختيارها"
 
+#: rapidsms_ureport/ureport/forms.py:348 rapidsms_ureport/ureport/forms.py:380
 msgid "A message must have one or more recipients!"
 msgstr "يجب أن يكون رسالة مستلم واحد أو أكثر!"
 
+#: rapidsms_ureport/ureport/forms.py:349
 msgid "error"
 msgstr "خطأ"
 
+#: rapidsms_ureport/ureport/forms.py:373
 msgid "text"
 msgstr "نص"
 
+#: rapidsms_ureport/ureport/forms.py:374
 msgid "text luo"
 msgstr "النص لوه"
 
+#: rapidsms_ureport/ureport/forms.py:407
+#, python-format
 msgid "Message successfully sent to %(connections)d numbers"
 msgstr "رسالة أرسلت بنجاح إلى %(connections)d أرقام"
 
+#: rapidsms_ureport/ureport/forms.py:410
 msgid "You don't have permission to send messages!"
 msgstr "ليس لديك الإذن لإرسال الرسائل!"
 
+#: rapidsms_ureport/ureport/forms.py:417
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:99
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:46
+#: rapidsms_ureport/ureport/views/message_views.py:49
+#: rapidsms_ureport/ureport/views/message_views.py:84
+#: rapidsms_ureport/ureport/views/message_views.py:119
+#: rapidsms_ureport/ureport/views/message_views.py:154
+#: rapidsms_ureport/ureport/views/message_views.py:189
+#: rapidsms_ureport/ureport/views/message_views.py:219
 msgid "Type"
 msgstr "نوع"
 
+#: rapidsms_ureport/ureport/forms.py:421
 msgid "Is urgent"
 msgstr "ثمة حاجة ملحة"
 
+#: rapidsms_ureport/ureport/forms.py:428
 msgid "Question en"
 msgstr "سؤال"
 
+#: rapidsms_ureport/ureport/forms.py:429
 msgid "Question luo"
 msgstr "السؤال لوه"
 
+#: rapidsms_ureport/ureport/forms.py:430
 msgid "Question kdj"
 msgstr "سؤال KDJ"
 
+#: rapidsms_ureport/ureport/forms.py:432
 msgid "Default response en"
 msgstr "الاستجابة الافتراضية في"
 
+#: rapidsms_ureport/ureport/forms.py:434
 msgid "Default response kdj"
 msgstr "KDJ الاستجابة الافتراضية"
 
+#: rapidsms_ureport/ureport/forms.py:436
 msgid "districts"
 msgstr "المناطق"
 
+#: rapidsms_ureport/ureport/forms.py:438
 msgid "Default response luo"
 msgstr "الاستجابة الافتراضية لوه"
 
+#: rapidsms_ureport/ureport/forms.py:459
 msgid "groups"
 msgstr "مجموعات"
 
+#: rapidsms_ureport/ureport/forms.py:470
 msgid "You must provide a set of recipients (a group or groups)"
 msgstr "يجب توفير مجموعة من المتلقين (مجموعة أو مجموعات)"
 
+#: rapidsms_ureport/ureport/forms.py:527
 msgid "Blacklist/Opt-out Users"
 msgstr "القائمة السوداء / التقيد بها المستخدمين"
 
+#: rapidsms_ureport/ureport/forms.py:705
 msgid "Template"
 msgstr "قالب"
 
+#: rapidsms_ureport/ureport/forms.py:707
 msgid ""
 "message shd be of form Dear Hon. [insert name]. [insert results ] of people "
 "from [insert district] say that lorem ipsum"
@@ -682,90 +1118,189 @@ msgstr ""
 "رسالة التنمية البشرية المستدامة تكون ذات شكل عزيزي هون. [أدخل الاسم]. "
 "[النتائج إدراج] من الناس من [حي إدراج] يقول أن أبجد هوز"
 
+#: rapidsms_ureport/ureport/forms.py:752
+#, python-format
+msgid "Message is going to be sent to %(contacts)d contacts."
+msgstr "الرسالة سوف يتم إرسالها إلى جهات الاتصال %(contacts)d."
+
+#: rapidsms_ureport/ureport/forms.py:753
+msgid "Confirm Sending"
+msgstr "إرسال تأكيد"
+
+#: rapidsms_ureport/ureport/forms.py:786
 msgid "Push Selected Messages to Mtrac"
 msgstr "دفع الرسائل المختارة إلى Mtrac"
 
+#: rapidsms_ureport/ureport/forms.py:791
+#, python-format
+msgid "%(count)d Messages were pushed to mtrac"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/layout.html:5
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:7
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:37
 msgid "Voice Matters"
 msgstr "المسائل الصوتية"
 
+#: rapidsms_ureport/ureport/templates/layout.html:45
 msgid "VOICE MATTERS"
 msgstr "المسائل صوت"
 
+#: rapidsms_ureport/ureport/templates/layout.html:48
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:40
 msgid "members to date"
 msgstr "أعضاء حتى الآن"
 
+#: rapidsms_ureport/ureport/templates/layout.html:54
+#: rapidsms_ureport/ureport/templates/layout.html:86
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:50
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:97
 msgid "HOME"
 msgstr "منزل"
 
+#: rapidsms_ureport/ureport/templates/layout.html:57
 msgid "DASHBOARDS"
 msgstr "لوحات"
 
+#: rapidsms_ureport/ureport/templates/layout.html:59
+#: rapidsms_ureport/ureport/templates/layout.html:93
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:103
 msgid "POLL ADMIN"
 msgstr "استطلاع للرأي مشرف"
 
+#: rapidsms_ureport/ureport/templates/layout.html:60
+#: rapidsms_ureport/ureport/templates/layout.html:94
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:104
 msgid "MESSAGE LOG"
 msgstr "سجل الرسائل"
 
+#: rapidsms_ureport/ureport/templates/layout.html:61
+#: rapidsms_ureport/ureport/templates/layout.html:95
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:105
 msgid "UREPORTERS"
 msgstr "UREPORTERS"
 
+#: rapidsms_ureport/ureport/templates/layout.html:62
+#: rapidsms_ureport/ureport/templates/layout.html:96
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:106
 msgid "FLAGGED MESSAGES"
 msgstr "الرسائل التي ترفع علم"
 
+#: rapidsms_ureport/ureport/templates/layout.html:63
+#: rapidsms_ureport/ureport/templates/layout.html:97
 msgid "MP BARAZA"
 msgstr "النائب الباحث"
 
+#: rapidsms_ureport/ureport/templates/layout.html:64
+#: rapidsms_ureport/ureport/templates/layout.html:98
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:107
 msgid "A-CLASS"
 msgstr "فئة A-"
 
+#: rapidsms_ureport/ureport/templates/layout.html:65
 msgid "Real Time"
 msgstr "في الوقت الحقيقي"
 
+#: rapidsms_ureport/ureport/templates/layout.html:68
+#: rapidsms_ureport/ureport/templates/layout.html:102
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:111
 msgid "LOGIN"
 msgstr "تسجيل الدخول"
 
+#: rapidsms_ureport/ureport/templates/layout.html:80
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:91
 msgid "Supported by"
 msgstr "بدعم من"
 
+#: rapidsms_ureport/ureport/templates/layout.html:87
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:51
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:98
 msgid "POLL RESULTS"
 msgstr "نتائج الاستطلاع"
 
+#: rapidsms_ureport/ureport/templates/layout.html:88
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:52
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:99
 msgid "ABOUT UREPORT"
 msgstr "عن UREPORT"
 
+#: rapidsms_ureport/ureport/templates/layout.html:89
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:53
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:100
 msgid "HOW TO JOIN"
 msgstr "كيفية الانضمام"
 
+#: rapidsms_ureport/ureport/templates/layout.html:99
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:108
 msgid "REAL TIME"
 msgstr "في الوقت الحقيقي"
 
+#: rapidsms_ureport/ureport/templates/layout.html:100
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:109
+msgid "LOGOUT"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/layout.html:106
 msgid "Copyright &copy; 2010 - 2012 UNICEF et al"
 msgstr "حقوق التأليف والنشر © 2010 - 2012 اليونيسيف وآخرون"
 
+#: rapidsms_ureport/ureport/templates/layout.html:107
 msgid "RapidSMS and Ureport are available under the BSD license"
 msgstr "تتوفر الرسائل القصيرة السريعة وUreport تحت رخصة BSD"
 
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:54
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:101
 msgid "NATIONAL PULSE"
 msgstr "نبض وطني"
 
-msgid "Ureport is a free SMS-based system that allows young %(citizens_trans)s to speak out on what's happening in communities across the country, and work together with other community leaders for positive change."
-msgstr "Ureport هو نظام قائم على SMS مجانية تسمح الشباب الأوغنديين للحديث عن ما يحدث في المجتمعات في جميع أنحاء البلاد، والعمل جنبا إلى جنب مع قادة المجتمع الآخرين لإحداث تغيير إيجابي."
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:60
+#: rapidsms_ureport/ureport/templates/ureport/about.html:30
+msgid "Ugandans"
+msgstr ""
 
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:61
+#: rapidsms_ureport/ureport/templates/ureport/about.html:31
+#, fuzzy, python-format
+msgid ""
+"Ureport is a free SMS-based system that allows young %(citizens_trans)s to "
+"speak out on what's happening in communities across the country, and work "
+"together with other community leaders for positive change."
+msgstr ""
+"Ureport هو نظام قائم على SMS مجانية تسمح الشباب الأوغنديين للحديث عن ما يحدث "
+"في المجتمعات في جميع أنحاء البلاد، والعمل جنبا إلى جنب مع قادة المجتمع "
+"الآخرين لإحداث تغيير إيجابي."
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:72
 msgid "YOUR SAY:"
 msgstr "قل كلمتك:"
 
-msgid "&copy; 2010 - 2012 UNICEF et al."
-msgstr "© 2010 - 2012 اليونيسيف وآخرون."
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:116
+msgid "&copy; 2010 -"
+msgstr ""
 
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:116
+msgid "UNICEF et al."
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/about.html:8
 msgid "Why Join Ureport"
 msgstr "لماذا تاريخ Ureport"
 
+#: rapidsms_ureport/ureport/templates/ureport/about.html:12
+msgid "Uganda"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/about.html:13
+#, fuzzy, python-format
 msgid ""
 "<ul>\n"
 "\t    <li>Speak out on what's happening in your community</li>\n"
-"\t    <li>Use Ureport results and information to update and increase citizen's awareness</li>\n"
-"\t    <li>Participate in nationwide campaigns to help improve your country</li>\n"
-"\t    <li>Share what's happening around %(country_trans)s with other Ureporters</li>\n"
+"\t    <li>Use Ureport results and information to update and increase "
+"citizen's awareness</li>\n"
+"\t    <li>Participate in nationwide campaigns to help improve your country</"
+"li>\n"
+"\t    <li>Share what's happening around %(country_trans)s with other "
+"Ureporters</li>\n"
 "\t</ul>"
 msgstr ""
 "<ul>\n"
@@ -775,557 +1310,826 @@ msgstr ""
 "\t    <li>حصة ما يحدث في جميع أنحاء أوغندا مع Ureporters أخرى</li>\n"
 "\t</ul>"
 
+#: rapidsms_ureport/ureport/templates/ureport/about.html:26
 msgid "About Ureport"
 msgstr "حول Ureport"
 
-msgid ""
-"Ureport is a free SMS-based system that allows\n"
-"                young Ugandans to speak out on what's happening in\n"
-"                communities across the country, and work together\n"
-"\t\twith other community leaders for positive change."
-msgstr ""
-"Ureport هو نظام حر يستند إلى SMS التي تسمح الأوغنديين الشباب للحديث عن ما "
-"يحدث في المجتمعات في جميع أنحاء البلاد، والعمل جنبا إلى جنب مع قادة المجتمع "
-"الآخرين لإحداث تغيير إيجابي."
-
+#: rapidsms_ureport/ureport/templates/ureport/about.html:37
 msgid "Ureport is made up of"
 msgstr "يرصد Ureport تتكون من"
 
+#: rapidsms_ureport/ureport/templates/ureport/about.html:39
 msgid ""
 "Weekly SMS messages and polls to and from\n"
 "\t\t\ta growing community of Ureporters"
 msgstr ""
 "رسائل SMS الأسبوعية واستطلاعات الرأي من وإلى المجتمع المتنامي من Ureporters"
 
+#: rapidsms_ureport/ureport/templates/ureport/about.html:43
 msgid ""
 "Regular radio programs that will broadcast\n"
 "\t\t\tstories gathered by Ureport"
 msgstr "البرامج الإذاعية العادية التي سوف تبث القصص التي جمعتها Ureport"
 
+#: rapidsms_ureport/ureport/templates/ureport/about.html:47
 msgid ""
 "Newspaper articles that will publish stories from\n"
 "\t\t\tthe Ureport community."
 msgstr "مقالات الصحف التي سوف تنشر قصص من المجتمع Ureport."
 
+#: rapidsms_ureport/ureport/templates/ureport/about.html:53
 msgid "The mission of Ureport"
 msgstr "مهمة Ureport"
 
+#: rapidsms_ureport/ureport/templates/ureport/about.html:56
 msgid ""
 "Inspire action within our communities to unite\n"
 "                    and share the responsibility of creating a better\n"
 "                    environment for eveyone.<br/>\n"
 "                    Inspire action from our leaders - let them know\n"
-"                    what's going on and what action your community wants.<br/>\n"
+"                    what's going on and what action your community wants.<br/"
+">\n"
 "                    Share info that Ureport gathers through different\n"
 "                    mediums (radio, TV, community dialogue, website,\n"
 "\t\t    and youth events)"
 msgstr ""
-"إلهام العمل داخل مجتمعاتنا لتوحيد وتقاسم مسؤولية خلق بيئة أفضل للجميع."
-"<br/> إلهام العمل من قادتنا - اجعلهم يعرفون ما يجري وماذا يريد العمل مجتمعك."
-" <br/> شارك معلومات أن Ureport تجمع من خلال وسائل مختلفة (راديو، تلفزيون، "
-"حوار المجتمع، والموقع، والأحداث الشباب)"
+"إلهام العمل داخل مجتمعاتنا لتوحيد وتقاسم مسؤولية خلق بيئة أفضل للجميع.<br/> "
+"إلهام العمل من قادتنا - اجعلهم يعرفون ما يجري وماذا يريد العمل مجتمعك. <br/> "
+"شارك معلومات أن Ureport تجمع من خلال وسائل مختلفة (راديو، تلفزيون، حوار "
+"المجتمع، والموقع، والأحداث الشباب)"
 
+#: rapidsms_ureport/ureport/templates/ureport/contact_message_base.html:25
 msgid "Search Messages"
 msgstr "رسائل البحث"
 
+#: rapidsms_ureport/ureport/templates/ureport/contact_message_base.html:25
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:39
 msgid "Filter By District"
 msgstr "الفلترة من منطقة"
 
+#: rapidsms_ureport/ureport/templates/ureport/contact_message_base.html:48
 msgid "Show Mass Messages"
 msgstr "تظهر رسائل جماعية"
 
+#: rapidsms_ureport/ureport/templates/ureport/contact_message_base.html:49
 msgid "Show Unsolicited Messages"
 msgstr "تظهر الرسائل غير المرغوب فيها"
 
+#: rapidsms_ureport/ureport/templates/ureport/contact_message_base.html:50
 msgid "Show Poll Messages"
 msgstr "تظهر الرسائل الإستطلاع"
 
+#: rapidsms_ureport/ureport/templates/ureport/contact_message_base.html:51
 msgid "Show Autoreg Messages"
 msgstr "تظهر رسائل Autoreg"
 
+#: rapidsms_ureport/ureport/templates/ureport/contact_message_base.html:52
 msgid "Show Quit Messages"
 msgstr "المعرض إنهاء الرسائل"
 
+#: rapidsms_ureport/ureport/templates/ureport/dashboard.html:39
+#: rapidsms_ureport/ureport/templates/ureport/partials/dashboard/poll_row.html:20
+#: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_admin_row.html:15
+msgid "Report"
+msgstr "تقرير"
+
+#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:42
+#: rapidsms_ureport/ureport/templates/ureport/new_flag.html:15
 msgid "All Flags"
 msgstr "جميع أعلام"
 
+#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:44
+#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:48
+#: rapidsms_ureport/ureport/templates/ureport/new_flag.html:17
+#: rapidsms_ureport/ureport/templates/ureport/new_flag.html:20
 msgid "messages"
 msgstr "رسائل"
 
+#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:49
+#: rapidsms_ureport/ureport/templates/ureport/new_flag.html:21
 msgid "edit"
 msgstr "تعديل"
 
+#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:50
+#: rapidsms_ureport/ureport/templates/ureport/new_flag.html:22
 msgid "delete"
 msgstr "حذف"
 
+#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:56
 msgid "Add New Flag"
 msgstr "إضافة علم جديد"
 
+#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:58
 msgid "Export To Excel"
 msgstr "تصدير إلى Excel"
 
+#: rapidsms_ureport/ureport/templates/ureport/home.html:22
 msgid "PREVIOUS POLLS"
 msgstr "الانتخابات السابقة"
 
+#: rapidsms_ureport/ureport/templates/ureport/home.html:22
+msgid "The last message is received at"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/home.html:34
 msgid "See results"
 msgstr "نرى النتائج"
 
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:5
 msgid "How To Join"
 msgstr "كيف لتاريخ"
 
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:10
 msgid "Step 2"
 msgstr "الخطوة 2"
 
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:12
 msgid ""
-"You will receive a greeting message and a series of quetions , to find out more about you\n"
+"You will receive a greeting message and a series of quetions , to find out "
+"more about you\n"
 "    (Ureport needs to know your District but all other quetions are optional)"
 msgstr ""
 "سوف تتلقى رسالة تحية وسلسلة من الأسئلة، لمعرفة المزيد عنك\n"
 "(يحتاج تقرير لمعرفة حي الخاص بك ولكن جميع الأسئلة الأخرى اختيارية)"
 
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:21
 msgid "Step 1"
 msgstr "الخطوة 1"
 
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:21
 msgid ""
 "Text the word Join to 8500\n"
 "    - all Ureport SMSs are free!"
 msgstr "نص كلمة تاريخ ل8500 - جميع الرسائل القصيرة Ureport أحرار!"
 
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:30
 msgid "Step 4"
 msgstr "الخطوة 4"
 
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:32
 msgid ""
-" As a Ureporter, you will get weekly poll results, and meaningful information to assist you to enact change in\n"
+" As a Ureporter, you will get weekly poll results, and meaningful "
+"information to assist you to enact change in\n"
 "    your community."
 msgstr ""
-"باعتبارها Ureporter، وسوف تحصل على نتائج الاستطلاع الأسبوعية، ومعلومات مفيدة"
-" لمساعدتك على سن التغيير في مجتمعك."
+"باعتبارها Ureporter، وسوف تحصل على نتائج الاستطلاع الأسبوعية، ومعلومات مفيدة "
+"لمساعدتك على سن التغيير في مجتمعك."
 
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:40
 msgid "Step 3"
 msgstr "الخطوة 3"
 
+#: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:42
 msgid "After you answer the quetions about you, you are a member of Ureport!"
 msgstr "بعد الإجابة على الأسئلة عنك، كنت عضوا في Ureport!"
 
-msgid "Thanks for visiting RapidSMS!"
-msgstr "شكرا لزيارتكم الرسائل القصيرة السريعة!"
-
-msgid "Please come again."
-msgstr "يرجى تأتي مرة أخرى."
-
-msgid "Log in again"
-msgstr "تسجيل الدخول مرة أخرى"
-
-msgid "Login"
-msgstr "دخول"
-
-msgid "Oops. Your username and password didn't match. Please try again."
-msgstr "عفوا. لم اسم المستخدم وكلمة المرور الخاصة بك غير متطابقة. يرجى المحاولة مرة أخرى."
-
-msgid "You're already logged in!"
-msgstr "كنت بالفعل في تسجيل!"
-
-msgid "Please log in to RapidSMS"
-msgstr "يرجى تسجيل الدخول إلى الرسائل القصيرة السريعة"
-
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:46
 msgid "Filter Poll Contacts"
 msgstr "مرشح الإستطلاع اتصالات"
 
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:84
+#: rapidsms_ureport/ureport/views/dashboard_views.py:95
 msgid "No Contacts Selected"
 msgstr "لا اتصالات مختارة"
 
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:98
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:70
+#: rapidsms_ureport/ureport/views/poll_views.py:90
 msgid "Send Poll"
 msgstr "إرسال الإستطلاع"
 
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:99
 msgid "Luo Question"
 msgstr "لوه سؤال"
 
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:100
 msgid "Response Type"
 msgstr "نوع الاستجابة"
 
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:100
 msgid "Auto Response"
 msgstr "السيارات استجابة"
 
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:101
 msgid "Auto Response Luo"
 msgstr "السيارات الاستجابة لوه"
 
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:114
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:324
 msgid "Messages"
 msgstr "رسائل"
 
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:123
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:211
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:383
+#: rapidsms_ureport/ureport/views/contact_views.py:364
 msgid "District"
 msgstr "حي"
 
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:124
+#: rapidsms_ureport/ureport/views/contact_views.py:365
 msgid "Group(s)"
 msgstr "مجموعة (ق)"
 
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:151
 msgid "previous"
 msgstr "سابق"
 
+#: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:155
+#, python-format
 msgid "Page %(messages_number)sof %(messages_paginator_num_pages)s. "
 msgstr "الصفحة %(messages_number)s من %(messages_paginator_num_pages)s. "
 
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:3
 msgid "National Pulse"
 msgstr "نبض وطني"
 
-msgid "Today's Pulse"
-msgstr "نبض اليوم"
-
-msgid "Week's Pulse"
-msgstr "نبض الأسبوع"
-
-msgid "Month's Pulse"
-msgstr "نبض الشهر"
-
-msgid "Year's Pulse"
-msgstr "نبض العام"
-
-msgid "Reset All"
-msgstr "إعادة تعيين جميع"
-
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:28
 msgid "Welcome to National Pulse"
 msgstr "مرحبا بكم في نبض الوطنية"
 
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:28
 msgid "This is What is trending in the Ureport Community"
 msgstr "هذا هو ما تتجه في الجماعة Ureport"
 
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:30
+msgid "Today's Pulse"
+msgstr "نبض اليوم"
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:31
+msgid "Week's Pulse"
+msgstr "نبض الأسبوع"
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:32
+msgid "Month's Pulse"
+msgstr "نبض الشهر"
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:33
+msgid "Year's Pulse"
+msgstr "نبض العام"
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:49
 msgid "Loading National Pulse... Please wait, This may take a while."
 msgstr "تحميل نبض الوطنية ... يرجى الانتظار، وهذا قد يستغرق فترة من الوقت."
 
-msgid ""
-"Welcome to National Pulse where you can see what is trending within the "
-"U-report community."
-msgstr ""
-"مرحبا بكم في نبض الوطنية حيث يمكنك أن ترى ما تتجه داخل المجتمع U-التقرير."
-
-msgid ""
-"Click on your district to see what the young people are talking about where "
-"you live."
-msgstr ""
-"انقر على حي الخاص بك لمعرفة ما الشباب يتحدثون عن المكان الذي تعيش فيه."
-
-msgid "Click on on current filter("
-msgstr "انقر على على مرشح الحالية ("
-
-msgid ") to see word cloud"
-msgstr ") لرؤية سحابة الكلمة"
-
-msgid "Filter word cloud with"
-msgstr "تصفية كلمة سحابة مع"
-
+#: rapidsms_ureport/ureport/templates/ureport/new_flag.html:6
 msgid "Add New flag"
 msgstr "إضافة علامة جديدة"
 
+#: rapidsms_ureport/ureport/templates/ureport/new_flag.html:10
 msgid "submit"
 msgstr "عرض"
 
+#: rapidsms_ureport/ureport/templates/ureport/new_poll.html:13
 msgid "Excluded Groups: "
 msgstr "استبعاد المجموعات:"
 
+#: rapidsms_ureport/ureport/templates/ureport/new_poll.html:19
 msgid "Cancel"
 msgstr "إلغاء"
 
+#: rapidsms_ureport/ureport/templates/ureport/new_poll.html:23
 msgid "Create Poll"
 msgstr "إنشاء الإستطلاع"
 
+#: rapidsms_ureport/ureport/templates/ureport/poll_admin_base.html:35
 msgid "Add New Poll"
 msgstr "إضافة تصويت جديد"
 
-msgid "Poll Responses "
-msgstr "الردود الاستطلاع"
-
-msgid "Search Ureporters"
-msgstr "البحث Ureporters"
-
-msgid "Filter By Group"
-msgstr "الفلترة من المجموعة"
-
-msgid "Filter By Gender"
-msgstr "تصفية حسب الجنس"
-
-msgid "Filter By Age"
-msgstr "تصفية حسب العمر"
-
-msgid "Send SMS"
-msgstr "إرسال الرسائل القصيرة"
-
-msgid "Assign Group"
-msgstr "تعيين المجموعة"
-
-msgid "Remove Group"
-msgstr "إزالة المجموعة"
-
-msgid "Blacklist"
-msgstr "القائمة السوداء"
-
-msgid "Export to excel"
-msgstr "التصدير إلى التفوق"
-
-msgid "Send Custom SMS"
-msgstr "ارسال الرسائل القصيرة مخصص"
-
-msgid "Send Message"
-msgstr "إرسال رسالة"
-
-msgid "Remove Group(s)"
-msgstr "إزالة المجموعة (ق)"
-
-msgid "Blacklist Selected"
-msgstr "القائمة السوداء مختارة"
-
-msgid "Select Join Date range and download"
-msgstr "حدد تاريخ التسجيل نطاق وتحميل"
-
-msgid "Download"
-msgstr "تحميل"
-
-msgid "Export All To Excel"
-msgstr "تصدير جميع على التفوق"
-
-msgid "Open"
-msgstr "فتح"
-
-msgid "Report"
-msgstr "تقرير"
-
-msgid "Responses"
-msgstr "الردود"
-
-msgid "Are you sure you want to remove this response from the poll?"
-msgstr "هل أنت متأكد أنك تريد إزالة هذا استجابة من الاستطلاع؟"
-
-msgid "Response rates"
-msgstr "معدلات الاستجابة"
-
-msgid "Participants, total responses"
-msgstr "المشاركين، ومجموع الاستجابات"
-
-msgid "You will receive an email as soon as the export is done"
-msgstr "سوف تتلقى رسالة بريد إلكتروني في أقرب وقت كما هو الحال تصدير"
-
-msgid "Export"
-msgstr "تصدير"
-
-msgid "edit excluded tags"
-msgstr "تحرير علامات استبعاد"
-
-msgid "CURRENT POLL"
-msgstr "الاستطلاع الحالي"
-
-msgid "Responses out of"
-msgstr "الردود من"
-
-msgid "Participants"
-msgstr "المشاركين"
-
-msgid "More"
-msgstr "أكثر"
-
-msgid "No"
-msgstr "ليس"
-
-msgid "Yes"
-msgstr "نعم"
-
-msgid "Split Results"
-msgstr "نتائج الانقسام"
-
-msgid "Start Age"
-msgstr "بدء تشغيل العمر"
-
-msgid "End Age"
-msgstr "نهاية العمر"
-
-msgid "Top Responses"
-msgstr "أعلى الردود"
-
-msgid "Stop Capture"
-msgstr "التوقف عن الالتقاط"
-
-msgid "Start Capture"
-msgstr "بدء الالتقاط"
-
-msgid "Filter Districts"
-msgstr "مرشح المناطق"
-
-msgid "Filter Groups"
-msgstr "تصفية المجموعات"
-
-msgid "Filter By District(s)"
-msgstr "الفلترة من حي (ق)"
-
-msgid "Filtering"
-msgstr "تصفية"
-
-msgid "Reset Filter"
-msgstr "إعادة تصفية"
-
-msgid "Filter Group"
-msgstr "تصفية المجموعة"
-
-msgid "filter group"
-msgstr "مجموعة فلتر"
-
-msgid "Search"
-msgstr "بحث"
-
-msgid "Actioned"
-msgstr "اتخاذ إجراءات بشأن"
-
-msgid "Foward"
-msgstr "FOWARD"
-
-msgid "Reply"
-msgstr "رد"
-
-msgid "Assign"
-msgstr "عين"
-
-msgid "Close"
-msgstr "أغلق"
-
-msgid "Editing"
-msgstr "التحرير"
-
-msgid "Create A new Category"
-msgstr "إنشاء فئة جديدة"
-
-msgid "Next"
-msgstr "التالي"
-
-msgid "Save"
-msgstr "حفظ"
-
-msgid "Rules for"
-msgstr "قواعد ل"
-
-msgid "Contains all of"
-msgstr "يحتوي على كافة"
-
-msgid "Contains one of"
-msgstr "يحتوي على واحد من"
-
-msgid "Delete"
-msgstr "حذف"
-
-msgid "No rules for %(category_name)s yet"
-msgstr "أية قواعد ل %(category_name)s حتى الآن"
-
-msgid "Add  a rule"
-msgstr "إضافة قاعدة"
-
-msgid "enter list of comma separated words"
-msgstr "قائمة بالكلمات مفصولة بفواصل دخول"
-
-msgid "Save and close"
-msgstr "حفظ وإغلاق"
-
-msgid "save edits"
-msgstr "حفظ التعديلات"
-
-msgid "Save and add another"
-msgstr "حفظ وإضافة أخرى"
-
-msgid "View Rules"
-msgstr "عرض القواعد"
-
-msgid "Prepare Poll"
-msgstr "إعداد الإستطلاع"
-
-msgid "Start Poll"
-msgstr "بدء التصويت"
-
-msgid "click on question to edit"
-msgstr "انقر على سؤال لتحرير"
-
-msgid "Close Poll"
-msgstr "إغلاق الإستطلاع"
-
-msgid "Reopen Poll"
-msgstr "إعادة فتح الإستطلاع"
-
-msgid "Show On Home page"
-msgstr "عرض على الصفحة الرئيسية"
-
-msgid "Don't Show on home page"
-msgstr "لا تظهر على الصفحة الرئيسية"
-
-msgid "Response Message"
-msgstr "رسالة رد"
-
-msgid "Is Default"
-msgstr "هو الافتراضي"
-
-msgid "Ussd Menu"
-msgstr "قائمة USSD"
-
-msgid "Save Menu  Edits"
-msgstr "حفظ بالتحرير القائمة"
-
-msgid "Language"
-msgstr "لغة"
-
-msgid "Questions "
-msgstr "الأسئلة"
-
-msgid "Responses "
-msgstr "الردود"
-
-msgid "Messages Sent"
-msgstr "الرسائل المرسلة"
-
-msgid "caregiver"
-msgstr "الرعاية"
-
-msgid "join date"
-msgstr "تاريخ الانضمام"
-
-msgid "quit date"
-msgstr "تاريخ الإقلاع عن التدخين"
-
-msgid "uReporters"
-msgstr "uReporters"
-
-msgid "Message Log"
-msgstr "رسالة دخول"
-
-msgid "Autoreg Messages"
-msgstr "رسائل Autoreg"
-
-msgid "Unsolicited Messages"
-msgstr "الرسائل غير المرغوب فيها"
-
-msgid "Poll Messages"
-msgstr "الرسائل الاستطلاع"
-
-msgid "Quit Messages"
-msgstr "استقال رسائل"
-
-msgid "Message"
-msgstr "رسالة"
-
-msgid "Time"
-msgstr "وقت"
-
-msgid "User"
-msgstr "المستخدم"
-
-msgid "Recipients"
-msgstr "المستلمين"
-
-msgid "Mass Messages"
-msgstr "الرسائل الجماعية"
-
-msgid "Flagged Messages"
-msgstr "الرسائل التي ترفع علم"
-
-msgid "Flags"
-msgstr "الأعلام"
-
-msgid "Don't Show On Home page"
-msgstr "لا تظهر في الصفحة الرئيسية"
-
+#: rapidsms_ureport/ureport/templates/ureport/poll_admin_base.html:38
+msgid "View AutoReg Polls"
+msgstr "عرض السيارات ريج استطلاعات الرأي"
+
+#: rapidsms_ureport/ureport/templates/ureport/poll_admin_base.html:39
+msgid "View Autoreg Group Rules"
+msgstr "عرض السيارات ريج قوانين المجموعة"
+
+#: rapidsms_ureport/ureport/templates/ureport/poll_empty.html:5
+#, fuzzy
+msgid "No Polls"
+msgstr "استطلاعات الرأي"
+
+#: rapidsms_ureport/ureport/templates/ureport/poll_summary.html:10
 msgid "Polls"
 msgstr "استطلاعات الرأي"
 
+#: rapidsms_ureport/ureport/templates/ureport/poll_summary.html:37
+msgid "Results"
+msgstr "النتائج"
+
+#: rapidsms_ureport/ureport/templates/ureport/poll_summary.html:38
+#, fuzzy
+msgid "Share This Poll"
+msgstr "بدء التصويت"
+
+#: rapidsms_ureport/ureport/templates/ureport/responses_base.html:4
+msgid "Poll Responses "
+msgstr "الردود الاستطلاع"
+
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:38
+msgid "Search Ureporters"
+msgstr "البحث Ureporters"
+
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:38
+msgid "Filter By Group"
+msgstr "الفلترة من المجموعة"
+
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:39
+msgid "Filter By Gender"
+msgstr "تصفية حسب الجنس"
+
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:40
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:19
+msgid "Filter By Age"
+msgstr "تصفية حسب العمر"
+
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:66
+msgid "Send SMS"
+msgstr "إرسال الرسائل القصيرة"
+
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:67
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:88
+msgid "Assign Group"
+msgstr "تعيين المجموعة"
+
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:68
+msgid "Remove Group"
+msgstr "إزالة المجموعة"
+
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:69
+msgid "Blacklist"
+msgstr "القائمة السوداء"
+
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:71
+msgid "Export to excel"
+msgstr "التصدير إلى التفوق"
+
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:72
+msgid "Send Custom SMS"
+msgstr "ارسال الرسائل القصيرة مخصص"
+
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:81
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:108
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:128
+msgid "Send Message"
+msgstr "إرسال رسالة"
+
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:95
+msgid "Remove Group(s)"
+msgstr "إزالة المجموعة (ق)"
+
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:101
+msgid "Blacklist Selected"
+msgstr "القائمة السوداء مختارة"
+
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:115
+msgid "Select Join Date range and download"
+msgstr "حدد تاريخ التسجيل نطاق وتحميل"
+
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:120
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:328
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:338
+msgid "Download"
+msgstr "تحميل"
+
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:122
+msgid "Export All To Excel"
+msgstr "تصدير جميع على التفوق"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/dashboard/poll_row.html:25
+#: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_admin_row.html:18
+#: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_partial_base.html:52
+msgid "Responses"
+msgstr "الردود"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_admin_row.html:9
+msgid "Open"
+msgstr "فتح"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_partial_base.html:6
+msgid "Are you sure you want to remove this response from the poll?"
+msgstr "هل أنت متأكد أنك تريد إزالة هذا استجابة من الاستطلاع؟"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_partial_base.html:45
+msgid "Response rates"
+msgstr "معدلات الاستجابة"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_partial_base.html:55
+msgid "Participants, total responses"
+msgstr "المشاركين، ومجموع الاستجابات"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_partial_base.html:62
+msgid "You will receive an email as soon as the export is done"
+msgstr "سوف تتلقى رسالة بريد إلكتروني في أقرب وقت كما هو الحال تصدير"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_partial_base.html:66
+msgid "Export"
+msgstr "تصدير"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/tag_cloud/tag_cloud.html:148
+msgid "edit excluded tags"
+msgstr "تحرير علامات استبعاد"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/best_visualization.html:4
+msgid "CURRENT POLL"
+msgstr "الاستطلاع الحالي"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/best_visualization.html:18
+msgid "Responses out of"
+msgstr "الردود من"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/best_visualization.html:18
+msgid "Participants"
+msgstr "المشاركين"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/best_visualization.html:55
+msgid "More"
+msgstr "أكثر"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:6
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:11
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:16
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:21
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:26
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:218
+msgid "No"
+msgstr "ليس"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:31
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:35
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:39
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:43
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:47
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:51
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:56
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:61
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:66
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:71
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:215
+msgid "Yes"
+msgstr "نعم"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:75
+msgid "Split Results"
+msgstr "نتائج الانقسام"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:13
+msgid "Start Age"
+msgstr "بدء تشغيل العمر"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:16
+msgid "End Age"
+msgstr "نهاية العمر"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/top_responses.html:2
+msgid "Top Responses"
+msgstr "أعلى الردود"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:326
+msgid "Filter Districts"
+msgstr "مرشح المناطق"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:330
+msgid "Filter Groups"
+msgstr "تصفية المجموعات"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:346
+msgid "Filter By District(s)"
+msgstr "الفلترة من حي (ق)"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:346
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:360
+msgid "Filtering"
+msgstr "تصفية"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:348
+msgid "Reset Filter"
+msgstr "إعادة تصفية"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:357
+msgid "Filter Group"
+msgstr "تصفية المجموعة"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:360
+msgid "filter group"
+msgstr "مجموعة فلتر"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:370
+msgid "Search"
+msgstr "بحث"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:379
+msgid "Actioned"
+msgstr "اتخاذ إجراءات بشأن"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:418
+msgid "Foward"
+msgstr "FOWARD"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:420
+msgid "Reply"
+msgstr "رد"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:462
+msgid "Already Assigned"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:464
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:477
+msgid "Assign"
+msgstr "عين"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:520
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:541
+#: rapidsms_ureport/ureport/templates/ureport/polls/category.html:21
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:55
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:286
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:304
+msgid "Close"
+msgstr "أغلق"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/category.html:8
+msgid "Editing"
+msgstr "التحرير"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/category.html:10
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:276
+msgid "Create A new Category"
+msgstr "إنشاء فئة جديدة"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/category.html:23
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:287
+msgid "Next"
+msgstr "التالي"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/category.html:25
+msgid "Save"
+msgstr "حفظ"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:7
+msgid "Rules for"
+msgstr "قواعد ل"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:14
+#: rapidsms_ureport/ureport/views/poll_views.py:449
+msgid "Contains all of"
+msgstr "يحتوي على كافة"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:16
+#: rapidsms_ureport/ureport/views/poll_views.py:451
+msgid "Contains one of"
+msgstr "يحتوي على واحد من"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:20
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_category.html:22
+#: rapidsms_ureport/ureport/views/poll_views.py:453
+msgid "Delete"
+msgstr "حذف"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:37
+#, python-format
+msgid "No rules for %(category_name)s yet"
+msgstr "أية قواعد ل %(category_name)s حتى الآن"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:40
+msgid "Add  a rule"
+msgstr "إضافة قاعدة"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:47
+msgid "enter list of comma separated words"
+msgstr "قائمة بالكلمات مفصولة بفواصل دخول"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:55
+msgid "Save and close"
+msgstr "حفظ وإغلاق"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:56
+msgid "save edits"
+msgstr "حفظ التعديلات"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:56
+msgid "Save and add another"
+msgstr "حفظ وإضافة أخرى"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_category.html:16
+msgid "View Rules"
+msgstr "عرض القواعد"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_category.html:25
+#, fuzzy
+msgid "Give Group"
+msgstr "إزالة المجموعة"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:203
+msgid "Prepare Poll"
+msgstr "إعداد الإستطلاع"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:203
+msgid "Start Poll"
+msgstr "بدء التصويت"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:205
+msgid "click on question to edit"
+msgstr "انقر على سؤال لتحرير"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:214
+#: rapidsms_ureport/ureport/views/poll_views.py:93
+#: rapidsms_ureport/ureport/views/poll_views.py:102
+#: rapidsms_ureport/ureport/views/poll_views.py:117
+msgid "Close Poll"
+msgstr "إغلاق الإستطلاع"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:218
+#: rapidsms_ureport/ureport/views/poll_views.py:109
+msgid "Reopen Poll"
+msgstr "إعادة فتح الإستطلاع"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:229
+#: rapidsms_ureport/ureport/views/poll_views.py:134
+msgid "Show On Home page"
+msgstr "عرض على الصفحة الرئيسية"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:233
+msgid "Don't Show on home page"
+msgstr "لا تظهر على الصفحة الرئيسية"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:251
+msgid "Response Message"
+msgstr "رسالة رد"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:253
+msgid "Is Default"
+msgstr "هو الافتراضي"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:295
+#, fuzzy
+msgid "Give Category a Group"
+msgstr "الفلترة من المجموعة"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:298
+msgid "Please make sure the group is already in Ureport"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:305
+#, fuzzy
+msgid "Create"
+msgstr "خلق"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:328
+msgid "Ussd Menu"
+msgstr "قائمة USSD"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:335
+msgid "Save Menu  Edits"
+msgstr "حفظ بالتحرير القائمة"
+
+#: rapidsms_ureport/ureport/views/contact_views.py:363
+msgid "Language"
+msgstr "لغة"
+
+#: rapidsms_ureport/ureport/views/contact_views.py:366
+msgid "Questions "
+msgstr "الأسئلة"
+
+#: rapidsms_ureport/ureport/views/contact_views.py:367
+msgid "Responses "
+msgstr "الردود"
+
+#: rapidsms_ureport/ureport/views/contact_views.py:368
+msgid "Messages Sent"
+msgstr "الرسائل المرسلة"
+
+#: rapidsms_ureport/ureport/views/contact_views.py:369
+msgid "caregiver"
+msgstr "الرعاية"
+
+#: rapidsms_ureport/ureport/views/contact_views.py:370
+msgid "join date"
+msgstr "تاريخ الانضمام"
+
+#: rapidsms_ureport/ureport/views/contact_views.py:371
+msgid "quit date"
+msgstr "تاريخ الإقلاع عن التدخين"
+
+#: rapidsms_ureport/ureport/views/contact_views.py:390
+msgid "uReporters"
+msgstr "uReporters"
+
+#: rapidsms_ureport/ureport/views/dashboard_views.py:259
+#: rapidsms_ureport/ureport/views/dashboard_views.py:521
+msgid "Start Capture"
+msgstr "بدء الالتقاط"
+
+#: rapidsms_ureport/ureport/views/dashboard_views.py:263
+#: rapidsms_ureport/ureport/views/dashboard_views.py:525
+msgid "Stop Capture"
+msgstr "التوقف عن الالتقاط"
+
+#: rapidsms_ureport/ureport/views/message_views.py:216
+#: rapidsms_ureport/ureport/views/message_views.py:332
+msgid "Message"
+msgstr "رسالة"
+
+#: rapidsms_ureport/ureport/views/message_views.py:217
+msgid "Time"
+msgstr "وقت"
+
+#: rapidsms_ureport/ureport/views/message_views.py:217
+msgid "User"
+msgstr "المستخدم"
+
+#: rapidsms_ureport/ureport/views/message_views.py:218
+msgid "Recipients"
+msgstr "المستلمين"
+
+#: rapidsms_ureport/ureport/views/message_views.py:334
+msgid "Flags"
+msgstr "الأعلام"
+
+#: rapidsms_ureport/ureport/views/poll_views.py:126
+msgid "Don't Show On Home page"
+msgstr "لا تظهر في الصفحة الرئيسية"
+
+#: rapidsms_ureport/ureport/views/poll_views.py:456
+msgid "Please enter all the fields"
+msgstr ""
+
+#: rapidsms_ureport/ureport/views/poll_views.py:464
+#, fuzzy
+msgid "# Participants"
+msgstr "المشاركين"
+
+#: rapidsms_ureport/ureport/views/poll_views.py:465
+msgid "Visuals"
+msgstr ""
+
+#: rapidsms_ureport/ureport/views/poll_views.py:490
 msgid "Closing Date"
 msgstr "إغلاق التسجيل"
+
+#~ msgid "Classified Messages"
+#~ msgstr "رسائل سرية"
+
+#~ msgid "n"
+#~ msgstr "ن"
+
+#~ msgid "y"
+#~ msgstr "ذ"
+
+#~ msgid "&copy; 2010 - 2012 UNICEF et al."
+#~ msgstr "© 2010 - 2012 اليونيسيف وآخرون."
+
+#~ msgid ""
+#~ "Ureport is a free SMS-based system that allows\n"
+#~ "                young Ugandans to speak out on what's happening in\n"
+#~ "                communities across the country, and work together\n"
+#~ "\t\twith other community leaders for positive change."
+#~ msgstr ""
+#~ "Ureport هو نظام حر يستند إلى SMS التي تسمح الأوغنديين الشباب للحديث عن ما "
+#~ "يحدث في المجتمعات في جميع أنحاء البلاد، والعمل جنبا إلى جنب مع قادة "
+#~ "المجتمع الآخرين لإحداث تغيير إيجابي."
+
+#~ msgid "Reset All"
+#~ msgstr "إعادة تعيين جميع"
+
+#~ msgid ""
+#~ "Welcome to National Pulse where you can see what is trending within the U-"
+#~ "report community."
+#~ msgstr ""
+#~ "مرحبا بكم في نبض الوطنية حيث يمكنك أن ترى ما تتجه داخل المجتمع U-التقرير."
+
+#~ msgid ""
+#~ "Click on your district to see what the young people are talking about "
+#~ "where you live."
+#~ msgstr ""
+#~ "انقر على حي الخاص بك لمعرفة ما الشباب يتحدثون عن المكان الذي تعيش فيه."
+
+#~ msgid "Click on on current filter("
+#~ msgstr "انقر على على مرشح الحالية ("
+
+#~ msgid ") to see word cloud"
+#~ msgstr ") لرؤية سحابة الكلمة"
+
+#~ msgid "Filter word cloud with"
+#~ msgstr "تصفية كلمة سحابة مع"
+
+#~ msgid "Message Log"
+#~ msgstr "رسالة دخول"
+
+#~ msgid "Autoreg Messages"
+#~ msgstr "رسائل Autoreg"
+
+#~ msgid "Unsolicited Messages"
+#~ msgstr "الرسائل غير المرغوب فيها"
+
+#~ msgid "Poll Messages"
+#~ msgstr "الرسائل الاستطلاع"
+
+#~ msgid "Quit Messages"
+#~ msgstr "استقال رسائل"
+
+#~ msgid "Mass Messages"
+#~ msgstr "الرسائل الجماعية"
+
+#~ msgid "Flagged Messages"
+#~ msgstr "الرسائل التي ترفع علم"

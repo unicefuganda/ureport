@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-25 15:30+0300\n"
+"POT-Creation-Date: 2015-04-17 11:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,65 +18,91 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 
-#: settings.py:47
+#: localsettings.py:213 settings.py:71
+msgid "luo"
+msgstr "Portugais"
+
+#: localsettings.py:214 settings.py:72
+msgid "English"
+msgstr ""
+
+#: settings.py:49
+#, fuzzy, python-format
 msgid ""
-"Welcome to UReport! Ureport is a community of Ugandan youth that are "
+"Welcome to UReport! Ureport is a community of %(citizen)s youth that are "
 "dedicated to working for positive change in their communities. Stay tuned "
 "for more info."
 msgstr ""
-"Bienvenu à Unieleze! Unieleze est une communauté de jeunes Congolais "
-"qui travaillent exclusivement pour des changements positifs dans leurs communautés. "
-"Restez à l'écoute pour plus d'informations."
+"Bienvenu à Ureport RDC! C'est GRATUIT. Donnez votre opinion par SMS et soyez "
+"entendu! Nous allons vous poser 5 questions pour compléter votre inscription."
 
 #: settings.py:49
+#, fuzzy
+msgid "Ugandan"
+msgstr "Congolais"
+
+#: settings.py:50
+msgid ""
+"CONGRATULATIONS!!! You are now a registered member of Ureport! With Ureport, "
+"you can make a real difference!  Speak Up and Be Heard! from UNICEF"
+msgstr ""
+"Félicitations ! Vous êtes maintenant un membre inscrit d'Ureport RDC! Avec "
+"Ureport RDC, votre voix compte, faites l'entendre en participant aux "
+"sondages !"
+
+#: settings.py:52
 msgid ""
 "Your UReport opt out is confirmed.If you made a mistake,or you want your "
 "voice to be heard again,text in JOIN and send it to 8500!All SMS messages "
 "are free"
 msgstr ""
-"Vous venez de vous désinscrire de Unieleze. Si vous voulez que votre voix soit entendue de nouveau, envoyer PARTICIPER au 100! Tous les SMS sont gratuits."
+"Vous venez de vous désinscrire de Ureport RDC. Si vous voulez que votre voix "
+"soit entendue de nouveau, envoyer PARTICIPER au 100! Tous les SMS sont "
+"gratuits."
 
-#: settings.py:50
+#: settings.py:54
+#, fuzzy, python-format
 msgid ""
-"CONGRATULATIONS!!! You are now a registered member of Ureport! With Ureport, you can make a real difference!  Speak Up and Be Heard! from UNICEF"
+"We didn't recognize your %(district)s.  Please carefully type the name of "
+"your %(district)s and re-send."
 msgstr ""
-"FELICITATIONS!!! Vous êtes maintenant un membre inscrit de Ureport! Avec Unieleze, vous pouvez faire la différence! Exprimez-vous et soyez entendu!"
+"Nous n'avons pas reconnu votre %(location)s. S'il vous plaît entrez "
+"soigneusement le nom de votre %(location)s et ré-envoyer."
 
-#: settings.py:64
-msgid "luo"
-msgstr "Portugais"
-
-#: settings.py:65
-msgid "English"
+#: settings.py:55
+#, python-format
+msgid ""
+"We didn't recognize your %(location)s.  Please carefully type the name of "
+"your %(location)s and re-send."
 msgstr ""
+"Nous n'avons pas reconnu votre %(location)s. S'il vous plaît entrez "
+"soigneusement le nom de votre %(location)s et ré-envoyer."
 
 #: django_eav/eav/fields.py:54
 msgid ""
 "Must be all lower case, start with a letter, and contain only letters, "
 "numbers, or underscores."
-msgstr "Doit être en minuscules, commencer par une lettre et ne contenir que des lettres, des chiffres ou des tirets."
+msgstr ""
+"Doit être en minuscules, commencer par une lettre et ne contenir que des "
+"lettres, des chiffres ou des tirets."
 
 #: django_eav/eav/fields.py:87
 msgid "You cannot change the datatype of an attribute that is already in use."
-msgstr "Vous ne pouvez pas changer le datatype d'un attribu qui est déjà utilisé"
+msgstr ""
+"Vous ne pouvez pas changer le datatype d'un attribu qui est déjà utilisé"
 
 #: django_eav/eav/forms.py:109
 #, python-format
 msgid "The %s could not be saved because the datadidn't validate."
-msgstr "Le %s n'est pas enregistré parceque les données envoyées ne sont pas valide."
-
-msgid "Uganda"
-msgstr "RD Congo"
-
-msgid "Ugandans"
-msgstr "Congolais"
+msgstr ""
+"Le %s n'est pas enregistré parceque les données envoyées ne sont pas valide."
 
 #: django_eav/eav/models.py:79
 msgid "value"
 msgstr "valeur"
 
 #: django_eav/eav/models.py:95 django_eav/eav/models.py:175
-#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:24
+#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:44
 #: rapidsms_ureport/ureport/templates/ureport/new_flag.html:17
 msgid "name"
 msgstr "nom"
@@ -87,15 +113,15 @@ msgstr "enum group"
 
 #: django_eav/eav/models.py:166
 #: rapidsms_message_classifier/message_classifier/views.py:37
-#: rapidsms_ureport/ureport/forms.py:313
+#: rapidsms_ureport/ureport/forms.py:343
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:121
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:399
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:381
 #: rapidsms_ureport/ureport/views/message_views.py:46
 #: rapidsms_ureport/ureport/views/message_views.py:81
 #: rapidsms_ureport/ureport/views/message_views.py:116
 #: rapidsms_ureport/ureport/views/message_views.py:151
 #: rapidsms_ureport/ureport/views/message_views.py:186
-#: rapidsms_ureport/ureport/views/poll_views.py:353
+#: rapidsms_ureport/ureport/views/poll_views.py:373
 msgid "Text"
 msgstr ""
 
@@ -110,14 +136,14 @@ msgstr ""
 #: django_eav/eav/models.py:169
 #: rapidsms_message_classifier/message_classifier/views.py:38
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:122
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:400
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:382
 #: rapidsms_ureport/ureport/views/message_views.py:48
 #: rapidsms_ureport/ureport/views/message_views.py:83
 #: rapidsms_ureport/ureport/views/message_views.py:118
 #: rapidsms_ureport/ureport/views/message_views.py:153
 #: rapidsms_ureport/ureport/views/message_views.py:188
 #: rapidsms_ureport/ureport/views/message_views.py:333
-#: rapidsms_ureport/ureport/views/poll_views.py:352
+#: rapidsms_ureport/ureport/views/poll_views.py:372
 msgid "Date"
 msgstr ""
 
@@ -268,11 +294,12 @@ msgstr "Une liste de tags séparés par des virgules"
 #: django_taggit/taggit/models.py:10 rapidsms_contact/contact/models.py:41
 #: rapidsms_message_classifier/message_classifier/forms.py:24
 #: rapidsms_message_classifier/message_classifier/models.py:25
-#: rapidsms_polls/poll/forms.py:94 rapidsms_ureport/ureport/forms.py:395
+#: rapidsms_polls/poll/forms.py:94 rapidsms_ureport/ureport/forms.py:427
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:98
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:120
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:229
-#: rapidsms_ureport/ureport/views/poll_views.py:466
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:250
+#: rapidsms_ureport/ureport/views/poll_views.py:461
+#: rapidsms_ureport/ureport/views/poll_views.py:487
 msgid "Name"
 msgstr ""
 
@@ -306,147 +333,203 @@ msgid "Tagged Items"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/locations/forms.py:36
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/locations/forms.py:36
 msgid "Enter a valid latitude."
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/locations/forms.py:37
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/locations/forms.py:37
 msgid "Enter a valid longitude."
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/views.py:35
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/views.py:31
 #, python-format
 msgid "Schedule '%(name)s' successfully updated"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/edit.html:35
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/edit.html:35
 msgid "Submit"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/edit.html:38
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/edit.html:38
 msgid "Return to the list of schedules"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:14
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:14
 msgid "Event"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:15
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:15
 msgid "Description"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:16
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:16
 msgid "Month"
 msgstr "Mois"
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:17
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:17
 msgid "Day of Month"
 msgstr "Jour du Mois"
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:18
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:18
 msgid "Day of Week"
 msgstr "Jour de la Semaine"
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:19
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:19
 msgid "Hour"
 msgstr "Heure"
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:20
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:20
 msgid "Minute"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:21
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:21
 msgid "Start Time"
 msgstr "Debut"
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:22
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:22
 msgid "End Time"
 msgstr "Fin"
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:23
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:23
 msgid "Count"
 msgstr "Nombre"
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:24
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:24
 msgid "Active"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:53
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:64
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:45
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:56
 msgid "Add a Schedule"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:61
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/contrib/scheduler/templates/scheduler/index.html:53
 msgid "No schedules yet"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/templates/layout.html:38
 #: rapidsms_uganda_common/uganda_common/templates/layout.html:37
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/templates/layout.html:36
 msgid "Return to the Dashboard"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/templates/layout.html:46
 #: rapidsms_uganda_common/uganda_common/templates/layout.html:45
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/templates/layout.html:44
 msgid "Log out"
 msgstr ""
 
 #: rapidsms/lib/rapidsms/templates/layout.html:47
 #: rapidsms_uganda_common/uganda_common/templates/layout.html:46
+#: rapidsms_ureport/ureport/templates/registration/password_reset_complete.html:10
+#: rapidsms_xforms_src/docs/_build/html/lib/rapidsms/templates/layout.html:45
 msgid "Log in"
 msgstr ""
 
-#: rapidsms_contact/contact/forms.py:76 rapidsms_contact/contact/forms.py:388
-#: rapidsms_ureport/ureport/forms.py:476
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:216
+#: rapidsms/lib/rapidsms/templates/rapidsms/loggedout.html:3
+msgid "Goodbye"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/templates/rapidsms/loggedout.html:6
+msgid "Thanks for visiting RapidSMS!"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/templates/rapidsms/loggedout.html:8
+msgid "Please come again."
+msgstr ""
+
+#: rapidsms/lib/rapidsms/templates/rapidsms/loggedout.html:10
+msgid "Log in again"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/templates/rapidsms/login.html:5
+#: rapidsms/lib/rapidsms/templates/rapidsms/login.html:32
+msgid "Login"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/templates/rapidsms/login.html:9
+msgid "Oops. Your username and password didn't match. Please try again."
+msgstr ""
+
+#: rapidsms/lib/rapidsms/templates/rapidsms/login.html:13
+msgid "You're already logged in!"
+msgstr ""
+
+#: rapidsms/lib/rapidsms/templates/rapidsms/login.html:17
+msgid "Please log in to RapidSMS"
+msgstr ""
+
+#: rapidsms_contact/contact/forms.py:76 rapidsms_contact/contact/forms.py:395
+#: rapidsms_ureport/ureport/forms.py:508
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:237
 msgid "Groups"
 msgstr ""
 
-#: rapidsms_contact/contact/forms.py:249 rapidsms_ureport/ureport/forms.py:637
+#: rapidsms_contact/contact/forms.py:256 rapidsms_ureport/ureport/forms.py:670
 msgid "Districts"
 msgstr "Territoires ou Communes"
 
-#: rapidsms_contact/contact/forms.py:398
+#: rapidsms_contact/contact/forms.py:405
 #, python-format
 msgid "%(results)d Contacts assigned to %(groups)d groups."
 msgstr "%(results)d Participants assignés a %(groups)d groupes."
 
-#: rapidsms_contact/contact/forms.py:424
+#: rapidsms_contact/contact/forms.py:431
 #, python-format
 msgid "%(contacts)d Contacts removed from %(groups)d groups."
 msgstr "%(contacts)d Participants enlevés a %(groups)d groupes."
 
-#: rapidsms_contact/contact/forms.py:464
+#: rapidsms_contact/contact/forms.py:471
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:6
 msgid "Male"
 msgstr "Masculin"
 
-#: rapidsms_contact/contact/forms.py:464
+#: rapidsms_contact/contact/forms.py:471
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:7
 msgid "Female"
 msgstr "Feminin"
 
-#: rapidsms_contact/contact/forms.py:464 rapidsms_contact/contact/forms.py:484
+#: rapidsms_contact/contact/forms.py:471 rapidsms_contact/contact/forms.py:491
 msgid "N/A"
 msgstr ""
 
-#: rapidsms_contact/contact/forms.py:465
-#: rapidsms_ureport/ureport/views/contact_views.py:363
+#: rapidsms_contact/contact/forms.py:472
+#: rapidsms_ureport/ureport/views/contact_views.py:362
 msgid "Gender"
 msgstr "Sexe"
 
-#: rapidsms_contact/contact/forms.py:482 rapidsms_ureport/ureport/forms.py:609
+#: rapidsms_contact/contact/forms.py:489 rapidsms_ureport/ureport/forms.py:642
 msgid "Equal to"
 msgstr "égal à"
 
-#: rapidsms_contact/contact/forms.py:482 rapidsms_ureport/ureport/forms.py:609
+#: rapidsms_contact/contact/forms.py:489 rapidsms_ureport/ureport/forms.py:642
 msgid "Greater than"
 msgstr "Supérieur à"
 
-#: rapidsms_contact/contact/forms.py:483 rapidsms_ureport/ureport/forms.py:610
+#: rapidsms_contact/contact/forms.py:490 rapidsms_ureport/ureport/forms.py:643
 msgid "Less than"
 msgstr "Inférieur à"
 
-#: rapidsms_contact/contact/forms.py:485
-#: rapidsms_ureport/ureport/views/contact_views.py:362
+#: rapidsms_contact/contact/forms.py:492
+#: rapidsms_ureport/ureport/views/contact_views.py:361
 msgid "Age"
 msgstr "Age"
 
@@ -457,11 +540,11 @@ msgstr "Age"
 msgid "Words"
 msgstr "Mots"
 
-#: rapidsms_contact/contact/models.py:44 rapidsms_polls/poll/models.py:795
+#: rapidsms_contact/contact/models.py:44 rapidsms_polls/poll/models.py:778
 msgid "contains_all_of"
 msgstr ""
 
-#: rapidsms_contact/contact/models.py:44 rapidsms_polls/poll/models.py:795
+#: rapidsms_contact/contact/models.py:44 rapidsms_polls/poll/models.py:778
 msgid "contains_one_of"
 msgstr ""
 
@@ -470,10 +553,6 @@ msgstr ""
 #: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:32
 msgid "Rule"
 msgstr ""
-
-#: rapidsms_generic/generic/views.py:32
-msgid "Results"
-msgstr "Résultats"
 
 #: rapidsms_generic/generic/templates/generic/base.html:27
 #: rapidsms_ureport/ureport/templates/ureport/contact_message_base.html:21
@@ -506,7 +585,9 @@ msgstr "Annuler"
 
 #: rapidsms_generic/generic/templates/generic/partials/partial_base.html:28
 msgid "No Results match your search.  Refresh to reset."
-msgstr "Aucun résultat ne correspond à votre recherche. Rafraîchir la page pour réinitialiser."
+msgstr ""
+"Aucun résultat ne correspond à votre recherche. Rafraîchir la page pour "
+"réinitialiser."
 
 #: rapidsms_generic/generic/templates/generic/partials/partial_header.html:47
 msgid "Select all"
@@ -525,20 +606,39 @@ msgstr "Cliquer ici"
 msgid "to select all %(total)s items"
 msgstr "pour sélectionner tous les %(total)s éléments"
 
+#: rapidsms_geoserver/geoserver/management/commands/export_poll_data.py:22
+#: rapidsms_polls/poll/models.py:46 rapidsms_polls/poll/models.py:263
+#: rapidsms_polls/poll/models.py:279 rapidsms_polls/poll/models.py:294
+msgid "yes"
+msgstr "oui"
+
+#: rapidsms_geoserver/geoserver/management/commands/export_poll_data.py:22
+#: rapidsms_polls/poll/models.py:51 rapidsms_polls/poll/models.py:264
+#: rapidsms_polls/poll/models.py:284 rapidsms_polls/poll/models.py:295
+msgid "no"
+msgstr "non"
+
+#: rapidsms_geoserver/geoserver/management/commands/export_poll_data.py:22
+#: rapidsms_polls/poll/models.py:265 rapidsms_polls/poll/models.py:296
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:221
+msgid "unknown"
+msgstr "inconnu"
+
 #: rapidsms_message_classifier/message_classifier/forms.py:12
-#: rapidsms_ureport/ureport/forms.py:540 rapidsms_ureport/ureport/forms.py:561
-#: rapidsms_ureport/ureport/views/poll_views.py:468
+#: rapidsms_ureport/ureport/forms.py:573 rapidsms_ureport/ureport/forms.py:594
+#: rapidsms_ureport/ureport/views/poll_views.py:463
+#: rapidsms_ureport/ureport/views/poll_views.py:489
 msgid "Start Date"
 msgstr "Debut"
 
 #: rapidsms_message_classifier/message_classifier/forms.py:18
-#: rapidsms_ureport/ureport/forms.py:546 rapidsms_ureport/ureport/forms.py:567
+#: rapidsms_ureport/ureport/forms.py:579 rapidsms_ureport/ureport/forms.py:600
 msgid "End Date"
 msgstr "Fin"
 
 #: rapidsms_message_classifier/message_classifier/forms.py:49
 #: rapidsms_message_classifier/message_classifier/views.py:40
-#: rapidsms_ureport/ureport/views/poll_views.py:354
+#: rapidsms_ureport/ureport/views/poll_views.py:374
 msgid "Category"
 msgstr ""
 
@@ -554,10 +654,17 @@ msgstr ""
 msgid "Queue all Selected Messages For Download"
 msgstr ""
 
+#: rapidsms_message_classifier/message_classifier/forms.py:105
+#, python-format
+msgid ""
+"%(count)d Messages have been queued for download, You'll be notified by "
+"email when download is ready"
+msgstr ""
+
 #: rapidsms_message_classifier/message_classifier/views.py:36
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:119
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:398
-#: rapidsms_ureport/ureport/views/contact_views.py:361
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:380
+#: rapidsms_ureport/ureport/views/contact_views.py:360
 #: rapidsms_ureport/ureport/views/message_views.py:47
 #: rapidsms_ureport/ureport/views/message_views.py:82
 #: rapidsms_ureport/ureport/views/message_views.py:117
@@ -572,19 +679,15 @@ msgid "Score"
 msgstr ""
 
 #: rapidsms_message_classifier/message_classifier/views.py:41
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:402
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:384
 #: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:9
 msgid "Action"
 msgstr ""
 
 #: rapidsms_message_classifier/message_classifier/views.py:42
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:403
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:385
 msgid "Rating"
 msgstr ""
-
-#: rapidsms_message_classifier/message_classifier/views.py:49
-msgid "Classified Messages"
-msgstr "Messages Classifiés"
 
 #: rapidsms_message_classifier/message_classifier/templates/message_classifier/message_classifier_base.html:228
 msgid "Powered by Text Analytics from IBM Research"
@@ -619,7 +722,7 @@ msgid "Add new Action"
 msgstr ""
 
 #: rapidsms_message_classifier/message_classifier/templates/message_classifier/message_classifier_base.html:270
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:279
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:318
 msgid "Add Category"
 msgstr ""
 
@@ -640,7 +743,7 @@ msgstr ""
 
 #: rapidsms_polls/poll/forms.py:96
 #: rapidsms_polls/poll/templates/polls/poll_report_text.html:12
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:170
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:191
 #: rapidsms_ureport/ureport/views/message_views.py:50
 #: rapidsms_ureport/ureport/views/message_views.py:85
 #: rapidsms_ureport/ureport/views/message_views.py:120
@@ -653,98 +756,87 @@ msgstr "Réponse"
 msgid "Priority"
 msgstr "Priorité"
 
+#: rapidsms_polls/poll/forms.py:100
+msgid "red"
+msgstr ""
+
+#: rapidsms_polls/poll/forms.py:101
+msgid "green"
+msgstr ""
+
+#: rapidsms_polls/poll/forms.py:102
+msgid "blue"
+msgstr ""
+
+#: rapidsms_polls/poll/forms.py:103
+msgid "yellow"
+msgstr ""
+
 #: rapidsms_polls/poll/forms.py:103
 msgid "Color"
 msgstr "Couleur"
 
-#: rapidsms_polls/poll/models.py:46 rapidsms_polls/poll/models.py:274
-#: rapidsms_polls/poll/models.py:290 rapidsms_polls/poll/models.py:305
-msgid "yes"
-msgstr ""
-
 #: rapidsms_polls/poll/models.py:46
 msgid "yeah"
-msgstr ""
+msgstr "oui"
 
 #: rapidsms_polls/poll/models.py:46
 msgid "yep"
-msgstr ""
+msgstr "oui"
 
 #: rapidsms_polls/poll/models.py:46
 msgid "yay"
-msgstr ""
-
-#: rapidsms_polls/poll/models.py:46
-msgid "y"
-msgstr ""
-
-#: rapidsms_polls/poll/models.py:51 rapidsms_polls/poll/models.py:275
-#: rapidsms_polls/poll/models.py:295 rapidsms_polls/poll/models.py:306
-msgid "no"
-msgstr ""
+msgstr "oui"
 
 #: rapidsms_polls/poll/models.py:51
 msgid "nope"
-msgstr ""
+msgstr "non"
 
 #: rapidsms_polls/poll/models.py:51
 msgid "nah"
-msgstr ""
+msgstr "non"
 
 #: rapidsms_polls/poll/models.py:51
 msgid "nay"
-msgstr ""
-
-#: rapidsms_polls/poll/models.py:51
-msgid "n"
-msgstr ""
+msgstr "non"
 
 #: rapidsms_polls/poll/models.py:115
 msgid "Allow all"
-msgstr ""
+msgstr "Vérifier tous"
 
 #: rapidsms_polls/poll/models.py:116
 msgid "Allow one"
-msgstr ""
+msgstr "Vérifier un"
 
 #: rapidsms_polls/poll/models.py:122
-msgid "Location-based"
-msgstr ""
+msgid "Numeric Response"
+msgstr "Réponse Numerique"
 
 #: rapidsms_polls/poll/models.py:133
-msgid "Numeric Response"
-msgstr ""
-
-#: rapidsms_polls/poll/models.py:144
 msgid "Free-form"
 msgstr ""
 
-#: rapidsms_polls/poll/models.py:154
+#: rapidsms_polls/poll/models.py:143
 msgid "Name/registration-based"
 msgstr ""
 
-#: rapidsms_polls/poll/models.py:167
+#: rapidsms_polls/poll/models.py:156
 msgid "question"
-msgstr ""
+msgstr "question"
 
-#: rapidsms_polls/poll/models.py:174
+#: rapidsms_polls/poll/models.py:163
 msgid "default_response"
 msgstr "réponse par default"
 
-#: rapidsms_polls/poll/models.py:276 rapidsms_polls/poll/models.py:307
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:214
-msgid "unknown"
-msgstr "inconnu"
-
-#: rapidsms_polls/poll/models.py:780 rapidsms_polls/poll/models.py:785
+#: rapidsms_polls/poll/models.py:763 rapidsms_polls/poll/models.py:768
 msgid "Starts With"
 msgstr "Commence War"
 
-#: rapidsms_polls/poll/models.py:781 rapidsms_polls/poll/models.py:786
+#: rapidsms_polls/poll/models.py:764 rapidsms_polls/poll/models.py:769
 msgid "Contains"
 msgstr "Contient"
 
-#: rapidsms_polls/poll/models.py:782 rapidsms_polls/poll/models.py:787
+#: rapidsms_polls/poll/models.py:765 rapidsms_polls/poll/models.py:770
 msgid "Regex (advanced)"
 msgstr ""
 
@@ -753,7 +845,7 @@ msgid "Send Alerts"
 msgstr "Envoyer Alertes"
 
 #: rapidsms_polls/poll/templates/polls/poll_report_text.html:9
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:157
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:178
 msgid "participant"
 msgstr ""
 
@@ -773,40 +865,39 @@ msgstr ""
 msgid "Uncategorized"
 msgstr ""
 
-#: rapidsms_uganda_common/uganda_common/forms.py:85
+#: rapidsms_uganda_common/uganda_common/forms.py:97
 msgid "characters left"
 msgstr "caractères restants"
 
-#: rapidsms_uganda_common/uganda_common/forms.py:86
+#: rapidsms_uganda_common/uganda_common/forms.py:98
 msgid "character left"
 msgstr "caractère restant"
 
-#: rapidsms_uganda_common/uganda_common/forms.py:87
+#: rapidsms_uganda_common/uganda_common/forms.py:99
 msgid "No characters left"
 msgstr "Aucun caractère restant"
 
-#: rapidsms_uganda_common/uganda_common/forms.py:88
+#: rapidsms_uganda_common/uganda_common/forms.py:100
 msgid "characters over limit"
 msgstr "caractères au dessus du limite"
 
-#: rapidsms_uganda_common/uganda_common/forms.py:89
+#: rapidsms_uganda_common/uganda_common/forms.py:101
 msgid "character over limit"
 msgstr "caractère au dessus du limite"
 
-#: rapidsms_uganda_common/uganda_common/models.py:23
-#, python-format
-msgid ""
-"We didn't recognize your %(district)s.  Please carefully type the name of your %(district)s and re-send."
-msgstr "Nous n'avons pas reconnu votre %(district)s. S'il vous plaît entrez soigneusement le nom de votre %(district)s et ré-envoyer."
-
-msgid ""
-"We didn't recognize your %(location)s.  Please carefully type the name of your %(location)s and re-send."
-msgstr "Nous n'avons pas reconnu votre %(location)s. S'il vous plaît entrez soigneusement le nom de votre %(location)s et ré-envoyer."
-
-#: rapidsms_uganda_common/uganda_common/models.py:31
-#: rapidsms_uganda_common/uganda_common/utils.py:209
+#: rapidsms_uganda_common/uganda_common/models.py:36
+#: rapidsms_uganda_common/uganda_common/utils.py:211
 msgid "District Response"
 msgstr "Réponse par Territoire ou Commune"
+
+#: rapidsms_uganda_common/uganda_common/models.py:45
+msgid "Location-based"
+msgstr ""
+
+#: rapidsms_uganda_common/uganda_common/utils.py:205
+#, fuzzy
+msgid "district"
+msgstr "territoires ou communes"
 
 #: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:29
 #, python-format
@@ -842,28 +933,36 @@ msgstr "%s tag requiert soit trois, sept ou huit arguments"
 #: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:136
 #, python-format
 msgid "if seven arguments are given, fourth argument to %s tag must be 'with'"
-msgstr "Si sept arguments sont donnés, le quatrième argument du %s tag doit etre 'with'"
+msgstr ""
+"Si sept arguments sont donnés, le quatrième argument du %s tag doit etre "
+"'with'"
 
 #: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:138
 #, python-format
 msgid "if seven arguments are given, sixth argument to %s tag must be 'in'"
-msgstr "Si sept arguments sont donnés, le sixième argument du %s tag doit etre 'in'"
+msgstr ""
+"Si sept arguments sont donnés, le sixième argument du %s tag doit etre 'in'"
 
 #: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:142
 #, python-format
 msgid ""
 "if eight arguments are given, fourth argument to %s tag must be 'cumulative'"
-msgstr "Si huit arguments sont donnés, le quatrième argument du %s tag doit etre 'cumulative'"
+msgstr ""
+"Si huit arguments sont donnés, le quatrième argument du %s tag doit etre "
+"'cumulative'"
 
 #: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:144
 #, python-format
 msgid "if eight arguments are given, fifth argument to %s tag must be 'count'"
-msgstr "Si huit arguments sont donnés, le cinquième argument du %s tag doit etre 'count'"
+msgstr ""
+"Si huit arguments sont donnés, le cinquième argument du %s tag doit etre "
+"'count'"
 
 #: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:146
 #, python-format
 msgid "if eight arguments are given, seventh argument to %s tag must be 'in'"
-msgstr "Si huit arguments sont donnés, le septième argument du %s tag doit etre 'in'"
+msgstr ""
+"Si huit arguments sont donnés, le septième argument du %s tag doit etre 'in'"
 
 #: rapidsms_uganda_ussd/ussd/templatetags/mptt_tags.py:288
 #, python-format
@@ -871,102 +970,103 @@ msgid "%s tag requires a queryset"
 msgstr ""
 
 #: rapidsms_unregister/unregister/forms.py:13
-#, python-format
-msgid "'You blacklisted %(connections)d numbers'"
-msgstr ""
+#, fuzzy, python-format
+msgid "You blacklisted %(connections)d numbers"
+msgstr "Message envoyés aux %(connections)d numeros"
 
 #: rapidsms_unregister/unregister/forms.py:15
 msgid "You don't have permissions to blacklist numbers"
 msgstr ""
 
-#: rapidsms_ureport/ureport/forms.py:199 rapidsms_ureport/ureport/forms.py:675
+#: rapidsms_ureport/ureport/forms.py:223 rapidsms_ureport/ureport/forms.py:709
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:92
 #, fuzzy
 msgid "Poll"
 msgstr "Sondage"
 
-#: rapidsms_ureport/ureport/forms.py:200
+#: rapidsms_ureport/ureport/forms.py:224
 msgid "Assign selected to poll"
 msgstr "Associer la sélection au sondage"
 
-#: rapidsms_ureport/ureport/forms.py:208
+#: rapidsms_ureport/ureport/forms.py:233
 #, python-format
 msgid "%(length)d responses assigned to  %(poll)s poll"
 msgstr "%(length)d réponses associé au sondage  %(poll)s"
 
-#: rapidsms_ureport/ureport/forms.py:214
+#: rapidsms_ureport/ureport/forms.py:240
 msgid "Delete Selected"
 msgstr "Effacer ceux sélectionés"
 
-#: rapidsms_ureport/ureport/forms.py:220
+#: rapidsms_ureport/ureport/forms.py:246 rapidsms_ureport/ureport/forms.py:274
 msgid "No contacts selected"
 msgstr "Aucun participants sélectionés"
 
-#: rapidsms_ureport/ureport/forms.py:234
+#: rapidsms_ureport/ureport/forms.py:260
 msgid "Assign to New poll"
 msgstr "Associer à un nouveau sondage"
 
-#: rapidsms_ureport/ureport/forms.py:235
+#: rapidsms_ureport/ureport/forms.py:261
 msgid "Poll Name"
 msgstr "Nom du Sondage"
 
-#: rapidsms_ureport/ureport/forms.py:236 rapidsms_ureport/ureport/forms.py:385
+#: rapidsms_ureport/ureport/forms.py:262 rapidsms_ureport/ureport/forms.py:417
 msgid "Yes/No Question"
 msgstr "Question Oui/Non"
 
-#: rapidsms_ureport/ureport/forms.py:240 rapidsms_ureport/ureport/forms.py:387
+#: rapidsms_ureport/ureport/forms.py:266 rapidsms_ureport/ureport/forms.py:419
 msgid "Response type"
 msgstr "Type de Réponse"
 
-#: rapidsms_ureport/ureport/forms.py:241
+#: rapidsms_ureport/ureport/forms.py:267
 msgid "Poll type"
 msgstr "Type de Sondage"
 
-#: rapidsms_ureport/ureport/forms.py:242
+#: rapidsms_ureport/ureport/forms.py:268
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:98
-#: rapidsms_ureport/ureport/views/poll_views.py:467
+#: rapidsms_ureport/ureport/views/poll_views.py:462
+#: rapidsms_ureport/ureport/views/poll_views.py:488
 msgid "Question"
 msgstr ""
 
-#: rapidsms_ureport/ureport/forms.py:243
+#: rapidsms_ureport/ureport/forms.py:269
 msgid "Default response"
 msgstr "Réponse par defaut"
 
-#: rapidsms_ureport/ureport/forms.py:277
+#: rapidsms_ureport/ureport/forms.py:304
 #, python-format
 msgid "%(results)d participants added to  %(poll)s poll"
 msgstr "%(results)d participants ajoutés au sondage %(poll)s"
 
-#: rapidsms_ureport/ureport/forms.py:314
+#: rapidsms_ureport/ureport/forms.py:344
 msgid "Reply to selected"
 msgstr "Repondre aux sélectionés"
 
-#: rapidsms_ureport/ureport/forms.py:318 rapidsms_ureport/ureport/forms.py:350
+#: rapidsms_ureport/ureport/forms.py:348 rapidsms_ureport/ureport/forms.py:380
 msgid "A message must have one or more recipients!"
 msgstr "Un message doit avoir un ou plusieurs destinataires"
 
-#: rapidsms_ureport/ureport/forms.py:319
+#: rapidsms_ureport/ureport/forms.py:349
 msgid "error"
 msgstr ""
 
-#: rapidsms_ureport/ureport/forms.py:343
+#: rapidsms_ureport/ureport/forms.py:373
 msgid "text"
 msgstr ""
 
-#: rapidsms_ureport/ureport/forms.py:344
+#: rapidsms_ureport/ureport/forms.py:374
 msgid "text luo"
 msgstr "text portugais"
 
-#: rapidsms_ureport/ureport/forms.py:376
+#: rapidsms_ureport/ureport/forms.py:407
 #, python-format
 msgid "Message successfully sent to %(connections)d numbers"
 msgstr "Message envoyés aux %(connections)d numeros"
 
-#: rapidsms_ureport/ureport/forms.py:378
+#: rapidsms_ureport/ureport/forms.py:410
 msgid "You don't have permission to send messages!"
 msgstr "Vous n'avez pas la permission d'envoyer des messages!"
 
-#: rapidsms_ureport/ureport/forms.py:385
+#: rapidsms_ureport/ureport/forms.py:417
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:99
 #: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:46
 #: rapidsms_ureport/ureport/views/message_views.py:49
@@ -978,83 +1078,97 @@ msgstr "Vous n'avez pas la permission d'envoyer des messages!"
 msgid "Type"
 msgstr ""
 
-#: rapidsms_ureport/ureport/forms.py:389
+#: rapidsms_ureport/ureport/forms.py:421
 msgid "Is urgent"
 msgstr ""
 
-#: rapidsms_ureport/ureport/forms.py:396
+#: rapidsms_ureport/ureport/forms.py:428
 msgid "Question en"
 msgstr ""
 
-#: rapidsms_ureport/ureport/forms.py:397
+#: rapidsms_ureport/ureport/forms.py:429
 msgid "Question luo"
 msgstr "Question pt"
 
-#: rapidsms_ureport/ureport/forms.py:398
+#: rapidsms_ureport/ureport/forms.py:430
 msgid "Question kdj"
 msgstr ""
 
-#: rapidsms_ureport/ureport/forms.py:400
+#: rapidsms_ureport/ureport/forms.py:432
 msgid "Default response en"
 msgstr ""
 
-#: rapidsms_ureport/ureport/forms.py:402
+#: rapidsms_ureport/ureport/forms.py:434
 msgid "Default response kdj"
 msgstr ""
 
-#: rapidsms_ureport/ureport/forms.py:404
+#: rapidsms_ureport/ureport/forms.py:436
 msgid "districts"
 msgstr "territoires ou communes"
 
-#: rapidsms_ureport/ureport/forms.py:406
+#: rapidsms_ureport/ureport/forms.py:438
 msgid "Default response luo"
 msgstr "Réponse par defaut en portugais"
 
-#: rapidsms_ureport/ureport/forms.py:427
+#: rapidsms_ureport/ureport/forms.py:459
 msgid "groups"
 msgstr ""
 
-#: rapidsms_ureport/ureport/forms.py:438
+#: rapidsms_ureport/ureport/forms.py:470
 msgid "You must provide a set of recipients (a group or groups)"
 msgstr "Vous devez ajouter des destinataires (groupe(s))"
 
-#: rapidsms_ureport/ureport/forms.py:495
+#: rapidsms_ureport/ureport/forms.py:527
 msgid "Blacklist/Opt-out Users"
 msgstr ""
 
-#: rapidsms_ureport/ureport/forms.py:672
+#: rapidsms_ureport/ureport/forms.py:705
 msgid "Template"
 msgstr ""
 
-#: rapidsms_ureport/ureport/forms.py:673
+#: rapidsms_ureport/ureport/forms.py:707
 msgid ""
 "message shd be of form Dear Hon. [insert name]. [insert results ] of people "
 "from [insert district] say that lorem ipsum"
 msgstr ""
 
-#: rapidsms_ureport/ureport/forms.py:751
+#: rapidsms_ureport/ureport/forms.py:752
+#, fuzzy, python-format
+msgid "Message is going to be sent to %(contacts)d contacts."
+msgstr "Message envoyés aux %(connections)d numeros"
+
+#: rapidsms_ureport/ureport/forms.py:753
+msgid "Confirm Sending"
+msgstr ""
+
+#: rapidsms_ureport/ureport/forms.py:786
 msgid "Push Selected Messages to Mtrac"
 msgstr ""
 
+#: rapidsms_ureport/ureport/forms.py:791
+#, python-format
+msgid "%(count)d Messages were pushed to mtrac"
+msgstr ""
+
 #: rapidsms_ureport/ureport/templates/layout.html:5
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:6
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:38
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:7
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:37
 msgid "Voice Matters"
-msgstr "Lobela biso! Votre voix compte!"
+msgstr " "
 
 #: rapidsms_ureport/ureport/templates/layout.html:45
 msgid "VOICE MATTERS"
-msgstr "Votre voix compte"
+msgstr "LOBELA BISO! VOTRE VOIX COMPTE!"
 
 #: rapidsms_ureport/ureport/templates/layout.html:48
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:41
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:40
 msgid "members to date"
-msgstr "membres jusqu'à ce jours"
+msgstr "membres à ce jour"
 
 #: rapidsms_ureport/ureport/templates/layout.html:54
-#: rapidsms_ureport/ureport/templates/layout.html:91
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:53
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:101
+#: rapidsms_ureport/ureport/templates/layout.html:86
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:50
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:97
 msgid "HOME"
 msgstr "ACCEUIL"
 
@@ -1063,175 +1177,196 @@ msgid "DASHBOARDS"
 msgstr ""
 
 #: rapidsms_ureport/ureport/templates/layout.html:59
-#: rapidsms_ureport/ureport/templates/layout.html:98
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:107
+#: rapidsms_ureport/ureport/templates/layout.html:93
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:103
 msgid "POLL ADMIN"
 msgstr "ADMIN SONDAGE"
 
 #: rapidsms_ureport/ureport/templates/layout.html:60
-#: rapidsms_ureport/ureport/templates/layout.html:99
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:108
+#: rapidsms_ureport/ureport/templates/layout.html:94
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:104
 msgid "MESSAGE LOG"
 msgstr "JOURNAL DES MESSAGES"
 
 #: rapidsms_ureport/ureport/templates/layout.html:61
-#: rapidsms_ureport/ureport/templates/layout.html:100
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:109
+#: rapidsms_ureport/ureport/templates/layout.html:95
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:105
 msgid "UREPORTERS"
 msgstr "UREPORTERS"
 
 #: rapidsms_ureport/ureport/templates/layout.html:62
-#: rapidsms_ureport/ureport/templates/layout.html:101
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:110
+#: rapidsms_ureport/ureport/templates/layout.html:96
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:106
 msgid "FLAGGED MESSAGES"
 msgstr "MESSAGES MARQUES"
 
 #: rapidsms_ureport/ureport/templates/layout.html:63
-#: rapidsms_ureport/ureport/templates/layout.html:102
+#: rapidsms_ureport/ureport/templates/layout.html:97
 msgid "MP BARAZA"
 msgstr ""
 
 #: rapidsms_ureport/ureport/templates/layout.html:64
-#: rapidsms_ureport/ureport/templates/layout.html:103
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:111
+#: rapidsms_ureport/ureport/templates/layout.html:98
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:107
 msgid "A-CLASS"
 msgstr ""
 
 #: rapidsms_ureport/ureport/templates/layout.html:65
 msgid "Real Time"
-msgstr ""
+msgstr "Temps Réel"
 
 #: rapidsms_ureport/ureport/templates/layout.html:68
-#: rapidsms_ureport/ureport/templates/layout.html:106
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:114
+#: rapidsms_ureport/ureport/templates/layout.html:102
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:111
 msgid "LOGIN"
 msgstr "SESSION"
 
-msgid "LOGOUT"
-msgstr "DECONNEXION"
-
 #: rapidsms_ureport/ureport/templates/layout.html:80
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:95
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:91
 msgid "Supported by"
 msgstr "Appuyée par"
 
-#: rapidsms_ureport/ureport/templates/layout.html:92
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:54
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:102
+#: rapidsms_ureport/ureport/templates/layout.html:87
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:51
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:98
 msgid "POLL RESULTS"
 msgstr "RESULTATS DES SONDAGES"
 
-#: rapidsms_ureport/ureport/templates/layout.html:93
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:55
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:103
+#: rapidsms_ureport/ureport/templates/layout.html:88
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:52
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:99
 msgid "ABOUT UREPORT"
-msgstr "A PROPOS DE UNIELEZE"
+msgstr "A PROPOS DE UREPORT RDC"
 
-#: rapidsms_ureport/ureport/templates/layout.html:94
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:56
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:104
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:105
+#: rapidsms_ureport/ureport/templates/layout.html:89
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:53
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:100
 msgid "HOW TO JOIN"
 msgstr "COMMENT PARTICIPER"
 
-#: rapidsms_ureport/ureport/templates/layout.html:104
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:112
+#: rapidsms_ureport/ureport/templates/layout.html:99
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:108
 msgid "REAL TIME"
 msgstr "TEMPS REEL"
 
-#: rapidsms_ureport/ureport/templates/layout.html:110
+#: rapidsms_ureport/ureport/templates/layout.html:100
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:109
+msgid "LOGOUT"
+msgstr "DECONNEXION"
+
+#: rapidsms_ureport/ureport/templates/layout.html:106
 msgid "Copyright &copy; 2010 - 2012 UNICEF et al"
 msgstr ""
 
-#: rapidsms_ureport/ureport/templates/layout.html:111
+#: rapidsms_ureport/ureport/templates/layout.html:107
 msgid "RapidSMS and Ureport are available under the BSD license"
 msgstr ""
 
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:57
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:54
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:101
 msgid "NATIONAL PULSE"
 msgstr "POULS NATIONAL"
 
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:66
-#msgid ""
-#"Ureport is a free SMS-based system that allows young %(citizens_trans)s to speak out"
-#"on what's happening in communities across the country, and work together with other community"
-#"leaders for positive change."
-msgid "Ureport is a free SMS-based system that allows young %(citizens_trans)s to speak out on what's happening in communities across the country, and work together with other community leaders for positive change."
-msgstr "Unieleze est un système de SMS gratuits permettant aux jeunes %(citizens_trans)s de s'exprimer sur ce qui se passe dans leurs communautés à travers le pays tout en travaillant avec les leaders communautaires pour un changement positif."
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:60
+#: rapidsms_ureport/ureport/templates/ureport/about.html:30
+msgid "Ugandans"
+msgstr "Congolais"
 
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:76
+# msgid ""
+# "Ureport is a free SMS-based system that allows young %(citizens_trans)s to speak out"
+# "on what's happening in communities across the country, and work together with other community"
+# "leaders for positive change."
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:61
+#: rapidsms_ureport/ureport/templates/ureport/about.html:31
+#, python-format
+msgid ""
+"Ureport is a free SMS-based system that allows young %(citizens_trans)s to "
+"speak out on what's happening in communities across the country, and work "
+"together with other community leaders for positive change."
+msgstr ""
+"Ureport RDC est un système de SMS gratuits permettant aux jeunes "
+"%(citizens_trans)s de s'exprimer sur ce qui se passe dans leurs communautés "
+"à travers le pays tout en travaillant avec les leaders communautaires pour "
+"un changement positif."
+
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:72
 msgid "YOUR SAY:"
 msgstr "VOTRE OPINION:"
 
-#: rapidsms_ureport/ureport/templates/ureport_layout.html:118
-msgid "&copy; 2010 - 2012 UNICEF et al."
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:116
+msgid "&copy; 2010 -"
 msgstr ""
 
-#: rapidsms_ureport/ureport/templates/ureport/poll_summary.html:38
-msgid "Share This Poll"
-msgstr "Partager ce sondage"
+#: rapidsms_ureport/ureport/templates/ureport_layout.html:116
+msgid "UNICEF et al."
+msgstr ""
 
-#: rapidsms_ureport/ureport/templates/ureport/about.html:7
+#: rapidsms_ureport/ureport/templates/ureport/about.html:8
 msgid "Why Join Ureport"
-msgstr "Pourquoi participer à Unieleze"
+msgstr "Pourquoi participer à Ureport RDC"
 
-#: rapidsms_ureport/ureport/templates/ureport/about.html:11
+#: rapidsms_ureport/ureport/templates/ureport/about.html:12
+msgid "Uganda"
+msgstr "RD Congo"
+
+#: rapidsms_ureport/ureport/templates/ureport/about.html:13
+#, fuzzy, python-format
 msgid ""
 "<ul>\n"
 "\t    <li>Speak out on what's happening in your community</li>\n"
-"\t    <li>Use Ureport results and information to update and increase citizen's awareness</li>\n"
-"\t    <li>Participate in nationwide campaigns to help improve your country</li>\n"
-"\t    <li>Share what's happening around %(country_trans)s with other Ureporters</li>\n"
+"\t    <li>Use Ureport results and information to update and increase "
+"citizen's awareness</li>\n"
+"\t    <li>Participate in nationwide campaigns to help improve your country</"
+"li>\n"
+"\t    <li>Share what's happening around %(country_trans)s with other "
+"Ureporters</li>\n"
 "\t</ul>"
 msgstr ""
 "<ul>\n"
 "\t    <li>S'exprimer sur ce qui se passe dans votre communauté.</li>\n"
-"\t    <li>Utiliser les résultats et informations de Unieleze pour se mettre soi-même "
-"à jour et accroitre son engagement citoyen. </li>\n"
-"\t    <li>Participer aux campagnes nationales visant l'amélioration des conditions de vie.</li>\n"
-"\t    <li>Noter vos observations sur ce qui se passe autour de vous et partager vos préoccupations avec d'autres Ureporters</li>\n"
+"\t    <li>Utiliser les résultats et informations de Ureport RDC pour se "
+"mettre soi-même à jour et accroitre son engagement citoyen. </li>\n"
+"\t    <li>Participer aux campagnes nationales visant l'amélioration des "
+"conditions de vie.</li>\n"
+"\t    <li>Noter vos observations sur ce qui se passe autour de vous et "
+"partager vos préoccupations avec d'autres Ureporters</li>\n"
 "\t</ul>"
 
-#: rapidsms_ureport/ureport/templates/ureport/about.html:24
+#: rapidsms_ureport/ureport/templates/ureport/about.html:26
 msgid "About Ureport"
-msgstr "A propos de Unieleze"
-
-#: rapidsms_ureport/ureport/templates/ureport/about.html:28
-msgid ""
-"Ureport is a free SMS-based system that allows\n"
-"                young Ugandans to speak out on what's happening in\n"
-"                communities across the country, and work together\n"
-"\t\twith other community leaders for positive change."
-msgstr ""
-"Unieleze est un système de SMS gratuits qui permet aux \n"
-"jeunes %(citizens_trans)s de s'exprimer sur ce qui se passe"
- "dans leurs communautés et de travailler ensemble avec leurs dirigeants pour amener un changement positif. "
+msgstr "A propos de Ureport RDC"
 
 #: rapidsms_ureport/ureport/templates/ureport/about.html:37
 msgid "Ureport is made up of"
-msgstr "Unieleze comprend"
+msgstr "Ureport RDC comprend"
 
 #: rapidsms_ureport/ureport/templates/ureport/about.html:39
 msgid ""
 "Weekly SMS messages and polls to and from\n"
 "\t\t\ta growing community of Ureporters"
-msgstr "Des SMS hebdomadaires et des sondages vers et provenant d'une communauté grandissante de Ureporters"
+msgstr ""
+"Des SMS hebdomadaires et des sondages vers et provenant d'une communauté "
+"grandissante de Ureporters"
 
 #: rapidsms_ureport/ureport/templates/ureport/about.html:43
 msgid ""
 "Regular radio programs that will broadcast\n"
 "\t\t\tstories gathered by Ureport"
-msgstr "Des programmes radio réguliers qui diffuseront des histoires recueillies par les Ureporters"
+msgstr ""
+"Des programmes radio réguliers qui diffuseront des histoires recueillies par "
+"les Ureporters"
 
 #: rapidsms_ureport/ureport/templates/ureport/about.html:47
 msgid ""
 "Newspaper articles that will publish stories from\n"
 "\t\t\tthe Ureport community."
-msgstr "Des articles de journaux qui publieront des histoires provenant de la communauté."
+msgstr ""
+"Des articles de journaux qui publieront des histoires provenant de la "
+"communauté."
 
 #: rapidsms_ureport/ureport/templates/ureport/about.html:53
 msgid "The mission of Ureport"
-msgstr "La mission de Unieleze"
+msgstr "La mission de Ureport RDC"
 
 #: rapidsms_ureport/ureport/templates/ureport/about.html:56
 msgid ""
@@ -1245,12 +1380,16 @@ msgid ""
 "                    mediums (radio, TV, community dialogue, website,\n"
 "\t\t    and youth events)"
 msgstr ""
-"Inspirer l'action de nos communautés afin d'unir les efforts et de partager la reponsabilité \n"
+"Inspirer l'action de nos communautés afin d'unir les efforts et de partager "
+"la reponsabilité \n"
 "pour la création d'un environnement meilleur pour chacun. <br/>\n"
-"Inciter nos dirigeants de prendre des actions appropriées - les mettre au courant \n"
-"de ce qui se passe et des attentes des communautés quant aux actions à prendre. <br/>\n"
+"Inciter nos dirigeants de prendre des actions appropriées - les mettre au "
+"courant \n"
+"de ce qui se passe et des attentes des communautés quant aux actions à "
+"prendre. <br/>\n"
 "Partager sur divers media (radio, TV, sites web, assemblées communautaires \n"
- "et réunions de la communauté humanitaires, réunions des jeunes) les informations recueillies par Unieleze."
+"et réunions de la communauté humanitaires, réunions des jeunes) les "
+"informations recueillies par Ureport RDC."
 
 #: rapidsms_ureport/ureport/templates/ureport/contact_message_base.html:25
 msgid "Search Messages"
@@ -1281,42 +1420,45 @@ msgstr "Monter Autoreg Messages"
 msgid "Show Quit Messages"
 msgstr "Monter Messages de désabonnement"
 
-#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:22
+#: rapidsms_ureport/ureport/templates/ureport/dashboard.html:39
+#: rapidsms_ureport/ureport/templates/ureport/partials/dashboard/poll_row.html:20
+#: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_admin_row.html:15
+msgid "Report"
+msgstr "Rapport"
+
+#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:42
 #: rapidsms_ureport/ureport/templates/ureport/new_flag.html:15
 msgid "All Flags"
 msgstr "Tous les Marques"
 
-#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:24
+#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:44
+#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:48
 #: rapidsms_ureport/ureport/templates/ureport/new_flag.html:17
 #: rapidsms_ureport/ureport/templates/ureport/new_flag.html:20
 msgid "messages"
 msgstr ""
 
-#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:28
+#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:49
 #: rapidsms_ureport/ureport/templates/ureport/new_flag.html:21
 msgid "edit"
 msgstr ""
 
-#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:29
+#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:50
 #: rapidsms_ureport/ureport/templates/ureport/new_flag.html:22
 msgid "delete"
 msgstr "effacer"
 
-#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:37
+#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:56
 msgid "Add New Flag"
 msgstr "Ajouter Nouveau Marque"
 
+#: rapidsms_ureport/ureport/templates/ureport/flagged_message_base.html:58
+msgid "Export To Excel"
+msgstr "Exporter tous en format Excel"
 
 #: rapidsms_ureport/ureport/templates/ureport/home.html:22
-msgid "PREVIOUS POLLS"
-msgstr "SONDAGES PRECEDENTS"
-
-msgid "PREVIOUS POLLS."
-msgstr "SONDAGES PRECEDENTS."
-
-msgid " PREVIOUS POLLS.    The last message is received at : %(timelastmsg)s "
-msgstr "SONDAGES PRECEDENTS.    Le dernier message est recu à : %(timelastmsg)s"
-
+msgid "PREVIOUS POLLS The last message was received at"
+msgstr "SONDAGES PRECEDENTS Le dernier message a été recu à"
 
 #: rapidsms_ureport/ureport/templates/ureport/home.html:34
 msgid "See results"
@@ -1335,8 +1477,9 @@ msgid ""
 "You will receive a greeting message and a series of quetions , to find out "
 "more about you\n"
 "    (Ureport needs to know your District but all other quetions are optional)"
-msgstr "Vous allez recevoir un message d'accueil et une série de questions, "
-"pour mieux vous connaître."
+msgstr ""
+"Vous allez recevoir un message d'accueil et une série de questions, pour "
+"mieux vous connaître."
 
 #: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:21
 msgid "Step 1"
@@ -1346,7 +1489,9 @@ msgstr "Etape 1"
 msgid ""
 "Text the word Join to 8500\n"
 "    - all Ureport SMSs are free!"
-msgstr "Envoyez le mot Participer à 100\n - tous les SMS échangés avec Unieleze sont gratuits!"
+msgstr ""
+"Envoyez le mot Participer à 100\n"
+" - tous les SMS échangés avec Ureport RDC sont gratuits!"
 
 #: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:30
 msgid "Step 4"
@@ -1357,8 +1502,10 @@ msgid ""
 " As a Ureporter, you will get weekly poll results, and meaningful "
 "information to assist you to enact change in\n"
 "    your community."
-msgstr "En tant que Ureporter, vous recevrez les résultats des sondages hebdomadaires "
-"ainsi que des informations utiles pouvant vous aider à susciter des changements positifs dans votre communauté."
+msgstr ""
+"En tant que Ureporter, vous recevrez les résultats des sondages "
+"hebdomadaires ainsi que des informations utiles pouvant vous aider à "
+"susciter des changements positifs dans votre communauté."
 
 #: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:40
 msgid "Step 3"
@@ -1366,20 +1513,22 @@ msgstr "Etape 3"
 
 #: rapidsms_ureport/ureport/templates/ureport/how_to_join.html:42
 msgid "After you answer the quetions about you, you are a member of Ureport!"
-msgstr "Une fois que vous avez terminé de répondre aux questions vous concernant, vous êtes membre de Unieleze!"
+msgstr ""
+"Une fois que vous avez terminé de répondre aux questions vous concernant, "
+"vous êtes membre de Ureport RDC!"
 
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:46
 msgid "Filter Poll Contacts"
 msgstr "Filter les Participants au Sondage"
 
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:84
-#: rapidsms_ureport/ureport/views/dashboard_views.py:90
+#: rapidsms_ureport/ureport/views/dashboard_views.py:95
 msgid "No Contacts Selected"
 msgstr "Aucun Participants Sélectionné"
 
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:98
 #: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:70
-#: rapidsms_ureport/ureport/views/poll_views.py:89
+#: rapidsms_ureport/ureport/views/poll_views.py:90
 msgid "Send Poll"
 msgstr "Envoyer le Sondage"
 
@@ -1405,14 +1554,14 @@ msgid "Messages"
 msgstr "Messages"
 
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:123
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:204
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:401
-#: rapidsms_ureport/ureport/views/contact_views.py:365
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:211
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:383
+#: rapidsms_ureport/ureport/views/contact_views.py:364
 msgid "District"
 msgstr "Territoire ou Communes"
 
 #: rapidsms_ureport/ureport/templates/ureport/mp_dashboard.html:124
-#: rapidsms_ureport/ureport/views/contact_views.py:366
+#: rapidsms_ureport/ureport/views/contact_views.py:365
 msgid "Group(s)"
 msgstr "Groupe(s)"
 
@@ -1429,45 +1578,35 @@ msgstr "Page %(messages_number)sof %(messages_paginator_num_pages)s."
 msgid "National Pulse"
 msgstr "Pulse National"
 
-#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:65
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:28
+msgid "Welcome to National Pulse"
+msgstr "Bienvenu au Pouls National"
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:28
+msgid "This is What is trending in the Ureport Community"
+msgstr ""
+"Où vous pouvez voir ce qui est une tendance au "
+"sein de la communauté Ureport RDC."
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:30
 msgid "Today's Pulse"
 msgstr "Pouls d'aujourd'hui"
 
-#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:66
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:31
+msgid "Week's Pulse"
+msgstr "Pouls de la semaine"
+
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:32
 msgid "Month's Pulse"
 msgstr "Pouls du mois"
 
-#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:67
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:33
 msgid "Year's Pulse"
 msgstr "Pouls de l'année"
 
-#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:70
-msgid "Reset All"
-msgstr "Réinitialiser Tout"
-
-#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:74
-msgid ""
-"Welcome to National Pulse where you can see what is trending within the U-"
-"report community."
-msgstr "Bienvenu au Pouls National où vous pouvez voir ce qui est une tendance au sein de la communauté Unieleze."
-
-#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:74
-msgid ""
-"Click on your district to see what the young people are talking about where "
-"you live."
-msgstr "Cliquez sur votre territoire ou commune pour voir ce que les jeunes parlent de l'endroit où vous vivez."
-
-#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:76
-msgid "Click on on current filter("
-msgstr "Cliquer sur le filtre("
-
-#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:76
-msgid ") to see word cloud"
-msgstr ") pour voir le mot nuage"
-
-#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:103
-msgid "Filter word cloud with"
-msgstr "Filtrer le nuage de mots avec"
+#: rapidsms_ureport/ureport/templates/ureport/national_pulse.html:49
+msgid "Loading National Pulse... Please wait, This may take a while."
+msgstr ""
 
 #: rapidsms_ureport/ureport/templates/ureport/new_flag.html:6
 msgid "Add New flag"
@@ -1492,6 +1631,31 @@ msgstr "Créer un Sondage"
 #: rapidsms_ureport/ureport/templates/ureport/poll_admin_base.html:35
 msgid "Add New Poll"
 msgstr "Ajouter un Nouveau Sondage"
+
+#: rapidsms_ureport/ureport/templates/ureport/poll_admin_base.html:38
+msgid "View AutoReg Polls"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/poll_admin_base.html:39
+msgid "View Autoreg Group Rules"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/poll_empty.html:5
+#, fuzzy
+msgid "No Polls"
+msgstr "Sondages"
+
+#: rapidsms_ureport/ureport/templates/ureport/poll_summary.html:10
+msgid "Polls"
+msgstr "Sondages"
+
+#: rapidsms_ureport/ureport/templates/ureport/poll_summary.html:37
+msgid "Results"
+msgstr "Résultats"
+
+#: rapidsms_ureport/ureport/templates/ureport/poll_summary.html:38
+msgid "Share This Poll"
+msgstr "Partager ce sondage"
 
 #: rapidsms_ureport/ureport/templates/ureport/responses_base.html:4
 msgid "Poll Responses "
@@ -1531,6 +1695,10 @@ msgstr "Effacer le Groupe"
 msgid "Blacklist"
 msgstr "Blacklist"
 
+#: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:71
+#, fuzzy
+msgid "Export to excel"
+msgstr "Exporter tous en format Excel"
 
 #: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:72
 msgid "Send Custom SMS"
@@ -1555,8 +1723,8 @@ msgid "Select Join Date range and download"
 msgstr "Sélectionnez la date d'inscription et télécharger"
 
 #: rapidsms_ureport/ureport/templates/ureport/ureporters_base.html:120
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:344
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:356
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:328
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:338
 msgid "Download"
 msgstr "Télécharger"
 
@@ -1564,18 +1732,15 @@ msgstr "Télécharger"
 msgid "Export All To Excel"
 msgstr "Exporter tous en format Excel"
 
-#: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_admin_row.html:9
-msgid "Open"
-msgstr "Ouvert"
-
-#: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_admin_row.html:15
-msgid "Report"
-msgstr "Rapport"
-
+#: rapidsms_ureport/ureport/templates/ureport/partials/dashboard/poll_row.html:25
 #: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_admin_row.html:18
 #: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_partial_base.html:52
 msgid "Responses"
 msgstr "Réponses"
+
+#: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_admin_row.html:9
+msgid "Open"
+msgstr "Ouvert"
 
 #: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_partial_base.html:6
 msgid "Are you sure you want to remove this response from the poll?"
@@ -1591,7 +1756,7 @@ msgstr "Participants, réponses totales"
 
 #: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_partial_base.html:62
 msgid "You will receive an email as soon as the export is done"
-msgstr "Vous recevrez un email dès que l'exportation est effectuée"
+msgstr "Vous recevrez un email dès que l exportation est effectuée"
 
 #: rapidsms_ureport/ureport/templates/ureport/partials/polls/poll_partial_base.html:66
 msgid "Export"
@@ -1622,7 +1787,7 @@ msgstr "Plus"
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:16
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:21
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:26
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:211
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:218
 msgid "No"
 msgstr "Non"
 
@@ -1636,7 +1801,7 @@ msgstr "Non"
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:61
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:66
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:71
-#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:208
+#: rapidsms_ureport/ureport/templates/ureport/partials/viz/choropleth.html:215
 msgid "Yes"
 msgstr "Oui"
 
@@ -1646,78 +1811,76 @@ msgstr "Résultats Departagés"
 
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:13
 msgid "Start Age"
-msgstr "Age Inferieur"
+msgstr "Age Superieur"
 
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/piechart.html:16
 msgid "End Age"
-msgstr "Age Superieur"
+msgstr "Age Inferieur"
 
 #: rapidsms_ureport/ureport/templates/ureport/partials/viz/top_responses.html:2
 msgid "Top Responses"
 msgstr "Top Réponses"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:329
-msgid "Stop Capture"
-msgstr "Arrêter la Capture"
-
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:331
-msgid "Start Capture"
-msgstr "Lancer la Capture"
-
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:342
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:326
 msgid "Filter Districts"
 msgstr "Filtrer Territoires ou Communes"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:346
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:330
 msgid "Filter Groups"
 msgstr "Filtrer Groupes"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:364
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:346
 msgid "Filter By District(s)"
 msgstr "Filtrer par Territoires ou Communes"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:364
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:378
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:346
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:360
 msgid "Filtering"
 msgstr "Filtrage"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:366
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:348
 msgid "Reset Filter"
 msgstr "Réinitialiser le Filtre"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:375
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:357
 msgid "Filter Group"
 msgstr "Filtrer groupe"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:378
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:360
 msgid "filter group"
 msgstr "filtrer groupe"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:388
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:370
 msgid "Search"
 msgstr "Recherche"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:397
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:379
 msgid "Actioned"
 msgstr "Mise en action"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:436
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:418
 msgid "Foward"
 msgstr "Avant"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:438
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:420
 msgid "Reply"
 msgstr "Répondre"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:478
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:462
+msgid "Already Assigned"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:464
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:477
 msgid "Assign"
 msgstr "Assigner"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:519
-#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:540
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:520
+#: rapidsms_ureport/ureport/templates/ureport/polls/alerts.html:541
 #: rapidsms_ureport/ureport/templates/ureport/polls/category.html:21
 #: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:55
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:265
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:286
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:304
 msgid "Close"
 msgstr "Fermer"
 
@@ -1726,12 +1889,12 @@ msgid "Editing"
 msgstr "Modifiant"
 
 #: rapidsms_ureport/ureport/templates/ureport/polls/category.html:10
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:255
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:276
 msgid "Create A new Category"
 msgstr "Créer une nouvelle catégorie"
 
 #: rapidsms_ureport/ureport/templates/ureport/polls/category.html:23
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:266
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:287
 msgid "Next"
 msgstr "Suivant"
 
@@ -1744,15 +1907,18 @@ msgid "Rules for"
 msgstr "Règles pour"
 
 #: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:14
+#: rapidsms_ureport/ureport/views/poll_views.py:449
 msgid "Contains all of"
 msgstr "Contient tous les"
 
 #: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:16
+#: rapidsms_ureport/ureport/views/poll_views.py:451
 msgid "Contains one of"
 msgstr "Contient une de"
 
 #: rapidsms_ureport/ureport/templates/ureport/polls/rules.html:20
 #: rapidsms_ureport/ureport/templates/ureport/polls/view_category.html:22
+#: rapidsms_ureport/ureport/views/poll_views.py:453
 msgid "Delete"
 msgstr "Effacer"
 
@@ -1785,102 +1951,116 @@ msgstr "Enregistrer et ajouter un autre"
 msgid "View Rules"
 msgstr "Voir les Règles"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:182
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_category.html:25
+#, fuzzy
+msgid "Give Group"
+msgstr "Effacer le Groupe"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:203
 msgid "Prepare Poll"
 msgstr "Préparer le Sondage"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:182
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:203
 msgid "Start Poll"
 msgstr "Ouvrir le Sondage"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:184
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:205
 msgid "click on question to edit"
 msgstr "Cliquer sur la question pour éditer"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:193
-#: rapidsms_ureport/ureport/views/poll_views.py:92
-#: rapidsms_ureport/ureport/views/poll_views.py:101
-#: rapidsms_ureport/ureport/views/poll_views.py:116
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:214
+#: rapidsms_ureport/ureport/views/poll_views.py:93
+#: rapidsms_ureport/ureport/views/poll_views.py:102
+#: rapidsms_ureport/ureport/views/poll_views.py:117
 msgid "Close Poll"
 msgstr "Fermer le Sondage"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:197
-#: rapidsms_ureport/ureport/views/poll_views.py:108
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:218
+#: rapidsms_ureport/ureport/views/poll_views.py:109
 msgid "Reopen Poll"
 msgstr "Re-ouvrir le Sondage"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:208
-#: rapidsms_ureport/ureport/views/poll_views.py:133
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:229
+#: rapidsms_ureport/ureport/views/poll_views.py:134
 msgid "Show On Home page"
 msgstr "Montrer a la page d'acceuil"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:230
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:233
+#, fuzzy
+msgid "Don't Show on home page"
+msgstr "Ne pas montrer a la page d'acceuil"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:251
 msgid "Response Message"
 msgstr "Message Réponse"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:232
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:253
 msgid "Is Default"
 msgstr "Par Defaut"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:289
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:295
+#, fuzzy
+msgid "Give Category a Group"
+msgstr "Filtrer par Groupe"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:298
+msgid "Please make sure the group is already in Ureport"
+msgstr ""
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:305
+#, fuzzy
+msgid "Create"
+msgstr "Créer un Sondage"
+
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:328
 msgid "Ussd Menu"
 msgstr "Menu Ussd"
 
-#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:296
+#: rapidsms_ureport/ureport/templates/ureport/polls/view_poll.html:335
 msgid "Save Menu  Edits"
 msgstr "Enregistrer le Menu Editer"
 
-#: rapidsms_ureport/ureport/views/contact_views.py:364
+#: rapidsms_ureport/ureport/views/contact_views.py:363
 msgid "Language"
 msgstr "Langue"
 
-#: rapidsms_ureport/ureport/views/contact_views.py:367
+#: rapidsms_ureport/ureport/views/contact_views.py:366
 msgid "Questions "
 msgstr "Questions"
 
-#: rapidsms_ureport/ureport/views/contact_views.py:368
+#: rapidsms_ureport/ureport/views/contact_views.py:367
 msgid "Responses "
 msgstr "Reponses"
 
-#: rapidsms_ureport/ureport/views/contact_views.py:369
+#: rapidsms_ureport/ureport/views/contact_views.py:368
 msgid "Messages Sent"
 msgstr "Messages envoyés"
 
-#: rapidsms_ureport/ureport/views/contact_views.py:370
+#: rapidsms_ureport/ureport/views/contact_views.py:369
 msgid "caregiver"
 msgstr "soignant"
 
-#: rapidsms_ureport/ureport/views/contact_views.py:371
+#: rapidsms_ureport/ureport/views/contact_views.py:370
 msgid "join date"
 msgstr "join le"
 
-#: rapidsms_ureport/ureport/views/contact_views.py:372
+#: rapidsms_ureport/ureport/views/contact_views.py:371
 msgid "quit date"
 msgstr "fini le"
 
-#: rapidsms_ureport/ureport/views/contact_views.py:391
+#: rapidsms_ureport/ureport/views/contact_views.py:390
 msgid "uReporters"
-msgstr "Unieleze"
+msgstr "Ureport RDC"
 
-#: rapidsms_ureport/ureport/views/message_views.py:62
-msgid "Message Log"
-msgstr "Log Message"
+#: rapidsms_ureport/ureport/views/dashboard_views.py:259
+#: rapidsms_ureport/ureport/views/dashboard_views.py:521
+msgid "Start Capture"
+msgstr "Lancer la Capture"
 
-#: rapidsms_ureport/ureport/views/message_views.py:98
-msgid "Autoreg Messages"
-msgstr "Messages Autoregistration"
-
-#: rapidsms_ureport/ureport/views/message_views.py:134
-msgid "Unsolicited Messages"
-msgstr "Messages Non Sollicité"
-
-#: rapidsms_ureport/ureport/views/message_views.py:169
-msgid "Poll Messages"
-msgstr "Sondages Messages"
-
-#: rapidsms_ureport/ureport/views/message_views.py:204
-msgid "Quit Messages"
-msgstr "Quitter Messages"
+#: rapidsms_ureport/ureport/views/dashboard_views.py:263
+#: rapidsms_ureport/ureport/views/dashboard_views.py:525
+msgid "Stop Capture"
+msgstr "Arrêter la Capture"
 
 #: rapidsms_ureport/ureport/views/message_views.py:216
 #: rapidsms_ureport/ureport/views/message_views.py:332
@@ -1899,30 +2079,112 @@ msgstr "Utilisateur"
 msgid "Recipients"
 msgstr " Restinataires"
 
-#: rapidsms_ureport/ureport/views/message_views.py:234
-msgid "Mass Messages"
-msgstr "Messages en masse"
-
-#: rapidsms_ureport/ureport/views/message_views.py:326
-msgid "Flagged Messages"
-msgstr "Messages Marqués"
-
 #: rapidsms_ureport/ureport/views/message_views.py:334
 msgid "Flags"
 msgstr "Marques"
 
-#: rapidsms_ureport/ureport/views/poll_views.py:125
+#: rapidsms_ureport/ureport/views/poll_views.py:126
 msgid "Don't Show On Home page"
 msgstr "Ne pas montrer a la page d'acceuil"
 
-#: rapidsms_ureport/ureport/views/poll_views.py:450
-#: rapidsms_ureport/ureport/views/poll_views.py:482
-msgid "Polls"
-msgstr "Sondages"
+#: rapidsms_ureport/ureport/views/poll_views.py:456
+msgid "Please enter all the fields"
+msgstr ""
 
-#: rapidsms_ureport/ureport/views/poll_views.py:469
+#: rapidsms_ureport/ureport/views/poll_views.py:464
+#, fuzzy
+msgid "# Participants"
+msgstr "Participants"
+
+#: rapidsms_ureport/ureport/views/poll_views.py:465
+msgid "Visuals"
+msgstr ""
+
+#: rapidsms_ureport/ureport/views/poll_views.py:490
 msgid "Closing Date"
 msgstr "Date de Fermeture"
+
+#~ msgid "PREVIOUS POLLS"
+#~ msgstr "SONDAGES PRECEDENTS"
+
+#~ msgid "Ureport"
+#~ msgstr "Ureport RDC"
+
+#~ msgid "Classified Messages"
+#~ msgstr "Messages Classifiés"
+
+#~ msgid "y"
+#~ msgstr "oui"
+
+#~ msgid "n"
+#~ msgstr "n"
+
+#~ msgid ""
+#~ "We didn't recognize your territoire.  Please carefully type the name of "
+#~ "your territoire and re-send."
+#~ msgstr ""
+#~ "Nous n'avons pas reconnu votre ville ou territoire. Prière bien écrire le "
+#~ "nom de votre ville ou de votre territoire et envoyez de nouveau."
+
+#~ msgid "ayoyoyoooooooooo"
+#~ msgstr "oga"
+
+#~ msgid ""
+#~ "Ureport is a free SMS-based system that allows\n"
+#~ "                young Ugandans to speak out on what's happening in\n"
+#~ "                communities across the country, and work together\n"
+#~ "\t\twith other community leaders for positive change."
+#~ msgstr ""
+#~ "Ureport RDC est un système de SMS gratuits qui permet aux \n"
+#~ "jeunes %(citizens_trans)s de s'exprimer sur ce qui se passedans leurs "
+#~ "communautés et de travailler ensemble avec leurs dirigeants pour amener "
+#~ "un changement positif. "
+
+#~ msgid "PREVIOUS POLL"
+#~ msgstr "SONDAGE PRECEDENT"
+
+#~ msgid "PREVIOUS POLLS."
+#~ msgstr "SONDAGES PRECEDENTS."
+
+#~ msgid "Reset All"
+#~ msgstr "Réinitialiser Tout"
+
+#~ msgid ""
+#~ "Click on your district to see what the young people are talking about "
+#~ "where you live."
+#~ msgstr ""
+#~ "Cliquez sur votre territoire ou commune pour voir ce que les jeunes "
+#~ "parlent de l'endroit où vous vivez."
+
+#~ msgid "Click on on current filter("
+#~ msgstr "Cliquer sur le filtre("
+
+#~ msgid ") to see word cloud"
+#~ msgstr ") pour voir le mot nuage"
+
+#~ msgid "Filter word cloud with"
+#~ msgstr "Filtrer le nuage de mots avec"
+
+#~ msgid "Message Log"
+#~ msgstr "Log Message"
+
+#~ msgid "Autoreg Messages"
+#~ msgstr "Messages Autoregistration"
+
+#~ msgid "Unsolicited Messages"
+#~ msgstr "Messages Non Sollicité"
+
+#~ msgid "Poll Messages"
+#~ msgstr "Sondages Messages"
+
+#~ msgid "Quit Messages"
+#~ msgstr "Quitter Messages"
+
+#~ msgid "Mass Messages"
+#~ msgstr "Messages en masse"
+
+#~ msgid "Flagged Messages"
+#~ msgstr "Messages Marqués"
 
 #~ msgid "This field is required."
 #~ msgstr "haha enter the field"

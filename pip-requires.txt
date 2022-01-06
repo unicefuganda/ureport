@@ -5,7 +5,7 @@ amqplib==1.0.2
 anyjson==0.3.3
 argparse==1.2.1
 billiard==2.7.3.17
-celery==3.0.11
+celery==5.2.2
 coverage==3.6
 django-celery==3.0.10
 django-debug-toolbar==0.9.4
